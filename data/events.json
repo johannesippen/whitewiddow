@@ -1,0 +1,40 @@
+[
+  {
+    "_id" : "",
+    "category" : "casual",
+    "participants" : [
+      {
+        "_id" : "",
+        "name" : "John"
+      },
+      {
+        "_id" : "",
+        "name" : "Jane"
+      }
+    ],
+    "venue" : {
+      "_id" : "",
+      "name" : "Mein Haus am See"
+    },
+    "timestamp" : 1234567890
+  },
+  {
+    "_id" : "",
+    "category" : "dinner",
+    "participants" : [
+      {
+        "_id" : "",
+        "name" : "John"
+      },
+      {
+        "_id" : "",
+        "name" : "Jane"
+      }
+    ],
+    "venue" : {
+      "_id" : "",
+      "name" : "Transit"
+    },
+    "timestamp" : 1234567890
+  }
+]
