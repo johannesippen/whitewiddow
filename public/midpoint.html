@@ -10,35 +10,24 @@
 			  margin: 0;
 			}
 			#map {
+			    width: 320px;
 			}
 		</style>
 	</head>
 	<body>
 	  The blue marker will show you the midpoint between you and Rosenthaler Platz:
 	  <img id="map" src="">
+	  <script src="js/location.js"></script>
 		<script>
 			var my_coordinates;
 			var friend_coordinates = [52.5313,13.401667]; // Static for Rosenthaler Platz
 			
-			var mapwidth = 320;
-			var mapheight = 480;
-
-			navigator.geolocation.getCurrentPosition(function(position){
-				my_coordinates = [position.coords.latitude,position.coords.longitude];
-				
-				location_coordinates = (friend_coordinates[0]+my_coordinates[0])/2+','+(friend_coordinates[1]+my_coordinates[1])/2;
-				
-				my_coord = my_coordinates[0]+','+my_coordinates[1];
-				friend_coord = friend_coordinates[0]+','+friend_coordinates[1];
-				
-				markers = my_coord+'|'+friend_coord+'&markers=color:blue%7C'+location_coordinates;
+		  navigator.geolocation.getCurrentPosition(function(position){
+        my_coordinates = [position.coords.latitude,position.coords.longitude];
+				console.log(ll(getMidpoint(my_coordinates,friend_coordinates)));
 				
 				var map = document.getElementById('map');
-				var mapSrc = "http://maps.googleapis.com/maps/api/staticmap";
-						mapSrc += "?markers="+markers;
-						mapSrc += "&size=" + mapwidth + "x" + mapheight;
-						mapSrc += "&sensor=false";
-						map.src = mapSrc;
+						map.src = staticMapUrl(my_coordinates,friend_coordinates,320,320);
 			});
 		</script>
 	</body>
