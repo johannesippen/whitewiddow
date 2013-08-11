@@ -11,12 +11,15 @@
 			}
 			#map {
 			    width: 320px;
+			    height: 320px;
+			    background: #eee url(img/ajax-loader.gif) no-repeat center;
 			}
 		</style>
 	</head>
 	<body>
-	  The blue marker will show you the midpoint between you and Rosenthaler Platz:
+	  <p>The blue marker will show you the midpoint between you and Rosenthaler Platz. The green marker is the closest venue, called <b id="venue"></b>:</p>
 	  <img id="map" src="">
+	  <script src="js/zepto.min.js"></script>
 	  <script src="js/location.js"></script>
 		<script>
 			var my_coordinates;
@@ -24,9 +27,10 @@
 			
 		  navigator.geolocation.getCurrentPosition(function(position){
         my_coordinates = [position.coords.latitude,position.coords.longitude];
-				console.log(ll(getMidpoint(my_coordinates,friend_coordinates)));
-				
-				var map = document.getElementById('map');
+        window.setTimeout(function(){
+				  getVenue(getMidpoint(my_coordinates,friend_coordinates));
+        },1000)        
+        var map = document.getElementById('map');
 						map.src = staticMapUrl(my_coordinates,friend_coordinates,320,320);
 			});
 		</script>

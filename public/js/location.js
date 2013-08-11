@@ -10,10 +10,41 @@ var getMidpoint = function(my_ll, friend_ll) {
 };
 
 // Generates Static Google Map with Geo Midpoint between my_ll and friend_ll, defines Width and Height
-var staticMapUrl = function(my_ll, friend_ll, w, h) {
+var staticMapUrl = function(my_ll, friend_ll, w, h, venue_ll) {
   var mapSrc = "http://maps.googleapis.com/maps/api/staticmap";
-      mapSrc += "?markers="+ll(my_ll)+'|'+ll(friend_ll)+'&markers=color:blue%7C'+ll(getMidpoint(my_ll,friend_ll));
+      mapSrc += "?markers="+ll(my_ll)+'|'+ll(friend_ll);
+      if(venue_ll) {
+        mapSrc += '&markers=color:green%7C'+ll(venue_ll);        
+      } else {
+        mapSrc += '&markers=color:blue%7C'+ll(getMidpoint(my_ll,friend_ll));
+      }
       mapSrc += "&size=" + w + "x" + h;
       mapSrc += "&sensor=false";
   return mapSrc;
 };
+
+// Get the venue from Foursquare and puts it into the Map
+var getVenue = function(location_ll) {
+  var category = '4bf58dd8d48988d116941735'; // Foursquare Nightlife
+  var radius = 500;
+  var token = 'B2YI5GXCW022WC3F4FLP5SFHGGLG1LA0DCT2QSGQTXQVBYWV';
+  
+  var url = 'https://api.foursquare.com/v2/venues/search'
+      url += '?ll='+ll(location_ll);
+      url += '&radius='+radius;
+      url += '&categoryId='+category;
+      url += '&intent=browse&oauth_token='+token+'&v=20130811';
+  
+  $.getJSON(url,function(data){
+	  venues = data.response.venues;
+	  if(venues.length > 0) {
+	    
+	    // TODO: This is a good point to insert some location chooser magic. Right now we just take the first result.
+      venue_ll = [venues[0].location.lat,venues[0].location.lng];
+      
+      // TODO: This updates the Map & the #venue field. Make this better.
+      map.src = staticMapUrl(my_coordinates,friend_coordinates,320,320,venue_ll);
+	    $('#venue').text(venues[0].name);
+	  }
+	});
+}
