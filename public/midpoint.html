@@ -19,6 +19,13 @@
 	<body>
 	  <p>The blue marker will show you the midpoint between you and Rosenthaler Platz. The green marker is the closest venue, called <b id="venue"></b>:</p>
 	  <img id="map" src="">
+	  <ol>
+	    <li id="midpoint_venue">Best Match: </li>
+	    <li id="my_hood">Around you: </li>
+	    <li id="friend_hood">Around them: </li>
+	    <li>Your favourite place: <strong>Mein Haus am See</strong></li>
+	    <li>Your home</li>
+	  </ol>
 	  <script src="js/zepto.min.js"></script>
 	  <script src="js/location.js"></script>
 		<script>
@@ -28,7 +35,9 @@
 		  navigator.geolocation.getCurrentPosition(function(position){
         my_coordinates = [position.coords.latitude,position.coords.longitude];
         window.setTimeout(function(){
-				  getVenue(getMidpoint(my_coordinates,friend_coordinates));
+				  getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
+				  getVenue(my_coordinates,false,true);
+				  getVenue(friend_coordinates,false,false,true);
         },1000)        
         var map = document.getElementById('map');
 						map.src = staticMapUrl(my_coordinates,friend_coordinates,320,320);

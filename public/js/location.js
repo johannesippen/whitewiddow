@@ -24,7 +24,7 @@ var staticMapUrl = function(my_ll, friend_ll, w, h, venue_ll) {
 };
 
 // Get the venue from Foursquare and puts it into the Map
-var getVenue = function(location_ll) {
+var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood) {
   var category = '4bf58dd8d48988d116941735'; // Foursquare Nightlife
   var radius = 500;
   var token = 'B2YI5GXCW022WC3F4FLP5SFHGGLG1LA0DCT2QSGQTXQVBYWV';
@@ -42,9 +42,21 @@ var getVenue = function(location_ll) {
 	    // TODO: This is a good point to insert some location chooser magic. Right now we just take the first result.
       venue_ll = [venues[0].location.lat,venues[0].location.lng];
       
-      // TODO: This updates the Map & the #venue field. Make this better.
-      map.src = staticMapUrl(my_coordinates,friend_coordinates,320,320,venue_ll);
-	    $('#venue').text(venues[0].name);
+      if(is_midpoint) {
+        // TODO: This updates the Map & the #venue field. Make this better.
+        map.src = staticMapUrl(my_coordinates,friend_coordinates,320,320,venue_ll);
+  	    $('#venue').text(venues[0].name);
+  	    $('#midpoint_venue').append(venues[0].name);
+      }
+      
+      // TODO: This shows the closest places around you and your friend. Remove this later
+      if(is_my_hood) {
+        $('#my_hood').append(venues[0].name);
+      }
+      
+      if(is_friend_hood) {
+        $('#friend_hood').append(venues[0].name);
+      }
 	  }
 	});
 }
