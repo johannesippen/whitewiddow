@@ -1,7 +1,10 @@
 {
     "_id": "",
-    "name": "John",
-    "avatar": "http://www.facebook.com/john.doe/picture",
+    "name": {
+      "first": "John",
+      "last": "Doe"
+    },
+    "picture": "http://graph.facebook.com/john.dow/picture",
     "facebook": {
         "id": "1234567890",
         "name": "John Doe",

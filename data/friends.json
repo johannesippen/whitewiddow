@@ -1,8 +1,11 @@
 [
   {
     "_id" : "",
-    "name" : "John",
-    "avatar" : "http://www.facebook.com/john.doe/picture",
+    "name": {
+      "first": "John",
+      "last": "Doe"
+    },
+    "picture" : "http://graph.facebook.com/john.dow/picture",
     "status" : {
       "timestamp" : 1234567890,
       "description" : "free"
@@ -10,8 +13,11 @@
   },
   {
     "_id" : "",
-    "name" : "John",
-    "avatar" : "http://www.facebook.com/john.doe/picture",
+    "name": {
+      "first": "John",
+      "last": "Doe"
+    },
+    "picture" : "http://graph.facebook.com/john.dow/picture",
     "status" : {
       "timestamp" : 1234567890,
       "description" : "free"
@@ -19,8 +25,11 @@
   },
   {
     "_id" : "",
-    "name" : "John",
-    "avatar" : "http://www.facebook.com/john.doe/picture",
+    "name": {
+      "first": "John",
+      "last": "Doe"
+    },
+    "picture" : "http://graph.facebook.com/john.dow/picture",
     "status" : {
       "timestamp" : 1234567890,
       "description" : "free"

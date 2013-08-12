@@ -7,7 +7,7 @@ var loadProfile = function(user_id) {
 
 var showMyProfile = function(user) {
   // TODO: Add all relevant user info to the profile page
-  $('#profile').append('<h2>You are '+user.name+'</h2>');
-  $('#profile').append('<p><img src="'+user.avatar+'"></p>');
+  $('#profile').append('<h2>You are '+user.name.first+'</h2>');
+  $('#profile').append('<p><img src="'+user.picture+'"></p>');
   $('#profile').append('<p>Status: '+user.status.description+'</p>');
 };
