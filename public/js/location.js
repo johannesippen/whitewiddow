@@ -46,17 +46,46 @@ var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood) {
         // TODO: This updates the Map & the #venue field. Make this better.
         map.src = staticMapUrl(my_coordinates,friend_coordinates,320,320,venue_ll);
   	    $('#venue').text(venues[0].name);
-  	    $('#midpoint_venue').append(venues[0].name);
+  	    $('#midpoint_venue').append(venues[0].name+' ('+getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min)');
       }
       
       // TODO: This shows the closest places around you and your friend. Remove this later
       if(is_my_hood) {
-        $('#my_hood').append(venues[0].name);
+        $('#my_hood').append(venues[0].name+' ('+getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min)');
       }
       
       if(is_friend_hood) {
-        $('#friend_hood').append(venues[0].name);
+        $('#friend_hood').append(venues[0].name+' ('+getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min)');
       }
 	  }
 	});
-}
+};
+
+// Calculate Distance between two users in kilometers
+var getDistance = function(my_ll,friend_ll) {
+   lat1 = my_ll[0];
+   lon1 = my_ll[1];
+   lat2 = friend_ll[0];
+   lon2 = friend_ll[1];
+   var R = 6371000000;
+   var dLat = (lat2-lat1) * Math.PI / 180;
+   var dLon = (lon2-lon1) * Math.PI / 180;
+   var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+   Math.cos(lat1 * Math.PI / 180 ) * Math.cos(lat2 * Math.PI / 180 ) *
+   Math.sin(dLon/2) * Math.sin(dLon/2);
+   var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+   var d = R * c;
+   return Math.round(d/100000)/10;
+};
+
+// Calculate Travel Time between two locations
+var getTravelTime = function(my_ll,friend_ll) {
+  var distance = getDistance(my_ll, friend_ll);
+  if(distance > 1.5) {
+    var time_per_km = 3; // TODO: 3min per kilometer. Works in Berlin. Make better!
+  } else {
+    var time_per_km = 10; // TODO: 10m per kilometer walking speed
+  }
+  var t = distance * time_per_km;
+  return Math.round(t);
+};

@@ -19,6 +19,7 @@
 	<body>
 	  <p>The blue marker will show you the midpoint between you and Rosenthaler Platz. The green marker is the closest venue, called <b id="venue"></b>:</p>
 	  <img id="map" src="">
+	  <p id="distance"></p>
 	  <ol>
 	    <li id="midpoint_venue">Best Match: </li>
 	    <li id="my_hood">Around you: </li>
@@ -34,6 +35,11 @@
 			
 		  navigator.geolocation.getCurrentPosition(function(position){
         my_coordinates = [position.coords.latitude,position.coords.longitude];
+        
+        $('#distance').text('You guys are '+getDistance(my_coordinates,friend_coordinates)+'km apart, which would take you '+getTravelTime(my_coordinates,friend_coordinates)+'min.');
+        
+        // Get Venue
+        // TODO: Is delayed by 1 second - remove Timeout
         window.setTimeout(function(){
 				  getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
 				  getVenue(my_coordinates,false,true);
