@@ -14,7 +14,9 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/interface.min.css">
     <style>
-      
+      .friendlist li {
+        text-transform: capitalize;
+      }
     </style>
   </head>
   <body class="ios">
@@ -39,11 +41,13 @@
     <section>
       <h2>Friend List</h2>
       <p>Here goes the friend list</p>
+      <ul id="friendlist" class="friendlist"></ul>
     </section>
     <script src="./js/zepto.min.js"></script>
+    <script src="./js/friends.js"></script>
     <script>
       $(function(){
-        
+        loadRandomFriends(5);
       });
     </script>
     <script>
