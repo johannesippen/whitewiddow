@@ -1,38 +1,38 @@
 {
-  "_id" : "",
-  "name" : "John",
-  "avatar" : "http://www.facebook.com/john.doe/picture",
-  "facebook" : {
-     "id": "1234567890",
-     "name": "John Doe",
-     "first_name": "John",
-     "last_name": "Doe",
-     "link": "http://www.facebook.com/john.doe",
-     "username": "john.doe",
-     "gender": "male",
-     "locale": "en_US"
-  },
-  "twitter" : false,
-  "foursquare" : false,
-  "instagram" : false,
-  "path" : false,
-  "venues" : [
-    {
-      "name" : "Mein Haus am See",
-      "timestamp" : 1234567890,
-      "location" : {
-        "longitude" : 35.1237890,
-        "latitude" : 14.324567890,
-        "adress" : "Brunnenstr 143, 10405 Berlin",
-      },
-      "foursquare_id" : 1000
-    }   
-  ],
-  "friends" : {
-    "count" : 3
-  }
-  "status" : {
-    "timestamp" : 1234567890,
-    "description" : "free"
-  }
+    "_id": "",
+    "name": "John",
+    "avatar": "http://www.facebook.com/john.doe/picture",
+    "facebook": {
+        "id": "1234567890",
+        "name": "John Doe",
+        "first_name": "John",
+        "last_name": "Doe",
+        "link": "http://www.facebook.com/john.doe",
+        "username": "john.doe",
+        "gender": "male",
+        "locale": "en_US"
+    },
+    "twitter": false,
+    "foursquare": false,
+    "instagram": false,
+    "path": false,
+    "venues": [
+        {
+            "name": "Mein Haus am See",
+            "timestamp": 1234567890,
+            "location": {
+                "longitude": 35.123789,
+                "latitude": 14.32456789,
+                "adress": "Brunnenstr 143, 10405 Berlin"
+            },
+            "foursquare_id": 1000
+        }
+    ],
+    "friends": {
+        "count": 3
+    },
+    "status": {
+        "timestamp": 1234567890,
+        "description": "free"
+    }
 }

@@ -30,7 +30,7 @@
          <button id="fb_connect">Facebook Connect</button>
        </form>
     </section>
-    <section>
+    <section id="profile">
       <h2>Profile</h2>
       <p>Here goes the user info</p>
     </section>
@@ -45,9 +45,11 @@
     </section>
     <script src="./js/zepto.min.js"></script>
     <script src="./js/friends.js"></script>
+    <script src="./js/profile.js"></script>
     <script>
       $(function(){
         loadRandomFriends(5);
+        loadProfile();
       });
     </script>
     <script>
