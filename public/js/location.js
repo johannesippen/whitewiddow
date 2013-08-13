@@ -25,7 +25,11 @@ var staticMapUrl = function(my_ll, friend_ll, w, h, venue_ll) {
 
 // Get the venue from Foursquare and puts it into the Map
 var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood) {
-  var category = '4bf58dd8d48988d116941735'; // Foursquare Nightlife
+  if(activate_daytime) {
+    var category = activity[getDaytime()]; // Foursquare Nightlife
+  } else {
+    var category = '4bf58dd8d48988d116941735'; // Foursquare Nightlife
+  }
   var radius = 500;
   var token = 'B2YI5GXCW022WC3F4FLP5SFHGGLG1LA0DCT2QSGQTXQVBYWV';
   

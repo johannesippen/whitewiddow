@@ -28,10 +28,12 @@
 	    <li>Your home</li>
 	  </ol>
 	  <script src="js/zepto.min.js"></script>
+	  <script src="js/daytime.js"></script>
 	  <script src="js/location.js"></script>
 		<script>
 			var my_coordinates;
 			var friend_coordinates = [52.5313,13.401667]; // Static for Rosenthaler Platz
+			var activate_daytime = true;
 			
 		  navigator.geolocation.getCurrentPosition(function(position){
         my_coordinates = [position.coords.latitude,position.coords.longitude];
