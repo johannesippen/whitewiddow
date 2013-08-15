@@ -51,7 +51,7 @@
     <script src="./js/interface.js"></script>
     <script>
       $(function(){
-        $('#range').on('mouseup',function(){
+        $('#range').on('touchend',function(){
           $('#friendlist li').remove();
           loadRandomFriends($('#range').val());
         });
