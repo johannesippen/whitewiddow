@@ -11,18 +11,20 @@ var loadFriendlist = function(user_id) {
 
 // loads an "amount" of random users and puts them into friend list
 var loadRandomFriends = function(amount) {
-  var seed = "1234567890"; // loads different people
+  var seed = "1234567890qwertzuiop"; // loads different people
   for(i = 0; i < amount; i++) {
     $.getJSON('http://randomuser.me/g/?seed='+seed[i],function(data){
       addFriendtoList(data.user);
+      // TODO: put this in a better callback function
+      arrangeBubbles(document.getElementsByClassName('friend'));
     });
   };
 }
 
 // adds a person to the friend list
 var addFriendtoList = function(user) {
-    $('<li></li>')
-      .text(user.name.first)
+    $('<li class="friend"></li>')
+      .html('<span class="name">'+user.name.first+'</span>')
       .prepend('<img src="'+user.picture+'">')
       .appendTo($('#friendlist'));
 };
