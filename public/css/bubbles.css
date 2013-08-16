@@ -1,5 +1,4 @@
 ul.friendlist {
-  outline: 1px solid red;
   height: 320px;
   border: none;
   background: transparent;
@@ -14,18 +13,26 @@ ul.friendlist,
 }
 .ios ul.friendlist li {
   position: absolute;
-  margin: -38px 0 0 -38px;
+  margin: -30px 0 0 -30px;
   height: auto;
   padding: 0;
-  border: none;
+  border: none!important;
 }
 .friendlist .name {
   display: none;
   text-transform: capitalize;
 }
 .ios ul.friendlist li img {
-  width: 75px!important;
+  width: 60px!important;
   height: auto;
-  border-radius: 75px;
+  border-radius: 100px;
   margin: 0;
+}
+.ios ul.friendlist li.me {
+  left: 160px;
+  top: 160px;
+  margin: -49px 0 0 -49px;
+}
+.ios ul.friendlist li.me img {
+  width: 97px!important;
 }

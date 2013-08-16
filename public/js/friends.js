@@ -29,6 +29,13 @@ var addFriendtoList = function(user) {
       .appendTo($('#friendlist'));
 };
 
+// adds you to the friend list
+var addMeToFriendlist = function(user) {
+    $('<li class="me"></li>')
+      .prepend('<img src="'+user.picture+'">')
+      .appendTo($('#friendlist'));
+};
+
 // FIXME: old code for generating the friend list
 var showFriendlist = function(user_id) {
   for(i in friendlist) {
