@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Friendlist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-startup-image" href="./img/iPhone@2X.png">
+    <link rel="apple-touch-icon-precomposed" href="./img/Icon-72.png" sizes="72x72">
+    <link rel="apple-touch-icon-precomposed" href="./img/Icon-72@2X.png" sizes="144x144">
+    <link rel="apple-touch-icon-precomposed" href="./img/Icon@2X.png">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../public/css/interface.min.css">
+    <link rel="stylesheet" href="../public/css/bubbles.css">
+    <style>
+      .friendlist li {
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body class="ios">
+    <header>
+      <h1>Friendlist</h1>
+    </header>
+    <section id="profile">
+      <h2>Profile</h2>
+      <p>Here goes the user info</p>
+    </section>
+    <section id="invite">
+      <h2>Invite</h2>
+      <p>Here goes the invite</p>
+    </section>
+    <section>
+      <h2>Friend List</h2>
+      <p>Here goes the friend list</p>
+      <ul id="friendlist" class="friendlist"></ul>
+    </section>
+    <script src="../public/js/zepto.min.js"></script>
+    <script src="../public/js/friends.js"></script>
+    <script src="../public/js/interface.js"></script>
+    <script src="../public/js/profile.js"></script>
+    <script>
+      $(function(){
+        loadRandomFriends(5);
+        loadProfile();
+      });
+    </script>
+  </body>
+</html>

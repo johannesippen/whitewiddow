@@ -1,6 +1,6 @@
 var arrangeBubbles = function(elems){
   var increase = Math.PI * 2 / elems.length;
-  var x = 0, y = 0, angle = 0;
+  var x = 0, y = 0, angle = Math.round(Math.random()*180);
 
   for (var i = 0; i < elems.length; i++) {
       var elem = elems[i];
