@@ -3,6 +3,14 @@ var ll = function(ll_array) {
   return ll_array[0]+','+ll_array[1];
 };
 
+$(function(){
+  $.Event('ww:gotVenue', { bubbles: false });
+});
+
+$(document).on('ww:gotVenue', function(e, map, name){
+  console.log(map,name)
+})
+
 // Returns Geo Midpoint between my_ll and friend_ll
 var getMidpoint = function(my_ll, friend_ll) {
   midpoint = [((friend_ll[0]+my_ll[0])/2),((friend_ll[1]+my_ll[1])/2)];
@@ -38,6 +46,8 @@ var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood) {
       url += '&radius='+radius;
       url += '&categoryId='+category;
       url += '&intent=browse&oauth_token='+token+'&v=20130811';
+      
+      url = "https://api.foursquare.com/v2/venues/search?ll=52.529994200000004,13.408835700000001&radius=5000&categoryId=4bf58dd8d48988d1e0931735,4bf58dd8d48988d16d941735&intent=browse&oauth_token=B2YI5GXCW022WC3F4FLP5SFHGGLG1LA0DCT2QSGQTXQVBYWV&v=20130811"
   
   $.getJSON(url,function(data){
 	  venues = data.response.venues;
@@ -48,9 +58,7 @@ var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood) {
       
       if(is_midpoint) {
         // TODO: This updates the Map & the #venue field. Make this better.
-        map.src = staticMapUrl(my_coordinates,friend_coordinates,320,320,venue_ll);
-  	    $('#venue').text(venues[0].name);
-  	    $('#midpoint_venue').append(venues[0].name+' ('+getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min)');
+        $(document.body).trigger('ww:gotVenue', [staticMapUrl(my_coordinates,friend_coordinates,320,320,venue_ll), venues[0].name]);
       }
       
       // TODO: This shows the closest places around you and your friend. Remove this later

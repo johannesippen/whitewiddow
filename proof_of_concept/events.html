@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>Events</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<style>
+    
+		</style>
+	</head>
+	<body>
+    <button>Async Login</button>
+	  <script src="../public/js/zepto.min.js"></script>
+	  <script src="../public/js/location.js"></script>
+		<script>
+		var my_coordinates = [52.7313,13.701667];
+		var friend_coordinates = [52.5313,13.401667]; // Static for Rosenthaler Platz
+		var activate_daytime = false;
+      $(function(){
+        $('button').on('click',function(){
+          getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
+          console.log('clicked');
+        });
+      });
+      
+
+  		</script>
+		</script>
+	</body>
