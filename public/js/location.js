@@ -38,7 +38,7 @@ var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood) {
   } else {
     var category = '4bf58dd8d48988d116941735'; // Foursquare Nightlife
   }
-  var radius = 500;
+  var radius = 5000;
   var token = 'B2YI5GXCW022WC3F4FLP5SFHGGLG1LA0DCT2QSGQTXQVBYWV';
   
   var url = 'https://api.foursquare.com/v2/venues/search'
@@ -46,8 +46,9 @@ var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood) {
       url += '&radius='+radius;
       url += '&categoryId='+category;
       url += '&intent=browse&oauth_token='+token+'&v=20130811';
-      
-      url = "https://api.foursquare.com/v2/venues/search?ll=52.529994200000004,13.408835700000001&radius=5000&categoryId=4bf58dd8d48988d1e0931735,4bf58dd8d48988d16d941735&intent=browse&oauth_token=B2YI5GXCW022WC3F4FLP5SFHGGLG1LA0DCT2QSGQTXQVBYWV&v=20130811"
+      console.log(url);
+//      url = "https://api.foursquare.com/v2/venues/search?ll=52.529994200000004,13.408835700000001&radius=5000&categoryId=4bf58dd8d48988d1e0931735,4bf58dd8d48988d16d941735&intent=browse&oauth_token=B2YI5GXCW022WC3F4FLP5SFHGGLG1LA0DCT2QSGQTXQVBYWV&v=20130811"
+              //https://api.foursquare.com/v2/venues/search?ll=52.90875075801331,13.928215145934656&radius=500&categoryId=4bf58dd8d48988d116941735&intent=browse&oauth_token=B2YI5GXCW022WC3F4FLP5SFHGGLG1LA0DCT2QSGQTXQVBYWV&v=20130811
   
   $.getJSON(url,function(data){
 	  venues = data.response.venues;
@@ -59,15 +60,18 @@ var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood) {
       if(is_midpoint) {
         // TODO: This updates the Map & the #venue field. Make this better.
         $(document.body).trigger('ww:gotVenue', [staticMapUrl(my_coordinates,friend_coordinates,320,320,venue_ll), venues[0].name]);
+        $('.invite_venue_name').text(venues[0].name+' ('+getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min)');
+        
+        console.log(url);
       }
       
       // TODO: This shows the closest places around you and your friend. Remove this later
       if(is_my_hood) {
-        $('#my_hood').append(venues[0].name+' ('+getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min)');
+        $('.invite_venue_name').text(venues[0].name+' ('+getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min)');
       }
       
       if(is_friend_hood) {
-        $('#friend_hood').append(venues[0].name+' ('+getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min)');
+        $('.invite_venue_name').text(venues[0].name+' ('+getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min)');
       }
 	  }
 	});

@@ -12,78 +12,38 @@
     <link rel="apple-touch-icon-precomposed" href="./img/Icon-72@2X.png" sizes="144x144">
     <link rel="apple-touch-icon-precomposed" href="./img/Icon@2X.png">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="../public/css/interface.min.css">
+    <link rel="stylesheet" href="../public/css/app.css">
     <link rel="stylesheet" href="../public/css/bubbles.css">
-    <style>
-      .ios {
-        background: #f5f5f5;
-        font-family: "Helvetica Neue";
-        font-weight: 200;
-      }
-      section {
-        width: 320px;
-        margin-top: 0;
-        min-height: 480px;
-        float: left;
-        outline: 1px solid #ccc;
-      }
-      .ios p,
-      .ios h2,
-      .ios button {
-        font-family: "Helvetica Neue";
-        font-weight: 200;
-      }
-      .friendlist li { text-transform: capitalize; }
-      .invite_dialogue {
-        width: 300px;
-        margin: 10px;
-        border-radius: 8px;
-        background: #fff;
-        text-align: center;
-      }
-      .invite_map img {
-        width: 300px;
-        height: 186px;
-      }
-      .invite_confirm button {
-        background: #0c2;
-        color: #fff;
-        line-height: 44px;
-        border-radius: 4px;
-        margin: 10px;
-        width: 280px;
-      }
-    </style>
   </head>
   <body class="ios">
-    <header>
-      <h1>Friendlist</h1>
-    </header>
+    <!-- User Profile -->
     <section id="profile">
       <h2>Profile</h2>
       <p>Here goes the user info</p>
     </section>
+    <!-- Friend List -->
+    <section>
+      <ul id="friendlist" class="friendlist"></ul>
+    </section>
+    <!-- Invite Dialogue -->
     <section id="invite">
       <div class="invite_dialogue">
         <div class="invite_map">
           <img src="" id="map">
         </div>
         <div class="invite_venue">
-          Mein Haus am See, 5.2km
+          <span class="invite_venue_name">Mein Haus am See</span>
+          <span class="invite_venue_distance">5.2km</span>
         </div>
         <div class="invite_time">
-          20:00
+          <date class="selector" id="selector">20:00</date>
         </div>
         <div class="invite_confirm">
           <button>Send Invite!</button>
         </div>
       </div>
     </section>
-    <section>
-      <h2>Friend List</h2>
-      <p>Here goes the friend list</p>
-      <ul id="friendlist" class="friendlist"></ul>
-    </section>
+    
     <script src="../public/js/zepto.min.js"></script>
     <script src="../public/js/friends.js"></script>
     <script src="../public/js/interface.js"></script>
@@ -91,12 +51,13 @@
     <script src="../public/js/profile.js"></script>
     <script>
       var activate_daytime = false;
+      var friend_coordinates = [52.5313,13.401667];
+      var my_coordinates = [52.9313,13.401667];
+      
       $(function(){
         loadRandomFriends(7);
         loadProfile();
         
-        var friend_coordinates = [52.5313,13.401667];
-        var my_coordinates = [52.9313,13.401667];
         getVenue(friend_coordinates,false,true);
         var map = document.getElementById('map');
 						map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180);

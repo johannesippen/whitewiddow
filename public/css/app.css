@@ -1,0 +1,39 @@
+.ios {
+  background: #f5f5f5;
+  margin: 0;
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+}
+section {
+  width: 320px;
+  margin-top: 0;
+  min-height: 480px;
+  float: left;
+  outline: 1px solid #ccc;
+}
+.ios p,
+.ios h2,
+.ios button {
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+}
+.friendlist li { text-transform: capitalize; }
+.invite_dialogue {
+  width: 300px;
+  margin: 10px;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+.invite_map img {
+  width: 300px;
+  height: 186px;
+}
+.invite_confirm button {
+  background: #0c2;
+  color: #fff;
+  line-height: 44px;
+  border-radius: 4px;
+  margin: 10px;
+  width: 280px;
+}
