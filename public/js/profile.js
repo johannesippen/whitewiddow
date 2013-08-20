@@ -10,4 +10,5 @@ var showMyProfile = function(user) {
   $('#profile').append('<h2>You are '+user.name.first+'</h2>');
   $('#profile').append('<p><img src="'+user.picture+'"></p>');
   $('#profile').append('<p>Status: '+user.status.description+'</p>');
+  addMeToFriendlist(user);
 };

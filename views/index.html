@@ -20,6 +20,13 @@
         font-family: "Helvetica Neue";
         font-weight: 200;
       }
+      section {
+        width: 320px;
+        margin-top: 0;
+        min-height: 480px;
+        float: left;
+        outline: 1px solid #ccc;
+      }
       .ios p,
       .ios h2,
       .ios button {
@@ -59,7 +66,7 @@
     <section id="invite">
       <div class="invite_dialogue">
         <div class="invite_map">
-          <img src="">
+          <img src="" id="map">
         </div>
         <div class="invite_venue">
           Mein Haus am See, 5.2km
@@ -80,11 +87,19 @@
     <script src="../public/js/zepto.min.js"></script>
     <script src="../public/js/friends.js"></script>
     <script src="../public/js/interface.js"></script>
+    <script src="../public/js/location.js"></script>
     <script src="../public/js/profile.js"></script>
     <script>
+      var activate_daytime = false;
       $(function(){
-        loadRandomFriends(5);
+        loadRandomFriends(7);
         loadProfile();
+        
+        var friend_coordinates = [52.5313,13.401667];
+        var my_coordinates = [52.9313,13.401667];
+        getVenue(friend_coordinates,false,true);
+        var map = document.getElementById('map');
+						map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180);
       });
     </script>
   </body>
