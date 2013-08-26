@@ -15,3 +15,7 @@ var arrangeBubbles = function(elems){
       angle += increase;
   }
 };
+
+$('.invite_confirm button').on('click',function(){
+  $('body').attr('data-mode','friends');
+})

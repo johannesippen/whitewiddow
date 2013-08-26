@@ -29,3 +29,59 @@ var getDaytime = function(){
     return day_minutes;
   }
 };
+
+// Time Selector Module
+var $selector = $('#selector');
+
+// TODO: minutes from now.
+var min_time = 840; // Now
+var set_time = 1200; // 8PM
+var max_time = 1640; // Tomorrow Night
+
+var temp_time = 20;
+var startX = undefined;
+var currentX = 0;
+var range = $selector.width();
+
+var formatTime = function(time){
+  if(time > 1440) {
+    return "Tomorrow";
+  } else {
+    if(time < min_time+60) {
+      return "Now";
+    }
+    hours = Math.floor(time/60);
+    minutes = time-(hours*60);
+    if(time > set_time+60 || time < set_time-60) {
+      minutes = Math.floor(minutes/15)*15;
+    }
+    if(minutes < 10) {
+      minutes = "0"+minutes;
+    }
+    return hours+':'+minutes;
+  }
+};
+
+$selector
+.on('mousedown touchstart',function(e){
+  startX = e.pageX;
+  temp_time = set_time;
+})
+.on('mousemove touchmove',function(e){
+  if(startX != undefined) {
+    e.preventDefault();
+    currentX = (e.pageX-startX)/(range-startX);
+    if(currentX > 0) {
+      temp_time = Math.round((max_time-set_time)*currentX+set_time);
+    } else {
+      factorX = 1-(e.pageX-startX)*-1/startX;
+      temp_time = Math.round((set_time-min_time)*factorX+min_time);
+    }
+    $selector.text(formatTime(temp_time));
+  }
+})
+.on('mouseup touchend',function(e){
+  startX = undefined;
+  set_time = temp_time;
+})
+.text(formatTime(1200));

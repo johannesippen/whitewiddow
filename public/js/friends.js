@@ -62,7 +62,9 @@ var showFriendProfile = function(user_id) {
 var createInviteFor = function(user_id) {
   console.log(friendlist[user_id]);
   friend_ll = [friendlist[user_id].location.longitude,friendlist[user_id].location.latitude];
+  
   getVenue(getMidpoint(friend_ll,my_coordinates),true);
   var map = document.getElementById('map');
       map.src = staticMapUrl(my_coordinates,friend_ll,300,180);
+  $('body').attr('data-mode','invite');
 }

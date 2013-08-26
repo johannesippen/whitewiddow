@@ -8,8 +8,20 @@ section {
   width: 320px;
   margin-top: 0;
   min-height: 480px;
-  float: left;
-  outline: 1px solid #ccc;
+  display: none;
+  position: absolute;
+}
+@media screen and (min-width: 600px) {
+  section {
+    position: static;
+    float: left;
+    display: block;
+    outline: 1px solid #ccc;
+  }
+}
+body[data-mode=friends] #friends,
+body[data-mode=invite] #invite {
+  display: block;
 }
 .ios p,
 .ios h2,
@@ -36,4 +48,28 @@ section {
   border-radius: 4px;
   margin: 10px;
   width: 280px;
+  border: none;
+  font-size: 24px;
+}
+.invite_venue,
+.invite_time {
+  height: 66px;
+  border-bottom: 1px solid #ddd;
+}
+.invite_venue_name,
+.invite_venue_distance {
+  display: block;
+}
+.invite_venue_name {
+  font-size: 24px;
+  padding-top: 8px;
+  padding: 8px 8px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.selector {
+  display: block;
+  padding: 8px 8px 0;
+  font-size: 36px;
 }
