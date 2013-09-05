@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Friendlist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bubbles.css">
+  </head>
+  <body class="ios" data-mode="friends">
+    <!-- User Profile -->
+    <section id="profile">
+      <h2>Profile</h2>
+      <p>Here goes the user info</p>
+    </section>
+    <!-- Friend List -->
+    <section id="friends">
+      <ul id="friendlist" class="friendlist"></ul>
+    </section>
+    <!-- Invite Dialogue -->
+    <section id="invite">
+      <div class="invite_dialogue">
+        <div class="invite_map">
+          <img src="" id="map">
+        </div>
+        <div class="invite_venue">
+          <span class="invite_venue_name">%Venue%</span>
+          <span class="invite_venue_distance">%0.0km%</span>
+        </div>
+        <div class="invite_time">
+          <date class="selector" id="selector">%20:00%</date>
+        </div>
+        <div class="invite_confirm">
+          <button>Send Invite!</button>
+        </div>
+      </div>
+    </section>
+    
+    <script src="js/zepto.min.js"></script>
+    <script src="js/friends.js"></script>
+    <script src="js/interface.js"></script>
+    <script src="js/daytime.js"></script>
+    <script src="js/location.js"></script>
+    <script src="js/profile.js"></script>
+    <script>
+      var activate_daytime = false;
+      var friend_coordinates = [52.5313,13.401667];
+      var my_coordinates = [52.6313,13.401667];
+      var map = document.getElementById('map');
+      
+      $(function(){
+        $('body').attr('data-mode','friends');
+        loadRandomFriends(7);
+        loadProfile();
+        map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180);
+        getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
+      });
+    </script>
+  </body>
+</html>

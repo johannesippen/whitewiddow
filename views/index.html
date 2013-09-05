@@ -1,68 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Friendlist</title>
+    <title></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
-    <link rel="apple-touch-startup-image" href="./img/iPhone@2X.png">
-    <link rel="apple-touch-icon-precomposed" href="./img/Icon-72.png" sizes="72x72">
-    <link rel="apple-touch-icon-precomposed" href="./img/Icon-72@2X.png" sizes="144x144">
-    <link rel="apple-touch-icon-precomposed" href="./img/Icon@2X.png">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="../public/css/app.css">
-    <link rel="stylesheet" href="../public/css/bubbles.css">
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      a {
+        display: block;
+        line-height: 44px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 200;
+        font-size: 16px;
+        background: #04c;
+        color: #fff;
+        margin: 5px;
+      }
+    </style>
   </head>
-  <body class="ios" data-mode="friends">
-    <!-- User Profile -->
-    <section id="profile">
-      <h2>Profile</h2>
-      <p>Here goes the user info</p>
-    </section>
-    <!-- Friend List -->
-    <section id="friends">
-      <ul id="friendlist" class="friendlist"></ul>
-    </section>
-    <!-- Invite Dialogue -->
-    <section id="invite">
-      <div class="invite_dialogue">
-        <div class="invite_map">
-          <img src="" id="map">
-        </div>
-        <div class="invite_venue">
-          <span class="invite_venue_name">%Venue%</span>
-          <span class="invite_venue_distance">%0.0km%</span>
-        </div>
-        <div class="invite_time">
-          <date class="selector" id="selector">%20:00%</date>
-        </div>
-        <div class="invite_confirm">
-          <button>Send Invite!</button>
-        </div>
-      </div>
-    </section>
-    
-    <script src="../public/js/zepto.min.js"></script>
-    <script src="../public/js/friends.js"></script>
-    <script src="../public/js/interface.js"></script>
-    <script src="../public/js/daytime.js"></script>
-    <script src="../public/js/location.js"></script>
-    <script src="../public/js/profile.js"></script>
+  <body>
+    <a href="interface.html">/index</a>
+    <a href="onboarding.html">/onboarding</a>
+    <a onclick="window.location.reload();">Reload</a>
+    <a onclick="getContacts();">Get Contacts</a>
+    <a onclick="hasAccessToContacts();">Has Access to Contacts</a>
+    <p id="log">
+      <!-- Generated Logs go here -->
+    </p>
+    <script type="text/javascript" src="js/NativeConnector.js"></script>
+    <script type="text/javascript" src="js/Social.js"></script>
     <script>
-      var activate_daytime = false;
-      var friend_coordinates = [52.5313,13.401667];
-      var my_coordinates = [52.6313,13.401667];
-      var map = document.getElementById('map');
-      
-      $(function(){
-        $('body').attr('data-mode','friends');
-        loadRandomFriends(7);
-        loadProfile();
-        map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180);
-        getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
-      });
+      var connector = new NativeConnector();
+      var social = new Social();
+
+      var getContacts = function() {
+        social.addNativeListener("getFBConnectedContacts", _onContactsReceived);
+        social.getFBContacts();
+      };
+      var hasAccessToContacts = function() {
+        social.addNativeListener("connectFB", _onHasAccessReceived);
+        social.connectFB();
+      };
+      var _onHasAccessReceived = function(data) {
+        log.innerHTML = "HasAccess: "+data.connectionState;
+      };
+      var _onContactsReceived = function(data) {
+        log.innerHTML = data;
+      };
+      var writeLog = function(msg) {
+        document.getElementById("log").innerHTML += new Date().getTime()+" "+msg+"<br/>";
+      };
     </script>
   </body>
 </html>
