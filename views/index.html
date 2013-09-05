@@ -37,7 +37,6 @@
     <script>
       var connector = new NativeConnector();
       var social = new Social();
-
       var getContacts = function() {
         social.addNativeListener("getFBConnectedContacts", _onContactsReceived);
         social.getFBContacts();

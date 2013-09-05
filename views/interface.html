@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bubbles.css">
   </head>
   <body class="ios" data-mode="friends">
+    <a onclick="window.location.reload();" class="dev_overlay">Reload</a>
     <!-- User Profile -->
     <section id="profile">
       <h2>Profile</h2>
@@ -52,7 +53,9 @@
       var map = document.getElementById('map');
       
       $(function(){
-        $('body').attr('data-mode','friends');
+        $('body').attr('data-mode','friends').on('touchmove',function(){
+          return false;
+        });
         loadRandomFriends(7);
         loadProfile();
         map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180);

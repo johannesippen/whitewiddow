@@ -14,6 +14,7 @@ var loadRandomFriends = function(amount) {
   var seed = "012345678"; // loads different people
   for(i = 0; i < amount; i++) {
     $.getJSON('http://randomuser.me/g/?seed='+seed[i],function(data){
+      data = data.results[0];
       data.user.location = {
         "longitude": 52+Math.random(),
         "latitude": 14+Math.random()
@@ -22,7 +23,7 @@ var loadRandomFriends = function(amount) {
         "description":"free"
       };
       friendlist.push(data.user);
-      addFriendtoList(data.user);
+      addFriendtoList(data.user, i);
       // TODO: put this in a better callback function
       arrangeBubbles(document.getElementsByClassName('friend'));
     });
@@ -30,8 +31,8 @@ var loadRandomFriends = function(amount) {
 }
 
 // adds a person to the friend list
-var addFriendtoList = function(user) {
-    $('<li class="friend" onclick="createInviteFor('+user.seed+')"></li>')
+var addFriendtoList = function(user, i) {
+    $('<li class="friend" onclick="createInviteFor(0)"></li>') // FIXME: static user invite
       .html('<span class="name">'+user.name.first+'</span>')
       .prepend('<img src="'+user.picture+'">')
       .appendTo($('#friendlist'));
@@ -60,6 +61,7 @@ var showFriendProfile = function(user_id) {
 };
 
 var createInviteFor = function(user_id) {
+  
   console.log(friendlist[user_id]);
   friend_ll = [friendlist[user_id].location.longitude,friendlist[user_id].location.latitude];
   
