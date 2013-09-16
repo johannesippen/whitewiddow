@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bubbles.css">
+    <style>
+      section {
+        display: block;
+        position: static;
+        float: none;
+        outline: 1px solid #ccc;
+        margin: 0;
+        padding-top: 1px;
+      }
+      .debug {
+        height: auto;
+        min-height: 0;
+        padding: 20px 0;
+      }
+      .debug a,
+      .debug strong {
+        display: block;
+        background: #789;
+        margin: 5px 14px;
+        text-align: center;
+        line-height: 33px;
+        color: #fff;
+      }
+      .debug .done {
+        font-weight: normal;
+        color: #567;
+        background: transparent;
+      }
+      #log {
+        background: lightyellow;
+        overflow: scroll;
+        max-height: 150px;
+        padding: 5px 20px;
+      }
+      a.fb {
+        background: #3b5998;
+      }
+      .done:before {
+        content: "\2714  ";
+      }
+      h1, h2, ul {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body class="ios" data-mode="friends">
+    <!-- Debug Menu -->
+    <section id="debug" class="debug">
+      <a onclick="window.location.reload();">&#8635; Reload</a>
+      <a onclick="">Version</a>
+      <a onclick="">Debug Console</a>
+      <p id="log">
+        <!-- Generated Logs go here -->
+      </p>
+    </section>
+    <!-- Onboarding -->
+    <section id="onboarding" class="debug">
+      <strong class="done" onclick="">1. Welcome</strong>
+      <a class="fb" onclick="hasAccessToContacts();">2. Connect to Facebook</a>
+      <a class="" onclick="testCoreLocation();">3. Allow Location</a>
+      <a class="" onclick="">4. Allow Notifications</a>
+      <a class="" onclick="getContacts();">5. Invite Friends</a>
+    </section>
+    <!-- Friend List -->
+    <section id="friends">
+      <div class="friends">
+        <ul id="friendlist" class="friendlist"></ul>
+      </div>
+    </section>
+    <!-- Invite Dialogue -->
+    <section id="invite">
+      <div class="invite_dialogue">
+        <div class="invite_map">
+          <img src="" id="map">
+        </div>
+        <div class="invite_venue">
+          <span class="invite_venue_name">%Venue%</span>
+          <span class="invite_venue_distance">%0.0km%</span>
+        </div>
+        <div class="invite_time">
+          <date class="selector" id="selector">%20:00%</date>
+        </div>
+        <div class="invite_confirm">
+          <button>Send Invite!</button>
+        </div>
+      </div>
+    </section>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/friends.js"></script>
+    <script src="js/interface.js"></script>
+    <script src="js/daytime.js"></script>
+    <script src="js/location.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/native/NativeConnector.js"></script>
+    <script src="js/native/Social.js"></script>
+    <script src="js/native/CoreLocation.js"></script>
+    <script>
+      var connector = new NativeConnector();
+      var social = new Social();
+      var coreLocation = new CoreLocation();
+      /* Write Log */
+      var writeLog = function(msg) {
+        document.getElementById("log").innerHTML += new Date().getTime()+" "+msg+"<br/>";
+      };
+      /* Facebook Connect */
+      var hasAccessToContacts = function() {
+        social.addNativeListener("connectFB", _onHasAccessReceived);
+        social.connectFB();
+      };
+      var _onHasAccessReceived = function(data) {
+        log.innerHTML = "HasAccess: "+data.connectionState;
+        writeLog("HasAccess: "+data.connectionState);
+      };
+      /* Get User Location */
+      var testCoreLocation = function() {
+        coreLocation.addNativeListener("getLocation", _onCoreLocationReceived);
+        coreLocation.getLocation();
+      };
+      var _onCoreLocationReceived = function(data) {
+        log.innerHTML = JSON.stringify(data);
+        writeLog(JSON.stringify(data));
+      };
+      /* Cet Contacts // Invite Friends */
+      var getContacts = function() {
+        social.addNativeListener("getFBConnectedContacts", _onContactsReceived);
+        social.getFBContacts();
+      };
+      var _onContactsReceived = function(data) {
+        log.innerHTML = data;
+        writeLog(data);
+      };
+    </script>
+    <script>
+      var activate_daytime = false;
+      var friend_coordinates = [52.52585,13.341351];
+      var my_coordinates = [52.490278,13.47];
+      var map = document.getElementById('map');
+      
+      $(function(){
+        $('body').attr('data-mode','friends');
+        loadRandomFriends(7);
+        loadProfile();
+        map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180);
+        getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
+      });
+    </script>
+  </body>
+</html>

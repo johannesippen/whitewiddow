@@ -16,8 +16,8 @@ var loadRandomFriends = function(amount) {
     $.getJSON('http://randomuser.me/g/?seed='+seed[i],function(data){
       data = data.results[0];
       data.user.location = {
-        "longitude": 52+Math.random(),
-        "latitude": 14+Math.random()
+        "longitude": 52+Math.random()*0.1167+0.4166, // Min: .4166, Max: .5333
+        "latitude": 13+Math.random()*0.4+0.1666 // Min: .5666, Max: .1666
       };
       data.user.status = {
         "description":"free"

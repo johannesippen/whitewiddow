@@ -29,14 +29,18 @@
     <a onclick="window.location.reload();">Reload</a>
     <a onclick="getContacts();">Get Contacts</a>
     <a onclick="hasAccessToContacts();">Has Access to Contacts</a>
+    <a onclick="testCoreLocation();">CoreLocation</a>
     <p id="log">
       <!-- Generated Logs go here -->
     </p>
     <script type="text/javascript" src="js/NativeConnector.js"></script>
     <script type="text/javascript" src="js/Social.js"></script>
+    <script type="text/javascript" src="js/native/CoreLocation.js"></script>
     <script>
       var connector = new NativeConnector();
       var social = new Social();
+      var coreLocation = new CoreLocation();
+      
       var getContacts = function() {
         social.addNativeListener("getFBConnectedContacts", _onContactsReceived);
         social.getFBContacts();
@@ -47,12 +51,24 @@
       };
       var _onHasAccessReceived = function(data) {
         log.innerHTML = "HasAccess: "+data.connectionState;
+        writeLog(data);
       };
       var _onContactsReceived = function(data) {
         log.innerHTML = data;
+        writeLog(data);
       };
       var writeLog = function(msg) {
         document.getElementById("log").innerHTML += new Date().getTime()+" "+msg+"<br/>";
+      };
+      
+      var testCoreLocation = function()
+      {
+          coreLocation.addNativeListener("getLocation", _onCoreLocationReceived);
+	      coreLocation.getLocation();
+      }
+      
+      var _onCoreLocationReceived = function(data) {
+        log.innerHTML = JSON.stringify(data);
       };
     </script>
   </body>

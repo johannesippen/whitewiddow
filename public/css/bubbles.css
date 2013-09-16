@@ -1,15 +1,15 @@
-ul.friendlist {
-  height: 320px;
-  border: none;
-  background: transparent;
-  position: absolute;
-  width: 320px;
-}
 ul.friendlist,
 .friendlist li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+ul.friendlist {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: transparent;
+  margin-top: 80px;
 }
 .ios ul.friendlist li {
   position: absolute;
