@@ -1,6 +1,18 @@
 [
   {
-    "_id" : "",
+    "_id" : "0",
+    "name": {
+      "first": "John",
+      "last": "Doe"
+    },
+    "picture" : "http://graph.facebook.com/johannes.ippen/picture",
+    "status" : {
+      "timestamp" : 1234567890,
+      "description" : "free"
+    }
+  },
+  {
+    "_id" : "1",
     "name": {
       "first": "John",
       "last": "Doe"
@@ -12,7 +24,7 @@
     }
   },
   {
-    "_id" : "",
+    "_id" : "2",
     "name": {
       "first": "John",
       "last": "Doe"
@@ -24,7 +36,19 @@
     }
   },
   {
-    "_id" : "",
+    "_id" : "3",
+    "name": {
+      "first": "John",
+      "last": "Doe"
+    },
+    "picture" : "http://graph.facebook.com/john.dow/picture",
+    "status" : {
+      "timestamp" : 1234567890,
+      "description" : "free"
+    }
+  },
+  {
+    "_id" : "4",
     "name": {
       "first": "John",
       "last": "Doe"

@@ -32,13 +32,15 @@ var staticMapUrl = function(my_ll, friend_ll, w, h, venue_ll) {
 };
 
 // Get the venue from Foursquare and puts it into the Map
-var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood) {
+var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood, radius) {
   if(activate_daytime) {
     var category = activity[getDaytime()]; // Foursquare Nightlife
   } else {
     var category = '4bf58dd8d48988d116941735'; // Foursquare Nightlife
   }
-  var radius = 5000;
+  if(!radius) {
+    var radius = 500;  
+  }
   var token = 'B2YI5GXCW022WC3F4FLP5SFHGGLG1LA0DCT2QSGQTXQVBYWV';
   
   var url = 'https://api.foursquare.com/v2/venues/search'
@@ -55,31 +57,41 @@ var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood) {
     venues = data.response.venues;
     if(venues.length > 0) {
       
+      venue = selectVenue(venues);
+      
       // TODO: This is a good point to insert some location chooser magic. Right now we just take the first result.
-      venue_ll = [venues[0].location.lat,venues[0].location.lng];
+      venue_ll = [venue.location.lat,venue.location.lng];
       
       // TODO: This updates the Map
       map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180,venue_ll);
       
       if(is_midpoint) {
         // TODO: This updates the venue anme & distance field. Make this better.
-        $(document.body).trigger('ww:gotVenue', [staticMapUrl(my_coordinates,friend_coordinates,320,320,venue_ll), venues[0].name]);
-        $('.invite_venue_name').text(venues[0].name);
+        $('.invite_venue_name').text(venue.name);
         $('.invite_venue_distance').text(getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min');
       }
       
       // TODO: This shows the closest places around you and your friend. Remove this later
       if(is_my_hood) {
-        $('.invite_venue_name').text(venues[0].name);
+        $('.invite_venue_name').text(venue.name);
         $('.invite_venue_distance').text(getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min');
       }
       
       if(is_friend_hood) {
-        $('.invite_venue_name').text(venues[0].name);
+        $('.invite_venue_name').text(venue.name);
         $('.invite_venue_distance').text(getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min');
       }
+    } else {
+      $('.invite_venue_name').text('No Venue found');
+      getVenue(location_ll, is_midpoint, is_my_hood, is_friend_hood, radius*2);
     }
   });
+};
+
+// From an Array of venues, choose the best one. Right now it's randomized
+var selectVenue = function(venues) {
+  i = Math.floor(Math.random()*venues.length);
+  return venues[i];
 };
 
 // Calculate Distance between two users in kilometers

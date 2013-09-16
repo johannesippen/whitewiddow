@@ -1,11 +1,21 @@
 var friendlist = new Array();
 
 // loads the actual friendlist from backend
-var loadFriendlist = function(user_id) {
-  var url = "../data/friends.json";
+var loadFriends = function(user_id) {
+  var url = "/data/friends.json";
+  if(window.location.host == "localhost") {
+    var url = "../data/friends.json";
+  }
   $.getJSON(url,function(data){
-    friendlist = data;
-    showFriendlist();
+    for(i in data) {
+      data[i].location = {
+        "longitude": 52+Math.random()*0.1167+0.4166, // Min: .4166, Max: .5333
+        "latitude": 13+Math.random()*0.4+0.1666 // Min: .5666, Max: .1666
+      };
+      friendlist.push(data[i]);
+      addFriendtoList(data[i], i);
+    }
+    arrangeBubbles(document.getElementsByClassName('friend'));
   });
 };
 
@@ -32,7 +42,7 @@ var loadRandomFriends = function(amount) {
 
 // adds a person to the friend list
 var addFriendtoList = function(user, i) {
-    $('<li class="friend" onclick="createInviteFor(0)"></li>') // FIXME: static user invite
+    $('<li class="friend" onclick="createInviteFor('+user._id+')"></li>')
       .html('<span class="name">'+user.name.first+'</span>')
       .prepend('<img src="'+user.picture+'">')
       .appendTo($('#friendlist'));
@@ -45,28 +55,17 @@ var addMeToFriendlist = function(user) {
       .appendTo($('#friendlist'));
 };
 
-// FIXME: old code for generating the friend list
-var showFriendlist = function(user_id) {
-  for(i in friendlist) {
-    $('<li></li>')
-      .text(friendlist[i].name)
-      .prepend('<img src="'+friendlist[i].avatar+'">')
-      .appendTo($('#friendlist'));
-  }
-};
-
 // shows the friends profile
 var showFriendProfile = function(user_id) {
   
 };
 
 var createInviteFor = function(user_id) {
-  
-  console.log(friendlist[user_id]);
-  friend_ll = [friendlist[user_id].location.longitude,friendlist[user_id].location.latitude];
-  
-  getVenue(getMidpoint(friend_ll,my_coordinates),true);
+  friend_coordinates = [friendlist[user_id].location.longitude,friendlist[user_id].location.latitude];
   var map = document.getElementById('map');
-      map.src = staticMapUrl(my_coordinates,friend_ll,300,180);
+      map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180);
+      
+  getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
+    
   $('body').attr('data-mode','invite');
 }
