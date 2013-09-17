@@ -83,6 +83,13 @@
         <div class="invite_map">
           <img src="" id="map">
         </div>
+        <div class="invite_venue_switch">
+          <a>Him</a>
+          <a>Mid</a>
+          <a>Me</a>
+          <a>List</a>
+          <a>&times;</a>
+        </div>
         <div class="invite_venue">
           <span class="invite_venue_name">%Venue%</span>
           <span class="invite_venue_distance">%0.0km%</span>
@@ -148,6 +155,9 @@
       
       $(function(){
         $('body').attr('data-mode','friends');
+        $('.invite_venue, .invite_venue_switch a').on('click',function(){
+          $('.invite_venue_switch').toggleClass('active');
+        });
         loadFriends(7);
         loadProfile();
         map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180);
