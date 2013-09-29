@@ -58,7 +58,8 @@
     <section id="debug" class="debug">
       <a onclick="window.location.reload();">&#8635; Reload</a>
       <a onclick="writeLog('Version: unknown')">Version</a>
-      <a onclick="writeLog('Test')">Debug Console</a>
+      <a onclick="getInvitations()">Get Invitations</a>
+      <a onclick="testCoreLocation()">Get Core Location</a>
       <p id="log">
         <!-- Generated Logs go here -->
       </p>
@@ -67,9 +68,9 @@
     <section id="onboarding" class="debug">
       <strong class="done" onclick="">1. Welcome</strong>
       <a class="fb" onclick="hasAccessToContacts();">2. Connect to Facebook</a>
-      <a class="" onclick="testCoreLocation();">3. Allow Location</a>
+      <a id="allowCoreLocation" class="" onclick="allowCoreLocation();">3. Allow Location</a>
       <a class="" onclick="">4. Allow Notifications</a>
-      <a class="" onclick="getContacts();">5. Invite Friends</a>
+      <a class="" onclick="inviteFBUser();">5. Invite Friends</a>
     </section>
     <!-- Friend List -->
     <section id="friends">
@@ -115,6 +116,12 @@
       var connector = new NativeConnector();
       var social = new Social();
       var coreLocation = new CoreLocation();
+      
+      var activate_daytime = false;
+      var friend_coordinates = [52.52585,13.341351];
+      var my_coordinates = [52.490278,13.47];
+      var map = document.getElementById('map');
+      
       /* Write Log */
       var writeLog = function(msg) {
         document.getElementById("log").innerHTML += new Date().getTime()+" "+msg+"<br/>";
@@ -123,36 +130,48 @@
       var hasAccessToContacts = function() {
         social.addNativeListener("connectFB", _onHasAccessReceived);
         social.connectFB();
+        $('.fb').addClass('done');
       };
       var _onHasAccessReceived = function(data) {
+        // TODO: not being fired
         log.innerHTML = "HasAccess: "+data.connectionState;
         writeLog("HasAccess: "+data.connectionState);
       };
       /* Get User Location */
+      var allowCoreLocation = function() {
+        coreLocation.addNativeListener("authorizeCoreLocation", _onCoreLocationAllowed);
+        coreLocation.authorizeCoreLocation();
+        $('#allowCoreLocation').addClass('done');
+      };
       var testCoreLocation = function() {
         coreLocation.addNativeListener("getLocation", _onCoreLocationReceived);
         coreLocation.getLocation();
       };
+      var _onCoreLocationAllowed = function(data) {
+        writeLog('works!'); //TODO: Why doesn't this work?
+      }
       var _onCoreLocationReceived = function(data) {
         log.innerHTML = JSON.stringify(data);
         writeLog(JSON.stringify(data));
+        my_coordinates = [data.latitude,data.longitude];
+        map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180);
+        getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
       };
       /* Cet Contacts // Invite Friends */
-      var getContacts = function() {
-        social.addNativeListener("getFBConnectedContacts", _onContactsReceived);
-        social.getFBContacts();
+      var inviteFBUser = function() {
+        social.addNativeListener("getInvitedUser", _onContactsReceived);
+        social.inviteFBUser("1031789260");
       };
       var _onContactsReceived = function(data) {
         log.innerHTML = data;
         writeLog(data);
       };
-    </script>
-    <script>
-      var activate_daytime = false;
-      var friend_coordinates = [52.52585,13.341351];
-      var my_coordinates = [52.490278,13.47];
-      var map = document.getElementById('map');
       
+      var getInvitations = function() {
+        social.addNativeListener("getConnectedFBContacts", _onContactsReceived);
+        social.getInvitedUser();
+      };
+
       $(function(){
         $('body').attr('data-mode','friends');
         $('.invite_venue, .invite_venue_switch a').on('click',function(){
@@ -160,8 +179,6 @@
         });
         loadFriends(7);
         loadProfile();
-        map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180);
-        getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
       });
     </script>
   </body>

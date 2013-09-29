@@ -25,9 +25,16 @@ var NativeConnector = function()
 		_nativeListener[nativeType](JSON.parse(data).data);
 	}
 	
-	this.callNativeMethod = function(method)
+	this.callNativeMethod = function(method, params)
 	{
-		window.location.href = "native://"+method;
+		if(params)
+		{
+			window.location.href = "native://"+method+"&"+params;
+		}
+		else
+		{
+			window.location.href = "native://"+method;
+		}
 		writeLog("Call iOS-Method: "+method);
 	}
 }
