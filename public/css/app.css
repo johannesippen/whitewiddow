@@ -14,6 +14,17 @@
   font-family: "Helvetica Neue";
   font-weight: 200;
 }
+header {
+  height: 44px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  display: block;
+}
+header{height:44px;text-align:center;}
+header h1{font:normal 20px/43px sans-serif;overflow:hidden;}
+header button{position:absolute;height:28px;font:bold 10px/26px sans-serif;margin:7px 5px;padding:0 8px;top:0;color:#04c;border:none;}
+header h1+button{right:0;}
+
 section {
   width: 320px;
   margin-top: 0;
