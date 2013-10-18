@@ -74,21 +74,31 @@
     </section>
     <!-- Friend List -->
     <section id="friends">
+      <div class="status_selector">
+        <a id="status_free" class="selector">I&rsquo;m free</a>
+      </div>
       <div class="friends">
         <ul id="friendlist" class="friendlist"></ul>
       </div>
       <div class="status_selector">
-        <a id="status_busy">I&rsquo;m busy</a>
-        <a id="status_free">I&rsquo;m free</a>
+        <a id="status_busy" class="selector">I&rsquo;m busy</a>
+      </div>
+    </section>
+    <!-- Pre Event Dashboard -->
+    <section id="event">
+      <div class="friends">
+        <ul id="friendlist_event" class="friendlist secondary"></ul>
+      </div>
+      <div class="attendees">
       </div>
       <div class="status_planned">
-        <div class="status_planned_time">
-          <date></date>
-          <a id="status_late">I&rsquo;m late</a>
-        </div>
         <div class="invite_venue">
           <span class="invite_venue_name">%Venue%</span>
           <span class="invite_venue_distance">%0.0km%</span>
+        </div>
+        <div class="status_planned_time">
+          <date></date>
+          <a id="status_late">I&rsquo;m late</a>
         </div>
       </div>
     </section>
@@ -100,13 +110,6 @@
       <div class="invite_dialogue">
         <div class="invite_map">
           <img src="" id="map">
-        </div>
-        <div class="invite_venue_switch">
-          <a>Him</a>
-          <a>Mid</a>
-          <a>Me</a>
-          <a>List</a>
-          <a>&times;</a>
         </div>
         <div class="invite_venue">
           <span class="invite_venue_name">%Venue%</span>
