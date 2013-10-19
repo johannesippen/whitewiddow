@@ -15,7 +15,7 @@ var loadFriends = function(user_id) {
       friendlist.push(data[i]);
       addFriendtoList(data[i], i);
     }
-    arrangeBubbles(document.getElementsByClassName('friend'));
+    arrangeBubbles(document.querySelectorAll('#friendlist .friend'));
   });
 };
 
@@ -46,6 +46,19 @@ var addFriendtoList = function(user, i) {
       .html('<span class="name">'+user.name.first+'</span>')
       .prepend('<img src="'+user.picture+'">')
       .appendTo($('#friendlist'));
+    
+    // Secondary List
+    if(i == 0) {
+      $('<li class="friend"></li>')
+        .html('<span class="name">'+user.name.first+'</span>')
+        .prepend('<img src="'+user.picture+'">')
+        .prependTo($('.attendees'));
+    } else {
+      $('<li class="friend"></li>')
+        .html('<span class="name">'+user.name.first+'</span>')
+        .prepend('<img src="'+user.picture+'">')
+        .appendTo($('#friendlist_event'));      
+    }
 };
 
 // adds you to the friend list
@@ -53,6 +66,10 @@ var addMeToFriendlist = function(user) {
     $('<li class="me"></li>')
       .prepend('<img src="'+user.picture+'">')
       .appendTo($('#friendlist'));
+      
+      $('<li class="me"></li>')
+        .prepend('<img src="'+user.picture+'">')
+        .appendTo($('.attendees'));
 };
 
 // shows the friends profile

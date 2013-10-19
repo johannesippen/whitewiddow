@@ -31,7 +31,7 @@ var Social = function()
 	}
 	
 	// Retrieves a list of connected Facebook Contacts of the current user
-	this.getFBConnectedContacts = function()
+	this.getConnectedFBContacts = function()
 	{
 		this.connector.removeNativeListener("getConnectedFBContacts", self._onFBConnectedContactsReceived);
 		this.connector.callNativeMethod("getConnectedFBContacts");
@@ -47,6 +47,20 @@ var Social = function()
 		this.connector.removeNativeListener("connectFB", self._onFBConnectionStateReceived);
 		this.connector.callNativeMethod("connectFB");
 		this.connector.addNativeListener("connectFB", self._onFBConnectionStateReceived);
+	}
+	
+	this.inviteFBUser = function(id)
+	{
+		this.connector.removeNativeListener("inviteFBUser", self._onFBConnectionStateReceived);
+		this.connector.callNativeMethod("inviteFBUser", id);
+		this.connector.addNativeListener("inviteFBUser", self._onFBConnectionStateReceived);
+	}
+	
+	this.getInvitedUser = function()
+	{
+		this.connector.removeNativeListener("getInvitedUser", self._onFBConnectionStateReceived);
+		this.connector.callNativeMethod("getInvitedUser");
+		this.connector.addNativeListener("getInvitedUser", self._onFBConnectionStateReceived);
 	}
 	
 	self._onFBConnectionStateReceived = function(data)

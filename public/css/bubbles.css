@@ -1,5 +1,6 @@
 ul.friendlist,
-.friendlist li {
+.friendlist li,
+.attendees li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -18,7 +19,8 @@ ul.friendlist {
   padding: 0;
   border: none!important;
 }
-.friendlist .name {
+.friendlist .name,
+.attendees .name {
   display: none;
   text-transform: capitalize;
 }
@@ -27,6 +29,7 @@ ul.friendlist {
   height: auto;
   border-radius: 100px;
   margin: 0;
+  padding: 4px;
 }
 .ios ul.friendlist li.me {
   left: 160px;
@@ -34,5 +37,50 @@ ul.friendlist {
   margin: -49px 0 0 -49px;
 }
 .ios ul.friendlist li.me img {
+  width: 97px!important;
+}
+.ios ul.friendlist li.free img {
+  border: 2px solid #2BD74B;
+  padding: 2px;
+}
+.ios ul.friendlist li.busy img {
+  border: 2px solid #FF210E;
+  padding: 2px;
+}
+/* Secondary List */
+ul.friendlist.secondary {
+  position: static;
+  height: auto;
+  display: -webkit-box;
+  margin-top: 0;
+  background: #fff;
+  overflow: scroll;
+  padding: 10px;
+  width: 300px;
+}
+.ios ul.friendlist.secondary li {
+  -webkit-box-flex: 1;
+  position: static;
+  margin: 0;
+}
+.attendees {
+  width: 320px;
+  height: 160px;
+}
+.attendees li.friend {
+  position: absolute;
+  left: 160px;
+  margin: -10px 0 0 5px;
+}
+.attendees li.me {
+  margin: 30px 100px;
+}
+.attendees li img {
+  height: auto;
+  border-radius: 100px;
+  margin: 0;
+  padding: 4px;
+}
+.attendees li.me img {
   width: 97px!important;
 }

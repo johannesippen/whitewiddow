@@ -14,6 +14,17 @@
   font-family: "Helvetica Neue";
   font-weight: 200;
 }
+header {
+  height: 44px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  display: block;
+}
+header{height:44px;}
+header h1{font:normal 20px/43px sans-serif;overflow:hidden;text-align: center}
+header button{height:28px;font:normal 18px/26px sans-serif;margin:7px 5px;padding:0 8px;top:0;color:#3B7FF3;border:none;background:none;}
+header h1+button{right:0;}
+
 section {
   width: 320px;
   margin-top: 0;
@@ -41,18 +52,16 @@ body[data-mode=invite] #invite {
 }
 .friendlist li { text-transform: capitalize; }
 .invite_dialogue {
-  width: 300px;
-  margin: 10px;
   border-radius: 8px;
   background: #fff;
   text-align: center;
 }
 .invite_map img {
-  width: 300px;
+  width: 320px;
   height: 186px;
 }
 .invite_confirm button {
-  background: #0c2;
+  background: #44DB5E;
   color: #fff;
   line-height: 44px;
   border-radius: 4px;
@@ -69,36 +78,33 @@ body[data-mode=invite] #invite {
 .invite_venue_name,
 .invite_venue_distance {
   display: block;
+  text-align: left;
+  padding-left: 8px;
 }
 .invite_venue_name {
   font-size: 24px;
+  font-weight: normal;
   padding-top: 8px;
   padding: 8px 8px 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.invite_venue_switch {
-  display: -webkit-box;
-  -webkit-box-align: stretch;
-  background: #fff;
-  position: absolute;
-  width: 300px;
-  -webkit-transform: scale(1,0);
-  -webkit-transition: all .3s;
-}
-.invite_venue_switch.active {
-  -webkit-transform: scale(1,1);
-}
-.invite_venue_switch a {
-  display: block;
-  -webkit-box-flex: 1;
-  text-align: center;
-  line-height: 44px;
-  color: #04c;
+  color: #3B7FF3;
 }
 .selector {
   display: block;
   padding: 8px 8px 0;
-  font-size: 36px;
+  font-size: 24px;
+  text-align: center;
+}
+.status_selector {
+  position: absolute;
+  width: 320px;
+  padding-top: 20px;
+}
+.friends + .status_selector {
+  margin-top: 400px;
+}
+#status_free {
+  color: #2BD74B;
 }
