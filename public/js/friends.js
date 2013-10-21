@@ -42,19 +42,19 @@ var loadRandomFriends = function(amount) {
 
 // adds a person to the friend list
 var addFriendtoList = function(user, i) {
-    $('<li class="friend" onclick="createInviteFor('+user._id+')"></li>')
+    $('<li class="friend '+user.status.description+'" onclick="createInviteFor('+user._id+')"></li>')
       .html('<span class="name">'+user.name.first+'</span>')
       .prepend('<img src="'+user.picture+'">')
       .appendTo($('#friendlist'));
     
     // Secondary List
     if(i == 0) {
-      $('<li class="friend"></li>')
+      $('<li class="friend '+user.status.description+'"></li>')
         .html('<span class="name">'+user.name.first+'</span>')
         .prepend('<img src="'+user.picture+'">')
         .prependTo($('.attendees'));
     } else {
-      $('<li class="friend"></li>')
+      $('<li class="friend '+user.status.description+'"></li>')
         .html('<span class="name">'+user.name.first+'</span>')
         .prepend('<img src="'+user.picture+'">')
         .appendTo($('#friendlist_event'));      
