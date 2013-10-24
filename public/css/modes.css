@@ -1,0 +1,22 @@
+section {
+  display: none;
+  position: absolute;
+  float: none;
+  margin: 0;
+  padding-top: 1px;
+}
+body[data-mode=event] #event,
+body[data-mode=venue] #venue,
+body[data-mode=friends] #friends,
+body[data-mode=invite] #invite {
+  display: block;
+}
+#debug,
+#onboarding {
+  display: block;
+  position: static;
+}
+body {
+//  background: url(../x.png) no-repeat 0 0!important;
+  background-size: 320px 568px!important;
+}

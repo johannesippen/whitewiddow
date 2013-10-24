@@ -1,4 +1,5 @@
 var arrangeBubbles = function(elems){
+  return false;
   var increase = Math.PI * 2 / elems.length;
   var x = 0, y = 0, angle = Math.round(Math.random()*180);
 

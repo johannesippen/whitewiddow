@@ -84,5 +84,5 @@ var createInviteFor = function(user_id) {
       
   getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
     
-  $('body').attr('data-mode','invite');
+
 }

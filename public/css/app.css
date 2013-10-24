@@ -24,25 +24,9 @@ header{height:44px;}
 header h1{font:normal 20px/43px sans-serif;overflow:hidden;text-align: center}
 header button{height:28px;font:normal 18px/26px sans-serif;margin:7px 5px;padding:0 8px;top:0;color:#3B7FF3;border:none;background:none;}
 header h1+button{right:0;}
-
 section {
   width: 320px;
-  margin-top: 0;
-  min-height: 480px;
-  display: none;
-  position: absolute;
-}
-@media screen and (min-width: 600px) {
-  section {
-    position: static;
-    float: left;
-    display: block;
-    outline: 1px solid #ccc;
-  }
-}
-body[data-mode=friends] #friends,
-body[data-mode=invite] #invite {
-  display: block;
+  min-height: 568px;
 }
 .ios p,
 .ios h2,
@@ -52,8 +36,6 @@ body[data-mode=invite] #invite {
 }
 .friendlist li { text-transform: capitalize; }
 .invite_dialogue {
-  border-radius: 8px;
-  background: #fff;
   text-align: center;
 }
 .invite_map img {
@@ -63,12 +45,12 @@ body[data-mode=invite] #invite {
 .invite_confirm button {
   background: #44DB5E;
   color: #fff;
-  line-height: 44px;
-  border-radius: 4px;
+  line-height: 60px;
+  border-radius: 6px;
   margin: 10px;
-  width: 280px;
+  width: 290px;
   border: none;
-  font-size: 24px;
+  font-size: 28px;
 }
 .invite_venue,
 .invite_time {
@@ -79,22 +61,34 @@ body[data-mode=invite] #invite {
 .invite_venue_distance {
   display: block;
   text-align: left;
-  padding-left: 8px;
+  padding-left: 24px;
 }
 .invite_venue_name {
   font-size: 16px;
   font-weight: normal;
   padding-top: 8px;
-  padding: 8px 8px 0;
+  padding: 8px 24px 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #3B7FF3;
 }
+.invite_venue_distance {
+  font-size: 14px;
+  font-weight: normal;
+  color: #999;
+}
+.invite_time_label {
+  display: block;
+  margin-bottom: 24px;
+  font-size: 10px;
+  font-weight: normal;
+  color: #999;
+}
 .selector {
   display: block;
-  padding: 8px 8px 0;
-  font-size: 24px;
+  padding: 8px 24px 0;
+  font-size: 36px;
   text-align: center;
 }
 .status_selector {

@@ -9,14 +9,6 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/bubbles.css">
     <style>
-      section {
-        display: block;
-        position: static;
-        float: none;
-        outline: 1px solid #ccc;
-        margin: 0;
-        padding-top: 1px;
-      }
       .debug {
         height: auto;
         min-height: 0;
@@ -52,26 +44,10 @@
         margin-top: 0;
       }
     </style>
+    <link rel="stylesheet" href="css/modes.css">
+    <link rel="stylesheet" href="css/status.css">
   </head>
-  <body class="ios" data-mode="friends">
-    <!-- Debug Menu -->
-    <section id="debug" class="debug">
-      <a onclick="window.location.reload();">&#8635; Reload</a>
-      <a onclick="writeLog('Version: unknown')">Version</a>
-      <a onclick="getInvitations()">Get Invitations</a>
-      <a onclick="testCoreLocation()">Get Core Location</a>
-      <p id="log">
-        <!-- Generated Logs go here -->
-      </p>
-    </section>
-    <!-- Onboarding -->
-    <section id="onboarding" class="debug">
-      <strong class="done" onclick="">1. Welcome</strong>
-      <a class="fb" onclick="hasAccessToContacts();">2. Connect to Facebook</a>
-      <a id="allowCoreLocation" class="" onclick="allowCoreLocation();">3. Allow Location</a>
-      <a class="" onclick="">4. Allow Notifications</a>
-      <a class="" onclick="inviteFBUser();">5. Invite Friends</a>
-    </section>
+  <body class="ios" data-mode="" data-status="">
     <!-- Friend List -->
     <section id="friends">
       <div class="status_selector">
@@ -118,15 +94,45 @@
         </div>
         <div class="invite_time">
           <date class="selector" id="selector">%20:00%</date>
+          <span class="invite_time_label">Swipe to set time</span>
         </div>
         <div class="invite_confirm">
-          <button>Send Invite!</button>
+          <button>Send Invite</button>
         </div>
       </div>
     </section>
+    <!-- Venue Details -->
+    <section id="venue">
+      <header>
+        <button class="back">Back</button>
+      </header>
+      Venue Details
+    </section>
+    <div style="padding-top: 568px;">
+    <!-- Debug Menu -->
+    <section id="debug" class="debug">
+      <a onclick="window.location.reload();">&#8635; Reload</a>
+      <a onclick="writeLog('Version: unknown')">Version</a>
+      <a onclick="getInvitations()">Get Invitations</a>
+      <a onclick="testCoreLocation()">Get Core Location</a>
+      <p id="log">
+        <!-- Generated Logs go here -->
+      </p>
+    </section>
+    <!-- Onboarding -->
+    <section id="onboarding" class="debug">
+      <strong class="done" onclick="">1. Welcome</strong>
+      <a class="fb" onclick="hasAccessToContacts();">2. Connect to Facebook</a>
+      <a id="allowCoreLocation" class="" onclick="allowCoreLocation();">3. Allow Location</a>
+      <a class="" onclick="">4. Allow Notifications</a>
+      <a class="" onclick="inviteFBUser();">5. Invite Friends</a>
+    </section>
+    </div>
     <script src="js/zepto.min.js"></script>
     <script src="js/friends.js"></script>
     <script src="js/interface.js"></script>
+    <script src="js/modes.js"></script>
+    <script src="js/status.js"></script>
     <script src="js/daytime.js"></script>
     <script src="js/location.js"></script>
     <script src="js/profile.js"></script>
@@ -194,7 +200,6 @@
       };
 
       $(function(){
-        $('body').attr('data-mode','friends');
         $('.invite_venue, .invite_venue_switch a').on('click',function(){
           $('.invite_venue_switch').toggleClass('active');
         });

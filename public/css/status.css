@@ -1,0 +1,12 @@
+body[data-status=free] .me img {
+  border: 2px solid #2BD74B;
+  padding: 2px;
+}
+body[data-status=busy] .me img {
+  border: 2px solid #FF210E;
+  padding: 2px;
+}
+body[data-status=free] #status_free,
+body[data-status=busy] #status_busy {
+  display: none;
+}
