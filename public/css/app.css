@@ -40,7 +40,7 @@ section {
 }
 .invite_map img {
   width: 320px;
-  height: 186px;
+  height: 225px;
 }
 .invite_confirm button {
   background: #44DB5E;
@@ -54,7 +54,7 @@ section {
 }
 .invite_venue,
 .invite_time {
-  height: 66px;
+  height: 86px;
   border-bottom: 1px solid #ddd;
 }
 .invite_venue_name,
@@ -78,16 +78,19 @@ section {
   font-weight: normal;
   color: #999;
 }
+.invite_time {
+  padding-bottom: 14px;
+}
 .invite_time_label {
   display: block;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
   font-size: 10px;
   font-weight: normal;
   color: #999;
 }
 .selector {
   display: block;
-  padding: 8px 24px 0;
+  padding: 20px 24px 8px;
   font-size: 36px;
   text-align: center;
 }

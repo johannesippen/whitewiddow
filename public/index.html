@@ -219,7 +219,7 @@
         log.innerHTML = JSON.stringify(data);
         writeLog(JSON.stringify(data));
         my_coordinates = [data.latitude,data.longitude];
-        map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180);
+        map.src = staticMapUrl(my_coordinates,friend_coordinates,300,225);
         getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
       };
       /* Cet Contacts // Invite Friends */
