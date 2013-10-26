@@ -5,6 +5,9 @@ section {
   margin: 20px 0 0 0;
   padding-top: 1px;
 }
+section > section {
+  margin-top: 0;
+}
 body[data-mode=permissions] #permissions,
 body[data-mode=event] #event,
 body[data-mode=venue] #venue,
