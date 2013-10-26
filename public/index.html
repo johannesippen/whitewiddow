@@ -109,26 +109,6 @@
       </header>
       Venue Details
     </section>
-    <div style="padding-top: 568px;">
-    <!-- Debug Menu -->
-    <section id="debug" class="debug">
-      <a onclick="window.location.reload();">&#8635; Reload</a>
-      <a onclick="writeLog('Version: unknown')">Version</a>
-      <a onclick="getInvitations()">Get Invitations</a>
-      <a onclick="testCoreLocation()">Get Core Location</a>
-      <p id="log">
-        <!-- Generated Logs go here -->
-      </p>
-    </section>
-    <!-- Onboarding -->
-    <section id="onboarding" class="debug">
-      <strong class="done" onclick="">1. Welcome</strong>
-      <a class="fb" onclick="hasAccessToContacts();">2. Connect to Facebook</a>
-      <a id="allowCoreLocation" class="" onclick="allowCoreLocation();">3. Allow Location</a>
-      <a class="" onclick="">4. Allow Notifications</a>
-      <a class="" onclick="inviteFBUser();">5. Invite Friends</a>
-    </section>
-    </div>
     <section id="permissions">
       <section id="welcome" class="permission">
         <div class="permission_description">
@@ -163,6 +143,28 @@
         </div>
       </section>
     </section>
+    <div style="padding-top: 568px;">
+    <!-- Debug Menu -->
+    <section id="debug" class="debug">
+      <a onclick="window.location.reload();">&#8635; Reload</a>
+      <a onclick="localStorage.removeItem('permissions');">Reset Onboarding</a>
+      <a onclick="writeLog('Version: unknown')">Version</a>
+      <a onclick="getInvitations()">Get Invitations</a>
+      <a onclick="testCoreLocation()">Get Core Location</a>
+      <p id="log">
+        <!-- Generated Logs go here -->
+      </p>
+    </section>
+    <!-- Onboarding -->
+    <section id="onboarding" class="debug">
+      <strong class="done" onclick="">1. Welcome</strong>
+      <a class="fb" onclick="hasAccessToContacts();">2. Connect to Facebook</a>
+      <a id="allowCoreLocation" class="" onclick="allowCoreLocation();">3. Allow Location</a>
+      <a class="" onclick="">4. Allow Notifications</a>
+      <a class="" onclick="inviteFBUser();">5. Invite Friends</a>
+    </section>
+    </div>
+
     <script src="js/zepto.min.js"></script>
     <script src="js/permissions.js"></script>
     <script src="js/friends.js"></script>

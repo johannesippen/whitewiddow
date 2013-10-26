@@ -10,7 +10,8 @@ $('#allowNotification button').live('click',function(){
   confirm('Whitewidow Would Like to Send You Push Notifications')
 });
 $('#addFriends button').live('click',function(){
-  $('body').attr('data-mode','friends')
+  localStorage.setItem('permissions',true);
+  $('body').attr('data-mode','friends');
 });
 /* Next Slide */
 $('.permission_action button').live('click',function(){

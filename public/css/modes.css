@@ -2,9 +2,10 @@ section {
   display: none;
   position: absolute;
   float: none;
-  margin: 0;
+  margin: 20px 0 0 0;
   padding-top: 1px;
 }
+body[data-mode=permissions] #permissions,
 body[data-mode=event] #event,
 body[data-mode=venue] #venue,
 body[data-mode=friends] #friends,
