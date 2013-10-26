@@ -28,7 +28,7 @@ $(function(){
   });
   /* Startup */  
   if(localStorage['permissions']=='true') {
-    $('body').attr('data-mode','invite');    
+    $('body').attr('data-mode','friends');    
   } else {
     $('body').attr('data-mode','permissions');    
   }
