@@ -3,7 +3,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   position: absolute;
-  background: #fff;
+  background: #f6f9f6;
 }
 .permission_description,
 .permission_action {

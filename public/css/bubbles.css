@@ -74,8 +74,7 @@ ul.friendlist.secondary {
   height: auto;
   display: -webkit-box;
   margin-top: 0;
-  background: #fff;
-  overflow: scroll;
+  overflow: hidden;
   padding: 10px;
   width: 300px;
 }
@@ -85,23 +84,25 @@ ul.friendlist.secondary {
   margin: 0;
 }
 .attendees {
+  display: -webkit-box;
   width: 320px;
-  height: 160px;
+  height: 263px;
 }
 .attendees li.friend {
   position: absolute;
-  left: 160px;
-  margin: -10px 0 0 5px;
+  margin: 51px 0 0 172px;
+  z-index: 10;
 }
 .attendees li.me {
-  margin: 30px 100px;
+  position: absolute;
+  margin: 86px 0 0 95px;
 }
 .attendees li img {
-  height: auto;
+  width: 60px!important;
   border-radius: 100px;
   margin: 0;
   padding: 4px;
 }
 .attendees li.me img {
-  width: 97px!important;
+  width: 120px!important;
 }

@@ -1,6 +1,6 @@
 section {
   display: none;
-  position: absolute;
+   position: absolute;
   float: none;
   margin: 20px 0 0 0;
   padding-top: 1px;
@@ -21,6 +21,6 @@ body[data-mode=invite] #invite {
   position: static;
 }
 body {
-//  background: url(../x.png) no-repeat 0 0!important;
+//  background: url(https://trello-attachments.s3.amazonaws.com/50afe80369698de767017e95/520a396955af4b947d0039d4/e78e716f299ceef6a9164a3fd02ee308/2013-10-18-white-widow-dash-event.png) no-repeat 0 0!important;
   background-size: 320px 568px!important;
 }

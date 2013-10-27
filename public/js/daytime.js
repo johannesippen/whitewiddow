@@ -71,10 +71,11 @@ $selector
   if(startX != undefined) {
     e.preventDefault();
     currentX = (e.pageX-startX)/(range-startX);
+    // FIXME: Time direction is wrong
     if(currentX > 0) {
       temp_time = Math.round((max_time-set_time)*currentX+set_time);
     } else {
-      factorX = 1-(e.pageX-startX)*-1/startX;
+      factorX = 1-(e.pageX-startX)*1/startX;
       temp_time = Math.round((set_time-min_time)*factorX+min_time);
     }
     $selector.text(formatTime(temp_time));
