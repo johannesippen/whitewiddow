@@ -1,5 +1,6 @@
 button:active {
   outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .dev_overlay {
   display: block;
@@ -27,6 +28,9 @@ header{height:44px;}
 header h1{font:normal 20px/43px sans-serif;overflow:hidden;text-align: center}
 header button{height:28px;font:normal 18px/26px sans-serif;margin:7px 5px;padding:0 8px;top:0;color:#3B7FF3;border:none;background:none;}
 header h1+button{right:0;}
+header button.active {
+  color: #000;
+}
 section {
   width: 320px;
   min-height: 568px;
@@ -36,9 +40,6 @@ section {
 .ios button {
   font-family: "Helvetica Neue";
   font-weight: 200;
-}
-.invite_dialogue {
-//  text-align: center;
 }
 .invite_map img {
   width: 320px;
@@ -53,6 +54,9 @@ section {
   width: 290px;
   border: none;
   font-size: 28px;
+}
+.invite_confirm button.active {
+  background: #3c4;
 }
 .invite_venue,
 .invite_time {
@@ -116,7 +120,10 @@ section {
   color: #2BD74B;
 }
 .status_planned {
-  padding-top: 20px;
+  padding-top: 8px;
+}
+.status_planned .selector {
+  font-size: 24px;
 }
 .event_map {
   width: 320px;

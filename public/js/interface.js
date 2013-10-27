@@ -20,3 +20,11 @@ var arrangeBubbles = function(elems){
 $('.invite_confirm button').on('click',function(){
   $('body').attr('data-mode','friends');
 })
+
+$('button')
+.live('mousedown touchstart',function(){
+  $(this).addClass('active');
+})
+.live('mouseup touchend',function(){
+  $(this).removeClass('active');
+});
