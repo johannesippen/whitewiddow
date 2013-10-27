@@ -25,8 +25,8 @@ header {
   display: block;
 }
 header{height:44px;}
-header h1{font:normal 20px/43px sans-serif;overflow:hidden;text-align: center}
-header button{height:28px;font:normal 18px/26px sans-serif;margin:7px 5px;padding:0 8px;top:0;color:#3B7FF3;border:none;background:none;}
+header h1{font:normal 20px/43px sans-serif;overflow:hidden;text-align: center;}
+header button{position:absolute;height:28px;font:normal 18px/29px sans-serif;margin:7px 5px;padding:0 8px;top:0;color:#3B7FF3;border:none;background:none;}
 header h1+button{right:0;}
 header button.active {
   color: #000;
@@ -51,7 +51,7 @@ section {
   line-height: 60px;
   border-radius: 6px;
   margin: 10px;
-  width: 290px;
+  width: 300px;
   border: none;
   font-size: 28px;
 }
@@ -132,4 +132,37 @@ section {
 .coming_soon {
   text-align: center;
   line-height: 100px;
+}
+/* Venue Details */
+.venue_image {
+  height: 225px;
+  background: #ccc;
+}
+.venue_title {
+  display: block;
+  margin: 14px 15px 0;
+  border-top: 1px solid #DCDEDC;
+  padding: 10px 10px 0;
+  color: #BFBFBF;
+}
+.venue_hours_hours {
+  display: block;
+  padding-left: 24px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #999;
+}
+.venue_contact_actions {
+  display: -webkit-box;
+  padding: 0 20px;
+}
+.venue_contact_actions a {
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  -webkit-box-pack: center;
+  width: 100px;
+  line-height: 40px;
+  background: #4889E7;
+  color: #fff;
+  margin: 5px;
 }
