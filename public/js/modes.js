@@ -14,6 +14,14 @@ $(function(){
   $('#invite .back').live('click',function(){
     $('body').attr('data-mode','friends');
   });
+  /* Add Friends */
+  $('#addfriends button').live('click',function(){
+    $('body').attr('data-mode','friends');
+  });
+  /* Add Friends */
+  $('#friendlist_add').live('click',function(){
+    $('body').attr('data-mode','addfriends');
+  });
   /* Friend-Eventmode */
   $('#invite .invite_confirm button').live('click',function(){
     $('body').attr('data-mode','event');

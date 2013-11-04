@@ -166,3 +166,35 @@ section {
   color: #fff;
   margin: 5px;
 }
+.addfriends_list {
+  height: 300px;
+  overflow: scroll;
+}
+.fb_friend_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fb_friend {
+  display: -webkit-box;
+  line-height: 44px;
+  padding: 0;
+}
+.fb_friend img {
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  margin-right: 22px;
+}
+.friend_slots {
+  display: -webkit-box;
+  padding: 0 10px;
+}
+.friend_slot {
+  display: -webkit-box;
+  width: 44px;
+  height: 44px;
+  border-radius: 44px;
+  margin: 10px;
+  background: #ccc;
+}

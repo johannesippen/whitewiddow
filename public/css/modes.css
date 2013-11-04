@@ -12,6 +12,7 @@ body[data-mode=permissions] #permissions,
 body[data-mode=event] #event,
 body[data-mode=venue] #venue,
 body[data-mode=friends] #friends,
+body[data-mode=addfriends] #addfriends,
 body[data-mode=invite] #invite {
   display: block;
 }

@@ -55,7 +55,9 @@
         <a id="status_free" class="selector">I&rsquo;m free</a>
       </div>
       <div class="friends">
-        <ul id="friendlist" class="friendlist"></ul>
+        <ul id="friendlist" class="friendlist">
+          <li class="friend_slot" id="friendlist_add"></li>
+        </ul>
       </div>
       <div class="status_selector">
         <a id="status_busy" class="selector">I&rsquo;m busy</a>
@@ -74,6 +76,24 @@
           <span class="invite_venue_name">%Venue%</span>
           <span class="invite_friend">%Name%</span>
           <span class="invite_set_time">%20:00%</span>
+        </div>
+      </div>
+    </section>
+    <!-- Pre Event Dashboard -->
+    <section id="event">
+      <header>
+        <h1>Event</h1>
+      </header>
+      <div class="invite_dialogue">
+        <div class="invite_map">
+          <img src="" id="map" class="map">
+        </div>
+        <div class="invite_venue">
+          <span class="invite_venue_name">%Venue%</span>
+          <span class="invite_venue_distance">%0.0km%</span>
+        </div>
+        <div class="invite_more_friends">
+          <button>Add More Friends</button>
         </div>
       </div>
     </section>
@@ -118,6 +138,26 @@
             <a>Website</a>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- Add Friends -->
+    <section id="addfriends">
+      <header>
+        <button id="addfriends_cancel">Cancel</button><h1><input type="search"></h1><button id="addfriends_invite">Invite</button>
+      </header>
+      <div class="addfriends_list">
+        <ul class="fb_friend_list">
+          <li class="fb_friend">
+            <img src="#"><span>John Doe</span>
+          </li>
+        </ul>
+      </div>
+      <div class="friend_slots">
+        <div class="friend_slot"></div>
+        <div class="friend_slot"></div>
+        <div class="friend_slot"></div>
+        <div class="friend_slot"></div>
+        <div class="friend_slot"></div>
       </div>
     </section>
     <section id="permissions">
