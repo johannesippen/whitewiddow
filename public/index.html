@@ -75,12 +75,6 @@
           <span class="invite_friend">%Name%</span>
           <span class="invite_set_time">%20:00%</span>
         </div>
-        <div class="status_planned_time">
-          <div class="invite_time">
-            <date class="selector">%1:20:00%</date>
-            <span class="invite_time_label">Time remaining til event</span>
-          </div>
-        </div>
       </div>
     </section>
     <!-- Invite Dialogue -->
@@ -95,10 +89,6 @@
         <div class="invite_venue">
           <span class="invite_venue_name">%Venue%</span>
           <span class="invite_venue_distance">%0.0km%</span>
-        </div>
-        <div class="invite_time">
-          <date class="selector" id="selector">%20:00%</date>
-          <span class="invite_time_label">Swipe to set time</span>
         </div>
         <div class="invite_confirm">
           <button>Send Invite</button>
@@ -128,7 +118,6 @@
             <a>Website</a>
           </div>
         </div>
-
       </div>
     </section>
     <section id="permissions">
@@ -242,7 +231,7 @@
         log.innerHTML = JSON.stringify(data);
         writeLog(JSON.stringify(data));
         my_coordinates = [data.latitude,data.longitude];
-        map.src = staticMapUrl(my_coordinates,friend_coordinates,300,225);
+        map.src = staticMapUrl(my_coordinates,friend_coordinates,320,320);
         getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
       };
       /* Cet Contacts // Invite Friends */
