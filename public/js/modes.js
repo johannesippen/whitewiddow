@@ -15,11 +15,11 @@ $(function(){
     $('body').attr('data-mode','friends');
   });
   /* Add Friends */
-  $('#addfriends button').live('click',function(){
+  $('#addfriends header button').live('touchend click',function(){
     $('body').attr('data-mode','friends');
   });
   /* Add Friends */
-  $('#friendlist_add').live('click',function(){
+  $('#friendlist_add').live('touchend mouseup',function(){
     $('body').attr('data-mode','addfriends');
   });
   /* Friend-Eventmode */
@@ -36,7 +36,7 @@ $(function(){
   });
   /* Startup */  
   if(localStorage['permissions']=='true') {
-    $('body').attr('data-mode','addfriends');    
+    $('body').attr('data-mode','friends');    
   } else {
     $('body').attr('data-mode','permissions');    
   }

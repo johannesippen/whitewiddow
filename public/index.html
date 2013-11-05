@@ -47,6 +47,7 @@
     </style>
     <link rel="stylesheet" href="css/modes.css">
     <link rel="stylesheet" href="css/status.css">
+    <style id="search_style"></style>
   </head>
   <body class="ios" data-mode="" data-status="">
     <!-- Friend List -->
@@ -56,7 +57,7 @@
       </div>
       <div class="friends">
         <ul id="friendlist" class="friendlist">
-          <li class="friend_slot" id="friendlist_add"></li>
+          <li class="friend_slot" id="friendlist_add">Add</li>
         </ul>
       </div>
       <div class="status_selector">
@@ -127,12 +128,21 @@
     <!-- Add Friends -->
     <section id="addfriends">
       <header>
-        <button id="addfriends_cancel">Cancel</button><h1><input type="search"></h1>
+        <button id="addfriends_cancel">Done</button><input id="search" type="search" placeholder="Search">
       </header>
       <div class="addfriends_list">
         <ul class="fb_friend_list">
-          <li class="fb_friend">
+          <li class="fb_friend" data-index="johndoe">
             <img src="#"><span>John Doe</span><button id="addfriends_invite">Invite</button>
+          </li>
+          <li class="fb_friend" data-index="nicoengelhardt">
+            <img src="#"><span>Nico Engelhardt</span><button id="addfriends_invite">Invite</button>
+          </li>
+          <li class="fb_friend" data-index="paulschmidt">
+            <img src="#"><span>Paul Schmidt</span><button id="addfriends_invite">Invite</button>
+          </li>
+          <li class="fb_friend" data-index="johannesippen">
+            <img src="#"><span>Johannes Ippen</span><button id="addfriends_invite">Invite</button>
           </li>
         </ul>
       </div>
@@ -213,6 +223,7 @@
     <script src="js/native/Social.js"></script>
     <script src="js/native/CoreLocation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/search.js"></script>
     <script>
       var connector = new NativeConnector();
       var social = new Social();

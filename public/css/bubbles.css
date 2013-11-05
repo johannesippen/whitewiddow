@@ -68,6 +68,13 @@ ul.friendlist li.busy img {
   border: 2px solid #FF210E;
   padding: 2px;
 }
+.friendlist .friend_slot {
+  height: 60px!important;
+  width: 60px!important;  
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+}
 /* Secondary List */
 ul.friendlist.secondary {
   position: static;
