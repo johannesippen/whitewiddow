@@ -46,13 +46,13 @@ section {
   height: 320px;
 }
 .invite_confirm button {
-  background: #44DB5E;
-  color: #fff;
+  border: 1px solid #44DB5E;
+  color: #44DB5E;
+  background: #fff;
   line-height: 60px;
   border-radius: 6px;
   margin: 10px;
   width: 300px;
-  border: none;
   font-size: 28px;
 }
 .invite_confirm button.active {
@@ -185,6 +185,18 @@ section {
   height: 44px;
   display: -webkit-box;
   margin-right: 22px;
+}
+.fb_friend span {
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+}
+.fb_friend button {
+  border: 1px solid #44DB5E;
+  color: #44DB5E;
+  background: #fff;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 1;
 }
 .friend_slots {
   display: -webkit-box;
