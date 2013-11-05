@@ -28,7 +28,7 @@ $(function(){
     $('body').attr('data-mode','event');
   });
   /* Friend-Eventmode */
-  $('#event .invite_confirm button').live('click',function(){
+  $('.invite_more_friends button').live('click',function(){
     $('body').attr('data-mode','received');
   });
   /* Venuemode */
