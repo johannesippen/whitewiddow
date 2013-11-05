@@ -24,7 +24,12 @@ $(function(){
   });
   /* Friend-Eventmode */
   $('#invite .invite_confirm button').live('click',function(){
+    alert('Your friend has been invited. Let the waiting begin!');
     $('body').attr('data-mode','event');
+  });
+  /* Friend-Eventmode */
+  $('#event .invite_confirm button').live('click',function(){
+    $('body').attr('data-mode','received');
   });
   /* Venuemode */
   $('#invite .invite_venue').live('click',function(){

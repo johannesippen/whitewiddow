@@ -30,6 +30,19 @@ var getDaytime = function(){
   }
 };
 
+$('#set_time').live('touchend mouseup',function(){
+  document.getElementById('set_time_selector').focus();
+  window.setTimeout(function(){
+    /* Received */
+      document.getElementById('set_time_selector').addEventListener('focusout', function(){
+        alert('We have a deal! Please be on time.');
+        $('body').attr('data-mode','event');
+      }, false);
+  },1000);
+  
+});
+
+// TODO: OLD Code!
 // Time Selector Module
 var $selector = $('#selector');
 
