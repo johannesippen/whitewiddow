@@ -4,7 +4,7 @@
       "first": "John",
       "last": "Doe"
     },
-    "picture": "http://graph.facebook.com/john.dow/picture",
+    "picture": "http://graph.facebook.com/martin.gleitsmann/picture?width=200&height=200",
     "facebook": {
         "id": "1234567890",
         "name": "John Doe",
