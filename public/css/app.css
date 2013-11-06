@@ -244,6 +244,8 @@ section {
 .friend_slots {
   display: -webkit-box;
   padding: 0 10px;
+  color: #fff;
+  text-align: center;
 }
 .friend_slot {
   display: -webkit-box;
