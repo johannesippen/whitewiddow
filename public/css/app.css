@@ -109,11 +109,26 @@ section {
 }
 .status_selector {
   position: absolute;
-  width: 320px;
+  width: 300px;
   padding-top: 20px;
 }
 .friends + .status_selector {
   margin-top: 400px;
+  display: -webkit-box;
+  padding: 0 10px;
+}
+.status_selector .selector {
+  border: 1px solid #44DB5E;
+  color: #44DB5E;
+  background: transparent;
+  line-height: 60px;
+  border-radius: 6px;
+  margin: 5px;
+  font-size: 28px;
+  padding: 0px;
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  -webkit-box-pack: center;
 }
 #status_free {
   color: #2BD74B;

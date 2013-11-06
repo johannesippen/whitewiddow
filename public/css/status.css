@@ -10,3 +10,7 @@ body[data-status=free] #status_free,
 body[data-status=busy] #status_busy {
   display: none;
 }
+#status_busy {
+  border-color: red;
+  color: red;
+}
