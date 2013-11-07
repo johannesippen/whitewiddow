@@ -1,3 +1,7 @@
+button:active {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 .dev_overlay {
   display: block;
   position: absolute;
@@ -9,40 +13,27 @@
   z-index: 32000;
 }
 .ios {
-  background: #f5f5f5;
+  background: #f6f9f6;
   margin: 0;
   font-family: "Helvetica Neue";
   font-weight: 200;
 }
 header {
   height: 44px;
-  background: #fff;
+  background: #f6f9f6;
   border-bottom: 1px solid #eee;
   display: block;
 }
 header{height:44px;}
-header h1{font:normal 20px/43px sans-serif;overflow:hidden;text-align: center}
-header button{height:28px;font:normal 18px/26px sans-serif;margin:7px 5px;padding:0 8px;top:0;color:#3B7FF3;border:none;background:none;}
+header h1{font:normal 20px/43px sans-serif;overflow:hidden;text-align: center;}
+header button{position:absolute;height:28px;font:normal 18px/29px sans-serif;margin:7px 5px;padding:0 8px;top:0;color:#3B7FF3;border:none;background:none;}
 header h1+button{right:0;}
-
+header button.active {
+  color: #000;
+}
 section {
   width: 320px;
-  margin-top: 0;
-  min-height: 480px;
-  display: none;
-  position: absolute;
-}
-@media screen and (min-width: 600px) {
-  section {
-    position: static;
-    float: left;
-    display: block;
-    outline: 1px solid #ccc;
-  }
-}
-body[data-mode=friends] #friends,
-body[data-mode=invite] #invite {
-  display: block;
+  min-height: 568px;
 }
 .ios p,
 .ios h2,
@@ -50,61 +41,237 @@ body[data-mode=invite] #invite {
   font-family: "Helvetica Neue";
   font-weight: 200;
 }
-.friendlist li { text-transform: capitalize; }
-.invite_dialogue {
-  border-radius: 8px;
-  background: #fff;
-  text-align: center;
-}
 .invite_map img {
   width: 320px;
-  height: 186px;
+  height: 320px;
 }
 .invite_confirm button {
-  background: #44DB5E;
-  color: #fff;
-  line-height: 44px;
-  border-radius: 4px;
+  border: 1px solid #44DB5E;
+  color: #44DB5E;
+  background: transparent;
+  line-height: 60px;
+  border-radius: 6px;
   margin: 10px;
-  width: 280px;
-  border: none;
-  font-size: 24px;
+  width: 300px;
+  font-size: 28px;
+}
+.invite_confirm button.active {
+  background: #3c4;
 }
 .invite_venue,
 .invite_time {
-  height: 66px;
-  border-bottom: 1px solid #ddd;
+  height: 86px;
 }
 .invite_venue_name,
 .invite_venue_distance {
   display: block;
-  text-align: left;
-  padding-left: 8px;
+  padding-left: 24px;
 }
 .invite_venue_name {
   font-size: 16px;
   font-weight: normal;
   padding-top: 8px;
-  padding: 8px 8px 0;
+  padding: 8px 24px 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #3B7FF3;
 }
+.invite_venue_distance,
+.invite_friend,
+.invite_set_time {
+  display: block;
+  padding-left: 24px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #999;
+}
+.invite_set_time {
+  margin-top: 6px;
+}
+.invite_time {
+  padding-bottom: 14px;
+}
+.invite_time_label {
+  display: block;
+  padding-bottom: 24px;
+  font-size: 10px;
+  font-weight: normal;
+  color: #999;
+  text-align: center;
+}
 .selector {
   display: block;
-  padding: 8px 8px 0;
-  font-size: 24px;
+  padding: 20px 24px 8px;
+  font-size: 36px;
   text-align: center;
+  color: #222;
 }
 .status_selector {
   position: absolute;
-  width: 320px;
+  width: 300px;
   padding-top: 20px;
 }
 .friends + .status_selector {
   margin-top: 400px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  padding: 0 10px;
 }
-#status_free {
-  color: #2BD74B;
+.status_free {
+  border: none;
+  color: #fff;
+  background: #44DB5E;
+  line-height: 60px;
+  border-radius: 6px;
+  margin: 5px;
+  font-size: 28px;
+  padding: 0px;
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  -webkit-box-pack: center;
+}
+.status_busy {
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  -webkit-box-pack: center;
+  font-size: 18px;
+  padding: 10px;
+  color: #08b;
+}
+.status_planned {
+  padding-top: 8px;
+}
+.status_planned .selector {
+  font-size: 24px;
+}
+.event_map {
+  width: 320px;
+  height: 263px;
+}
+.coming_soon {
+  text-align: center;
+  line-height: 100px;
+}
+.event_details {
+  display: -webkit-box;
+}
+#set_time_selector {
+  position: absolute;
+  top: 0;
+  -webkit-transform: scale(0,1);
+}
+.invite_venue {
+  -webkit-box-flex: 1;
+}
+.event_time {
+  padding: 8px 24px 0;
+}
+.invite_more_friends button {
+  border: none;
+  color: #08b;
+  background: transparent;
+  line-height: 60px;
+  border-radius: 6px;
+  margin: 10px;
+  width: 300px;
+  font-size: 28px;
+}
+/* Venue Details */
+.venue_image {
+  height: 225px;
+  background: #ccc;
+}
+.venue_title {
+  display: block;
+  margin: 14px 15px 0;
+  border-top: 1px solid #DCDEDC;
+  padding: 10px 10px 0;
+  color: #BFBFBF;
+}
+.venue_hours_hours {
+  display: block;
+  padding-left: 24px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #999;
+}
+.venue_contact_actions {
+  display: -webkit-box;
+  padding: 0 20px;
+}
+.venue_contact_actions a {
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  -webkit-box-pack: center;
+  width: 100px;
+  line-height: 40px;
+  background: #4889E7;
+  color: #fff;
+  margin: 5px;
+}
+#addfriends header {
+  display: -webkit-box;
+  -webkit-box-align: center;
+}
+#addfriends header button {
+  position: static;
+  display: -webkit-box;
+}
+#addfriends header input {
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  border-radius: 4px;
+  border: none;
+  background: #fff;
+  margin-right: 20px;
+  outline: none;
+  padding-top: 4px;
+  font: normal 16px/26px sans-serif;
+}
+.addfriends_list {
+  height: 433px;
+  overflow: scroll;
+}
+.fb_friend_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fb_friend {
+  display: -webkit-box;
+  line-height: 44px;
+  padding: 0;
+}
+.fb_friend img {
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  margin-right: 22px;
+}
+.fb_friend span {
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+}
+.fb_friend button {
+  border: 1px solid #44DB5E;
+  color: #44DB5E;
+  background: #fff;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 1;
+}
+.friend_slots {
+  display: -webkit-box;
+  padding: 0 10px;
+  color: #fff;
+  text-align: center;
+}
+.friend_slot {
+  display: -webkit-box;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 5px;
+  background: #ccc;
 }

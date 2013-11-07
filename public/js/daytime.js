@@ -30,6 +30,19 @@ var getDaytime = function(){
   }
 };
 
+$('#set_time').live('touchend mouseup',function(){
+  document.getElementById('set_time_selector').focus();
+  window.setTimeout(function(){
+    /* Received */
+      document.getElementById('set_time_selector').addEventListener('focusout', function(){
+        alert('We have a deal! Please be on time.');
+        $('body').attr('data-mode','event');
+      }, false);
+  },1000);
+  
+});
+
+// TODO: OLD Code!
 // Time Selector Module
 var $selector = $('#selector');
 
@@ -71,10 +84,11 @@ $selector
   if(startX != undefined) {
     e.preventDefault();
     currentX = (e.pageX-startX)/(range-startX);
+    // FIXME: Time direction is wrong
     if(currentX > 0) {
       temp_time = Math.round((max_time-set_time)*currentX+set_time);
     } else {
-      factorX = 1-(e.pageX-startX)*-1/startX;
+      factorX = 1-(e.pageX-startX)*1/startX;
       temp_time = Math.round((set_time-min_time)*factorX+min_time);
     }
     $selector.text(formatTime(temp_time));

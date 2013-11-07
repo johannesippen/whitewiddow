@@ -1,4 +1,5 @@
 var arrangeBubbles = function(elems){
+  return false;
   var increase = Math.PI * 2 / elems.length;
   var x = 0, y = 0, angle = Math.round(Math.random()*180);
 
@@ -16,6 +17,10 @@ var arrangeBubbles = function(elems){
   }
 };
 
-$('.invite_confirm button').on('click',function(){
-  $('body').attr('data-mode','friends');
+$('button')
+.live('mousedown touchstart',function(){
+  $(this).addClass('active');
 })
+.live('mouseup touchend',function(){
+  $(this).removeClass('active');
+});

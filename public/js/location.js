@@ -63,8 +63,8 @@ var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood, ra
       venue_ll = [venue.location.lat,venue.location.lng];
       
       // TODO: This updates the Map
-      map.src = staticMapUrl(my_coordinates,friend_coordinates,320,180,venue_ll);
-      $('.map').attr('src',staticMapUrl(my_coordinates,friend_coordinates,320,180,venue_ll));
+      map.src = staticMapUrl(my_coordinates,friend_coordinates,320,320,venue_ll);
+      $('.map').attr('src',staticMapUrl(my_coordinates,friend_coordinates,320,320,venue_ll));
       
       if(is_midpoint) {
         // TODO: This updates the venue anme & distance field. Make this better.

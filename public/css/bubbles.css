@@ -12,40 +12,68 @@ ul.friendlist {
   background: transparent;
   margin-top: 80px;
 }
-.ios ul.friendlist li {
+ul.friendlist li {
   position: absolute;
   margin: -30px 0 0 -30px;
   height: auto;
   padding: 0;
   border: none!important;
 }
+ul.friendlist li:nth-child(1) {
+  left: 107px; top: 245px;
+}
+ul.friendlist li:nth-child(2) {  
+  left: 61px; top: 172px;
+}
+ul.friendlist li:nth-child(3) {
+  left: 89px; top: 90px;
+}
+ul.friendlist li:nth-child(4) {
+  left: 171px; top: 61px;
+}
+ul.friendlist li:nth-child(5) {
+  left: 244px; top: 106px;
+}
+ul.friendlist li:nth-child(6) {
+  left: 255px; top: 193px;
+}
+ul.friendlist li:nth-child(7) {
+  left: 194px; top: 254px;
+}
 .friendlist .name,
 .attendees .name {
   display: none;
   text-transform: capitalize;
 }
-.ios ul.friendlist li img {
+ul.friendlist li img {
   width: 60px!important;
   height: auto;
   border-radius: 100px;
   margin: 0;
   padding: 4px;
 }
-.ios ul.friendlist li.me {
+ul.friendlist li.me {
   left: 160px;
   top: 160px;
   margin: -49px 0 0 -49px;
 }
-.ios ul.friendlist li.me img {
+ul.friendlist li.me img {
   width: 97px!important;
 }
-.ios ul.friendlist li.free img {
+ul.friendlist li.free img {
   border: 2px solid #2BD74B;
   padding: 2px;
 }
-.ios ul.friendlist li.busy img {
+ul.friendlist li.busy img {
   border: 2px solid #FF210E;
   padding: 2px;
+}
+.friendlist .friend_slot {
+  height: 60px!important;
+  width: 60px!important;  
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
 }
 /* Secondary List */
 ul.friendlist.secondary {
@@ -53,8 +81,7 @@ ul.friendlist.secondary {
   height: auto;
   display: -webkit-box;
   margin-top: 0;
-  background: #fff;
-  overflow: scroll;
+  overflow: hidden;
   padding: 10px;
   width: 300px;
 }
@@ -64,23 +91,25 @@ ul.friendlist.secondary {
   margin: 0;
 }
 .attendees {
+  display: -webkit-box;
   width: 320px;
-  height: 160px;
+  height: 263px;
 }
 .attendees li.friend {
   position: absolute;
-  left: 160px;
-  margin: -10px 0 0 5px;
+  margin: 51px 0 0 172px;
+  z-index: 10;
 }
 .attendees li.me {
-  margin: 30px 100px;
+  position: absolute;
+  margin: 86px 0 0 95px;
 }
 .attendees li img {
-  height: auto;
+  width: 60px!important;
   border-radius: 100px;
   margin: 0;
   padding: 4px;
 }
 .attendees li.me img {
-  width: 97px!important;
+  width: 120px!important;
 }

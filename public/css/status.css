@@ -1,0 +1,30 @@
+body[data-status=free] .me img {
+  border: 2px solid #2BD74B;
+  padding: 2px;
+}
+body[data-status=busy] .me img {
+  border: 2px solid #FF210E;
+  padding: 2px;
+}
+body[data-status=free] .status_free,
+body[data-status=busy] .status_busy,
+body[data-status=busy] .status_free,
+body[data-status=free] .status_busy,
+.status_selector_busy,
+.status_selector_free {
+  display: none;
+}
+body[data-status=busy] .status_selector_busy,
+body[data-status=free] .status_selector_free {
+  display: block;
+}
+.status_selector_busy,
+.status_selector_free {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 18px;
+}
+.status_selector_busy a,
+.status_selector_free a {
+  color: #08b;
+}

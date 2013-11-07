@@ -1,0 +1,33 @@
+.permission {
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: absolute;
+  background: #f6f9f6;
+}
+.permission_description,
+.permission_action {
+  display: -webkit-box;
+  height: 1px;
+  -webkit-box-pack: center;
+}
+.permission_description {
+  -webkit-box-align: center;
+  -webkit-box-flex: 2;
+}
+.permission_action {
+  -webkit-box-flex: 1;
+}
+.permission p {
+  margin: 0 24px;
+}
+.permission button {
+  background: #445EDB;
+  color: #fff;
+  line-height: 44px;
+  border-radius: 4px;
+  margin: 10px;
+  width: 200px;
+  border: none;
+  font-size: 20px;
+}

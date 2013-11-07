@@ -1,0 +1,27 @@
+section {
+  display: none;
+   position: absolute;
+  float: none;
+  margin: 20px 0 0 0;
+  padding-top: 1px;
+}
+section > section {
+  margin-top: 0;
+}
+body[data-mode=permissions] #permissions,
+body[data-mode=event] #event,
+body[data-mode=venue] #venue,
+body[data-mode=friends] #friends,
+body[data-mode=addfriends] #addfriends,
+body[data-mode=received] #received,
+body[data-mode=invite] #invite {
+  display: block;
+}
+#debug,
+#onboarding {
+  display: block;
+  position: static;
+}
+body {
+  background-size: 320px 568px!important;
+}
