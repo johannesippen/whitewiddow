@@ -60,6 +60,7 @@
       <a onclick="writeLog('Version: unknown')">Version</a>
       <a onclick="getInvitations()">Get Invitations</a>
       <a onclick="testCoreLocation()">Get Core Location</a>
+      <a onclick="testEvent()">Create Event</a>
       <p id="log">
         <!-- Generated Logs go here -->
       </p>
@@ -69,7 +70,7 @@
       <strong class="done" onclick="">1. Welcome</strong>
       <a class="fb" onclick="hasAccessToContacts();">2. Connect to Facebook</a>
       <a id="allowCoreLocation" class="" onclick="allowCoreLocation();">3. Allow Location</a>
-      <a class="" onclick="">4. Allow Notifications</a>
+      <a class="" onclick="authorizePushNotification()">4. Allow Notifications</a>
       <a class="" onclick="inviteFBUser();">5. Invite Friends</a>
     </section>
     <!-- Friend List -->
@@ -133,10 +134,14 @@
     <script src="js/native/NativeConnector.js"></script>
     <script src="js/native/Social.js"></script>
     <script src="js/native/CoreLocation.js"></script>
+    <script src="js/native/Event.js"></script>
+    <script src="js/native/PushNotification.js"></script>
     <script>
       var connector = new NativeConnector();
       var social = new Social();
       var coreLocation = new CoreLocation();
+      var event = new Event();
+      var notification = new PushNotification();
       
       var activate_daytime = false;
       var friend_coordinates = [52.52585,13.341351];
@@ -168,6 +173,18 @@
         coreLocation.addNativeListener("getLocation", _onCoreLocationReceived);
         coreLocation.getLocation();
       };
+      
+      var testEvent = function() {
+        event.addNativeListener("getLocation", _onCoreLocationReceived);
+        //event.createEvent(new Date(2013, 9, 21, 19, 0, 0), [52.5299939585937, 13.400823175907135]);
+        event.createEvent(new Date(2013, 9, 21, 19, 0, 0), [52.445241134041375, 13.325772285461426]);
+      };
+      
+      var authorizePushNotification = function()
+      {
+	      notification.authorizePushNotification();
+      }
+      
       var _onCoreLocationAllowed = function(data) {
         writeLog('works!'); //TODO: Why doesn't this work?
       }
