@@ -41,7 +41,7 @@ $(function(){
   });
   /* Startup */  
   if(localStorage['permissions']=='true') {
-    $('body').attr('data-mode','friends');    
+    $('body').attr('data-mode','event');    
   } else {
     $('body').attr('data-mode','permissions');    
   }

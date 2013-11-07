@@ -17,15 +17,21 @@ margin-left: 20px;
 }.flaticon-addition1:before {
 	content: "\e000";
 }
-.flaticon-clock9:before {
+.flaticon-bin3:before {
 	content: "\e001";
 }
-.flaticon-dark24:before {
+.flaticon-clock9:before {
 	content: "\e002";
 }
-.flaticon-lock9:before {
+.flaticon-dark24:before {
 	content: "\e003";
 }
-.flaticon-person135:before {
+.flaticon-lock9:before {
 	content: "\e004";
+}
+.flaticon-person135:before {
+	content: "\e005";
+}
+.flaticon-user7:before {
+	content: "\e006";
 }

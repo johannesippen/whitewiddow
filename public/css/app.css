@@ -162,8 +162,8 @@ section {
   padding: 8px 24px 0;
 }
 .invite_more_friends button {
-  border: 1px solid #333;
-  color: #333;
+  border: none;
+  color: #08b;
   background: transparent;
   line-height: 60px;
   border-radius: 6px;
@@ -171,7 +171,6 @@ section {
   width: 300px;
   font-size: 28px;
 }
-
 /* Venue Details */
 .venue_image {
   height: 225px;
