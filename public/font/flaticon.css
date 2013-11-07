@@ -32,6 +32,9 @@ margin-left: 20px;
 .flaticon-person135:before {
 	content: "\e005";
 }
-.flaticon-user7:before {
+.flaticon-tick:before {
 	content: "\e006";
+}
+.flaticon-user7:before {
+	content: "\e007";
 }

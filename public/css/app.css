@@ -115,12 +115,13 @@ section {
 .friends + .status_selector {
   margin-top: 400px;
   display: -webkit-box;
+  -webkit-box-orient: vertical;
   padding: 0 10px;
 }
-.status_selector .selector {
-  border: 1px solid #44DB5E;
-  color: #44DB5E;
-  background: transparent;
+.status_free {
+  border: none;
+  color: #fff;
+  background: #44DB5E;
   line-height: 60px;
   border-radius: 6px;
   margin: 5px;
@@ -130,8 +131,13 @@ section {
   -webkit-box-flex: 1;
   -webkit-box-pack: center;
 }
-#status_free {
-  color: #2BD74B;
+.status_busy {
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  -webkit-box-pack: center;
+  font-size: 18px;
+  padding: 10px;
+  color: #08b;
 }
 .status_planned {
   padding-top: 8px;
