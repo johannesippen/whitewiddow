@@ -21,7 +21,7 @@ var Social = function()
 		
 	}
 	
-	
+	// deprecated
 	// Retrieves a complete list of Facebook Contacts of the current user
 	this.getFBContacts = function()
 	{
@@ -30,6 +30,8 @@ var Social = function()
 		this.connector.addNativeListener("getFBContacts", self._onFBContactsReceived);
 	}
 	
+	
+	// deprecated
 	// Retrieves a list of connected Facebook Contacts of the current user
 	this.getConnectedFBContacts = function()
 	{
@@ -56,11 +58,28 @@ var Social = function()
 		this.connector.addNativeListener("inviteFBUser", self._onFBConnectionStateReceived);
 	}
 	
+	this.saveCurrentState = function(state)
+	{
+		this.connector.callNativeMethod("saveCurrentState", state);
+	}
+	
 	this.getInvitedUser = function()
 	{
 		this.connector.removeNativeListener("getInvitedUser", self._onFBConnectionStateReceived);
 		this.connector.callNativeMethod("getInvitedUser");
 		this.connector.addNativeListener("getInvitedUser", self._onFBConnectionStateReceived);
+	}
+	
+	this.getWWFriendsList = function()
+	{
+		this.connector.removeNativeListener("getWWFriendsList", self._onWWFriendsListReceived);
+		this.connector.callNativeMethod("getWWFriendsList");
+		this.connector.addNativeListener("getWWFriendsList", self._onWWFriendsListReceived);
+	}
+	
+	self._onWWFriendsListReceived = function(data)
+	{
+		self._listeners["getWWFriendsList"](data);
 	}
 	
 	self._onFBConnectionStateReceived = function(data)
