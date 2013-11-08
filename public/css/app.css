@@ -46,14 +46,17 @@ section {
   height: 320px;
 }
 .invite_confirm button {
-  border: 1px solid #44DB5E;
-  color: #44DB5E;
-  background: transparent;
+  border: none;
+  color: #fff;
+  background: #44DB5E;
   line-height: 60px;
   border-radius: 6px;
-  margin: 10px;
-  width: 300px;
+  margin: 5px;
   font-size: 28px;
+  padding: 0px;
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  -webkit-box-pack: center;
 }
 .invite_confirm button.active {
   background: #3c4;
