@@ -28,3 +28,14 @@ body[data-status=free] .status_selector_free {
 .status_selector_free a {
   color: #08b;
 }
+body[data-status=free] .me img {
+  -webkit-animation: knockknock .5s linear;
+}
+@-webkit-keyframes knockknock {
+  0%   { -webkit-transform: scale(1) }
+  35%  { -webkit-transform: scale(1.1); }
+  40%  { -webkit-transform: scale(1); padding: 10px; margin: -6px; border: 1px solid lightgreen; }
+  75%  { -webkit-transform: scale(1.1); }
+  80%  { -webkit-transform: scale(1); padding: 6px; margin: 0px;}
+  100% { -webkit-transform: scale(1) }
+}
