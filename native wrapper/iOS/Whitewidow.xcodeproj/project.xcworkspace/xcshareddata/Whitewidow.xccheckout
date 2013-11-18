@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>42B81AC5-165F-4FB5-9CC2-6AE9FAEBC30F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Whitewidow</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E93F7770-C5BB-4113-A5C4-0FCCC3465FB2</key>
+		<string>https://github.com/johannesippen/whitewiddow.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>native wrapper/iOS/Whitewidow.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E93F7770-C5BB-4113-A5C4-0FCCC3465FB2</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/johannesippen/whitewiddow.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E93F7770-C5BB-4113-A5C4-0FCCC3465FB2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E93F7770-C5BB-4113-A5C4-0FCCC3465FB2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>whitewiddow</string>
+		</dict>
+	</array>
+</dict>
+</plist>

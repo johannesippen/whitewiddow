@@ -1,0 +1,1148 @@
+Twhitewidow.temp_caseinsensitive_rename
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Info.plist /Projekte/Whitewidow/Whitewidow/whitewidow.temp_caseinsensitive_rename-Info.plist
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/ResourceRules.plist
+cProcessPCH /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch.pch Whitewidow/whitewidow.temp_caseinsensitive_rename-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/Logger.o /Projekte/Whitewidow/Whitewidow/utils/Logger.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/LocationController.o /Projekte/Whitewidow/Whitewidow/LocationController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/PushController.o /Projekte/Whitewidow/Whitewidow/PushController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/main.o /Projekte/Whitewidow/Whitewidow/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/JSONHelper.o /Projekte/Whitewidow/Whitewidow/JSONHelper.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactsModel.o /Projekte/Whitewidow/Whitewidow/ContactsModel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/SocialModel.o /Projekte/Whitewidow/Whitewidow/model/SocialModel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/AppDelegate.o /Projekte/Whitewidow/Whitewidow/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ViewController.o /Projekte/Whitewidow/Whitewidow/ViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactVO.o /Projekte/Whitewidow/Whitewidow/model/vo/ContactVO.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/UIWebviewInterfaceController.o /Projekte/Whitewidow/Whitewidow/UIWebviewInterfaceController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/whitewidow.temp_caseinsensitive_rename normal armv7s
+cGenerateDSYMFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app.dSYM /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/whitewidow.temp_caseinsensitive_rename
+cCopyStringsFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/en.lproj/InfoPlist.strings Whitewidow/en.lproj/InfoPlist.strings
+cCopyPNGFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default.png Whitewidow/Default.png
+cCopyPNGFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default@2x.png Whitewidow/Default@2x.png
+cCopyPNGFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default-568h@2x.png Whitewidow/Default-568h@2x.png
+cCompileStoryboard /Projekte/Whitewidow/Whitewidow/en.lproj/MainStoryboard.storyboard
+cProcessProductPackaging /Users/paulschmidt/Library/MobileDevice/Provisioning\ Profiles/7AF98328-C98A-4EC8-ABF2-5AB8D5C3963B.mobileprovision /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/embedded.mobileprovision
+cTouch /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename.xcent
+cCodeSign /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk
+c00000000521BCCE10000000000000110
+t1377553633
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist
+c000000005246C7560000000000000094
+t1380370262
+s148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist
+c000000005246C7560000000000000096
+t1380370262
+s150
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/SDKSettings.plist
+c000000005246C756000000000000036B
+t1380370262
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c000000005246C757000000000000019E
+t1380370263
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Accounts.framework/Accounts
+c000000005246C75800000000000C6CE0
+t1380370264
+s814304
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
+c000000005246C75800000000002167C0
+t1380370264
+s2189248
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000005246C75B0000000000CF3600
+t1380370267
+s13579776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000005246C75B0000000000632E40
+t1380370267
+s6499904
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000005246C75B00000000004D6390
+t1380370267
+s5071760
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000005246C75C0000000000145160
+t1380370268
+s1331552
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000005246C75E0000000000A8EAD0
+t1380370270
+s11070160
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000005246C7600000000000211130
+t1380370272
+s2167088
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000005246C762000000000063D6D0
+t1380370274
+s6543056
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Security.framework/Security
+c000000005246C762000000000017D8E0
+t1380370274
+s1562848
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Social.framework/Social
+c000000005246C76200000000002B0140
+t1380370274
+s2818368
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000005246C76200000000001A2270
+t1380370274
+s1712752
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000005246C7690000000002597C70
+t1380370281
+s39418992
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libz.1.1.3.dylib
+c000000005246C7860000000000044500
+t1380370310
+s279808
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libz.dylib
+c000000005246C7860000000000044500
+t1380370310
+s279808
+
+N/Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch.pch
+t1381508041
+s5288232
+
+N/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/AppDelegate.o
+t1381508042
+s71028
+
+N/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactVO.o
+t1381508042
+s6972
+
+N/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactsModel.o
+t1381508042
+s14888
+
+N/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/JSONHelper.o
+t1381508042
+s9876
+
+N/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/LocationController.o
+t1381508041
+s33796
+
+N/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/Logger.o
+t1381508041
+s49104
+
+N/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/PushController.o
+t1381508041
+s13960
+
+N/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/SocialModel.o
+t1381508042
+s49252
+
+N/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/UIWebviewInterfaceController.o
+t1381508042
+s58240
+
+N/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ViewController.o
+t1381508042
+s82120
+
+N/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/main.o
+t1381508041
+s3320
+
+N/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/whitewidow.temp_caseinsensitive_rename.LinkFileList
+c00000000525823C800000000000006AF
+t1381508040
+s1711
+
+N/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename.xcent
+t1381508044
+s597
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app
+t1381508044
+s374
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app.dSYM
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default-568h@2x.png
+t1381508043
+s7014
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default.png
+t1381508043
+s3688
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default@2x.png
+t1381508043
+s6316
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Info.plist
+t1381508040
+s1399
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/PkgInfo
+t1381508040
+s8
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/ResourceRules.plist
+t1381508040
+s150
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/embedded.mobileprovision
+t1381508044
+s7901
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/en.lproj/InfoPlist.strings
+t1381508043
+s42
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/en.lproj/MainStoryboard.storyboardc
+t1381508044
+s170
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/whitewidow.temp_caseinsensitive_rename
+t1381508043
+s2864704
+
+N/Projekte/Whitewidow/Whitewidow/AppDelegate.m
+c0000000052572A540000000000000CFC
+t1381444180
+s3324
+
+N/Projekte/Whitewidow/Whitewidow/ContactsModel.m
+c000000005212AF940000000000000DEF
+t1376956308
+s3567
+
+N/Projekte/Whitewidow/Whitewidow/Default-568h@2x.png
+c00000000515C9E6200000000000048A2
+t1365024354
+s18594
+
+N/Projekte/Whitewidow/Whitewidow/Default.png
+c00000000515C9E62000000000000198C
+t1365024354
+s6540
+
+N/Projekte/Whitewidow/Whitewidow/Default@2x.png
+c00000000515C9E620000000000003EEB
+t1365024354
+s16107
+
+N/Projekte/Whitewidow/Whitewidow/JSONHelper.m
+c00000000521E3B3C000000000000065D
+t1377712956
+s1629
+
+N/Projekte/Whitewidow/Whitewidow/LocationController.m
+c000000005238DB8D0000000000001476
+t1379457933
+s5238
+
+N/Projekte/Whitewidow/Whitewidow/PushController.m
+c00000000520D28950000000000000517
+t1376594069
+s1303
+
+N/Projekte/Whitewidow/Whitewidow/UIWebviewInterfaceController.m
+c00000000524B4AFA0000000000000FC6
+t1380666106
+s4038
+
+N/Projekte/Whitewidow/Whitewidow/ViewController.m
+c0000000052452F730000000000001744
+t1380265843
+s5956
+
+N/Projekte/Whitewidow/Whitewidow/en.lproj/InfoPlist.strings
+c0000000052077B2D000000000000002D
+t1376221997
+s45
+
+N/Projekte/Whitewidow/Whitewidow/en.lproj/MainStoryboard.storyboard
+c00000000524290700000000000000CAC
+t1380094064
+s3244
+
+N/Projekte/Whitewidow/Whitewidow/main.m
+c0000000052077B2D0000000000000156
+t1376221997
+s342
+
+N/Projekte/Whitewidow/Whitewidow/model/SocialModel.m
+c00000000524A09C70000000000001FED
+t1380583879
+s8173
+
+N/Projekte/Whitewidow/Whitewidow/model/vo/ContactVO.m
+c00000000520DD7D10000000000000109
+t1376638929
+s265
+
+N/Projekte/Whitewidow/Whitewidow/utils/Logger.m
+c00000000524290290000000000000573
+t1380093993
+s1395
+
+N/Projekte/Whitewidow/Whitewidow/whitewidow.temp_caseinsensitive_rename-Info.plist
+c00000000525823C400000000000005F1
+t1381508036
+s1521
+
+N/Projekte/Whitewidow/Whitewidow/whitewidow.temp_caseinsensitive_rename-Prefix.pch
+c0000000052077B2D0000000000000143
+t1376221997
+s323
+
+N/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/FacebookSDK
+c0000000051EEE8F30000000000B3DEC4
+t1374611699
+s11787972
+
+N/Users/paulschmidt/Documents/Parse.framework/Parse
+c0000000051E420EA00000000010B9E4C
+t1373905130
+s17538636
+
+N/Users/paulschmidt/Downloads/TestFlightSDK2/libTestFlight.a
+c000000005208A7220000000000125584
+t1376298786
+s1201540
+
+N/Users/paulschmidt/Library/MobileDevice/Provisioning Profiles/7AF98328-C98A-4EC8-ABF2-5AB8D5C3963B.mobileprovision
+c000000005257113E0000000000001EDD
+t1381437758
+s7901
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/AppDelegate.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/ContactsModel.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/JSONHelper.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/LocationController.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/PushController.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/UIWebviewInterfaceController.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/ViewController.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/main.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/model/SocialModel.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/model/vo/ContactVO.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/utils/Logger.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesebe5d7485b08b841^861dee485b08b841^---0#1#1#--18"Check dependencies36"AB3CA3BE-86A5-4701-84B7-2A52D1FFFD79-
+
+CCodeSign /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app
+s403200844.573745
+e403200844.866291
+r1
+xCodeSign
+x/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"CodeSign Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app81"CodeSign Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.appa724934c5b08b841^3bc6dd4c5b08b841^---0#0#1#-19%DVTDocumentLocation2@110"file://localhost/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/0000000000000000^1081"CodeSign Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app    cd /Projekte/Whitewidow    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    Using code signing identity "iPhone Developer: Paul Schmidt (7M7K64WEV6)" and provisioning profile "iOS Team Provisioning Profile: *" (7AF98328-C98A-4EC8-ABF2-5AB8D5C3963B)    codesign --force --sign D0366A62AFC59EA8D7EC435CFE915124E2C0C588 --resource-rules=/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/ResourceRules.plist --entitlements /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename.xcent /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app36"BD45F70A-B011-40F3-A37A-F6CE61501608-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/AppDelegate.o /Projekte/Whitewidow/Whitewidow/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s403200842.080619
+e403200842.321509
+r1
+xCompileC
+xBuild/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/AppDelegate.o
+x/Projekte/Whitewidow/Whitewidow/AppDelegate.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/AppDelegate.m
+d/Projekte/Whitewidow/Whitewidow/AppDelegate.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/Parse.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFACL.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnalytics.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnonymousUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFUser.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFConstants.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFObject.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSubclassing.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFCloud.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFile.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFGeoPoint.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQuery.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRelation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRole.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFImageView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFInstallation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProduct.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProductTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQueryTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTableViewCell.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPurchase.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPush.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTwitterUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_Twitter.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FacebookSDK.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSession.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequest.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequestConnection.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphAction.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/NSError+FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSettings.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppEvents.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppCall.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAccessTokenData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppLinkData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBErrorUtility.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSessionTokenCachingStrategy.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphUser.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphPlace.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphLocation.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBLoginView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBProfilePictureView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBUserSettingsViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBPlacePickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBCacheDescriptor.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFriendPickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBNativeDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphActionShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBWebDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFrictionlessRecipientCache.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBInsights.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFacebookUtils.h
+d/Users/paulschmidt/Downloads/TestFlightSDK2/TestFlight.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Compile /Projekte/Whitewidow/Whitewidow/AppDelegate.m236"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/AppDelegate.o Whitewidow/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler9acc144a5b08b841^098c814a5b08b841^---0#0#1#-19%DVTDocumentLocation2@61"file://localhost/Projekte/Whitewidow/Whitewidow/AppDelegate.m0000000000000000^3669"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/AppDelegate.o Whitewidow/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/AppDelegate.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/AppDelegate.dia -c /Projekte/Whitewidow/Whitewidow/AppDelegate.m -o /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/AppDelegate.o36"E2052A9F-E676-45D3-8884-F1F154E03AA6-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactVO.o /Projekte/Whitewidow/Whitewidow/model/vo/ContactVO.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s403200842.323004
+e403200842.413817
+r1
+xCompileC
+xBuild/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactVO.o
+x/Projekte/Whitewidow/Whitewidow/model/vo/ContactVO.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/model/vo/ContactVO.m
+d/Projekte/Whitewidow/Whitewidow/model/vo/ContactVO.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Projekte/Whitewidow/Whitewidow/model/vo/ContactVO.m241"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactVO.o Whitewidow/model/vo/ContactVO.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler17d9524a5b08b841^2096814a5b08b841^---0#0#1#-19%DVTDocumentLocation2@68"file://localhost/Projekte/Whitewidow/Whitewidow/model/vo/ContactVO.m0000000000000000^3675"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactVO.o Whitewidow/model/vo/ContactVO.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactVO.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactVO.dia -c /Projekte/Whitewidow/Whitewidow/model/vo/ContactVO.m -o /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactVO.o36"113ED304-73A6-442B-B5E1-FA7B405A2FB4-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactsModel.o /Projekte/Whitewidow/Whitewidow/ContactsModel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s403200841.933757
+e403200842.016507
+r1
+xCompileC
+xBuild/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactsModel.o
+x/Projekte/Whitewidow/Whitewidow/ContactsModel.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/ContactsModel.m
+d/Projekte/Whitewidow/Whitewidow/ContactsModel.h
+d/Projekte/Whitewidow/Whitewidow/model/vo/ContactVO.h
+o/Projekte/Whitewidow/Whitewidow/ContactsModel.m:53:77: warning: implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions') [-Wenum-conversion]
+o    NSData *json = [NSJSONSerialization dataWithJSONObject:jsonData options:NSJSONReadingAllowFragments error:nil];
+o                   ~                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Projekte/Whitewidow/Whitewidow/ContactsModel.m:103:81: warning: implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions') [-Wenum-conversion]
+o        NSData *json = [NSJSONSerialization dataWithJSONObject:jsonData options:NSJSONReadingAllowFragments error:nil];
+o                       ~                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Projekte/Whitewidow/Whitewidow/ContactsModel.m:13:17: warning: method definition for 'hasABPermissionAsJSON' not found [-Wincomplete-implementation]
+o@implementation ContactsModel
+o                ^
+oIn file included from /Projekte/Whitewidow/Whitewidow/ContactsModel.m:9:
+o/Projekte/Whitewidow/Whitewidow/ContactsModel.h:13:1: note: method 'hasABPermissionAsJSON' declared here
+o-(NSData *)hasABPermissionAsJSON;
+o^
+o3 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Compile /Projekte/Whitewidow/Whitewidow/ContactsModel.m240"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactsModel.o Whitewidow/ContactsModel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler3e25ef495b08b841^9a5c044a5b08b841^-1365"/Projekte/Whitewidow/Whitewidow/ContactsModel.m:53:77: warning: implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions') [-Wenum-conversion]    NSData *json = [NSJSONSerialization dataWithJSONObject:jsonData options:NSJSONReadingAllowFragments error:nil];                   ~                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~/Projekte/Whitewidow/Whitewidow/ContactsModel.m:103:81: warning: implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions') [-Wenum-conversion]        NSData *json = [NSJSONSerialization dataWithJSONObject:jsonData options:NSJSONReadingAllowFragments error:nil];                       ~                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~/Projekte/Whitewidow/Whitewidow/ContactsModel.m:13:17: warning: method definition for 'hasABPermissionAsJSON' not found [-Wincomplete-implementation]@implementation ContactsModel                ^In file included from /Projekte/Whitewidow/Whitewidow/ContactsModel.m:9:/Projekte/Whitewidow/Whitewidow/ContactsModel.h:13:1: note: method 'hasABPermissionAsJSON' declared here-(NSData *)hasABPermissionAsJSON;^3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@156"Implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions')-403200842#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@63"file://localhost/Projekte/Whitewidow/Whitewidow/ContactsModel.m0000000000000000^52#76#52#76#1423#0#22"Value Conversion Issue2(3@63"file://localhost/Projekte/Whitewidow/Whitewidow/ContactsModel.m0000000000000000^52#76#52#103#1423#0#3@63"file://localhost/Projekte/Whitewidow/Whitewidow/ContactsModel.m0000000000000000^52#19#52#20#1366#0#-2@156"Implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions')-403200842#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@63"file://localhost/Projekte/Whitewidow/Whitewidow/ContactsModel.m0000000000000000^102#80#102#80#3472#0#22"Value Conversion Issue2(3@63"file://localhost/Projekte/Whitewidow/Whitewidow/ContactsModel.m0000000000000000^102#80#102#107#3472#0#3@63"file://localhost/Projekte/Whitewidow/Whitewidow/ContactsModel.m0000000000000000^102#23#102#24#3415#0#-2@55"Method definition for 'hasABPermissionAsJSON' not found-403200842#18446744073709551615#0#1(2@44"Method 'hasABPermissionAsJSON' declared here-403200842#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@63"file://localhost/Projekte/Whitewidow/Whitewidow/ContactsModel.h0000000000000000^12#0#12#0#239#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@63"file://localhost/Projekte/Whitewidow/Whitewidow/ContactsModel.m0000000000000000^12#16#12#16#245#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@63"file://localhost/Projekte/Whitewidow/Whitewidow/ContactsModel.m0000000000000000^3681"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactsModel.o Whitewidow/ContactsModel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactsModel.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactsModel.dia -c /Projekte/Whitewidow/Whitewidow/ContactsModel.m -o /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactsModel.o36"FA9F4FA9-248D-47DC-B128-2EAB1D421D97-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/JSONHelper.o /Projekte/Whitewidow/Whitewidow/JSONHelper.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s403200841.933101
+e403200842.079192
+r1
+xCompileC
+xBuild/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/JSONHelper.o
+x/Projekte/Whitewidow/Whitewidow/JSONHelper.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/JSONHelper.m
+d/Projekte/Whitewidow/Whitewidow/JSONHelper.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/Parse.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFACL.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnalytics.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnonymousUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFUser.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFConstants.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFObject.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSubclassing.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFCloud.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFile.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFGeoPoint.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQuery.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRelation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRole.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFImageView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFInstallation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProduct.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProductTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQueryTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTableViewCell.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPurchase.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPush.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTwitterUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_Twitter.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FacebookSDK.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSession.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequest.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequestConnection.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphAction.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/NSError+FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSettings.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppEvents.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppCall.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAccessTokenData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppLinkData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBErrorUtility.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSessionTokenCachingStrategy.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphUser.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphPlace.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphLocation.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBLoginView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBProfilePictureView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBUserSettingsViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBPlacePickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBCacheDescriptor.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFriendPickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBNativeDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphActionShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBWebDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFrictionlessRecipientCache.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBInsights.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFacebookUtils.h
+o/Projekte/Whitewidow/Whitewidow/JSONHelper.m:42:83: warning: implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions') [-Wenum-conversion]
+o    NSData *jsonResult = [NSJSONSerialization dataWithJSONObject:jsonData options:NSJSONReadingAllowFragments error:nil];
+o                         ~                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Projekte/Whitewidow/Whitewidow/JSONHelper.m:52:83: warning: implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions') [-Wenum-conversion]
+o    NSData *jsonResult = [NSJSONSerialization dataWithJSONObject:jsonData options:NSJSONReadingAllowFragments error:nil];
+o                         ~                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Compile /Projekte/Whitewidow/Whitewidow/JSONHelper.m234"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/JSONHelper.o Whitewidow/JSONHelper.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerb9fdee495b08b841^508c144a5b08b841^-962"/Projekte/Whitewidow/Whitewidow/JSONHelper.m:42:83: warning: implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions') [-Wenum-conversion]    NSData *jsonResult = [NSJSONSerialization dataWithJSONObject:jsonData options:NSJSONReadingAllowFragments error:nil];                         ~                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~/Projekte/Whitewidow/Whitewidow/JSONHelper.m:52:83: warning: implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions') [-Wenum-conversion]    NSData *jsonResult = [NSJSONSerialization dataWithJSONObject:jsonData options:NSJSONReadingAllowFragments error:nil];                         ~                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@156"Implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions')-403200842#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@60"file://localhost/Projekte/Whitewidow/Whitewidow/JSONHelper.m0000000000000000^41#82#41#82#1100#0#22"Value Conversion Issue2(3@60"file://localhost/Projekte/Whitewidow/Whitewidow/JSONHelper.m0000000000000000^41#82#41#109#1100#0#3@60"file://localhost/Projekte/Whitewidow/Whitewidow/JSONHelper.m0000000000000000^41#25#41#26#1043#0#-2@156"Implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions')-403200842#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@60"file://localhost/Projekte/Whitewidow/Whitewidow/JSONHelper.m0000000000000000^51#82#51#82#1558#0#22"Value Conversion Issue2(3@60"file://localhost/Projekte/Whitewidow/Whitewidow/JSONHelper.m0000000000000000^51#82#51#109#1558#0#3@60"file://localhost/Projekte/Whitewidow/Whitewidow/JSONHelper.m0000000000000000^51#25#51#26#1501#0#-0#0#1#-19%DVTDocumentLocation4@60"file://localhost/Projekte/Whitewidow/Whitewidow/JSONHelper.m0000000000000000^3663"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/JSONHelper.o Whitewidow/JSONHelper.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/JSONHelper.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/JSONHelper.dia -c /Projekte/Whitewidow/Whitewidow/JSONHelper.m -o /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/JSONHelper.o36"38F2CF45-C8D6-4744-96CF-F02A295DC0F4-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/LocationController.o /Projekte/Whitewidow/Whitewidow/LocationController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s403200841.629218
+e403200841.890953
+r1
+xCompileC
+xBuild/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/LocationController.o
+x/Projekte/Whitewidow/Whitewidow/LocationController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/LocationController.m
+d/Projekte/Whitewidow/Whitewidow/LocationController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/Parse.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFACL.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnalytics.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnonymousUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFUser.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFConstants.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFObject.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSubclassing.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFCloud.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFile.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFGeoPoint.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQuery.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRelation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRole.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFImageView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFInstallation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProduct.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProductTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQueryTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTableViewCell.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPurchase.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPush.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTwitterUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_Twitter.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FacebookSDK.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSession.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequest.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequestConnection.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphAction.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/NSError+FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSettings.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppEvents.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppCall.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAccessTokenData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppLinkData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBErrorUtility.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSessionTokenCachingStrategy.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphUser.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphPlace.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphLocation.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBLoginView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBProfilePictureView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBUserSettingsViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBPlacePickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBCacheDescriptor.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFriendPickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBNativeDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphActionShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBWebDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFrictionlessRecipientCache.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBInsights.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFacebookUtils.h
+d/Projekte/Whitewidow/Whitewidow/UIWebviewInterfaceController.h
+d/Projekte/Whitewidow/Whitewidow/JSONHelper.h
+d/Projekte/Whitewidow/Whitewidow/utils/Logger.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Projekte/Whitewidow/Whitewidow/LocationController.m250"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/LocationController.o Whitewidow/LocationController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerb532a1495b08b841^016ce4495b08b841^---0#0#1#-19%DVTDocumentLocation2@68"file://localhost/Projekte/Whitewidow/Whitewidow/LocationController.m0000000000000000^3711"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/LocationController.o Whitewidow/LocationController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/LocationController.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/LocationController.dia -c /Projekte/Whitewidow/Whitewidow/LocationController.m -o /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/LocationController.o36"37EB27C8-6C1F-45C6-8B80-9AB70141C6EF-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/Logger.o /Projekte/Whitewidow/Whitewidow/utils/Logger.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s403200841.628386
+e403200841.866739
+r1
+xCompileC
+xBuild/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/Logger.o
+x/Projekte/Whitewidow/Whitewidow/utils/Logger.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/utils/Logger.m
+d/Projekte/Whitewidow/Whitewidow/utils/Logger.h
+d/Projekte/Whitewidow/Whitewidow/ViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Compile /Projekte/Whitewidow/Whitewidow/utils/Logger.m232"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/Logger.o Whitewidow/utils/Logger.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler7d05a1495b08b841^1420de495b08b841^---0#0#1#-19%DVTDocumentLocation2@62"file://localhost/Projekte/Whitewidow/Whitewidow/utils/Logger.m0000000000000000^3651"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/Logger.o Whitewidow/utils/Logger.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/Logger.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/Logger.dia -c /Projekte/Whitewidow/Whitewidow/utils/Logger.m -o /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/Logger.o36"C56B3594-77AC-4F5F-992B-05859A1C1617-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/PushController.o /Projekte/Whitewidow/Whitewidow/PushController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s403200841.868841
+e403200841.930033
+r1
+xCompileC
+xBuild/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/PushController.o
+x/Projekte/Whitewidow/Whitewidow/PushController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/PushController.m
+d/Projekte/Whitewidow/Whitewidow/PushController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFInstallation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFObject.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFACL.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFConstants.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSubclassing.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Projekte/Whitewidow/Whitewidow/PushController.m242"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/PushController.o Whitewidow/PushController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler6990de495b08b841^39d1ee495b08b841^---0#0#1#-19%DVTDocumentLocation2@64"file://localhost/Projekte/Whitewidow/Whitewidow/PushController.m0000000000000000^3687"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/PushController.o Whitewidow/PushController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/PushController.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/PushController.dia -c /Projekte/Whitewidow/Whitewidow/PushController.m -o /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/PushController.o36"A288B4F8-CD0A-4432-8C20-19DBB4302141-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/SocialModel.o /Projekte/Whitewidow/Whitewidow/model/SocialModel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s403200842.017956
+e403200842.317654
+r1
+xCompileC
+xBuild/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/SocialModel.o
+x/Projekte/Whitewidow/Whitewidow/model/SocialModel.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/model/SocialModel.m
+d/Projekte/Whitewidow/Whitewidow/model/SocialModel.h
+d/Projekte/Whitewidow/Whitewidow/SocialDelegate.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/Parse.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFACL.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnalytics.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnonymousUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFUser.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFConstants.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFObject.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSubclassing.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFCloud.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFile.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFGeoPoint.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQuery.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRelation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRole.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFImageView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFInstallation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProduct.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProductTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQueryTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTableViewCell.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPurchase.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPush.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTwitterUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_Twitter.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FacebookSDK.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSession.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequest.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequestConnection.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphAction.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/NSError+FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSettings.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppEvents.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppCall.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAccessTokenData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppLinkData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBErrorUtility.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSessionTokenCachingStrategy.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphUser.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphPlace.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphLocation.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBLoginView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBProfilePictureView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBUserSettingsViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBPlacePickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBCacheDescriptor.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFriendPickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBNativeDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphActionShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBWebDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFrictionlessRecipientCache.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBInsights.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFacebookUtils.h
+d/Projekte/Whitewidow/Whitewidow/JSONHelper.h
+d/Projekte/Whitewidow/Whitewidow/UIWebviewInterfaceController.h
+d/Projekte/Whitewidow/Whitewidow/utils/Logger.h
+o/Projekte/Whitewidow/Whitewidow/model/SocialModel.m:204:85: warning: implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions') [-Wenum-conversion]
+o            NSData *json = [NSJSONSerialization dataWithJSONObject:jsonData options:NSJSONReadingAllowFragments error:nil];
+o                           ~                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Projekte/Whitewidow/Whitewidow/model/SocialModel.m:204:21: warning: unused variable 'json' [-Wunused-variable]
+o            NSData *json = [NSJSONSerialization dataWithJSONObject:jsonData options:NSJSONReadingAllowFragments error:nil];
+o                    ^
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Compile /Projekte/Whitewidow/Whitewidow/model/SocialModel.m242"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/SocialModel.o Whitewidow/model/SocialModel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerc903054a5b08b841^5187814a5b08b841^-762"/Projekte/Whitewidow/Whitewidow/model/SocialModel.m:204:85: warning: implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions') [-Wenum-conversion]            NSData *json = [NSJSONSerialization dataWithJSONObject:jsonData options:NSJSONReadingAllowFragments error:nil];                           ~                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~/Projekte/Whitewidow/Whitewidow/model/SocialModel.m:204:21: warning: unused variable 'json' [-Wunused-variable]            NSData *json = [NSJSONSerialization dataWithJSONObject:jsonData options:NSJSONReadingAllowFragments error:nil];                    ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@156"Implicit conversion from enumeration type 'enum NSJSONReadingOptions' to different enumeration type 'NSJSONWritingOptions' (aka 'enum NSJSONWritingOptions')-403200842#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@67"file://localhost/Projekte/Whitewidow/Whitewidow/model/SocialModel.m0000000000000000^203#84#203#84#8108#0#22"Value Conversion Issue2(3@67"file://localhost/Projekte/Whitewidow/Whitewidow/model/SocialModel.m0000000000000000^203#84#203#111#8108#0#3@67"file://localhost/Projekte/Whitewidow/Whitewidow/model/SocialModel.m0000000000000000^203#27#203#28#8051#0#-2@22"Unused variable 'json'-403200842#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@67"file://localhost/Projekte/Whitewidow/Whitewidow/model/SocialModel.m0000000000000000^203#20#203#20#8044#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@67"file://localhost/Projekte/Whitewidow/Whitewidow/model/SocialModel.m0000000000000000^3681"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/SocialModel.o Whitewidow/model/SocialModel.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/SocialModel.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/SocialModel.dia -c /Projekte/Whitewidow/Whitewidow/model/SocialModel.m -o /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/SocialModel.o36"9883260B-7ECD-4A30-BE59-FBCD078D3FE2-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/UIWebviewInterfaceController.o /Projekte/Whitewidow/Whitewidow/UIWebviewInterfaceController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s403200842.416356
+e403200842.545486
+r1
+xCompileC
+xBuild/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/UIWebviewInterfaceController.o
+x/Projekte/Whitewidow/Whitewidow/UIWebviewInterfaceController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/UIWebviewInterfaceController.m
+d/Projekte/Whitewidow/Whitewidow/UIWebviewInterfaceController.h
+d/Projekte/Whitewidow/Whitewidow/ContactsModel.h
+d/Projekte/Whitewidow/Whitewidow/LocationController.h
+d/Projekte/Whitewidow/Whitewidow/utils/Logger.h
+d/Projekte/Whitewidow/Whitewidow/model/SocialModel.h
+d/Projekte/Whitewidow/Whitewidow/SocialDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Projekte/Whitewidow/Whitewidow/UIWebviewInterfaceController.m270"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/UIWebviewInterfaceController.o Whitewidow/UIWebviewInterfaceController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilere5b96a4a5b08b841^f5bc8b4a5b08b841^---0#0#1#-19%DVTDocumentLocation2@78"file://localhost/Projekte/Whitewidow/Whitewidow/UIWebviewInterfaceController.m0000000000000000^3771"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/UIWebviewInterfaceController.o Whitewidow/UIWebviewInterfaceController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/UIWebviewInterfaceController.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/UIWebviewInterfaceController.dia -c /Projekte/Whitewidow/Whitewidow/UIWebviewInterfaceController.m -o /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/UIWebviewInterfaceController.o36"68817C19-AB54-4461-AB15-30EF42B18C17-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ViewController.o /Projekte/Whitewidow/Whitewidow/ViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s403200842.319190
+e403200842.616646
+r1
+xCompileC
+xBuild/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ViewController.o
+x/Projekte/Whitewidow/Whitewidow/ViewController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/ViewController.m
+d/Projekte/Whitewidow/Whitewidow/ViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/Parse.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFACL.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnalytics.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnonymousUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFUser.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFConstants.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFObject.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSubclassing.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFCloud.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFile.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFGeoPoint.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQuery.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRelation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRole.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFImageView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFInstallation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProduct.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProductTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQueryTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTableViewCell.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPurchase.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPush.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTwitterUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_Twitter.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FacebookSDK.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSession.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequest.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequestConnection.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphAction.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/NSError+FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSettings.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppEvents.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppCall.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAccessTokenData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppLinkData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBErrorUtility.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSessionTokenCachingStrategy.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphUser.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphPlace.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphLocation.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBLoginView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBProfilePictureView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBUserSettingsViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBPlacePickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBCacheDescriptor.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFriendPickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBNativeDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphActionShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBWebDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFrictionlessRecipientCache.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBInsights.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFacebookUtils.h
+d/Projekte/Whitewidow/Whitewidow/LocationController.h
+d/Projekte/Whitewidow/Whitewidow/ContactsModel.h
+d/Projekte/Whitewidow/Whitewidow/UIWebviewInterfaceController.h
+d/Projekte/Whitewidow/Whitewidow/model/SocialModel.h
+d/Projekte/Whitewidow/Whitewidow/SocialDelegate.h
+d/Projekte/Whitewidow/Whitewidow/utils/Logger.h
+o/Projekte/Whitewidow/Whitewidow/ViewController.m:25:17: warning: method definition for 'writeToDebugView:' not found [-Wincomplete-implementation]
+o@implementation ViewController
+o                ^
+oIn file included from /Projekte/Whitewidow/Whitewidow/ViewController.m:9:
+o/Projekte/Whitewidow/Whitewidow/ViewController.h:12:1: note: method 'writeToDebugView:' declared here
+o+(void)writeToDebugView:(NSString*)message;
+o^
+o1 warning generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Projekte/Whitewidow/Whitewidow/ViewController.m242"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ViewController.o Whitewidow/ViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler38da514a5b08b841^7efc9d4a5b08b841^-439"/Projekte/Whitewidow/Whitewidow/ViewController.m:25:17: warning: method definition for 'writeToDebugView:' not found [-Wincomplete-implementation]@implementation ViewController                ^In file included from /Projekte/Whitewidow/Whitewidow/ViewController.m:9:/Projekte/Whitewidow/Whitewidow/ViewController.h:12:1: note: method 'writeToDebugView:' declared here+(void)writeToDebugView:(NSString*)message;^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@51"Method definition for 'writeToDebugView:' not found-403200842#18446744073709551615#0#1(2@40"Method 'writeToDebugView:' declared here-403200842#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@64"file://localhost/Projekte/Whitewidow/Whitewidow/ViewController.h0000000000000000^11#0#11#0#263#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@64"file://localhost/Projekte/Whitewidow/Whitewidow/ViewController.m0000000000000000^24#16#24#16#593#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@64"file://localhost/Projekte/Whitewidow/Whitewidow/ViewController.m0000000000000000^3687"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ViewController.o Whitewidow/ViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ViewController.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ViewController.dia -c /Projekte/Whitewidow/Whitewidow/ViewController.m -o /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ViewController.o36"4CC51557-5E3D-4E74-891F-A6C6344EA0B7-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/main.o /Projekte/Whitewidow/Whitewidow/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s403200841.892458
+e403200841.930012
+r1
+xCompileC
+xBuild/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/main.o
+x/Projekte/Whitewidow/Whitewidow/main.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/main.m
+d/Projekte/Whitewidow/Whitewidow/AppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Compile /Projekte/Whitewidow/Whitewidow/main.m222"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/main.o Whitewidow/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerf59ce4495b08b841^decaee495b08b841^---0#0#1#-19%DVTDocumentLocation2@54"file://localhost/Projekte/Whitewidow/Whitewidow/main.m0000000000000000^3627"CompileC Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/main.o Whitewidow/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/main.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/main.dia -c /Projekte/Whitewidow/Whitewidow/main.m -o /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/main.o36"15FAB9AA-E420-4FCD-AFFD-29B0AE7FC9EA-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCompileStoryboard /Projekte/Whitewidow/Whitewidow/en.lproj/MainStoryboard.storyboard
+s403200843.911945
+e403200844.538447
+r1
+xCompileStoryboard
+x/Projekte/Whitewidow/Whitewidow/en.lproj/MainStoryboard.storyboard
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"CompileStoryboard Whitewidow/en.lproj/MainStoryboard.storyboard63"CompileStoryboard Whitewidow/en.lproj/MainStoryboard.storyboard588de94b5b08b841^edd7894c5b08b841^---0#0#1#-19%DVTDocumentLocation2@82"file://localhost/Projekte/Whitewidow/Whitewidow/en.lproj/MainStoryboard.storyboard0000000000000000^787"CompileStoryboard Whitewidow/en.lproj/MainStoryboard.storyboard    cd /Projekte/Whitewidow    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 6.0 --output-format human-readable-text --compile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/en.lproj/MainStoryboard.storyboardc /Projekte/Whitewidow/Whitewidow/en.lproj/MainStoryboard.storyboard36"3B37F2D9-8A81-400B-BA06-839DB01C1957-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCopyPNGFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default-568h@2x.png Whitewidow/Default-568h@2x.png
+s403200843.856303
+e403200843.989740
+r1
+xCopyPNGFile
+x/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default-568h@2x.png
+xWhitewidow/Default-568h@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection135"CopyPNGFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default-568h@2x.png Whitewidow/Default-568h@2x.png135"CopyPNGFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default-568h@2x.png Whitewidow/Default-568h@2x.pngdc4adb4b5b08b841^3d61fd4b5b08b841^---0#0#1#-19%DVTDocumentLocation2@67"file://localhost/Projekte/Whitewidow/Whitewidow/Default-568h@2x.png0000000000000000^629"CopyPNGFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default-568h@2x.png Whitewidow/Default-568h@2x.png    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Projekte/Whitewidow/Whitewidow/Default-568h@2x.png /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default-568h@2x.png36"A61C4D4A-473F-44A4-BCA8-AC95D3CE39D6-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCopyPNGFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default.png Whitewidow/Default.png
+s403200843.678608
+e403200843.854996
+r1
+xCopyPNGFile
+x/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default.png
+xWhitewidow/Default.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"CopyPNGFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default.png Whitewidow/Default.png119"CopyPNGFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default.png Whitewidow/Default.png64ccad4b5b08b841^58e1da4b5b08b841^---0#0#1#-19%DVTDocumentLocation2@59"file://localhost/Projekte/Whitewidow/Whitewidow/Default.png0000000000000000^597"CopyPNGFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default.png Whitewidow/Default.png    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Projekte/Whitewidow/Whitewidow/Default.png /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default.png36"F8CBD58D-06DA-48CF-94F4-ACD4E78EF25C-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCopyPNGFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default@2x.png Whitewidow/Default@2x.png
+s403200843.684218
+e403200843.910447
+r1
+xCopyPNGFile
+x/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default@2x.png
+xWhitewidow/Default@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"CopyPNGFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default@2x.png Whitewidow/Default@2x.png125"CopyPNGFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default@2x.png Whitewidow/Default@2x.png2941af4b5b08b841^9413e94b5b08b841^---0#0#1#-19%DVTDocumentLocation2@62"file://localhost/Projekte/Whitewidow/Whitewidow/Default@2x.png0000000000000000^609"CopyPNGFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default@2x.png Whitewidow/Default@2x.png    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Projekte/Whitewidow/Whitewidow/Default@2x.png /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Default@2x.png36"0D545F26-1785-499A-9679-1BE74CDDD7B1-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCopyStringsFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/en.lproj/InfoPlist.strings Whitewidow/en.lproj/InfoPlist.strings
+s403200843.678367
+e403200843.682895
+r1
+xCopyStringsFile
+x/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/en.lproj/InfoPlist.strings
+xWhitewidow/en.lproj/InfoPlist.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Copy Whitewidow/en.lproj/InfoPlist.strings153"CopyStringsFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/en.lproj/InfoPlist.strings Whitewidow/en.lproj/InfoPlist.strings16bfad4b5b08b841^89d0b04b5b08b841^---0#0#1#-19%DVTDocumentLocation2@74"file://localhost/Projekte/Whitewidow/Whitewidow/en.lproj/InfoPlist.strings0000000000000000^604"CopyStringsFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/en.lproj/InfoPlist.strings Whitewidow/en.lproj/InfoPlist.strings    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/en.lproj -- Whitewidow/en.lproj/InfoPlist.strings36"D3A6D7E5-17C7-4EE6-A046-37147BF9407D-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/ResourceRules.plist
+s403200840.945390
+e403200840.948424
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist
+xBuild/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/ResourceRules.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Copy Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/ResourceRules.plist225"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/ResourceRules.plist191bf2485b08b841^61e3f2485b08b841^---0#0#1#-19%DVTDocumentLocation2@129"file://localhost/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/ResourceRules.plist0038581cdeffdf42^770"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/ResourceRules.plist    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app36"62DE9A5B-09F0-4624-9842-FCE930E1C68F-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CGenerateDSYMFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app.dSYM /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/whitewidow.temp_caseinsensitive_rename
+s403200843.362738
+e403200843.669857
+r1
+xGenerateDSYMFile
+x/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app.dSYM
+x/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/whitewidow.temp_caseinsensitive_rename
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Generate /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app.dSYM206"GenerateDSYMFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app.dSYM Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/whitewidow.temp_caseinsensitive_rename84f45c4b5b08b841^90c0ab4b5b08b841^---0#0#1#-19%DVTDocumentLocation2@114"file://localhost/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app.dSYM0038581cdeffdf42^758"GenerateDSYMFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app.dSYM Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/whitewidow.temp_caseinsensitive_rename    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/whitewidow.temp_caseinsensitive_rename -o /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app.dSYM36"BC74D433-389B-4DF1-BC3C-C2BAA0EA97DA-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CLd /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/whitewidow.temp_caseinsensitive_rename normal armv7s
+s403200842.627124
+e403200843.353527
+r1
+xLd
+x/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/whitewidow.temp_caseinsensitive_rename
+xnormal
+xarmv7s
+d/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/whitewidow.temp_caseinsensitive_rename.LinkFileList
+d/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/Logger.o
+d/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/LocationController.o
+d/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/PushController.o
+d/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/main.o
+d/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/JSONHelper.o
+d/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactsModel.o
+d/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/SocialModel.o
+d/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/AppDelegate.o
+d/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ViewController.o
+d/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/ContactVO.o
+d/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/UIWebviewInterfaceController.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libz.dylib
+d/Users/paulschmidt/Downloads/TestFlightSDK2/libTestFlight.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Social.framework/Social
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Accounts.framework/Accounts
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/FacebookSDK
+d/Users/paulschmidt/Documents/Parse.framework/Parse
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Security.framework/Security
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libz.1.1.3.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection137"Link /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/whitewidow.temp_caseinsensitive_rename128"Ld Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/whitewidow.temp_caseinsensitive_rename normal armv7s04a9a04a5b08b841^1f825a4b5b08b841^---0#0#1#--1840"Ld Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/whitewidow.temp_caseinsensitive_rename normal armv7s    cd /Projekte/Whitewidow    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -L/Projekte/Whitewidow/Build/Products/Debug-iphoneos -L/Users/paulschmidt/Downloads/TestFlightSDK2 -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -filelist /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/whitewidow.temp_caseinsensitive_rename.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=6.0 -lz -lTestFlight -framework Social -framework AddressBook -framework Accounts -framework FacebookSDK -framework Parse -framework SystemConfiguration -framework Security -framework QuartzCore -framework MobileCoreServices -lz.1.1.3 -framework CoreLocation -framework CFNetwork -framework AudioToolbox -framework UIKit -framework Foundation -framework CoreGraphics -Xlinker -dependency_info -Xlinker /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/Objects-normal/armv7s/whitewidow.temp_caseinsensitive_rename_dependency_info.dat -o /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/whitewidow.temp_caseinsensitive_rename36"5E3A151F-2E11-4F5A-B2BA-86DCBB17185F-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CProcessInfoPlistFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Info.plist /Projekte/Whitewidow/Whitewidow/whitewidow.temp_caseinsensitive_rename-Info.plist
+s403200840.932691
+e403200840.936910
+r1
+xProcessInfoPlistFile
+x/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Info.plist
+x/Projekte/Whitewidow/Whitewidow/whitewidow.temp_caseinsensitive_rename-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Process /Projekte/Whitewidow/Whitewidow/whitewidow.temp_caseinsensitive_rename-Info.plist165"ProcessInfoPlistFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Info.plist Whitewidow/whitewidow.temp_caseinsensitive_rename-Info.plistd7dbee485b08b841^4ddbef485b08b841^---0#0#1#-19%DVTDocumentLocation2@97"file://localhost/Projekte/Whitewidow/Whitewidow/whitewidow.temp_caseinsensitive_rename-Info.plist0000000000000000^903"ProcessInfoPlistFile Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Info.plist Whitewidow/whitewidow.temp_caseinsensitive_rename-Info.plist    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Projekte/Whitewidow/Whitewidow/whitewidow.temp_caseinsensitive_rename-Info.plist -genpkginfo /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/ResourceRules.plist -o /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/Info.plist36"2BE9B01F-09AB-4C18-83E2-BB1963460D3A-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CProcessPCH /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch.pch Whitewidow/whitewidow.temp_caseinsensitive_rename-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s403200840.958172
+e403200841.619337
+r1
+xProcessPCH
+x/Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch.pch
+xWhitewidow/whitewidow.temp_caseinsensitive_rename-Prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/whitewidow.temp_caseinsensitive_rename-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Precompile Whitewidow/whitewidow.temp_caseinsensitive_rename-Prefix.pch309"ProcessPCH Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch.pch Whitewidow/whitewidow.temp_caseinsensitive_rename-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler1971f5485b08b841^a8a89e495b08b841^---0#0#1#-19%DVTDocumentLocation2@97"file://localhost/Projekte/Whitewidow/Whitewidow/whitewidow.temp_caseinsensitive_rename-Prefix.pch0000000000000000^3692"ProcessPCH Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch.pch Whitewidow/whitewidow.temp_caseinsensitive_rename-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch.dia -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch.d -c /Projekte/Whitewidow/Whitewidow/whitewidow.temp_caseinsensitive_rename-Prefix.pch -o /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-gjjaosnkfdsjslawpdbehqofytzf/whitewidow.temp_caseinsensitive_rename-Prefix.pch.pch36"87010846-DB3D-4B53-9F56-F69B162D1CBB-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CProcessPCH /Users/paulschmidt/Library/Developer/Xcode/DerivedData/whitewidow-dsbzwhjaeqoavfewqmyiknpfsdsi/Index/PrecompiledHeaders/whitewidow.temp_caseinsensitive_rename-Prefix-aqgqbvgacukpctfcojitpvxboqhq_ast/whitewidow.temp_caseinsensitive_rename-Prefix.pch.pch Whitewidow/whitewidow.temp_caseinsensitive_rename-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename.xcent
+s403200844.561754
+e403200844.565179
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist
+x/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename.xcent
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection286"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename.xcent286"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename.xcent6de38f4c5b08b841^25b1904c5b08b841^---0#0#1#-19%DVTDocumentLocation2@178"file://localhost/Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename.xcent0038581cdeffdf42^852"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename.xcent    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist -entitlements -format xml -o /Projekte/Whitewidow/Build/Intermediates/whitewidow.build/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.build/whitewidow.temp_caseinsensitive_rename.xcent36"247B928C-0BB2-4D09-8284-8AC352436C99-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CProcessProductPackaging /Users/paulschmidt/Library/MobileDevice/Provisioning\ Profiles/7AF98328-C98A-4EC8-ABF2-5AB8D5C3963B.mobileprovision /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/embedded.mobileprovision
+s403200844.547203
+e403200844.551051
+r1
+xProcessProductPackaging
+x/Users/paulschmidt/Library/MobileDevice/Provisioning Profiles/7AF98328-C98A-4EC8-ABF2-5AB8D5C3963B.mobileprovision
+x/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/embedded.mobileprovision
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection237"ProcessProductPackaging /Users/paulschmidt/Library/MobileDevice/Provisioning\ Profiles/7AF98328-C98A-4EC8-ABF2-5AB8D5C3963B.mobileprovision Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/embedded.mobileprovision237"ProcessProductPackaging /Users/paulschmidt/Library/MobileDevice/Provisioning\ Profiles/7AF98328-C98A-4EC8-ABF2-5AB8D5C3963B.mobileprovision Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/embedded.mobileprovisione1298c4c5b08b841^51138d4c5b08b841^---0#0#1#-19%DVTDocumentLocation2@134"file://localhost/Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/embedded.mobileprovision0038581cdeffdf42^728"ProcessProductPackaging /Users/paulschmidt/Library/MobileDevice/Provisioning\ Profiles/7AF98328-C98A-4EC8-ABF2-5AB8D5C3963B.mobileprovision Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/embedded.mobileprovision    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Users/paulschmidt/Library/MobileDevice/Provisioning\ Profiles/7AF98328-C98A-4EC8-ABF2-5AB8D5C3963B.mobileprovision -o /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app/embedded.mobileprovision36"3DD681F1-B856-4A4C-A164-EE417A4A3981-
+b90042A14-52C2-4F5D-8EB0-2A7804A2903E
+
+CTouch /Projekte/Whitewidow/Build/Products/Debug-iphoneos/whitewidow.temp_caseinsensitive_rename.app
+r0
+

@@ -7,13 +7,41 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
+#import "TestFlight.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [TestFlight takeOff:@"b7e77ee3-f211-47e6-8c99-7075c501a9f1"];
+    [Parse setApplicationId:@"KNtdMcnjzZUcsSLkPVvbW7lakdF9hzitvFaDjmU1"
+                  clientKey:@"5mTRyvLWqb6eEZelvR2GhmNgbzddGr2s8x5hB37P"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+
+    [NSClassFromString(@"WebView") performSelector:@selector(_enableRemoteInspector)];
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [PFFacebookUtils handleOpenURL:url];
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    NSLog(@"registerNotification");
+    // Store the deviceToken in the current Installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    NSLog(@"failNotification: %@", error);
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

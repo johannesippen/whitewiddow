@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<UIWebViewDelegate, UIGestureRecognizerDelegate>
++(void)writeToDebugView:(NSString*)message;
 @end

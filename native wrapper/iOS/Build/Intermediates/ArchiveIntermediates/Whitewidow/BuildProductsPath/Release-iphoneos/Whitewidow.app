@@ -1,0 +1,1 @@
+/Projekte/Whitewidow/Build/Intermediates/ArchiveIntermediates/Whitewidow/InstallationBuildProductsLocation/Applications/Whitewidow.app

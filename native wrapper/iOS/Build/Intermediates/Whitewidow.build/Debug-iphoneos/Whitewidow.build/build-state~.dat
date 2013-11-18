@@ -1,0 +1,728 @@
+TWhitewidow
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Info.plist /Projekte/Whitewidow/Whitewidow/Whitewidow-Info.plist
+cCpResource /Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/Whitewidow.app/ResourceRules.plist
+cProcessPCH /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch.pch Whitewidow/Whitewidow-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/LocationController.o /Projekte/Whitewidow/Whitewidow/LocationController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/PushController.o /Projekte/Whitewidow/Whitewidow/PushController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/main.o /Projekte/Whitewidow/Whitewidow/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/JSONHelper.o /Projekte/Whitewidow/Whitewidow/JSONHelper.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/AppDelegate.o /Projekte/Whitewidow/Whitewidow/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/ViewController.o /Projekte/Whitewidow/Whitewidow/ViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Whitewidow normal armv7s
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk
+c00000000520036EB0000000000000110
+t1375745771
+s272
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist
+c000000005200DC710000000000000096
+t1375788145
+s150
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/SDKSettings.plist
+c000000005200DC71000000000000036B
+t1375788145
+s875
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c000000005200DC7200000000000001A0
+t1375788146
+s416
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000005200DC740000000000973520
+t1375788148
+s9909536
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000005200DC7400000000003CADF0
+t1375788148
+s3976688
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000005200DC7500000000003023A0
+t1375788149
+s3154848
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000005200DC7500000000000D1140
+t1375788149
+s856384
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000005200DC7700000000006AAA70
+t1375788151
+s6990448
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000005200DC790000000000149120
+t1375788153
+s1347872
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000005200DC7A00000000003F56D0
+t1375788154
+s4150992
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Security.framework/Security
+c000000005200DC7A00000000000E9820
+t1375788154
+s956448
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000005200DC7B0000000000102270
+t1375788155
+s1057392
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000005200DC7D00000000017FB7B0
+t1375788157
+s25147312
+
+N/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libz.1.1.3.dylib
+c000000005200DC8C0000000000028500
+t1375788172
+s165120
+
+N/Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch.pch
+t1376601114
+s5282268
+
+N/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/AppDelegate.o
+t1376601115
+s70364
+
+N/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/JSONHelper.o
+t1376601115
+s8464
+
+N/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/LocationController.o
+t1376601114
+s17508
+
+N/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/PushController.o
+t1376601114
+s13976
+
+N/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/ViewController.o
+t1376601115
+s57776
+
+N/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/Whitewidow.LinkFileList
+c00000000520D441A00000000000002F9
+t1376601114
+s761
+
+N/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/main.o
+t1376601114
+s3320
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Info.plist
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/PkgInfo
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/ResourceRules.plist
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Whitewidow
+t2
+s0
+
+N/Projekte/Whitewidow/Whitewidow/AppDelegate.m
+c00000000520D32030000000000000C46
+t1376596483
+s3142
+
+N/Projekte/Whitewidow/Whitewidow/JSONHelper.m
+c00000000520A620700000000000002AB
+t1376412167
+s683
+
+N/Projekte/Whitewidow/Whitewidow/LocationController.m
+c00000000520D23CB00000000000004BC
+t1376592843
+s1212
+
+N/Projekte/Whitewidow/Whitewidow/PushController.m
+c00000000520D28950000000000000517
+t1376594069
+s1303
+
+N/Projekte/Whitewidow/Whitewidow/ViewController.m
+c00000000520D44180000000000000E81
+t1376601112
+s3713
+
+N/Projekte/Whitewidow/Whitewidow/Whitewidow-Info.plist
+c00000000520D385D000000000000065E
+t1376598109
+s1630
+
+N/Projekte/Whitewidow/Whitewidow/Whitewidow-Prefix.pch
+c0000000052077B2D0000000000000143
+t1376221997
+s323
+
+N/Projekte/Whitewidow/Whitewidow/main.m
+c0000000052077B2D0000000000000156
+t1376221997
+s342
+
+N/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/FacebookSDK
+c0000000051EEE8F30000000000B3DEC4
+t1374611699
+s11787972
+
+N/Users/paulschmidt/Documents/Parse.framework/Parse
+c0000000051E420EA00000000010B9E4C
+t1373905130
+s17538636
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/AppDelegate.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/JSONHelper.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/LocationController.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/PushController.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/ViewController.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies60ae219a7bbdb741^732a359a7bbdb741^---0#1#1#--18"Check dependencies36"3FAB271C-B1EE-4D7C-80FA-9CBEE231B75D-
+
+CCodeSign /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app
+r0
+
+CCompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/AppDelegate.o /Projekte/Whitewidow/Whitewidow/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s398293914.946351
+e398293915.171221
+r1
+xCompileC
+xBuild/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/AppDelegate.o
+x/Projekte/Whitewidow/Whitewidow/AppDelegate.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/AppDelegate.m
+d/Projekte/Whitewidow/Whitewidow/AppDelegate.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/Parse.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFACL.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnalytics.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnonymousUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFUser.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFConstants.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFObject.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSubclassing.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFCloud.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFile.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFGeoPoint.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQuery.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRelation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRole.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFImageView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFInstallation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProduct.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProductTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQueryTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTableViewCell.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPurchase.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPush.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTwitterUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_Twitter.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FacebookSDK.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSession.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequest.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequestConnection.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphAction.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/NSError+FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSettings.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppEvents.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppCall.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAccessTokenData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppLinkData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBErrorUtility.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSessionTokenCachingStrategy.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphUser.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphPlace.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphLocation.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBLoginView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBProfilePictureView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBUserSettingsViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBPlacePickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBCacheDescriptor.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFriendPickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBNativeDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphActionShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBWebDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFrictionlessRecipientCache.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBInsights.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFacebookUtils.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Compile /Projekte/Whitewidow/Whitewidow/AppDelegate.m208"CompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/AppDelegate.o Whitewidow/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler7f68f29a7bbdb741^56d52b9b7bbdb741^---0#0#1#-19%DVTDocumentLocation2@61"file://localhost/Projekte/Whitewidow/Whitewidow/AppDelegate.m0000000000000000^3246"CompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/AppDelegate.o Whitewidow/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode5-DP5.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/AppDelegate.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/AppDelegate.dia -c /Projekte/Whitewidow/Whitewidow/AppDelegate.m -o /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/AppDelegate.o36"96001F84-564F-4E79-860B-6FE7F04162A8-
+b1C4C20B3-6B9B-43A8-AD68-84B57D7378E8
+
+CCompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/JSONHelper.o /Projekte/Whitewidow/Whitewidow/JSONHelper.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s398293914.875946
+e398293915.070395
+r1
+xCompileC
+xBuild/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/JSONHelper.o
+x/Projekte/Whitewidow/Whitewidow/JSONHelper.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/JSONHelper.m
+d/Projekte/Whitewidow/Whitewidow/JSONHelper.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/Parse.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFACL.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnalytics.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnonymousUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFUser.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFConstants.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFObject.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSubclassing.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFCloud.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFile.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFGeoPoint.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQuery.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRelation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRole.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFImageView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFInstallation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProduct.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProductTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQueryTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTableViewCell.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPurchase.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPush.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTwitterUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_Twitter.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FacebookSDK.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSession.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequest.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequestConnection.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphAction.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/NSError+FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSettings.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppEvents.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppCall.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAccessTokenData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppLinkData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBErrorUtility.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSessionTokenCachingStrategy.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphUser.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphPlace.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphLocation.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBLoginView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBProfilePictureView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBUserSettingsViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBPlacePickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBCacheDescriptor.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFriendPickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBNativeDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphActionShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBWebDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFrictionlessRecipientCache.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBInsights.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFacebookUtils.h
+o/Projekte/Whitewidow/Whitewidow/JSONHelper.m:25:23: warning: unused variable 'result' [-Wunused-variable]
+o        NSDictionary *result = returnObj;
+o                      ^
+o/Projekte/Whitewidow/Whitewidow/JSONHelper.m:20:15: warning: unused variable 'dataObject' [-Wunused-variable]
+o    PFObject *dataObject;
+o              ^
+o/Projekte/Whitewidow/Whitewidow/JSONHelper.m:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+o}
+o^
+o3 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Compile /Projekte/Whitewidow/Whitewidow/JSONHelper.m206"CompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/JSONHelper.o Whitewidow/JSONHelper.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler4374e09a7bbdb741^c004129b7bbdb741^-467"/Projekte/Whitewidow/Whitewidow/JSONHelper.m:25:23: warning: unused variable 'result' [-Wunused-variable]        NSDictionary *result = returnObj;                      ^/Projekte/Whitewidow/Whitewidow/JSONHelper.m:20:15: warning: unused variable 'dataObject' [-Wunused-variable]    PFObject *dataObject;              ^/Projekte/Whitewidow/Whitewidow/JSONHelper.m:33:1: warning: control reaches end of non-void function [-Wreturn-type]}^3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@24"Unused variable 'result'-398293915#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@60"file://localhost/Projekte/Whitewidow/Whitewidow/JSONHelper.m0000000000000000^24#22#24#22#523#0#19"Unused Entity Issue--2@28"Unused variable 'dataObject'-398293915#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@60"file://localhost/Projekte/Whitewidow/Whitewidow/JSONHelper.m0000000000000000^19#14#19#14#308#0#19"Unused Entity Issue--2@40"Control reaches end of non-void function-398293915#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@60"file://localhost/Projekte/Whitewidow/Whitewidow/JSONHelper.m0000000000000000^32#0#32#0#675#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@60"file://localhost/Projekte/Whitewidow/Whitewidow/JSONHelper.m0000000000000000^3240"CompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/JSONHelper.o Whitewidow/JSONHelper.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode5-DP5.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/JSONHelper.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/JSONHelper.dia -c /Projekte/Whitewidow/Whitewidow/JSONHelper.m -o /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/JSONHelper.o36"C6E7FA66-66E9-4C2D-A5A4-D7703E8BA6FB-
+b1C4C20B3-6B9B-43A8-AD68-84B57D7378E8
+
+CCompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/LocationController.o /Projekte/Whitewidow/Whitewidow/LocationController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s398293914.772370
+e398293914.943532
+r1
+xCompileC
+xBuild/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/LocationController.o
+x/Projekte/Whitewidow/Whitewidow/LocationController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/LocationController.m
+d/Projekte/Whitewidow/Whitewidow/LocationController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/Parse.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFACL.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnalytics.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnonymousUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFUser.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFConstants.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFObject.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSubclassing.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFCloud.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFile.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFGeoPoint.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQuery.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRelation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRole.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFImageView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFInstallation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProduct.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProductTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQueryTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTableViewCell.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPurchase.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPush.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTwitterUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_Twitter.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FacebookSDK.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSession.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequest.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequestConnection.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphAction.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/NSError+FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSettings.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppEvents.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppCall.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAccessTokenData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppLinkData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBErrorUtility.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSessionTokenCachingStrategy.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphUser.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphPlace.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphLocation.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBLoginView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBProfilePictureView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBUserSettingsViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBPlacePickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBCacheDescriptor.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFriendPickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBNativeDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphActionShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBWebDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFrictionlessRecipientCache.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBInsights.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFacebookUtils.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Compile /Projekte/Whitewidow/Whitewidow/LocationController.m222"CompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/LocationController.o Whitewidow/LocationController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler49dac59a7bbdb741^2f8bf19a7bbdb741^---0#0#1#-19%DVTDocumentLocation2@68"file://localhost/Projekte/Whitewidow/Whitewidow/LocationController.m0000000000000000^3288"CompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/LocationController.o Whitewidow/LocationController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode5-DP5.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/LocationController.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/LocationController.dia -c /Projekte/Whitewidow/Whitewidow/LocationController.m -o /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/LocationController.o36"2769DCB2-63CA-4BE2-A6A0-D7DCA775B209-
+b1C4C20B3-6B9B-43A8-AD68-84B57D7378E8
+
+CCompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/PushController.o /Projekte/Whitewidow/Whitewidow/PushController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s398293914.773141
+e398293914.834712
+r1
+xCompileC
+xBuild/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/PushController.o
+x/Projekte/Whitewidow/Whitewidow/PushController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/PushController.m
+d/Projekte/Whitewidow/Whitewidow/PushController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFInstallation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFObject.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFACL.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFConstants.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSubclassing.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Projekte/Whitewidow/Whitewidow/PushController.m214"CompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/PushController.o Whitewidow/PushController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler420ac69a7bbdb741^6cafd59a7bbdb741^---0#0#1#-19%DVTDocumentLocation2@64"file://localhost/Projekte/Whitewidow/Whitewidow/PushController.m0000000000000000^3264"CompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/PushController.o Whitewidow/PushController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode5-DP5.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/PushController.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/PushController.dia -c /Projekte/Whitewidow/Whitewidow/PushController.m -o /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/PushController.o36"B9930D80-F957-41BF-9B32-CF3F584D7032-
+b1C4C20B3-6B9B-43A8-AD68-84B57D7378E8
+
+CCompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/ViewController.o /Projekte/Whitewidow/Whitewidow/ViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s398293915.071804
+e398293915.252645
+r1
+xCompileC
+xBuild/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/ViewController.o
+x/Projekte/Whitewidow/Whitewidow/ViewController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/ViewController.m
+d/Projekte/Whitewidow/Whitewidow/ViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/Parse.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFACL.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnalytics.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFAnonymousUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFUser.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFConstants.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFObject.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSubclassing.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFCloud.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFile.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFGeoPoint.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQuery.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRelation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFRole.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFImageView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFInstallation.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProduct.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFProductTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFQueryTableViewController.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTableViewCell.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPurchase.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFPush.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFTwitterUtils.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PF_Twitter.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FacebookSDK.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSession.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequest.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequestConnection.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphObject.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphAction.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/NSError+FBError.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSettings.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppEvents.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppCall.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAccessTokenData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBAppLinkData.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBErrorUtility.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSessionTokenCachingStrategy.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphUser.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphPlace.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBGraphLocation.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBLoginView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBProfilePictureView.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBUserSettingsViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBPlacePickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBCacheDescriptor.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFriendPickerViewController.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBNativeDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogsParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBOpenGraphActionShareDialogParams.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBWebDialogs.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFrictionlessRecipientCache.h
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBInsights.h
+d/Users/paulschmidt/Documents/Parse.framework/Headers/PFFacebookUtils.h
+d/Projekte/Whitewidow/Whitewidow/LocationController.h
+o/Projekte/Whitewidow/Whitewidow/ViewController.m:71:14: warning: unused variable 'permissionsArray' [-Wunused-variable]
+o    NSArray *permissionsArray = @[ @"user_about_me", @"user_relationships", @"user_birthday", @"user_location"];
+o             ^
+o1 warning generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Projekte/Whitewidow/Whitewidow/ViewController.m214"CompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/ViewController.o Whitewidow/ViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler9486129b7bbdb741^15ad409b7bbdb741^-269"/Projekte/Whitewidow/Whitewidow/ViewController.m:71:14: warning: unused variable 'permissionsArray' [-Wunused-variable]    NSArray *permissionsArray = @[ @"user_about_me", @"user_relationships", @"user_birthday", @"user_location"];             ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@34"Unused variable 'permissionsArray'-398293915#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@64"file://localhost/Projekte/Whitewidow/Whitewidow/ViewController.m0000000000000000^70#13#70#13#1951#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@64"file://localhost/Projekte/Whitewidow/Whitewidow/ViewController.m0000000000000000^3264"CompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/ViewController.o Whitewidow/ViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode5-DP5.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/ViewController.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/ViewController.dia -c /Projekte/Whitewidow/Whitewidow/ViewController.m -o /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/ViewController.o36"25043465-635F-499A-AD26-47D8FABDD13E-
+b1C4C20B3-6B9B-43A8-AD68-84B57D7378E8
+
+CCompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/main.o /Projekte/Whitewidow/Whitewidow/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s398293914.836142
+e398293914.874550
+r1
+xCompileC
+xBuild/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/main.o
+x/Projekte/Whitewidow/Whitewidow/main.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/main.m
+d/Projekte/Whitewidow/Whitewidow/AppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Compile /Projekte/Whitewidow/Whitewidow/main.m194"CompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/main.o Whitewidow/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerec34d69a7bbdb741^82e2df9a7bbdb741^---0#0#1#-19%DVTDocumentLocation2@54"file://localhost/Projekte/Whitewidow/Whitewidow/main.m0000000000000000^3204"CompileC Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/main.o Whitewidow/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode5-DP5.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/main.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/main.dia -c /Projekte/Whitewidow/Whitewidow/main.m -o /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/main.o36"6B17A2C0-AC9A-4750-9805-83F0ABE375EA-
+b1C4C20B3-6B9B-43A8-AD68-84B57D7378E8
+
+CCompileStoryboard /Projekte/Whitewidow/Whitewidow/en.lproj/MainStoryboard.storyboard
+r0
+
+CCopyPNGFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Default-568h@2x.png Whitewidow/Default-568h@2x.png
+r0
+
+CCopyPNGFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Default.png Whitewidow/Default.png
+r0
+
+CCopyPNGFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Default@2x.png Whitewidow/Default@2x.png
+r0
+
+CCopyStringsFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/en.lproj/InfoPlist.strings Whitewidow/en.lproj/InfoPlist.strings
+r0
+
+CCpResource /Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/Whitewidow.app/ResourceRules.plist
+s398293914.221690
+e398293914.225397
+r1
+xCpResource
+x/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist
+xBuild/Products/Debug-iphoneos/Whitewidow.app/ResourceRules.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy Build/Products/Debug-iphoneos/Whitewidow.app/ResourceRules.plist202"CpResource /Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/Whitewidow.app/ResourceRules.plist4dda389a7bbdb741^35b4399a7bbdb741^---0#0#1#-19%DVTDocumentLocation2@101"file://localhost/Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/ResourceRules.plist0038581cdeffdf42^734"CpResource /Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/Whitewidow.app/ResourceRules.plist    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode5-DP5.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app36"C0318D53-6B54-4586-8761-91B93CF6AAFD-
+b1C4C20B3-6B9B-43A8-AD68-84B57D7378E8
+
+CGenerateDSYMFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app.dSYM /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Whitewidow
+r0
+
+CLd /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Whitewidow normal armv7s
+s398293915.262299
+e398293915.461677
+r0
+xLd
+x/Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Whitewidow
+xnormal
+xarmv7s
+d/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/Whitewidow.LinkFileList
+d/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/LocationController.o
+d/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/PushController.o
+d/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/main.o
+d/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/JSONHelper.o
+d/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/AppDelegate.o
+d/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/ViewController.o
+d/Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/FacebookSDK
+d/Users/paulschmidt/Documents/Parse.framework/Parse
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Security.framework/Security
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libz.1.1.3.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libxpc.dylib
+oUndefined symbols for architecture armv7s:
+o  "_ACFacebookAppIdKey", referenced from:
+o      -[ViewController loginButtonTouchHandler:] in ViewController.o
+o  "_ACAccountTypeIdentifierFacebook", referenced from:
+o      -[ViewController loginButtonTouchHandler:] in ViewController.o
+o  "_OBJC_CLASS_$_ACAccountStore", referenced from:
+o      objc-class-ref in ViewController.o
+old: symbol(s) not found for architecture armv7s
+oclang: error: linker command failed with exit code 1 (use -v to see invocation)
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Link /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Whitewidow72"Ld Build/Products/Debug-iphoneos/Whitewidow.app/Whitewidow normal armv7sa643439b7bbdb741^5131769b7bbdb741^-498"Undefined symbols for architecture armv7s:  "_ACFacebookAppIdKey", referenced from:      -[ViewController loginButtonTouchHandler:] in ViewController.o  "_ACAccountTypeIdentifierFacebook", referenced from:      -[ViewController loginButtonTouchHandler:] in ViewController.o  "_OBJC_CLASS_$_ACAccountStore", referenced from:      objc-class-ref in ViewController.old: symbol(s) not found for architecture armv7sclang: error: linker command failed with exit code 1 (use -v to see invocation)8(21%IDEActivityLogMessage2@39""_ACFacebookAppIdKey", referenced from:-398293915#43#42#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--2@62"-[ViewController loginButtonTouchHandler:] in ViewController.o-398293915#85#69#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@52""_ACAccountTypeIdentifierFacebook", referenced from:-398293915#154#55#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--2@62"-[ViewController loginButtonTouchHandler:] in ViewController.o-398293915#209#69#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@48""_OBJC_CLASS_$_ACAccountStore", referenced from:-398293915#278#51#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--2@34"Objc-class-ref in ViewController.o-398293915#329#41#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@43"Symbol(s) not found for architecture armv7s-398293915#370#48#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-398293915#418#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--0#0#1#--1512"Ld Build/Products/Debug-iphoneos/Whitewidow.app/Whitewidow normal armv7s    cd /Projekte/Whitewidow    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode5-DP5.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7s -isysroot /Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -L/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK -filelist /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/Whitewidow.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=6.0 -framework FacebookSDK -framework Parse -framework SystemConfiguration -framework Security -framework QuartzCore -framework MobileCoreServices -lz.1.1.3 -framework CoreLocation -framework CFNetwork -framework AudioToolbox -framework UIKit -framework Foundation -framework CoreGraphics -Xlinker -dependency_info -Xlinker /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Objects-normal/armv7s/Whitewidow_dependency_info.dat -o /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Whitewidow36"BE3FC852-C49B-4B79-A6A2-D68BAC50B8A6-
+b1C4C20B3-6B9B-43A8-AD68-84B57D7378E8
+
+CProcessInfoPlistFile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Info.plist /Projekte/Whitewidow/Whitewidow/Whitewidow-Info.plist
+s398293914.208814
+e398293914.213303
+r1
+xProcessInfoPlistFile
+x/Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Info.plist
+x/Projekte/Whitewidow/Whitewidow/Whitewidow-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Process /Projekte/Whitewidow/Whitewidow/Whitewidow-Info.plist109"ProcessInfoPlistFile Build/Products/Debug-iphoneos/Whitewidow.app/Info.plist Whitewidow/Whitewidow-Info.plist6d8c359a7bbdb741^deab369a7bbdb741^---0#0#1#-19%DVTDocumentLocation2@69"file://localhost/Projekte/Whitewidow/Whitewidow/Whitewidow-Info.plist0000000000000000^745"ProcessInfoPlistFile Build/Products/Debug-iphoneos/Whitewidow.app/Info.plist Whitewidow/Whitewidow-Info.plist    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode5-DP5.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Projekte/Whitewidow/Whitewidow/Whitewidow-Info.plist -genpkginfo /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/ResourceRules.plist -o /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/Info.plist36"3C88D8E6-5987-49FA-87BC-C23126A4476E-
+b1C4C20B3-6B9B-43A8-AD68-84B57D7378E8
+
+CProcessPCH /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch.pch Whitewidow/Whitewidow-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s398293914.235921
+e398293914.763861
+r1
+xProcessPCH
+x/Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch.pch
+xWhitewidow/Whitewidow-Prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Projekte/Whitewidow/Whitewidow/Whitewidow-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Precompile Whitewidow/Whitewidow-Prefix.pch225"ProcessPCH Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch.pch Whitewidow/Whitewidow-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerad863c9a7bbdb741^fc8cc39a7bbdb741^---0#0#1#-19%DVTDocumentLocation2@69"file://localhost/Projekte/Whitewidow/Whitewidow/Whitewidow-Prefix.pch0000000000000000^3157"ProcessPCH Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch.pch Whitewidow/Whitewidow-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode5-DP5.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphoneos/include -I/Applications/Xcode5-DP5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/DerivedSources/armv7s -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphoneos -F/Users/paulschmidt/Documents -F/Users/paulschmidt/Documents/FacebookSDK --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch.dia -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch.d -c /Projekte/Whitewidow/Whitewidow/Whitewidow-Prefix.pch -o /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-gjumythxclizsdfqswqjjikakgev/Whitewidow-Prefix.pch.pch36"4E9D28C5-DE53-48E2-B7D3-1FF8A36F1345-
+b1C4C20B3-6B9B-43A8-AD68-84B57D7378E8
+
+CProcessPCH /Users/paulschmidt/Library/Developer/Xcode/DerivedData/Whitewidow-diwdjkvqmcjhswcdjxhsatywywka/Index/PrecompiledHeaders/Whitewidow-Prefix-fskcoqqfqwomnycihkrewsjekvpe_ast/Whitewidow-Prefix.pch.pch Whitewidow/Whitewidow-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessProductPackaging /Applications/Xcode5-DP5.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphoneos/Whitewidow.build/Whitewidow.xcent
+r0
+
+CProcessProductPackaging /Users/paulschmidt/Library/MobileDevice/Provisioning\ Profiles/DD3DC4CB-B271-46DB-A233-8BDAEA687A50.mobileprovision /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app/embedded.mobileprovision
+r0
+
+CTouch /Projekte/Whitewidow/Build/Products/Debug-iphoneos/Whitewidow.app
+r0
+

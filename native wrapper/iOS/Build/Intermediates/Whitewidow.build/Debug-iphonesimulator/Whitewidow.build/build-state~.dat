@@ -1,0 +1,315 @@
+TWhitewidow
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Info.plist Whitewidow/Whitewidow-Info.plist
+cProcessPCH /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-asplhkkslpxoyaakjsdcquzazflp/Whitewidow-Prefix.pch.pth Whitewidow/Whitewidow-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/main.o /Projekte/Whitewidow/Whitewidow/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/AppDelegate.o /Projekte/Whitewidow/Whitewidow/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/ViewController.o /Projekte/Whitewidow/Whitewidow/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Whitewidow normal i386
+cGenerateDSYMFile /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app.dSYM /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Whitewidow
+cCopyStringsFile /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/en.lproj/InfoPlist.strings Whitewidow/en.lproj/InfoPlist.strings
+cCpResource Whitewidow/Default.png Build/Products/Debug-iphonesimulator/Whitewidow.app/Default.png
+cCpResource Whitewidow/Default@2x.png Build/Products/Debug-iphonesimulator/Whitewidow.app/Default@2x.png
+cCpResource Whitewidow/Default-568h@2x.png Build/Products/Debug-iphonesimulator/Whitewidow.app/Default-568h@2x.png
+cCompileStoryboard /Projekte/Whitewidow/Whitewidow/en.lproj/MainStoryboard.storyboard
+cTouch /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
+c0000000050EDEAFB0000000000000110
+t1357769467
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000051725FEA0000000000228FE0
+t1366450154
+s2265056
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000051725FEE00000000003DDFA0
+t1366450158
+s4054944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c0000000051725FED00000000000015F7
+t1366450157
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c0000000051725FF50000000000000E8D
+t1366450165
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c0000000051725FF80000000000AB6230
+t1366450168
+s11231792
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/usr/include/Availability.h
+c00000000517260150000000000001B73
+t1366450197
+s7027
+
+N/Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-asplhkkslpxoyaakjsdcquzazflp/Whitewidow-Prefix.pch.pth
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/AppDelegate.o
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/ViewController.o
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/Whitewidow.LinkFileList
+c0000000052077D240000000000000185
+t1376222500
+s389
+
+N/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app.dSYM
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Default-568h@2x.png
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Default.png
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Default@2x.png
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Info.plist
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/PkgInfo
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Whitewidow
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/en.lproj/MainStoryboard.storyboardc
+t2
+s0
+
+N/Projekte/Whitewidow/Whitewidow/AppDelegate.m
+c0000000052077B2D00000000000007DD
+t1376221997
+s2013
+
+N/Projekte/Whitewidow/Whitewidow/Default-568h@2x.png
+c00000000515C9E6200000000000048A2
+t1365024354
+s18594
+
+N/Projekte/Whitewidow/Whitewidow/Default.png
+c00000000515C9E62000000000000198C
+t1365024354
+s6540
+
+N/Projekte/Whitewidow/Whitewidow/Default@2x.png
+c00000000515C9E620000000000003EEB
+t1365024354
+s16107
+
+N/Projekte/Whitewidow/Whitewidow/ViewController.m
+c0000000052077D21000000000000028A
+t1376222497
+s650
+
+N/Projekte/Whitewidow/Whitewidow/Whitewidow-Prefix.pch
+c0000000052077B2D0000000000000143
+t1376221997
+s323
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Projekte/Whitewidow/Whitewidow/en.lproj/InfoPlist.strings
+c0000000052077B2D000000000000002D
+t1376221997
+s45
+
+N/Projekte/Whitewidow/Whitewidow/en.lproj/MainStoryboard.storyboard
+c0000000052077D240000000000000AC5
+t1376222500
+s2757
+
+N/Projekte/Whitewidow/Whitewidow/main.m
+c0000000052077B2D0000000000000156
+t1376221997
+s342
+
+NWhitewidow/Whitewidow-Info.plist
+c0000000052077B2D00000000000004DB
+t1376221997
+s1243
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/AppDelegate.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/ViewController.m
+r0
+
+CBuild AST from /Projekte/Whitewidow/Whitewidow/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies3fe643a4b4b7b741^da8f48a4b4b7b741^---0#1#0#--18"Check dependencies36"8BB65D32-E30D-4389-87FF-7FFA9737D589-
+
+CCompileC Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/AppDelegate.o /Projekte/Whitewidow/Whitewidow/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s397915301.281448
+e397915301.450639
+r1
+xCompileC
+xBuild/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/AppDelegate.o
+x/Projekte/Whitewidow/Whitewidow/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Compile /Projekte/Whitewidow/Whitewidow/AppDelegate.mf12d48a5b4b7b741^145d73a5b4b7b741^---0#0#0#-19%DVTDocumentLocation2@61"file://localhost/Projekte/Whitewidow/Whitewidow/AppDelegate.m0000000000000000^3407"CompileC Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/AppDelegate.o Whitewidow/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/DerivedSources/i386 -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-asplhkkslpxoyaakjsdcquzazflp/Whitewidow-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/AppDelegate.dia -c /Projekte/Whitewidow/Whitewidow/AppDelegate.m -o /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/AppDelegate.o36"386A10B8-24E3-447F-9023-B5E95C24F90D-
+
+CCompileC Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/ViewController.o /Projekte/Whitewidow/Whitewidow/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s397915301.433897
+e397915301.527684
+r1
+xCompileC
+xBuild/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/ViewController.o
+x/Projekte/Whitewidow/Whitewidow/ViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Projekte/Whitewidow/Whitewidow/ViewController.m7d3d6fa5b4b7b741^4c1687a5b4b7b741^---0#0#0#-19%DVTDocumentLocation2@64"file://localhost/Projekte/Whitewidow/Whitewidow/ViewController.m0000000000000000^3425"CompileC Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/ViewController.o Whitewidow/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/DerivedSources/i386 -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-asplhkkslpxoyaakjsdcquzazflp/Whitewidow-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/ViewController.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/ViewController.dia -c /Projekte/Whitewidow/Whitewidow/ViewController.m -o /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/ViewController.o36"D9976B6B-1B9E-446A-83C3-F5A761E0AF36-
+
+CCompileC Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/main.o /Projekte/Whitewidow/Whitewidow/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s397915301.280918
+e397915301.432541
+r1
+xCompileC
+xBuild/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/main.o
+x/Projekte/Whitewidow/Whitewidow/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Compile /Projekte/Whitewidow/Whitewidow/main.maa0f48a5b4b7b741^49ba6ea5b4b7b741^---0#0#0#-19%DVTDocumentLocation2@54"file://localhost/Projekte/Whitewidow/Whitewidow/main.m0000000000000000^3365"CompileC Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/main.o Whitewidow/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/DerivedSources/i386 -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator -include /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-asplhkkslpxoyaakjsdcquzazflp/Whitewidow-Prefix.pch -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/main.d --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/main.dia -c /Projekte/Whitewidow/Whitewidow/main.m -o /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/main.o36"90D499CF-AF7E-4B63-A66A-328249A9A1AF-
+
+CCompileStoryboard /Projekte/Whitewidow/Whitewidow/en.lproj/MainStoryboard.storyboard
+s397915302.218513
+e397915302.440849
+r1
+xCompileStoryboard
+x/Projekte/Whitewidow/Whitewidow/en.lproj/MainStoryboard.storyboard
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"CompileStoryboard Whitewidow/en.lproj/MainStoryboard.storyboard9a0738a6b4b7b741^1ced70a6b4b7b741^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Projekte/Whitewidow/Whitewidow/en.lproj/MainStoryboard.storyboard0000000000000000^908"CompileStoryboard Whitewidow/en.lproj/MainStoryboard.storyboard    cd /Projekte/Whitewidow    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/en.lproj/MainStoryboard.storyboardc /Projekte/Whitewidow/Whitewidow/en.lproj/MainStoryboard.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk36"354632D4-4BD3-4CFD-A76B-C21F39306EBE-
+
+CCopyStringsFile /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/en.lproj/InfoPlist.strings Whitewidow/en.lproj/InfoPlist.strings
+s397915302.205015
+e397915302.214405
+r1
+xCopyStringsFile
+x/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/en.lproj/InfoPlist.strings
+xWhitewidow/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Copy Whitewidow/en.lproj/InfoPlist.stringsfbcd34a6b4b7b741^30f236a6b4b7b741^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Projekte/Whitewidow/Whitewidow/en.lproj/InfoPlist.strings0000000000000000^569"CopyStringsFile Build/Products/Debug-iphonesimulator/Whitewidow.app/en.lproj/InfoPlist.strings Whitewidow/en.lproj/InfoPlist.strings    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/en.lproj -- Whitewidow/en.lproj/InfoPlist.strings36"D09E1F90-FEF6-4A66-B985-1ADB2877D2ED-
+
+CCpResource Whitewidow/Default-568h@2x.png Build/Products/Debug-iphonesimulator/Whitewidow.app/Default-568h@2x.png
+s397915302.216757
+e397915302.220130
+r1
+xCpResource
+xWhitewidow/Default-568h@2x.png
+xBuild/Products/Debug-iphonesimulator/Whitewidow.app/Default-568h@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Copy Build/Products/Debug-iphonesimulator/Whitewidow.app/Default-568h@2x.pngb89437a6b4b7b741^787b38a6b4b7b741^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Default-568h@2x.png000000000080d041^580"CpResource "Whitewidow/Default-568h@2x.png" "Build/Products/Debug-iphonesimulator/Whitewidow.app/Default-568h@2x.png"    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Projekte/Whitewidow/Whitewidow/Default-568h@2x.png" /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app36"1B963DE3-5EC5-4E9A-8106-8D08D7FBC432-
+
+CCpResource Whitewidow/Default.png Build/Products/Debug-iphonesimulator/Whitewidow.app/Default.png
+s397915302.205506
+e397915302.211736
+r1
+xCpResource
+xWhitewidow/Default.png
+xBuild/Products/Debug-iphonesimulator/Whitewidow.app/Default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy Build/Products/Debug-iphonesimulator/Whitewidow.app/Default.png5abc34a6b4b7b741^978d36a6b4b7b741^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Default.png000000000080d041^550"CpResource Whitewidow/Default.png Build/Products/Debug-iphonesimulator/Whitewidow.app/Default.png    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Projekte/Whitewidow/Whitewidow/Default.png /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app36"4DE60749-9B24-4F93-A27A-95D2F4DB86CA-
+
+CCpResource Whitewidow/Default@2x.png Build/Products/Debug-iphonesimulator/Whitewidow.app/Default@2x.png
+s397915302.213102
+e397915302.217206
+r1
+xCpResource
+xWhitewidow/Default@2x.png
+xBuild/Products/Debug-iphonesimulator/Whitewidow.app/Default@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Copy Build/Products/Debug-iphonesimulator/Whitewidow.app/Default@2x.png11ac36a6b4b7b741^87a337a6b4b7b741^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Default@2x.png000000000080d041^565"CpResource "Whitewidow/Default@2x.png" "Build/Products/Debug-iphonesimulator/Whitewidow.app/Default@2x.png"    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Projekte/Whitewidow/Whitewidow/Default@2x.png" /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app36"1B9A2714-9539-4048-BE24-540F81596633-
+
+CGenerateDSYMFile /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app.dSYM /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Whitewidow
+s397915301.805329
+e397915302.195682
+r1
+xGenerateDSYMFile
+x/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app.dSYM
+x/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Whitewidow
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Generate /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app.dSYM8f8bdaa5b4b7b741^2c2a32a6b4b7b741^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app.dSYM000000000080d041^625"GenerateDSYMFile Build/Products/Debug-iphonesimulator/Whitewidow.app.dSYM Build/Products/Debug-iphonesimulator/Whitewidow.app/Whitewidow    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Whitewidow -o /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app.dSYM36"78B54BCB-0303-4E62-974C-11C2F6800AC9-
+
+CLd /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Whitewidow normal i386
+s397915301.534401
+e397915301.743329
+r1
+xLd
+x/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Whitewidow
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Link /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Whitewidow60e988a5b4b7b741^8c4abea5b4b7b741^---0#0#0#--1128"Ld Build/Products/Debug-iphonesimulator/Whitewidow.app/Whitewidow normal i386    cd /Projekte/Whitewidow    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -L/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator -F/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator -filelist /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Objects-normal/i386/Whitewidow.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.1 -framework UIKit -framework Foundation -framework CoreGraphics -o /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Whitewidow36"341B9951-ED20-4F77-9C81-2F08760A770B-
+
+CProcessInfoPlistFile /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Info.plist Whitewidow/Whitewidow-Info.plist
+s397915300.284592
+e397915300.296497
+r1
+xProcessInfoPlistFile
+x/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Info.plist
+xWhitewidow/Whitewidow-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Process Whitewidow/Whitewidow-Info.plistd3134aa4b4b7b741^d17456a4b4b7b741^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Projekte/Whitewidow/Whitewidow/Whitewidow-Info.plist0000000000000000^644"ProcessInfoPlistFile Build/Products/Debug-iphonesimulator/Whitewidow.app/Info.plist Whitewidow/Whitewidow-Info.plist    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Whitewidow/Whitewidow-Info.plist -genpkginfo /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app/Info.plist36"1DEFA3AB-5177-4F9F-9F29-6FE579585CF3-
+
+CProcessPCH /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-asplhkkslpxoyaakjsdcquzazflp/Whitewidow-Prefix.pch.pth Whitewidow/Whitewidow-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s397915300.304847
+e397915301.273929
+r1
+xProcessPCH
+x/Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-asplhkkslpxoyaakjsdcquzazflp/Whitewidow-Prefix.pch.pth
+xWhitewidow/Whitewidow-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Precompile Whitewidow/Whitewidow-Prefix.pchf14a4ea4b4b7b741^6d1f46a5b4b7b741^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Projekte/Whitewidow/Whitewidow/Whitewidow-Prefix.pch0000000000000000^3298"ProcessPCH Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-asplhkkslpxoyaakjsdcquzazflp/Whitewidow-Prefix.pch.pth Whitewidow/Whitewidow-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Projekte/Whitewidow    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-generated-files.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-own-target-headers.hmap -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-all-target-headers.hmap -iquote /Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/Whitewidow-project-headers.hmap -I/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/DerivedSources/i386 -I/Projekte/Whitewidow/Build/Intermediates/Whitewidow.build/Debug-iphonesimulator/Whitewidow.build/DerivedSources -F/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-asplhkkslpxoyaakjsdcquzazflp/Whitewidow-Prefix.pch.dia -c /Projekte/Whitewidow/Whitewidow/Whitewidow-Prefix.pch -o /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-asplhkkslpxoyaakjsdcquzazflp/Whitewidow-Prefix.pch.pth -MMD -MT dependencies -MF /Projekte/Whitewidow/Build/Intermediates/PrecompiledHeaders/Whitewidow-Prefix-asplhkkslpxoyaakjsdcquzazflp/Whitewidow-Prefix.pch.d36"6F8C32F4-349D-44E2-A3F5-4699FC233A25-
+
+CProcessPCH /Users/paulschmidt/Library/Developer/Xcode/DerivedData/Whitewidow-diwdjkvqmcjhswcdjxhsatywywka/Index/PrecompiledHeaders/Whitewidow-Prefix-eagierhhpkkbkubmsagphwbzynpz_ast/Whitewidow-Prefix.pch.pth Whitewidow/Whitewidow-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app
+s397915302.451113
+e397915302.486881
+r1
+xTouch
+x/Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Touch /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app8e9273a6b4b7b741^ed0d7ea6b4b7b741^---0#0#0#--376"Touch Build/Products/Debug-iphonesimulator/Whitewidow.app    cd /Projekte/Whitewidow    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Projekte/Whitewidow/Build/Products/Debug-iphonesimulator/Whitewidow.app36"E95E31DC-7E29-40B4-91EA-6010681D1133-
+

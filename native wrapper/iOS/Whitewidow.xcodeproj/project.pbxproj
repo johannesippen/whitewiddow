@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A12FEB217FA38DF004D4DC1 /* SocialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A12FEB117FA38DF004D4DC1 /* SocialModel.m */; };
 		7A4C214517B7B2AD00088F99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4C214417B7B2AD00088F99 /* UIKit.framework */; };
 		7A4C214717B7B2AD00088F99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4C214617B7B2AD00088F99 /* Foundation.framework */; };
 		7A4C214917B7B2AD00088F99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4C214817B7B2AD00088F99 /* CoreGraphics.framework */; };
@@ -23,6 +24,28 @@
 		7A4C216B17B7B2AD00088F99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4C214617B7B2AD00088F99 /* Foundation.framework */; };
 		7A4C217317B7B2AD00088F99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C217117B7B2AD00088F99 /* InfoPlist.strings */; };
 		7A4C217617B7B2AD00088F99 /* WhitewidowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4C217517B7B2AD00088F99 /* WhitewidowTests.m */; };
+		7A9AADC717BD7BEC007411F7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9AADC617BD7BEC007411F7 /* Accounts.framework */; };
+		7A9AADCA17BD807A007411F7 /* ContactsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9AADC917BD807A007411F7 /* ContactsModel.m */; };
+		7A9AADCC17BD8132007411F7 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9AADCB17BD8132007411F7 /* AddressBook.framework */; };
+		7A9AADD017BE0A65007411F7 /* ContactVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9AADCF17BE0A65007411F7 /* ContactVO.m */; };
+		7A9AADD317C2DEE7007411F7 /* UIWebviewInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9AADD217C2DEE7007411F7 /* UIWebviewInterfaceController.m */; };
+		7A9AADD817C351CB007411F7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9AADD717C351CB007411F7 /* Social.framework */; };
+		7ACBDD5B17E66291008CD610 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACBDD5A17E66290008CD610 /* Logger.m */; };
+		7ACBDD6317EA2EC2008CD610 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACBDD5D17EA2E80008CD610 /* libTestFlight.a */; };
+		7ACBDD6517EA2EDA008CD610 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACBDD6417EA2EDA008CD610 /* libz.dylib */; };
+		7ACD897617B80E54008D635F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD897517B80E54008D635F /* AudioToolbox.framework */; };
+		7ACD897817B80E5C008D635F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD897717B80E5C008D635F /* CFNetwork.framework */; };
+		7ACD897A17B80E6A008D635F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD897917B80E6A008D635F /* CoreLocation.framework */; };
+		7ACD897C17B80E83008D635F /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD897B17B80E83008D635F /* libz.1.1.3.dylib */; };
+		7ACD897E17B80E94008D635F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD897D17B80E94008D635F /* MobileCoreServices.framework */; };
+		7ACD898017B80E9F008D635F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD897F17B80E9F008D635F /* QuartzCore.framework */; };
+		7ACD898217B80EAA008D635F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD898117B80EAA008D635F /* Security.framework */; };
+		7ACD898617B80EBE008D635F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD898517B80EBE008D635F /* SystemConfiguration.framework */; };
+		7ACD898817B80EE6008D635F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD898717B80EE6008D635F /* Parse.framework */; };
+		7ACD898A17B8108D008D635F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACD898917B8108D008D635F /* FacebookSDK.framework */; };
+		7ACD898E17B8BD90008D635F /* JSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD898D17B8BD90008D635F /* JSONHelper.m */; };
+		7ACD899217BA99AD008D635F /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD899117BA99AD008D635F /* LocationController.m */; };
+		7ACD899817BCB4C4008D635F /* PushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD899717BCB4C4008D635F /* PushController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7A4C214117B7B2AD00088F99 /* Whitewidow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whitewidow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A12FEB017FA38DF004D4DC1 /* SocialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialModel.h; path = model/SocialModel.h; sourceTree = "<group>"; };
+		7A12FEB117FA38DF004D4DC1 /* SocialModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialModel.m; path = model/SocialModel.m; sourceTree = "<group>"; };
+		7A4C214117B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4C214417B7B2AD00088F99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7A4C214617B7B2AD00088F99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7A4C214817B7B2AD00088F99 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7A4C214C17B7B2AD00088F99 /* Whitewidow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Whitewidow-Info.plist"; sourceTree = "<group>"; };
+		7A4C214C17B7B2AD00088F99 /* whitewidow.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "whitewidow.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
 		7A4C214E17B7B2AD00088F99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7A4C215017B7B2AD00088F99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7A4C215217B7B2AD00088F99 /* Whitewidow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Whitewidow-Prefix.pch"; sourceTree = "<group>"; };
+		7A4C215217B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
 		7A4C215317B7B2AD00088F99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7A4C215417B7B2AD00088F99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7A4C215617B7B2AD00088F99 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -52,12 +77,48 @@
 		7A4C215D17B7B2AD00088F99 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7A4C215F17B7B2AD00088F99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7A4C216017B7B2AD00088F99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7A4C216717B7B2AD00088F99 /* WhitewidowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhitewidowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4C216717B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4C216817B7B2AD00088F99 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		7A4C217017B7B2AD00088F99 /* WhitewidowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhitewidowTests-Info.plist"; sourceTree = "<group>"; };
+		7A4C217017B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests-Info.plist"; sourceTree = "<group>"; };
 		7A4C217217B7B2AD00088F99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7A4C217417B7B2AD00088F99 /* WhitewidowTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhitewidowTests.h; sourceTree = "<group>"; };
 		7A4C217517B7B2AD00088F99 /* WhitewidowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhitewidowTests.m; sourceTree = "<group>"; };
+		7A9AADC617BD7BEC007411F7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		7A9AADC817BD807A007411F7 /* ContactsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsModel.h; sourceTree = "<group>"; };
+		7A9AADC917BD807A007411F7 /* ContactsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsModel.m; sourceTree = "<group>"; };
+		7A9AADCB17BD8132007411F7 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		7A9AADCE17BE0A65007411F7 /* ContactVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactVO.h; path = model/vo/ContactVO.h; sourceTree = "<group>"; };
+		7A9AADCF17BE0A65007411F7 /* ContactVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactVO.m; path = model/vo/ContactVO.m; sourceTree = "<group>"; };
+		7A9AADD117C2DEE7007411F7 /* UIWebviewInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebviewInterfaceController.h; sourceTree = "<group>"; };
+		7A9AADD217C2DEE7007411F7 /* UIWebviewInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebviewInterfaceController.m; sourceTree = "<group>"; };
+		7A9AADD717C351CB007411F7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		7A9AADD917C49493007411F7 /* SocialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialDelegate.h; sourceTree = "<group>"; };
+		7ACBDD5917E66290008CD610 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = utils/Logger.h; sourceTree = "<group>"; };
+		7ACBDD5A17E66290008CD610 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Logger.m; path = utils/Logger.m; sourceTree = "<group>"; };
+		7ACBDD5D17EA2E80008CD610 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		7ACBDD5E17EA2E80008CD610 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		7ACBDD5F17EA2E80008CD610 /* release_notes.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		7ACBDD6017EA2E80008CD610 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		7ACBDD6117EA2E80008CD610 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		7ACBDD6217EA2E80008CD610 /* TestFlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		7ACBDD6417EA2EDA008CD610 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7ACD897517B80E54008D635F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7ACD897717B80E5C008D635F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7ACD897917B80E6A008D635F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7ACD897B17B80E83008D635F /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		7ACD897D17B80E94008D635F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7ACD897F17B80E9F008D635F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7ACD898117B80EAA008D635F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7ACD898517B80EBE008D635F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7ACD898717B80EE6008D635F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Users/paulschmidt/Documents/Parse.framework; sourceTree = "<group>"; };
+		7ACD898917B8108D008D635F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		7ACD898C17B8BD90008D635F /* JSONHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHelper.h; sourceTree = "<group>"; };
+		7ACD898D17B8BD90008D635F /* JSONHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHelper.m; sourceTree = "<group>"; };
+		7ACD899017BA99AD008D635F /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		7ACD899117BA99AD008D635F /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
+		7ACD899517BAE53A008D635F /* Whitewidow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Whitewidow.entitlements; sourceTree = "<group>"; };
+		7ACD899617BCB4C4008D635F /* PushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushController.h; sourceTree = "<group>"; };
+		7ACD899717BCB4C4008D635F /* PushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +126,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ACBDD6517EA2EDA008CD610 /* libz.dylib in Frameworks */,
+				7ACBDD6317EA2EC2008CD610 /* libTestFlight.a in Frameworks */,
+				7A9AADD817C351CB007411F7 /* Social.framework in Frameworks */,
+				7A9AADCC17BD8132007411F7 /* AddressBook.framework in Frameworks */,
+				7A9AADC717BD7BEC007411F7 /* Accounts.framework in Frameworks */,
+				7ACD898A17B8108D008D635F /* FacebookSDK.framework in Frameworks */,
+				7ACD898817B80EE6008D635F /* Parse.framework in Frameworks */,
+				7ACD898617B80EBE008D635F /* SystemConfiguration.framework in Frameworks */,
+				7ACD898217B80EAA008D635F /* Security.framework in Frameworks */,
+				7ACD898017B80E9F008D635F /* QuartzCore.framework in Frameworks */,
+				7ACD897E17B80E94008D635F /* MobileCoreServices.framework in Frameworks */,
+				7ACD897C17B80E83008D635F /* libz.1.1.3.dylib in Frameworks */,
+				7ACD897A17B80E6A008D635F /* CoreLocation.framework in Frameworks */,
+				7ACD897817B80E5C008D635F /* CFNetwork.framework in Frameworks */,
+				7ACD897617B80E54008D635F /* AudioToolbox.framework in Frameworks */,
 				7A4C214517B7B2AD00088F99 /* UIKit.framework in Frameworks */,
 				7A4C214717B7B2AD00088F99 /* Foundation.framework in Frameworks */,
 				7A4C214917B7B2AD00088F99 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +163,7 @@
 		7A4C213817B7B2AC00088F99 = {
 			isa = PBXGroup;
 			children = (
+				7ACBDD5C17EA2E80008CD610 /* TestFlightSDK2 */,
 				7A4C214A17B7B2AD00088F99 /* Whitewidow */,
 				7A4C216E17B7B2AD00088F99 /* WhitewidowTests */,
 				7A4C214317B7B2AD00088F99 /* Frameworks */,
@@ -97,8 +174,8 @@
 		7A4C214217B7B2AD00088F99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7A4C214117B7B2AD00088F99 /* Whitewidow.app */,
-				7A4C216717B7B2AD00088F99 /* WhitewidowTests.octest */,
+				7A4C214117B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app */,
+				7A4C216717B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +183,20 @@
 		7A4C214317B7B2AD00088F99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7ACBDD6417EA2EDA008CD610 /* libz.dylib */,
+				7A9AADD717C351CB007411F7 /* Social.framework */,
+				7A9AADCB17BD8132007411F7 /* AddressBook.framework */,
+				7A9AADC617BD7BEC007411F7 /* Accounts.framework */,
+				7ACD898917B8108D008D635F /* FacebookSDK.framework */,
+				7ACD898717B80EE6008D635F /* Parse.framework */,
+				7ACD898517B80EBE008D635F /* SystemConfiguration.framework */,
+				7ACD898117B80EAA008D635F /* Security.framework */,
+				7ACD897F17B80E9F008D635F /* QuartzCore.framework */,
+				7ACD897D17B80E94008D635F /* MobileCoreServices.framework */,
+				7ACD897B17B80E83008D635F /* libz.1.1.3.dylib */,
+				7ACD897917B80E6A008D635F /* CoreLocation.framework */,
+				7ACD897717B80E5C008D635F /* CFNetwork.framework */,
+				7ACD897517B80E54008D635F /* AudioToolbox.framework */,
 				7A4C214417B7B2AD00088F99 /* UIKit.framework */,
 				7A4C214617B7B2AD00088F99 /* Foundation.framework */,
 				7A4C214817B7B2AD00088F99 /* CoreGraphics.framework */,
@@ -117,6 +208,10 @@
 		7A4C214A17B7B2AD00088F99 /* Whitewidow */ = {
 			isa = PBXGroup;
 			children = (
+				7ACBDD5817E6625F008CD610 /* utils */,
+				7ACD899517BAE53A008D635F /* Whitewidow.entitlements */,
+				7ACD898F17BA998D008D635F /* controller */,
+				7ACD898B17B8BD70008D635F /* model */,
 				7A4C215317B7B2AD00088F99 /* AppDelegate.h */,
 				7A4C215417B7B2AD00088F99 /* AppDelegate.m */,
 				7A4C215C17B7B2AD00088F99 /* MainStoryboard.storyboard */,
@@ -130,10 +225,10 @@
 		7A4C214B17B7B2AD00088F99 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7A4C214C17B7B2AD00088F99 /* Whitewidow-Info.plist */,
+				7A4C214C17B7B2AD00088F99 /* whitewidow.temp_caseinsensitive_rename-Info.plist */,
 				7A4C214D17B7B2AD00088F99 /* InfoPlist.strings */,
 				7A4C215017B7B2AD00088F99 /* main.m */,
-				7A4C215217B7B2AD00088F99 /* Whitewidow-Prefix.pch */,
+				7A4C215217B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch */,
 				7A4C215617B7B2AD00088F99 /* Default.png */,
 				7A4C215817B7B2AD00088F99 /* Default@2x.png */,
 				7A4C215A17B7B2AD00088F99 /* Default-568h@2x.png */,
@@ -154,18 +249,78 @@
 		7A4C216F17B7B2AD00088F99 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7A4C217017B7B2AD00088F99 /* WhitewidowTests-Info.plist */,
+				7A4C217017B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests-Info.plist */,
 				7A4C217117B7B2AD00088F99 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7A9AADCD17BE0A39007411F7 /* vo */ = {
+			isa = PBXGroup;
+			children = (
+				7A9AADCE17BE0A65007411F7 /* ContactVO.h */,
+				7A9AADCF17BE0A65007411F7 /* ContactVO.m */,
+			);
+			name = vo;
+			sourceTree = "<group>";
+		};
+		7ACBDD5817E6625F008CD610 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				7ACBDD5917E66290008CD610 /* Logger.h */,
+				7ACBDD5A17E66290008CD610 /* Logger.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		7ACBDD5C17EA2E80008CD610 /* TestFlightSDK2 */ = {
+			isa = PBXGroup;
+			children = (
+				7ACBDD5D17EA2E80008CD610 /* libTestFlight.a */,
+				7ACBDD5E17EA2E80008CD610 /* README.md */,
+				7ACBDD5F17EA2E80008CD610 /* release_notes.md */,
+				7ACBDD6017EA2E80008CD610 /* TestFlight+AsyncLogging.h */,
+				7ACBDD6117EA2E80008CD610 /* TestFlight+ManualSessions.h */,
+				7ACBDD6217EA2E80008CD610 /* TestFlight.h */,
+			);
+			name = TestFlightSDK2;
+			path = ../../Users/paulschmidt/Downloads/TestFlightSDK2;
+			sourceTree = "<group>";
+		};
+		7ACD898B17B8BD70008D635F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7A12FEB017FA38DF004D4DC1 /* SocialModel.h */,
+				7A12FEB117FA38DF004D4DC1 /* SocialModel.m */,
+				7A9AADCD17BE0A39007411F7 /* vo */,
+				7ACD898C17B8BD90008D635F /* JSONHelper.h */,
+				7ACD898D17B8BD90008D635F /* JSONHelper.m */,
+				7A9AADC817BD807A007411F7 /* ContactsModel.h */,
+				7A9AADC917BD807A007411F7 /* ContactsModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		7ACD898F17BA998D008D635F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7ACD899617BCB4C4008D635F /* PushController.h */,
+				7ACD899717BCB4C4008D635F /* PushController.m */,
+				7ACD899017BA99AD008D635F /* LocationController.h */,
+				7ACD899117BA99AD008D635F /* LocationController.m */,
+				7A9AADD117C2DEE7007411F7 /* UIWebviewInterfaceController.h */,
+				7A9AADD217C2DEE7007411F7 /* UIWebviewInterfaceController.m */,
+				7A9AADD917C49493007411F7 /* SocialDelegate.h */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7A4C214017B7B2AD00088F99 /* Whitewidow */ = {
+		7A4C214017B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A4C217917B7B2AD00088F99 /* Build configuration list for PBXNativeTarget "Whitewidow" */;
+			buildConfigurationList = 7A4C217917B7B2AD00088F99 /* Build configuration list for PBXNativeTarget "Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				7A4C213D17B7B2AD00088F99 /* Sources */,
 				7A4C213E17B7B2AD00088F99 /* Frameworks */,
@@ -175,14 +330,14 @@
 			);
 			dependencies = (
 			);
-			name = Whitewidow;
+			name = Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
 			productName = Whitewidow;
-			productReference = 7A4C214117B7B2AD00088F99 /* Whitewidow.app */;
+			productReference = 7A4C214117B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7A4C216617B7B2AD00088F99 /* WhitewidowTests */ = {
+		7A4C216617B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A4C217C17B7B2AD00088F99 /* Build configuration list for PBXNativeTarget "WhitewidowTests" */;
+			buildConfigurationList = 7A4C217C17B7B2AD00088F99 /* Build configuration list for PBXNativeTarget "Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests" */;
 			buildPhases = (
 				7A4C216217B7B2AD00088F99 /* Sources */,
 				7A4C216317B7B2AD00088F99 /* Frameworks */,
@@ -194,9 +349,9 @@
 			dependencies = (
 				7A4C216D17B7B2AD00088F99 /* PBXTargetDependency */,
 			);
-			name = WhitewidowTests;
+			name = Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
 			productName = WhitewidowTests;
-			productReference = 7A4C216717B7B2AD00088F99 /* WhitewidowTests.octest */;
+			productReference = 7A4C216717B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -207,6 +362,25 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Paul Schmidt";
+				TargetAttributes = {
+					7A4C214017B7B2AD00088F99 = {
+						DevelopmentTeam = WTBVTY9G47;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Passbook = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 7A4C213C17B7B2AC00088F99 /* Build configuration list for PBXProject "Whitewidow" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -220,8 +394,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7A4C214017B7B2AD00088F99 /* Whitewidow */,
-				7A4C216617B7B2AD00088F99 /* WhitewidowTests */,
+				7A4C214017B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename */,
+				7A4C216617B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -270,9 +444,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ACBDD5B17E66291008CD610 /* Logger.m in Sources */,
+				7ACD899217BA99AD008D635F /* LocationController.m in Sources */,
+				7ACD899817BCB4C4008D635F /* PushController.m in Sources */,
 				7A4C215117B7B2AD00088F99 /* main.m in Sources */,
+				7ACD898E17B8BD90008D635F /* JSONHelper.m in Sources */,
+				7A9AADCA17BD807A007411F7 /* ContactsModel.m in Sources */,
+				7A12FEB217FA38DF004D4DC1 /* SocialModel.m in Sources */,
 				7A4C215517B7B2AD00088F99 /* AppDelegate.m in Sources */,
 				7A4C216117B7B2AD00088F99 /* ViewController.m in Sources */,
+				7A9AADD017BE0A65007411F7 /* ContactVO.m in Sources */,
+				7A9AADD317C2DEE7007411F7 /* UIWebviewInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +471,7 @@
 /* Begin PBXTargetDependency section */
 		7A4C216D17B7B2AD00088F99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7A4C214017B7B2AD00088F99 /* Whitewidow */;
+			target = 7A4C214017B7B2AD00088F99 /* Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename */;
 			targetProxy = 7A4C216C17B7B2AD00088F99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -381,11 +563,23 @@
 		7A4C217A17B7B2AD00088F99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/paulschmidt/Documents,
+					/Users/paulschmidt/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Whitewidow/Whitewidow-Prefix.pch";
-				INFOPLIST_FILE = "Whitewidow/Whitewidow-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Whitewidow/Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "Whitewidow/whitewidow.temp_caseinsensitive_rename-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/paulschmidt/Downloads/TestFlightSDK2,
+				);
+				PRODUCT_NAME = Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,11 +587,23 @@
 		7A4C217B17B7B2AD00088F99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/paulschmidt/Documents,
+					/Users/paulschmidt/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Whitewidow/Whitewidow-Prefix.pch";
-				INFOPLIST_FILE = "Whitewidow/Whitewidow-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Whitewidow/Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "Whitewidow/whitewidow.temp_caseinsensitive_rename-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/paulschmidt/Downloads/TestFlightSDK2,
+				);
+				PRODUCT_NAME = Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -412,8 +618,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Whitewidow/Whitewidow-Prefix.pch";
-				INFOPLIST_FILE = "WhitewidowTests/WhitewidowTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "WhitewidowTests/Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_NAME = Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -429,8 +635,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Whitewidow/Whitewidow-Prefix.pch";
-				INFOPLIST_FILE = "WhitewidowTests/WhitewidowTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "WhitewidowTests/Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_NAME = Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -448,7 +654,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7A4C217917B7B2AD00088F99 /* Build configuration list for PBXNativeTarget "Whitewidow" */ = {
+		7A4C217917B7B2AD00088F99 /* Build configuration list for PBXNativeTarget "Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A4C217A17B7B2AD00088F99 /* Debug */,
@@ -457,7 +663,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7A4C217C17B7B2AD00088F99 /* Build configuration list for PBXNativeTarget "WhitewidowTests" */ = {
+		7A4C217C17B7B2AD00088F99 /* Build configuration list for PBXNativeTarget "Whitewidow.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A4C217D17B7B2AD00088F99 /* Debug */,
