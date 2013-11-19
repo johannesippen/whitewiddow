@@ -4,37 +4,216 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Default-568h@2x.png</key>
+		<key>AppIcon29x29@2x.png</key>
 		<data>
-		D8STS3mHDv2ya6HKCvP6jrq8eig=
+		1XhDrq3zK0yJuUZgO1omny2dAj8=
 		</data>
-		<key>Default.png</key>
+		<key>AppIcon40x40@2x.png</key>
 		<data>
-		g4VJVUY+xKlNSVSdT4q0Ss3mj9c=
+		gdK+C4FRFYg8Db+0hpNCGMwQ9Zc=
 		</data>
-		<key>Default@2x.png</key>
+		<key>AppIcon60x60@2x.png</key>
 		<data>
-		f+chbalD/cg0G6RzsOPbpHUYQAg=
+		q2qmmXTRbD/uEv3ILuNZ2+Ujweg=
+		</data>
+		<key>Base.lproj/Main.storyboardc/3rb-w3-KjG-view-Tqo-uI-pTZ.nib/objects.nib</key>
+		<data>
+		i/rx49X57WhsaFB9BFRbr/6p2bA=
+		</data>
+		<key>Base.lproj/Main.storyboardc/3rb-w3-KjG-view-Tqo-uI-pTZ.nib/runtime.nib</key>
+		<data>
+		wa4hTWE7YgOOmGRRfmVW4SUHKwQ=
+		</data>
+		<key>Base.lproj/Main.storyboardc/FunctionTest.nib/objects.nib</key>
+		<data>
+		1FbnzjblHPjIOeSjbMaDseNgLFg=
+		</data>
+		<key>Base.lproj/Main.storyboardc/FunctionTest.nib/runtime.nib</key>
+		<data>
+		6OpCbiahLtLNu5PfqdKlKHKdBX4=
+		</data>
+		<key>Base.lproj/Main.storyboardc/Td8-Ab-Zpk-view-7Kd-4I-omy.nib/objects.nib</key>
+		<data>
+		Qtioe9jiqc0161RvJqLfVezzcKw=
+		</data>
+		<key>Base.lproj/Main.storyboardc/Td8-Ab-Zpk-view-7Kd-4I-omy.nib/runtime.nib</key>
+		<data>
+		ZLC5P2DwVthY8VQLEhGcEVMNjw0=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-3rb-w3-KjG.nib/objects.nib</key>
+		<data>
+		M/4adr+d+mjpHgiKYxpE7if/Aq0=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-3rb-w3-KjG.nib/runtime.nib</key>
+		<data>
+		FJvh7hlEgfeOz0kDvhqnnQe57mY=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-nqJ-Pg-kxN.nib/objects.nib</key>
+		<data>
+		0DAGI2vjdA42iOHRfZAm6ys9T8I=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-nqJ-Pg-kxN.nib/runtime.nib</key>
+		<data>
+		iYJbhex//6m/D+pgeQRe2rhhyBg=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-znY-r1-mkG.nib/objects.nib</key>
+		<data>
+		dfJAtmdtBkrgc44mYbzfQlYe3ts=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-znY-r1-mkG.nib/runtime.nib</key>
+		<data>
+		tY/jl8UWyo5z74gdQVM1zIJThAM=
+		</data>
+		<key>Base.lproj/Main.storyboardc/nqJ-Pg-kxN-view-Gzx-fK-nQK.nib/objects.nib</key>
+		<data>
+		D08PlxyQ3q3irMtBWEIGXBa/rYo=
+		</data>
+		<key>Base.lproj/Main.storyboardc/nqJ-Pg-kxN-view-Gzx-fK-nQK.nib/runtime.nib</key>
+		<data>
+		grZNr0ZAG8r4rRchhLGxplpMDhk=
+		</data>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib/objects.nib</key>
+		<data>
+		R8JHlqjPKQrT5UiJ6mjQZl9JYEM=
+		</data>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib/runtime.nib</key>
+		<data>
+		54DuRIO/Q2Rp7Z9zRETo096dhB4=
+		</data>
+		<key>LaunchImage-568h@2x.png</key>
+		<data>
+		V1VdV48TyrImURVWCaose9yz87E=
+		</data>
+		<key>LaunchImage-700-568h@2x.png</key>
+		<data>
+		V1VdV48TyrImURVWCaose9yz87E=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>README.md</key>
+		<data>
+		AlO8+StnRXFWyaJJYQV/ZD4vi2o=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		jLH/1wKhW9kMXSB6km2co51L05Y=
+		4wDOhJ4MWXl+Ebi+0PSx8Icqcy0=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
 		<data>
 		zmV6UqBSo6r1NOz798vd5O4zTBA=
 		</data>
-		<key>en.lproj/MainStoryboard.storyboardc/2-view-3.nib</key>
+		<key>release_notes.md</key>
 		<data>
-		ZkM9qvBZ3YBgv8pd92ZcAxK5Z8s=
+		fil9gTLnrfQhIr74DypZno+/SyU=
 		</data>
-		<key>en.lproj/MainStoryboard.storyboardc/UIViewController-2.nib</key>
+	</dict>
+	<key>files2</key>
+	<dict>
+		<key>AppIcon29x29@2x.png</key>
 		<data>
-		6/zS0XJM2l5/+kYUvp4T3Q0hzxI=
+		1XhDrq3zK0yJuUZgO1omny2dAj8=
+		</data>
+		<key>AppIcon40x40@2x.png</key>
+		<data>
+		gdK+C4FRFYg8Db+0hpNCGMwQ9Zc=
+		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		q2qmmXTRbD/uEv3ILuNZ2+Ujweg=
+		</data>
+		<key>Base.lproj/Main.storyboardc/3rb-w3-KjG-view-Tqo-uI-pTZ.nib/objects.nib</key>
+		<data>
+		i/rx49X57WhsaFB9BFRbr/6p2bA=
+		</data>
+		<key>Base.lproj/Main.storyboardc/3rb-w3-KjG-view-Tqo-uI-pTZ.nib/runtime.nib</key>
+		<data>
+		wa4hTWE7YgOOmGRRfmVW4SUHKwQ=
+		</data>
+		<key>Base.lproj/Main.storyboardc/FunctionTest.nib/objects.nib</key>
+		<data>
+		1FbnzjblHPjIOeSjbMaDseNgLFg=
+		</data>
+		<key>Base.lproj/Main.storyboardc/FunctionTest.nib/runtime.nib</key>
+		<data>
+		6OpCbiahLtLNu5PfqdKlKHKdBX4=
+		</data>
+		<key>Base.lproj/Main.storyboardc/Td8-Ab-Zpk-view-7Kd-4I-omy.nib/objects.nib</key>
+		<data>
+		Qtioe9jiqc0161RvJqLfVezzcKw=
+		</data>
+		<key>Base.lproj/Main.storyboardc/Td8-Ab-Zpk-view-7Kd-4I-omy.nib/runtime.nib</key>
+		<data>
+		ZLC5P2DwVthY8VQLEhGcEVMNjw0=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-3rb-w3-KjG.nib/objects.nib</key>
+		<data>
+		M/4adr+d+mjpHgiKYxpE7if/Aq0=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-3rb-w3-KjG.nib/runtime.nib</key>
+		<data>
+		FJvh7hlEgfeOz0kDvhqnnQe57mY=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-nqJ-Pg-kxN.nib/objects.nib</key>
+		<data>
+		0DAGI2vjdA42iOHRfZAm6ys9T8I=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-nqJ-Pg-kxN.nib/runtime.nib</key>
+		<data>
+		iYJbhex//6m/D+pgeQRe2rhhyBg=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-znY-r1-mkG.nib/objects.nib</key>
+		<data>
+		dfJAtmdtBkrgc44mYbzfQlYe3ts=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-znY-r1-mkG.nib/runtime.nib</key>
+		<data>
+		tY/jl8UWyo5z74gdQVM1zIJThAM=
+		</data>
+		<key>Base.lproj/Main.storyboardc/nqJ-Pg-kxN-view-Gzx-fK-nQK.nib/objects.nib</key>
+		<data>
+		D08PlxyQ3q3irMtBWEIGXBa/rYo=
+		</data>
+		<key>Base.lproj/Main.storyboardc/nqJ-Pg-kxN-view-Gzx-fK-nQK.nib/runtime.nib</key>
+		<data>
+		grZNr0ZAG8r4rRchhLGxplpMDhk=
+		</data>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib/objects.nib</key>
+		<data>
+		R8JHlqjPKQrT5UiJ6mjQZl9JYEM=
+		</data>
+		<key>Base.lproj/Main.storyboardc/vXZ-lx-hvc-view-kh9-bI-dsS.nib/runtime.nib</key>
+		<data>
+		54DuRIO/Q2Rp7Z9zRETo096dhB4=
+		</data>
+		<key>LaunchImage-568h@2x.png</key>
+		<data>
+		V1VdV48TyrImURVWCaose9yz87E=
+		</data>
+		<key>LaunchImage-700-568h@2x.png</key>
+		<data>
+		V1VdV48TyrImURVWCaose9yz87E=
+		</data>
+		<key>PkgInfo</key>
+		<data>
+		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>README.md</key>
+		<data>
+		AlO8+StnRXFWyaJJYQV/ZD4vi2o=
+		</data>
+		<key>embedded.mobileprovision</key>
+		<data>
+		4wDOhJ4MWXl+Ebi+0PSx8Icqcy0=
+		</data>
+		<key>en.lproj/InfoPlist.strings</key>
+		<data>
+		zmV6UqBSo6r1NOz798vd5O4zTBA=
+		</data>
+		<key>release_notes.md</key>
+		<data>
+		fil9gTLnrfQhIr74DypZno+/SyU=
 		</data>
 	</dict>
 	<key>rules</key>
@@ -54,6 +233,39 @@
 			<true/>
 			<key>weight</key>
 			<real>100</real>
+		</dict>
+	</dict>
+	<key>rules2</key>
+	<dict>
+		<key>.*</key>
+		<true/>
+		<key>Info.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>ResourceRules.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>100</real>
+		</dict>
+		<key>^(Frameworks|SharedFrameworks|Plugins|Plug-ins|XPCServices|Helpers|MacOS)/</key>
+		<dict>
+			<key>nested</key>
+			<true/>
+			<key>weight</key>
+			<real>0.0</real>
+		</dict>
+		<key>^[^/]+$</key>
+		<dict>
+			<key>top</key>
+			<true/>
+			<key>weight</key>
+			<real>0.0</real>
 		</dict>
 	</dict>
 </dict>

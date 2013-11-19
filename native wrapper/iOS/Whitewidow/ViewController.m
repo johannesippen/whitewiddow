@@ -14,15 +14,22 @@
 #import "UIWebviewInterfaceController.h"
 #import "SocialModel.h"
 #import "Logger.h"
+#import "EventModel.h"
+#import "FunctionTestViewController.h"
 
 @interface ViewController ()
-    @property IBOutlet UIWebView *webView;
+@property IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UITextView *debugView;
 @property LocationController *locationCtrl;
+@property (weak, nonatomic) IBOutlet UITableView *featureSelectionTable;
 @property BOOL isDebugger;
 @end
 
 @implementation ViewController
+- (IBAction)_onButtonPressed:(UIButton *)sender
+{
+    [EventModel createEvent:@"&data={\"latitude\":\"12\", \"longitude\":\"52\", \"title\":\"Mein Haus am See\"}"];
+}
 
 - (void)viewDidLoad
 {
@@ -33,6 +40,8 @@
     [self.webView loadRequest:request];
     self.webView.delegate = self;
     self.isDebugger = NO;
+    
+    self.featureSelectionTable.delegate = self;
     [[NSURLCache sharedURLCache] removeAllCachedResponses];
     
     [PFFacebookUtils initializeFacebook];
@@ -60,16 +69,19 @@
 
 -(void)swipeHandler:(UISwipeGestureRecognizer *)recognizer
 {
-    CGRect basketTopFrame = self.webView.frame;
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    FunctionTestViewController* viewCtrl = (FunctionTestViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"FunctionTest"];
+    [self.navigationController pushViewController: viewCtrl animated:YES];
+    /*CGRect basketTopFrame = self.webView.frame;
     self.isDebugger = !self.isDebugger;
     if(self.isDebugger)
-        basketTopFrame.size.height = basketTopFrame.size.height - 150;
+        basketTopFrame.size.height = 0;
     else
-        basketTopFrame.size.height = basketTopFrame.size.height + 150;
+        basketTopFrame.size.height = 960;
     
     [UIView animateWithDuration:0.5 animations:^{
         self.webView.frame = basketTopFrame;
-    }];
+    }];*/
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
@@ -81,7 +93,6 @@
 {
     _locationCtrl = [[LocationController alloc] init];
     SocialModel *social = [[SocialModel alloc]init];
-    [social getWWFriendsList];
 }
 
 - (void)registerForChannel
@@ -104,18 +115,18 @@
 {
     SocialModel* socialCtrl = [[SocialModel alloc] init];
     [socialCtrl getFriendsList];
-   /* CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(52.445270f, 13.325877f);
-    [_locationCtrl registerForRegion:coord withRadius:250];*/
+    /* CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(52.445270f, 13.325877f);
+     [_locationCtrl registerForRegion:coord withRadius:250];*/
 }
 
 - (IBAction)loginButtonTouchHandler:(id)sender
 {
     // Send a notification to all devices subscribed to the "Giants" channel.
-   /* PFPush *push = [[PFPush alloc] init];
-    [push setChannel:@"HausamSee"];
-    [push setMessage:@"The Giants just scored!"];
-    [push sendPushInBackground];
-    */// The permissions requested from the user
+    /* PFPush *push = [[PFPush alloc] init];
+     [push setChannel:@"HausamSee"];
+     [push setMessage:@"The Giants just scored!"];
+     [push sendPushInBackground];
+     */// The permissions requested from the user
     NSArray *permissionsArray = @[ @"user_about_me", @"friends_about_me"];
     
     // Login PFUser using Facebook
@@ -140,7 +151,7 @@
             }];
         } else {
             NSLog(@"User with facebook logged in!");
-          //  [self.navigationController pushViewController:[[UserDetailsViewController alloc] initWithStyle:UITableViewStyleGrouped] animated:YES];
+            //  [self.navigationController pushViewController:[[UserDetailsViewController alloc] initWithStyle:UITableViewStyleGrouped] animated:YES];
         }
     }];
 }

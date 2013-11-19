@@ -1,32 +1,34 @@
 //
-//  WhitewidowTests.m
-//  WhitewidowTests
+//  whitewidowTests.m
+//  whitewidowTests
 //
-//  Created by Paul Schmidt on 11.08.13.
+//  Created by Paul Schmidt on 11.10.13.
 //  Copyright (c) 2013 Paul Schmidt. All rights reserved.
 //
 
-#import "WhitewidowTests.h"
+#import <XCTest/XCTest.h>
 
-@implementation WhitewidowTests
+@interface whitewidowTests : XCTestCase
+
+@end
+
+@implementation whitewidowTests
 
 - (void)setUp
 {
     [super setUp];
-    
-    // Set-up code here.
+    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown
 {
-    // Tear-down code here.
-    
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in WhitewidowTests");
+    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
 @end

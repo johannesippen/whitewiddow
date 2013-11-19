@@ -1,34 +1,34 @@
 dependencies: /Projekte/Whitewidow/Whitewidow/JSONHelper.m \
   /Projekte/Whitewidow/Whitewidow/JSONHelper.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/Parse.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFACL.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFAnalytics.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFAnonymousUtils.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFUser.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFConstants.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFObject.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFSubclassing.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFCloud.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFFile.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFGeoPoint.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFQuery.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFRelation.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFRole.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFImageView.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFInstallation.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInViewController.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFLogInView.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpViewController.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFSignUpView.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFProduct.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFProductTableViewController.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFQueryTableViewController.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFTableViewCell.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFPurchase.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFPush.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFTwitterUtils.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PF_Twitter.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/Parse.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFACL.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFAnalytics.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFAnonymousUtils.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFUser.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFConstants.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFObject.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFSubclassing.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFCloud.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFFile.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFGeoPoint.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFQuery.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFRelation.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFRole.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFImageView.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFInstallation.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFLogInViewController.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFLogInView.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFSignUpViewController.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFSignUpView.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFProduct.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFProductTableViewController.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFQueryTableViewController.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFTableViewCell.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFPurchase.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFPush.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFTwitterUtils.h \
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PF_Twitter.h \
   /Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FacebookSDK.h \
   /Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBSession.h \
   /Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBRequest.h \
@@ -64,4 +64,4 @@ dependencies: /Projekte/Whitewidow/Whitewidow/JSONHelper.m \
   /Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBWebDialogs.h \
   /Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBFrictionlessRecipientCache.h \
   /Users/paulschmidt/Documents/FacebookSDK/FacebookSDK.framework/Headers/FBInsights.h \
-  /Users/paulschmidt/Documents/Parse.framework/Headers/PFFacebookUtils.h
+  /Users/paulschmidt/Downloads/Parse.framework/Headers/PFFacebookUtils.h

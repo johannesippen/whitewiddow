@@ -1,2 +1,2 @@
-dependencies: /Projekte/Whitewidow/Whitewidow/main.m \
-  /Projekte/Whitewidow/Whitewidow/AppDelegate.h
+dependencies: /Projekte/apps/whitewidow/whitewidow/main.m \
+  /Projekte/apps/whitewidow/whitewidow/AppDelegate.h
