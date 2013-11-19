@@ -6,16 +6,13 @@ $('#allowLocation button').live('click',function(){
   allowCoreLocation();
 });
 $('#allowNotification button').live('click',function(){
-
-      var notification = new PushNotification();
-      notification.authorizePushNotification();
-	//authorizePushNotification();
-  // TODO: Placeholder
-  //confirm('Whitewidow Would Like to Send You Push Notifications')
+  var notification = new PushNotification();
+  notification.authorizePushNotification();
 });
 $('#addFriends button').live('click',function(){
   localStorage.setItem('permissions',true);
   $('body').attr('data-mode','addfriends');
+  // getInvitations();
 });
 /* Next Slide */
 $('.permission_action button').live('click',function(){
