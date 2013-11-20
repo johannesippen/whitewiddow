@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0AD2AE183C1F2E00E13684 /* SocialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2AD183C1F2E00E13684 /* SocialModel.m */; };
+		7A0AD2AF183C1F2E00E13684 /* SocialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2AD183C1F2E00E13684 /* SocialModel.m */; };
+		7A0AD2B4183C1FDE00E13684 /* JSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2B3183C1FDE00E13684 /* JSONHelper.m */; };
+		7A0AD2B5183C1FDE00E13684 /* JSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2B3183C1FDE00E13684 /* JSONHelper.m */; };
+		7A0AD2B8183C200E00E13684 /* UIWebviewInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2B7183C200E00E13684 /* UIWebviewInterfaceController.m */; };
+		7A0AD2B9183C200E00E13684 /* UIWebviewInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2B7183C200E00E13684 /* UIWebviewInterfaceController.m */; };
+		7A0AD2BC183C204800E13684 /* ContactsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2BB183C204800E13684 /* ContactsModel.m */; };
+		7A0AD2BD183C204800E13684 /* ContactsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2BB183C204800E13684 /* ContactsModel.m */; };
+		7A0AD2C2183C208600E13684 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2BF183C208600E13684 /* LocationController.m */; };
+		7A0AD2C3183C208600E13684 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2BF183C208600E13684 /* LocationController.m */; };
+		7A0AD2C4183C208600E13684 /* PushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2C1183C208600E13684 /* PushController.m */; };
+		7A0AD2C5183C208600E13684 /* PushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2C1183C208600E13684 /* PushController.m */; };
+		7A0AD2C8183C20A400E13684 /* EventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2C7183C20A400E13684 /* EventModel.m */; };
+		7A0AD2C9183C20A400E13684 /* EventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2C7183C20A400E13684 /* EventModel.m */; };
+		7A0AD2CC183C20C300E13684 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2CB183C20C300E13684 /* Logger.m */; };
+		7A0AD2CD183C20C300E13684 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2CB183C20C300E13684 /* Logger.m */; };
+		7A0AD2CE183C216400E13684 /* FunctionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A49CAF4181D140600350AF1 /* FunctionTestViewController.m */; };
+		7A0AD2CF183C216400E13684 /* InvitesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E1C0C18286C410017467E /* InvitesViewController.m */; };
+		7A0AD2D0183C216400E13684 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E1C0F182A72B90017467E /* FriendsViewController.m */; };
+		7A0AD2D4183C218A00E13684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A0AD2D1183C218A00E13684 /* Main.storyboard */; };
+		7A0AD2DA183C21F600E13684 /* ContactVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2D9183C21F600E13684 /* ContactVO.m */; };
+		7A0AD2DB183C21F600E13684 /* ContactVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AD2D9183C21F600E13684 /* ContactVO.m */; };
+		7A0AD2DC183C222600E13684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A0AD2D1183C218A00E13684 /* Main.storyboard */; };
 		7A3E1C0D18286C410017467E /* InvitesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E1C0C18286C410017467E /* InvitesViewController.m */; };
 		7A3E1C10182A72B90017467E /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3E1C0F182A72B90017467E /* FriendsViewController.m */; };
 		7A49CAF5181D140600350AF1 /* FunctionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A49CAF4181D140600350AF1 /* FunctionTestViewController.m */; };
@@ -16,7 +39,6 @@
 		7ACF2EBC1808707F001DAF1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ACF2EBA1808707F001DAF1B /* InfoPlist.strings */; };
 		7ACF2EBE1808707F001DAF1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF2EBD1808707F001DAF1B /* main.m */; };
 		7ACF2EC21808707F001DAF1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF2EC11808707F001DAF1B /* AppDelegate.m */; };
-		7ACF2EC51808707F001DAF1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACF2EC31808707F001DAF1B /* Main.storyboard */; };
 		7ACF2EC81808707F001DAF1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF2EC71808707F001DAF1B /* ViewController.m */; };
 		7ACF2ECA1808707F001DAF1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ACF2EC91808707F001DAF1B /* Images.xcassets */; };
 		7ACF2ED11808707F001DAF1B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF2ED01808707F001DAF1B /* XCTest.framework */; };
@@ -27,8 +49,6 @@
 		7ACF2EE7180870C3001DAF1B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF2EE6180870C3001DAF1B /* Social.framework */; };
 		7ACF2EE9180870D5001DAF1B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF2EE8180870D5001DAF1B /* AddressBook.framework */; };
 		7ACF2EEB180870E1001DAF1B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF2EEA180870E1001DAF1B /* Accounts.framework */; };
-		7ACF2EED180AD75B001DAF1B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF2EEC180AD75B001DAF1B /* Parse.framework */; };
-		7ACF2EEF180AD7A0001DAF1B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF2EEE180AD7A0001DAF1B /* FacebookSDK.framework */; };
 		7ACF2EF1180AD7B3001DAF1B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF2EF0180AD7B3001DAF1B /* SystemConfiguration.framework */; };
 		7ACF2EF3180AD7BF001DAF1B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF2EF2180AD7BF001DAF1B /* Security.framework */; };
 		7ACF2EF5180AD7CA001DAF1B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF2EF4180AD7CA001DAF1B /* QuartzCore.framework */; };
@@ -38,19 +58,14 @@
 		7ACF2EFD180AD80D001DAF1B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF2EFC180AD80D001DAF1B /* CFNetwork.framework */; };
 		7ACF2EFF180AD819001DAF1B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF2EFE180AD819001DAF1B /* AudioToolbox.framework */; };
 		7ACF2F01180AD833001DAF1B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF2F00180AD833001DAF1B /* libz.dylib */; };
-		7ACF2F03180AD84E001DAF1B /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF2F02180AD84E001DAF1B /* libTestFlight.a */; };
-		7ACF2F0B180AE765001DAF1B /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF2F05180AE765001DAF1B /* libTestFlight.a */; };
-		7ACF2F0C180AE765001DAF1B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7ACF2F06180AE765001DAF1B /* README.md */; };
-		7ACF2F0D180AE765001DAF1B /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 7ACF2F07180AE765001DAF1B /* release_notes.md */; };
-		7ACF2F14180AE835001DAF1B /* SocialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF2F10180AE835001DAF1B /* SocialModel.m */; };
-		7ACF2F15180AE835001DAF1B /* ContactVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF2F13180AE835001DAF1B /* ContactVO.m */; };
-		7ACF2F18180AE846001DAF1B /* ContactsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF2F17180AE846001DAF1B /* ContactsModel.m */; };
-		7ACF2F1C180AE856001DAF1B /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF2F1B180AE856001DAF1B /* Logger.m */; };
-		7ACF2F1F180AE866001DAF1B /* JSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF2F1E180AE866001DAF1B /* JSONHelper.m */; };
-		7ACF2F27180AE880001DAF1B /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF2F21180AE880001DAF1B /* LocationController.m */; };
-		7ACF2F28180AE880001DAF1B /* PushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF2F23180AE880001DAF1B /* PushController.m */; };
-		7ACF2F29180AE880001DAF1B /* UIWebviewInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF2F26180AE880001DAF1B /* UIWebviewInterfaceController.m */; };
-		7AE87D1B180D1C5A00C14681 /* EventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE87D1A180D1C5A00C14681 /* EventModel.m */; };
+		7ADDA6E5183BED0300B49846 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ADDA6E4183BED0200B49846 /* Parse.framework */; };
+		7ADDA6E7183BED1300B49846 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ADDA6E6183BED1300B49846 /* FacebookSDK.framework */; };
+		7ADDA6EF183BED8D00B49846 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ADDA6E9183BED8D00B49846 /* libTestFlight.a */; };
+		7ADDA6F0183BED8D00B49846 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ADDA6E9183BED8D00B49846 /* libTestFlight.a */; };
+		7ADDA6F1183BED8D00B49846 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7ADDA6EA183BED8D00B49846 /* README.md */; };
+		7ADDA6F2183BED8D00B49846 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7ADDA6EA183BED8D00B49846 /* README.md */; };
+		7ADDA6F3183BED8D00B49846 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 7ADDA6EB183BED8D00B49846 /* release_notes.md */; };
+		7ADDA6F4183BED8D00B49846 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 7ADDA6EB183BED8D00B49846 /* release_notes.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +79,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A0AD2AC183C1F2E00E13684 /* SocialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialModel.h; path = whitewidow/model/SocialModel.h; sourceTree = SOURCE_ROOT; };
+		7A0AD2AD183C1F2E00E13684 /* SocialModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialModel.m; path = whitewidow/model/SocialModel.m; sourceTree = SOURCE_ROOT; };
+		7A0AD2B1183C1FC500E13684 /* SocialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialDelegate.h; path = whitewidow/model/SocialDelegate.h; sourceTree = SOURCE_ROOT; };
+		7A0AD2B2183C1FDE00E13684 /* JSONHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONHelper.h; path = whitewidow/utils/JSONHelper.h; sourceTree = SOURCE_ROOT; };
+		7A0AD2B3183C1FDE00E13684 /* JSONHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONHelper.m; path = whitewidow/utils/JSONHelper.m; sourceTree = SOURCE_ROOT; };
+		7A0AD2B6183C200E00E13684 /* UIWebviewInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWebviewInterfaceController.h; path = whitewidow/utils/UIWebviewInterfaceController.h; sourceTree = SOURCE_ROOT; };
+		7A0AD2B7183C200E00E13684 /* UIWebviewInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIWebviewInterfaceController.m; path = whitewidow/utils/UIWebviewInterfaceController.m; sourceTree = SOURCE_ROOT; };
+		7A0AD2BA183C204800E13684 /* ContactsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactsModel.h; path = whitewidow/model/ContactsModel.h; sourceTree = SOURCE_ROOT; };
+		7A0AD2BB183C204800E13684 /* ContactsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactsModel.m; path = whitewidow/model/ContactsModel.m; sourceTree = SOURCE_ROOT; };
+		7A0AD2BE183C208600E13684 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationController.h; path = whitewidow/model/LocationController.h; sourceTree = SOURCE_ROOT; };
+		7A0AD2BF183C208600E13684 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationController.m; path = whitewidow/model/LocationController.m; sourceTree = SOURCE_ROOT; };
+		7A0AD2C0183C208600E13684 /* PushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushController.h; path = whitewidow/model/PushController.h; sourceTree = SOURCE_ROOT; };
+		7A0AD2C1183C208600E13684 /* PushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushController.m; path = whitewidow/model/PushController.m; sourceTree = SOURCE_ROOT; };
+		7A0AD2C6183C20A400E13684 /* EventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventModel.h; path = whitewidow/model/EventModel.h; sourceTree = SOURCE_ROOT; };
+		7A0AD2C7183C20A400E13684 /* EventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventModel.m; path = whitewidow/model/EventModel.m; sourceTree = SOURCE_ROOT; };
+		7A0AD2CA183C20C300E13684 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = whitewidow/utils/Logger.h; sourceTree = SOURCE_ROOT; };
+		7A0AD2CB183C20C300E13684 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Logger.m; path = whitewidow/utils/Logger.m; sourceTree = SOURCE_ROOT; };
+		7A0AD2D2183C218A00E13684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A0AD2D8183C21F600E13684 /* ContactVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactVO.h; path = whitewidow/model/vo/ContactVO.h; sourceTree = SOURCE_ROOT; };
+		7A0AD2D9183C21F600E13684 /* ContactVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactVO.m; path = whitewidow/model/vo/ContactVO.m; sourceTree = SOURCE_ROOT; };
 		7A3E1C0B18286C410017467E /* InvitesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvitesViewController.h; sourceTree = "<group>"; };
 		7A3E1C0C18286C410017467E /* InvitesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvitesViewController.m; sourceTree = "<group>"; };
 		7A3E1C0E182A72B90017467E /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
@@ -80,7 +115,6 @@
 		7ACF2EBF1808707F001DAF1B /* whitewidow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "whitewidow-Prefix.pch"; sourceTree = "<group>"; };
 		7ACF2EC01808707F001DAF1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7ACF2EC11808707F001DAF1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7ACF2EC41808707F001DAF1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7ACF2EC61808707F001DAF1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7ACF2EC71808707F001DAF1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7ACF2EC91808707F001DAF1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -104,31 +138,14 @@
 		7ACF2EFE180AD819001DAF1B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7ACF2F00180AD833001DAF1B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		7ACF2F02180AD84E001DAF1B /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestFlight.a; path = ../../../Users/paulschmidt/Downloads/TestFlightSDK2/libTestFlight.a; sourceTree = "<group>"; };
-		7ACF2F05180AE765001DAF1B /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		7ACF2F06180AE765001DAF1B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		7ACF2F07180AE765001DAF1B /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
-		7ACF2F08180AE765001DAF1B /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		7ACF2F09180AE765001DAF1B /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
-		7ACF2F0A180AE765001DAF1B /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
-		7ACF2F0F180AE835001DAF1B /* SocialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialModel.h; sourceTree = "<group>"; };
-		7ACF2F10180AE835001DAF1B /* SocialModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialModel.m; sourceTree = "<group>"; };
-		7ACF2F12180AE835001DAF1B /* ContactVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactVO.h; sourceTree = "<group>"; };
-		7ACF2F13180AE835001DAF1B /* ContactVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactVO.m; sourceTree = "<group>"; };
-		7ACF2F16180AE846001DAF1B /* ContactsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactsModel.h; path = ../ContactsModel.h; sourceTree = "<group>"; };
-		7ACF2F17180AE846001DAF1B /* ContactsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactsModel.m; path = ../ContactsModel.m; sourceTree = "<group>"; };
-		7ACF2F1A180AE856001DAF1B /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
-		7ACF2F1B180AE856001DAF1B /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
-		7ACF2F1D180AE866001DAF1B /* JSONHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONHelper.h; path = ../JSONHelper.h; sourceTree = "<group>"; };
-		7ACF2F1E180AE866001DAF1B /* JSONHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONHelper.m; path = ../JSONHelper.m; sourceTree = "<group>"; };
-		7ACF2F20180AE880001DAF1B /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationController.h; path = ../LocationController.h; sourceTree = "<group>"; };
-		7ACF2F21180AE880001DAF1B /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationController.m; path = ../LocationController.m; sourceTree = "<group>"; };
-		7ACF2F22180AE880001DAF1B /* PushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushController.h; path = ../PushController.h; sourceTree = "<group>"; };
-		7ACF2F23180AE880001DAF1B /* PushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushController.m; path = ../PushController.m; sourceTree = "<group>"; };
-		7ACF2F24180AE880001DAF1B /* SocialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialDelegate.h; path = ../SocialDelegate.h; sourceTree = "<group>"; };
-		7ACF2F25180AE880001DAF1B /* UIWebviewInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWebviewInterfaceController.h; path = ../UIWebviewInterfaceController.h; sourceTree = "<group>"; };
-		7ACF2F26180AE880001DAF1B /* UIWebviewInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIWebviewInterfaceController.m; path = ../UIWebviewInterfaceController.m; sourceTree = "<group>"; };
-		7AE87D19180D1C5A00C14681 /* EventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventModel.h; sourceTree = "<group>"; };
-		7AE87D1A180D1C5A00C14681 /* EventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventModel.m; sourceTree = "<group>"; };
+		7ADDA6E4183BED0200B49846 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../_FRAMEWORKS/Parse.framework; sourceTree = "<group>"; };
+		7ADDA6E6183BED1300B49846 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../_FRAMEWORKS/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		7ADDA6E9183BED8D00B49846 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		7ADDA6EA183BED8D00B49846 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		7ADDA6EB183BED8D00B49846 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		7ADDA6EC183BED8D00B49846 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		7ADDA6ED183BED8D00B49846 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		7ADDA6EE183BED8D00B49846 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +153,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ACF2F0B180AE765001DAF1B /* libTestFlight.a in Frameworks */,
-				7ACF2F03180AD84E001DAF1B /* libTestFlight.a in Frameworks */,
+				7ADDA6E7183BED1300B49846 /* FacebookSDK.framework in Frameworks */,
+				7ADDA6E5183BED0300B49846 /* Parse.framework in Frameworks */,
 				7ACF2F01180AD833001DAF1B /* libz.dylib in Frameworks */,
 				7ACF2EFF180AD819001DAF1B /* AudioToolbox.framework in Frameworks */,
 				7ACF2EFD180AD80D001DAF1B /* CFNetwork.framework in Frameworks */,
@@ -145,10 +162,9 @@
 				7ACF2EF9180AD7F5001DAF1B /* libz.1.1.3.dylib in Frameworks */,
 				7ACF2EF7180AD7D7001DAF1B /* MobileCoreServices.framework in Frameworks */,
 				7ACF2EF5180AD7CA001DAF1B /* QuartzCore.framework in Frameworks */,
+				7ADDA6EF183BED8D00B49846 /* libTestFlight.a in Frameworks */,
 				7ACF2EF3180AD7BF001DAF1B /* Security.framework in Frameworks */,
 				7ACF2EF1180AD7B3001DAF1B /* SystemConfiguration.framework in Frameworks */,
-				7ACF2EEF180AD7A0001DAF1B /* FacebookSDK.framework in Frameworks */,
-				7ACF2EED180AD75B001DAF1B /* Parse.framework in Frameworks */,
 				7ACF2EEB180870E1001DAF1B /* Accounts.framework in Frameworks */,
 				7ACF2EE9180870D5001DAF1B /* AddressBook.framework in Frameworks */,
 				7ACF2EE7180870C3001DAF1B /* Social.framework in Frameworks */,
@@ -165,6 +181,7 @@
 				7ACF2ED11808707F001DAF1B /* XCTest.framework in Frameworks */,
 				7ACF2ED31808707F001DAF1B /* UIKit.framework in Frameworks */,
 				7ACF2ED21808707F001DAF1B /* Foundation.framework in Frameworks */,
+				7ADDA6F0183BED8D00B49846 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,11 +204,11 @@
 		7ACF2EA51808707F001DAF1B = {
 			isa = PBXGroup;
 			children = (
+				7ADDA6E8183BED8D00B49846 /* TestFlightSDK */,
 				7ACF2EB71808707F001DAF1B /* whitewidow */,
 				7ACF2ED61808707F001DAF1B /* whitewidowTests */,
 				7ACF2EB01808707F001DAF1B /* Frameworks */,
 				7ACF2EAF1808707F001DAF1B /* Products */,
-				7ACF2F04180AE765001DAF1B /* TestFlightSDK2 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,6 +224,8 @@
 		7ACF2EB01808707F001DAF1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7ADDA6E6183BED1300B49846 /* FacebookSDK.framework */,
+				7ADDA6E4183BED0200B49846 /* Parse.framework */,
 				7ACF2F02180AD84E001DAF1B /* libTestFlight.a */,
 				7ACF2F00180AD833001DAF1B /* libz.dylib */,
 				7ACF2EFE180AD819001DAF1B /* AudioToolbox.framework */,
@@ -233,12 +252,12 @@
 		7ACF2EB71808707F001DAF1B /* whitewidow */ = {
 			isa = PBXGroup;
 			children = (
+				7A0AD2D1183C218A00E13684 /* Main.storyboard */,
 				7A49CAF2181D13CE00350AF1 /* view */,
 				7ACF2F19180AE856001DAF1B /* utils */,
 				7ACF2F0E180AE835001DAF1B /* model */,
 				7ACF2EC01808707F001DAF1B /* AppDelegate.h */,
 				7ACF2EC11808707F001DAF1B /* AppDelegate.m */,
-				7ACF2EC31808707F001DAF1B /* Main.storyboard */,
 				7ACF2EC61808707F001DAF1B /* ViewController.h */,
 				7ACF2EC71808707F001DAF1B /* ViewController.m */,
 				7ACF2EC91808707F001DAF1B /* Images.xcassets */,
@@ -276,37 +295,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7ACF2F04180AE765001DAF1B /* TestFlightSDK2 */ = {
-			isa = PBXGroup;
-			children = (
-				7ACF2F05180AE765001DAF1B /* libTestFlight.a */,
-				7ACF2F06180AE765001DAF1B /* README.md */,
-				7ACF2F07180AE765001DAF1B /* release_notes.md */,
-				7ACF2F08180AE765001DAF1B /* TestFlight+AsyncLogging.h */,
-				7ACF2F09180AE765001DAF1B /* TestFlight+ManualSessions.h */,
-				7ACF2F0A180AE765001DAF1B /* TestFlight.h */,
-			);
-			name = TestFlightSDK2;
-			path = ../../../Users/paulschmidt/Downloads/TestFlightSDK2;
-			sourceTree = "<group>";
-		};
 		7ACF2F0E180AE835001DAF1B /* model */ = {
 			isa = PBXGroup;
 			children = (
-				7ACF2F20180AE880001DAF1B /* LocationController.h */,
-				7ACF2F21180AE880001DAF1B /* LocationController.m */,
-				7ACF2F22180AE880001DAF1B /* PushController.h */,
-				7ACF2F23180AE880001DAF1B /* PushController.m */,
-				7ACF2F24180AE880001DAF1B /* SocialDelegate.h */,
-				7ACF2F25180AE880001DAF1B /* UIWebviewInterfaceController.h */,
-				7ACF2F26180AE880001DAF1B /* UIWebviewInterfaceController.m */,
-				7ACF2F16180AE846001DAF1B /* ContactsModel.h */,
-				7ACF2F17180AE846001DAF1B /* ContactsModel.m */,
-				7ACF2F0F180AE835001DAF1B /* SocialModel.h */,
-				7ACF2F10180AE835001DAF1B /* SocialModel.m */,
+				7A0AD2C6183C20A400E13684 /* EventModel.h */,
+				7A0AD2C7183C20A400E13684 /* EventModel.m */,
+				7A0AD2BE183C208600E13684 /* LocationController.h */,
+				7A0AD2BF183C208600E13684 /* LocationController.m */,
+				7A0AD2C0183C208600E13684 /* PushController.h */,
+				7A0AD2C1183C208600E13684 /* PushController.m */,
+				7A0AD2BA183C204800E13684 /* ContactsModel.h */,
+				7A0AD2BB183C204800E13684 /* ContactsModel.m */,
+				7A0AD2AC183C1F2E00E13684 /* SocialModel.h */,
+				7A0AD2AD183C1F2E00E13684 /* SocialModel.m */,
+				7A0AD2B1183C1FC500E13684 /* SocialDelegate.h */,
 				7ACF2F11180AE835001DAF1B /* vo */,
-				7AE87D19180D1C5A00C14681 /* EventModel.h */,
-				7AE87D1A180D1C5A00C14681 /* EventModel.m */,
 			);
 			name = model;
 			path = ../../../Whitewidow/Whitewidow/model;
@@ -315,8 +318,8 @@
 		7ACF2F11180AE835001DAF1B /* vo */ = {
 			isa = PBXGroup;
 			children = (
-				7ACF2F12180AE835001DAF1B /* ContactVO.h */,
-				7ACF2F13180AE835001DAF1B /* ContactVO.m */,
+				7A0AD2D8183C21F600E13684 /* ContactVO.h */,
+				7A0AD2D9183C21F600E13684 /* ContactVO.m */,
 			);
 			path = vo;
 			sourceTree = "<group>";
@@ -324,13 +327,29 @@
 		7ACF2F19180AE856001DAF1B /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				7ACF2F1D180AE866001DAF1B /* JSONHelper.h */,
-				7ACF2F1E180AE866001DAF1B /* JSONHelper.m */,
-				7ACF2F1A180AE856001DAF1B /* Logger.h */,
-				7ACF2F1B180AE856001DAF1B /* Logger.m */,
+				7A0AD2CA183C20C300E13684 /* Logger.h */,
+				7A0AD2CB183C20C300E13684 /* Logger.m */,
+				7A0AD2B6183C200E00E13684 /* UIWebviewInterfaceController.h */,
+				7A0AD2B7183C200E00E13684 /* UIWebviewInterfaceController.m */,
+				7A0AD2B2183C1FDE00E13684 /* JSONHelper.h */,
+				7A0AD2B3183C1FDE00E13684 /* JSONHelper.m */,
 			);
 			name = utils;
 			path = ../../../Whitewidow/Whitewidow/utils;
+			sourceTree = "<group>";
+		};
+		7ADDA6E8183BED8D00B49846 /* TestFlightSDK */ = {
+			isa = PBXGroup;
+			children = (
+				7ADDA6E9183BED8D00B49846 /* libTestFlight.a */,
+				7ADDA6EA183BED8D00B49846 /* README.md */,
+				7ADDA6EB183BED8D00B49846 /* release_notes.md */,
+				7ADDA6EC183BED8D00B49846 /* TestFlight+AsyncLogging.h */,
+				7ADDA6ED183BED8D00B49846 /* TestFlight+ManualSessions.h */,
+				7ADDA6EE183BED8D00B49846 /* TestFlight.h */,
+			);
+			name = TestFlightSDK;
+			path = ../../../_FRAMEWORKS/TestFlightSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,11 +431,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0AD2DC183C222600E13684 /* Main.storyboard in Resources */,
+				7ADDA6F1183BED8D00B49846 /* README.md in Resources */,
 				7ACF2ECA1808707F001DAF1B /* Images.xcassets in Resources */,
 				7ACF2EBC1808707F001DAF1B /* InfoPlist.strings in Resources */,
-				7ACF2F0C180AE765001DAF1B /* README.md in Resources */,
-				7ACF2EC51808707F001DAF1B /* Main.storyboard in Resources */,
-				7ACF2F0D180AE765001DAF1B /* release_notes.md in Resources */,
+				7ADDA6F3183BED8D00B49846 /* release_notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +443,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADDA6F4183BED8D00B49846 /* release_notes.md in Resources */,
+				7ADDA6F2183BED8D00B49846 /* README.md in Resources */,
 				7ACF2EDB1808707F001DAF1B /* InfoPlist.strings in Resources */,
+				7A0AD2D4183C218A00E13684 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,19 +458,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A3E1C10182A72B90017467E /* FriendsViewController.m in Sources */,
-				7ACF2F14180AE835001DAF1B /* SocialModel.m in Sources */,
-				7ACF2F1F180AE866001DAF1B /* JSONHelper.m in Sources */,
-				7AE87D1B180D1C5A00C14681 /* EventModel.m in Sources */,
-				7ACF2F15180AE835001DAF1B /* ContactVO.m in Sources */,
-				7ACF2F18180AE846001DAF1B /* ContactsModel.m in Sources */,
+				7A0AD2B4183C1FDE00E13684 /* JSONHelper.m in Sources */,
+				7A0AD2AE183C1F2E00E13684 /* SocialModel.m in Sources */,
+				7A0AD2CC183C20C300E13684 /* Logger.m in Sources */,
+				7A0AD2B8183C200E00E13684 /* UIWebviewInterfaceController.m in Sources */,
 				7ACF2EC81808707F001DAF1B /* ViewController.m in Sources */,
-				7ACF2F28180AE880001DAF1B /* PushController.m in Sources */,
+				7A0AD2DA183C21F600E13684 /* ContactVO.m in Sources */,
 				7ACF2EC21808707F001DAF1B /* AppDelegate.m in Sources */,
-				7ACF2F29180AE880001DAF1B /* UIWebviewInterfaceController.m in Sources */,
-				7ACF2F1C180AE856001DAF1B /* Logger.m in Sources */,
+				7A0AD2BC183C204800E13684 /* ContactsModel.m in Sources */,
+				7A0AD2C8183C20A400E13684 /* EventModel.m in Sources */,
+				7A0AD2C4183C208600E13684 /* PushController.m in Sources */,
 				7ACF2EBE1808707F001DAF1B /* main.m in Sources */,
-				7ACF2F27180AE880001DAF1B /* LocationController.m in Sources */,
 				7A49CAF5181D140600350AF1 /* FunctionTestViewController.m in Sources */,
+				7A0AD2C2183C208600E13684 /* LocationController.m in Sources */,
 				7A3E1C0D18286C410017467E /* InvitesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +479,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0AD2D0183C216400E13684 /* FriendsViewController.m in Sources */,
+				7A0AD2AF183C1F2E00E13684 /* SocialModel.m in Sources */,
+				7A0AD2BD183C204800E13684 /* ContactsModel.m in Sources */,
+				7A0AD2C9183C20A400E13684 /* EventModel.m in Sources */,
+				7A0AD2C3183C208600E13684 /* LocationController.m in Sources */,
+				7A0AD2C5183C208600E13684 /* PushController.m in Sources */,
+				7A0AD2B9183C200E00E13684 /* UIWebviewInterfaceController.m in Sources */,
+				7A0AD2CE183C216400E13684 /* FunctionTestViewController.m in Sources */,
+				7A0AD2CF183C216400E13684 /* InvitesViewController.m in Sources */,
+				7A0AD2B5183C1FDE00E13684 /* JSONHelper.m in Sources */,
+				7A0AD2CD183C20C300E13684 /* Logger.m in Sources */,
+				7A0AD2DB183C21F600E13684 /* ContactVO.m in Sources */,
 				7ACF2EDD1808707F001DAF1B /* whitewidowTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,20 +506,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		7A0AD2D1183C218A00E13684 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A0AD2D2183C218A00E13684 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		7ACF2EBA1808707F001DAF1B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7ACF2EBB1808707F001DAF1B /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7ACF2EC31808707F001DAF1B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7ACF2EC41808707F001DAF1B /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		7ACF2ED91808707F001DAF1B /* InfoPlist.strings */ = {
@@ -578,10 +612,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/paulschmidt/Downloads,
 					/Users/paulschmidt/Documents/FacebookSDK,
+					/Projekte/_FRAMEWORKS,
+					/Projekte/_FRAMEWORKS/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whitewidow/whitewidow-Prefix.pch";
@@ -590,9 +627,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/paulschmidt/Downloads/TestFlightSDK2,
+					/Projekte/_FRAMEWORKS/TestFlightSDK,
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -604,10 +643,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/paulschmidt/Downloads,
 					/Users/paulschmidt/Documents/FacebookSDK,
+					/Projekte/_FRAMEWORKS,
+					/Projekte/_FRAMEWORKS/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whitewidow/whitewidow-Prefix.pch";
@@ -616,8 +658,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/paulschmidt/Downloads/TestFlightSDK2,
+					/Projekte/_FRAMEWORKS/TestFlightSDK,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -639,6 +683,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "whitewidowTests/whitewidowTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Projekte/_FRAMEWORKS/TestFlightSDK,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -658,6 +706,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whitewidow/whitewidow-Prefix.pch";
 				INFOPLIST_FILE = "whitewidowTests/whitewidowTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Projekte/_FRAMEWORKS/TestFlightSDK,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

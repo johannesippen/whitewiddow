@@ -7,7 +7,7 @@
 //
 
 #import "FriendsViewController.h"
-#import "SocialModel.h" 
+#import "SocialModel.h"
 #import "JSONHelper.h"
 
 @interface FriendsViewController ()

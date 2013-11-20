@@ -304,13 +304,13 @@
       /* Cet Contacts / Invite Friends */
       var inviteFBUser = function() {
         social.addNativeListener("getInvitedUser", _onContactsReceived);
-        social.inviteFBUser("1031789260");
+        social.getInvitedUser();
       };
       var getInvitations = function() {
         social.addNativeListener("getConnectedFBContacts", _onContactsReceived);
         social.getInvitedUser();
       };
-      var _onContactsReceived = function(data) { // TODO: This callback is not fired, why?
+      var _onContactsReceived = function(data) { // TODO: This callback is not fired, why? You didn't call the method. 
         log.innerHTML = data;
         writeLog(data);
       };
