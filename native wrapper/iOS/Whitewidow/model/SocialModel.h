@@ -9,8 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "SocialDelegate.h"
 
+typedef NS_ENUM(NSInteger, InvitationState) {
+	InvitationStateNotDetermined = -1,
+	InvitationStatePending = 0,
+	InvitationStateAccepted = 1,
+    InvitationStateDenied = 2
+};
+
 @interface SocialModel : NSObject<SocialDelegate>
 @property (nonatomic, weak) id <SocialDelegate> delegate;
+
+
 
 - (void) connect:(NSString*) withNetwork;
 - (void) getFriendsList;

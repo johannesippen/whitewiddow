@@ -121,7 +121,7 @@ section {
   -webkit-box-orient: vertical;
   padding: 0 10px;
 }
-.status_free {
+.free {
   border: none;
   color: #fff;
   background: #44DB5E;
@@ -134,7 +134,7 @@ section {
   -webkit-box-flex: 1;
   -webkit-box-pack: center;
 }
-.status_busy {
+.busy {
   display: -webkit-box;
   -webkit-box-flex: 1;
   -webkit-box-pack: center;

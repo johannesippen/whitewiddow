@@ -1,4 +1,6 @@
 var friendlist = new Array();
+var social = new Social();
+
 
 // loads the actual friendlist from backend
 var loadFriends = function(user_id) {
@@ -6,8 +8,9 @@ var loadFriends = function(user_id) {
   if(window.location.host == "localhost") {
     var url = "../data/friends.json";
   }
-  $.getJSON(url,function(data){
-    for(i in data) {
+  social.addNativeListener("getWWFriendsList", function(data)
+  {
+	  for(i in data) {
       data[i].location = {
         "longitude": 52+Math.random()*0.1167+0.4166, // Min: .4166, Max: .5333
         "latitude": 13+Math.random()*0.4+0.1666 // Min: .5666, Max: .1666
@@ -17,6 +20,19 @@ var loadFriends = function(user_id) {
     }
     arrangeBubbles(document.querySelectorAll('#friendlist .friend'));
   });
+  social.getWWFriendsList();
+  
+  /*$.getJSON(url,function(data){
+    for(i in data) {
+      data[i].location = {
+        "longitude": 52+Math.random()*0.1167+0.4166, // Min: .4166, Max: .5333
+        "latitude": 13+Math.random()*0.4+0.1666 // Min: .5666, Max: .1666
+      };
+      friendlist.push(data[i]);
+      addFriendtoList(data[i], i);
+    }
+    arrangeBubbles(document.querySelectorAll('#friendlist .friend'));
+  });*/
 };
 
 // loads an "amount" of random users and puts them into friend list
@@ -42,21 +58,21 @@ var loadRandomFriends = function(amount) {
 
 // adds a person to the friend list
 var addFriendtoList = function(user, i) {
-    $('<li class="friend '+user.status.description+'" onclick="createInviteFor('+user._id+')"></li>')
-      .html('<span class="name">'+user.name.first+'</span>')
-      .prepend('<img src="'+user.picture+'">')
+    $('<li class="friend '+user.availability+'" onclick="createInviteFor('+user._id+')"></li>')
+      .html('<span class="name">'+user.name+'</span>')
+      .prepend('<img src="https://graph.facebook.com/'+user.fbID+'/picture?width=200&height=200">')
       .appendTo($('#friendlist'));
     
     // Secondary List
     if(i == 0) {
-      $('<li class="friend '+user.status.description+'"></li>')
-        .html('<span class="name">'+user.name.first+'</span>')
-        .prepend('<img src="'+user.picture+'">')
+      $('<li class="friend '+user.availability+'"></li>')
+        .html('<span class="name">'+user.name+'</span>')
+        .prepend('<img src="https://graph.facebook.com/'+user.fbID+'/picture?width=200&height=200">')
         .prependTo($('.attendees'));
     } else {
-      $('<li class="friend '+user.status.description+'"></li>')
-        .html('<span class="name">'+user.name.first+'</span>')
-        .prepend('<img src="'+user.picture+'">')
+      $('<li class="friend '+user.availability+'"></li>')
+        .html('<span class="name">'+user.name+'</span>')
+        .prepend('<img src="https://graph.facebook.com/'+user.fbID+'/picture?width=200&height=200">')
         .appendTo($('#friendlist_event'));      
     }
 };

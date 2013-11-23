@@ -464,28 +464,37 @@
 
 - (void) getUserData
 {
+    PFObject* user = [PFUser currentUser];
+    if(user != nil)
+    {
+        NSMutableDictionary *userData = [[NSMutableDictionary alloc] init];
+        
+        [userData setValue:user[@"objectId"] forKey:@"objectId"];
+        [userData setValue:user[@"facebookName"] forKey:@"name"];
+        [userData setValue:user[@"fbId"] forKey:@"fbID"];
+        [userData setValue:@"notdetermined" forKey:@"location"];
+        [userData setValue:@"notdetermined" forKey:@"availability"];
+        
+        [UIWebviewInterfaceController callJavascript:[JSONHelper convertDictionaryToJSON:userData forSignal:@"getUserData"]];
+    }
     // Create request for user's Facebook data
-    FBRequest *request = [FBRequest requestForMe];
+    /*FBRequest *request = [FBRequest requestForMe];
     
     // Send request to Facebook
     [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
         if (!error) {
             // result is a dictionary with the user's Facebook data
-            NSMutableDictionary *userData = (NSMutableDictionary *)result;
+            NSMutableDictionary *userData = [[NSMutableDictionary alloc] init];
             
             NSString *facebookID = userData[@"id"];
             
-            NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID]];
+            NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture", facebookID]];
             
             [userData setValue:pictureURL forKey:@"picture"];
             
             [Logger logMessage:@"Get Facebook Me" withScope:@"Social"];
-            NSMutableDictionary *jsonData = [[NSMutableDictionary alloc] init];
-            [jsonData setValue:@"fbUserData" forKey:@"messageType"];
-            [jsonData setValue:userData forKey:@"data"];
-            
-            NSData *json = [NSJSONSerialization dataWithJSONObject:jsonData options:NSJSONReadingAllowFragments error:nil];
+            [UIWebviewInterfaceController callJavascript:[JSONHelper convertDictionaryToJSON:userData forSignal:@"getUserData"]];
         }
-    }];
+    }];*/
 }
 @end

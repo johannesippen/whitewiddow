@@ -58,6 +58,18 @@ var Social = function()
 		this.connector.addNativeListener("inviteFBUser", self._onFBConnectionStateReceived);
 	}
 	
+	this.getUser = function()
+	{
+		this.connector.removeNativeListener("getUserData", self._onUserData);
+		this.connector.callNativeMethod("getUserData");
+		this.connector.addNativeListener("getUserData", self._onUserData);
+	}
+	
+	self._onUserData = function(data)
+	{
+		self._listeners["getUserData"](data);
+	}
+	
 	this.saveCurrentState = function(state)
 	{
 		this.connector.callNativeMethod("saveCurrentState", state);

@@ -127,7 +127,12 @@ static UIWebviewInterfaceController* _interface;
     {
         [EventModel getEventById:messageParam];
         returnValue = @"true";
+    }else if([messageType rangeOfString:@"getUserData"].location != NSNotFound)
+    {
+        [social getUserData];
+        returnValue = @"true";
     }
+    
     
     NSLog(@"Native return: %@", returnValue);
     return returnValue;
