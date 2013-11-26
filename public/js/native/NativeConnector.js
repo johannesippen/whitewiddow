@@ -28,9 +28,9 @@ var NativeConnector = function()
 		}
 		else if(nativeType == "getUserData")
 		{
-			social._onUserData(JSON.parse(data).data);
+			//social._onUserData(JSON.parse(data).data);
 		}	
-		_nativeListener[nativeType](JSON.parse(data).data);
+		//_nativeListener[nativeType](JSON.parse(data).data);
 	}
 	
 	this.callNativeMethod = function(method, params)

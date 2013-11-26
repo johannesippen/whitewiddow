@@ -11,7 +11,6 @@
 @protocol SocialDelegate <NSObject>
 -(void) setFriendsList:(NSArray *) friends;
 -(void) setFriendsListOfConnectedUsers:(NSArray *) friends;
--(void) setUserData:(NSDictionary *) user;
 -(void) setInvitationList:(NSArray*)invites;
 -(void) setWWFriendList:(NSArray*)friends;
 @end

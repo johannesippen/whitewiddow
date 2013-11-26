@@ -4,6 +4,7 @@ var social = new Social();
 
 // loads the actual friendlist from backend
 var loadFriends = function(user_id) {
+	alert("loadFriends");
   var url = "/data/friends.json";
   if(window.location.host == "localhost") {
     var url = "../data/friends.json";

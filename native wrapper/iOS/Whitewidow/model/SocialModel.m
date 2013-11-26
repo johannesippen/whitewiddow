@@ -457,11 +457,6 @@
     }];
 }
 
--(void) setUserData:(NSDictionary *) user
-{
-    
-}
-
 - (void) getUserData
 {
     PFObject* user = [PFUser currentUser];
@@ -477,24 +472,5 @@
         
         [UIWebviewInterfaceController callJavascript:[JSONHelper convertDictionaryToJSON:userData forSignal:@"getUserData"]];
     }
-    // Create request for user's Facebook data
-    /*FBRequest *request = [FBRequest requestForMe];
-    
-    // Send request to Facebook
-    [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
-        if (!error) {
-            // result is a dictionary with the user's Facebook data
-            NSMutableDictionary *userData = [[NSMutableDictionary alloc] init];
-            
-            NSString *facebookID = userData[@"id"];
-            
-            NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture", facebookID]];
-            
-            [userData setValue:pictureURL forKey:@"picture"];
-            
-            [Logger logMessage:@"Get Facebook Me" withScope:@"Social"];
-            [UIWebviewInterfaceController callJavascript:[JSONHelper convertDictionaryToJSON:userData forSignal:@"getUserData"]];
-        }
-    }];*/
 }
 @end
