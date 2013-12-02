@@ -19,6 +19,9 @@ $(function(){
     $('body').attr('data-mode','friends');
   });
   /* Add Friends */
+  $('#friends header button').live('touchend mouseup',function(){
+    $('body').attr('data-mode','addfriends');
+  });
   $('#friendlist_add').live('touchend mouseup',function(){
     $('body').attr('data-mode','addfriends');
   });

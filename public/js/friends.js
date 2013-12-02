@@ -80,11 +80,11 @@ var addFriendtoList = function(user, i) {
 // adds you to the friend list
 var addMeToFriendlist = function(user) {
     $('<li class="me"></li>')
-      .prepend('<img src="'+user.picture+'">')
+      .prepend('<img src="https://graph.facebook.com/'+user.fbID+'/picture?width=200&height=200">')
       .appendTo($('#friendlist'));
       
       $('<li class="me"></li>')
-        .prepend('<img src="'+user.picture+'">')
+        .prepend('<img src="https://graph.facebook.com/'+user.fbID+'/picture?width=200&height=200">')
         .appendTo($('.attendees'));
 };
 
