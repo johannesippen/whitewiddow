@@ -1,6 +1,24 @@
 var friendlist = new Array();
 var social = new Social();
+var FacebookContacts_loaded = false;
 
+// loads Facebook Friends
+var loadFacebookContacts = function() {
+  if(!FacebookContacts_loaded) {
+    var url = "/data/friends.json";
+    if(window.location.host == "localhost") {
+      var url = "../data/friends.json";
+    }
+    social.addNativeListener("getInvitedUser", function(data)
+    {
+      FacebookContacts_loaded = true;
+      for(i in data) {
+        $('.fb_friend_list').append('<li class="fb_friend" data-index="'+user.name+'">'+user.name+'</li>');
+      }
+    });
+    social.getInvitedUser();    
+  }
+};
 
 // loads the actual friendlist from backend
 var loadFriends = function(user_id) {
