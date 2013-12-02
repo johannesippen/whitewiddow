@@ -15,7 +15,7 @@ $(function(){
     $('body').attr('data-mode','friends');
   });
   /* Add Friends */
-  $('#addfriends header button').live('touchend click',function(){
+  $('#addfriends header button').live('touchend mouseup',function(){
     $('body').attr('data-mode','friends');
   });
   /* Add Friends */
