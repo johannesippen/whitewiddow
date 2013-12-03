@@ -15,12 +15,17 @@ $(function(){
     $('body').attr('data-mode','friends');
   });
   /* Add Friends */
-  $('#addfriends header button').live('touchend click',function(){
+  $('#addfriends header button').live('touchend mouseup',function(){
     $('body').attr('data-mode','friends');
   });
   /* Add Friends */
+  $('#friends header button').live('touchend mouseup',function(){
+    $('body').attr('data-mode','addfriends');
+    loadFacebookContacts();
+  });
   $('#friendlist_add').live('touchend mouseup',function(){
     $('body').attr('data-mode','addfriends');
+    loadFacebookContacts();
   });
   /* Friend-Eventmode */
   $('#invite .invite_confirm button').live('click',function(){

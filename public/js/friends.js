@@ -1,6 +1,24 @@
 var friendlist = new Array();
 var social = new Social();
+var FacebookContacts_loaded = false;
 
+// loads Facebook Friends
+var loadFacebookContacts = function() {
+  if(!FacebookContacts_loaded) {
+    var url = "/data/friends.json";
+    if(window.location.host == "localhost") {
+      var url = "../data/friends.json";
+    }
+    social.addNativeListener("getInvitedUser", function(data)
+    {
+      FacebookContacts_loaded = true;
+      for(i in data) {
+        $('.fb_friend_list').append('<li class="fb_friend" data-index="'+user.name+'">'+user.name+'</li>');
+      }
+    });
+    social.getInvitedUser();    
+  }
+};
 
 // loads the actual friendlist from backend
 var loadFriends = function(user_id) {
@@ -81,11 +99,11 @@ var addFriendtoList = function(user, i) {
 // adds you to the friend list
 var addMeToFriendlist = function(user) {
     $('<li class="me"></li>')
-      .prepend('<img src="'+user.picture+'">')
+      .prepend('<img src="https://graph.facebook.com/'+user.fbID+'/picture?width=200&height=200">')
       .appendTo($('#friendlist'));
       
       $('<li class="me"></li>')
-        .prepend('<img src="'+user.picture+'">')
+        .prepend('<img src="https://graph.facebook.com/'+user.fbID+'/picture?width=200&height=200">')
         .appendTo($('.attendees'));
 };
 

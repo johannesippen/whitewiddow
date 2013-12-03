@@ -7,16 +7,12 @@ body[data-status=busy] .me img {
   padding: 2px;
 }
 body[data-status=free] .status_free,
-body[data-status=busy] .status_busy,
-body[data-status=busy] .status_free,
-body[data-status=free] .status_busy,
-.status_selector_busy,
-.status_selector_free {
+body[data-status=busy] .status_busy {
   display: none;
 }
-body[data-status=busy] .status_selector_busy,
-body[data-status=free] .status_selector_free {
-  display: block;
+body[data-status=busy] .status_free,
+body[data-status=free] .status_busy {
+  display: -webkit-box;
 }
 .status_selector_busy,
 .status_selector_free {
