@@ -1,2 +1,6 @@
 
 .DS_Store
+
+native wrapper/iOS/Whitewidow.xcodeproj/project.xcworkspace/xcuserdata/paulschmidt.xcuserdatad/UserInterfaceState.xcuserstate
+
+native wrapper/iOS/Whitewidow.xcodeproj/xcuserdata/paulschmidt.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist

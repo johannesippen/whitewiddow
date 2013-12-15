@@ -29,6 +29,9 @@ var NativeConnector = function()
 		else if(nativeType == "getUserData")
 		{
 			social._onUserData(JSON.parse(data).data);
+		}else if(nativeType == "getInvitedUser")
+		{
+			social._onInvitedUserReceived(JSON.parse(data).data);
 		}	
 		_nativeListener[nativeType](JSON.parse(data).data);
 	}

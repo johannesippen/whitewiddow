@@ -79,7 +79,7 @@ var Social = function()
 	{
 		this.connector.removeNativeListener("getInvitedUser", self._onFBConnectionStateReceived);
 		this.connector.callNativeMethod("getInvitedUser");
-		this.connector.addNativeListener("getInvitedUser", self._onFBConnectionStateReceived);
+		this.connector.addNativeListener("getInvitedUser", self._onInvitedUserReceived);
 	}
 	
 	this.getWWFriendsList = function()
@@ -87,6 +87,11 @@ var Social = function()
 		this.connector.removeNativeListener("getWWFriendsList", self._onWWFriendsListReceived);
 		this.connector.callNativeMethod("getWWFriendsList");
 		this.connector.addNativeListener("getWWFriendsList", self._onWWFriendsListReceived);
+	}
+	
+	self._onInvitedUserReceived = function(data)
+	{
+		self._listeners["getInvitedUser"](data);
 	}
 	
 	self._onWWFriendsListReceived = function(data)
