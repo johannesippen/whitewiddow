@@ -33,6 +33,7 @@ var staticMapUrl = function(my_ll, friend_ll, w, h, venue_ll) {
         mapSrc += '&markers=color:blue%7C'+ll(getMidpoint(my_ll,friend_ll));
       }
       mapSrc += "&size=" + w + "x" + h;
+      mapSrc += "&scale=2";
       mapSrc += "&sensor=false";
   return mapSrc;
 };
@@ -57,7 +58,7 @@ var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood, ra
       
       venue_ll = [venue.location.lat,venue.location.lng];
       
-      $('.map').attr('src',staticMapUrl(my_coordinates,friend_coordinates,640,640,venue_ll));
+      $('.map').attr('src',staticMapUrl(my_coordinates,friend_coordinates,320,320,venue_ll));
       
       if(is_midpoint) {
         $('.invite_venue_name').text(venue.name);
