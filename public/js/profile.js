@@ -5,6 +5,7 @@ var loadProfile = function(user_id) {
 	  {
 	  		showMyProfile(data);
 	  });
+    loadFriends(7);
 };
 
 var showMyProfile = function(user) {
