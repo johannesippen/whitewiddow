@@ -187,7 +187,7 @@
         <button id="addfriends_cancel">Done</button><input id="search" type="search" placeholder="Search">
       </header>
       <div class="addfriends_list">
-        <ul class="fb_friend_list">
+        <ul class="fb_friend_list" id="fb_list">
         </ul>
       </div>
       <div class="friend_slots">
@@ -234,6 +234,9 @@
     </section>
     <div style="padding-top: 568px;">
     <!-- Debug Menu -->
+    <div style="position: absolute;z-index:32000;top:0;right:0;background:rgba(0,0,0,.2)">
+      <a style="display:inline-block;margin:5px;padding:10px;background:rgba(0,0,0,.3)" onclick="window.location.reload();">&#8635;</a><a style="display:inline-block;margin:5px;padding:10px;background:rgba(0,0,0,.3)" onclick="localStorage.removeItem('permissions');">&otimes;</a>
+    </div>
     <section id="debug" class="debug">
       <a onclick="window.location.reload();">&#8635; Reload</a>
       <a onclick="localStorage.removeItem('permissions');">Reset Onboarding</a>
@@ -327,9 +330,10 @@
         log.innerHTML = data;
         writeLog(data);
       };
-      
-
       $(function(){
+/*        $('#friends, #event, #received, #invite, #venue, #addfriends, #permissions').on('touchmove', function(e) {
+          e.preventDefault();
+        });*/
         $('.invite_venue, .invite_venue_switch a').on('click',function(){
           $('.invite_venue_switch').toggleClass('active');
         });
