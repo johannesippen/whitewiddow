@@ -13,12 +13,17 @@ var loadFacebookContacts = function() {
     {
       FacebookContacts_loaded = true;
       for(i in data) {
-        $('.fb_friend_list').append('<li class="fb_friend" data-index="'+data[i].name+'"><img src="http://graph.facebook.com/'+data[i].fbID+'/picture"><span>'+data[i].name+'</span><button id="addfriends_invite">Invite</button></li>');
+        $('.fb_friend_list').append('<li class="fb_friend" data-index="'+data[i].name+'"><img src="http://graph.facebook.com/'+data[i].fbID+'/picture"><span>'+data[i].name+'</span><button ontouchstart="inviteFriend(\''+data[i].fbID+'\');" id="addfriends_invite">Invite</button></li>');
       }
     });
     social.getInvitedUser();    
   }
 };
+
+var inviteFriend = function(id)
+{
+	social.inviteFBUser(id);
+}
 
 // loads the actual friendlist from backend
 var loadFriends = function(user_id) {
