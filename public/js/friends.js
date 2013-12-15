@@ -104,10 +104,13 @@ var showFriendProfile = function(user_id) {
 };
 
 var createInviteFor = function(user_id) {
-  alert(friendlist[user_id].name);
+  coreLocation.addNativeListener("getLocation", _onCoreLocationReceived);
+  coreLocation.getLocation();
   friend_coordinates = [friendlist[user_id].location.longitude,friendlist[user_id].location.latitude];
+  if(friend_coordinates[0] == 0 || friend_coordinates[0] == undefined || friend_coordinates[1] == 0 || friend_coordinates[1] == undefined) {
+    friend_coordinates = my_coordinates;
+  }
   var map = document.getElementById('map');
       map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180);
-      
   getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
 }

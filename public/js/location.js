@@ -13,6 +13,12 @@ $(document).on('ww:gotVenue', function(e, map, name){
 
 // Returns Geo Midpoint between my_ll and friend_ll
 var getMidpoint = function(my_ll, friend_ll) {
+  if(friend_ll[0] == 0 || friend_ll[0] == undefined) {
+    friend_ll[0] = my_ll[0];
+  }
+  if(friend_ll[1] == 0 || friend_ll[1] == undefined) {
+    friend_ll[1] = my_ll[1];
+  }
   midpoint = [((friend_ll[0]+my_ll[0])/2),((friend_ll[1]+my_ll[1])/2)];
   return midpoint;
 };
@@ -41,6 +47,7 @@ var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood, ra
       url += '&radius='+radius;
       url += '&categoryId='+category;
       url += '&intent=browse&oauth_token='+token+'&v=20130811';
+
 
   $.getJSON(url,function(data){
     venues = data.response.venues;
