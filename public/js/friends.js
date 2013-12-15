@@ -29,11 +29,15 @@ var loadFacebookContacts = function() {
 	      		
       	}
       
-        $('.fb_friend_list').append('<li class="fb_friend" data-index="'+data[i].name+'"><img src="http://graph.facebook.com/'+data[i].fbID+'/picture"><span>'+data[i].name+'</span><button ontouchstart="inviteFriend(\''+data[i].fbID+'\',\''+state+'\');" id="addfriends_invite">'+state+'</button></li>');
+        $('.fb_friend_list').append('<li class="fb_friend" data-index="'+computerName(data[i].name)+'"><img src="http://graph.facebook.com/'+data[i].fbID+'/picture"><span>'+data[i].name+'</span><button ontouchstart="inviteFriend(\''+data[i].fbID+'\',\''+state+'\');" id="addfriends_invite">'+state+'</button></li>');
       }
     });
     social.getInvitedUser();    
   }
+};
+
+var computerName = function(name){
+  return (name.replace(/ /g, "")).toLowerCase();
 };
 
 var inviteFriend = function(id, state)
