@@ -133,10 +133,27 @@
         <div class="invite_map">
           <img src="" id="map" class="map">
         </div>
-        <div class="invite_venue">
+        <div class="invite_venue" id="venue_slider">
+          <ul>
+            <li id="mid_invite_venue"></li>
+            <li id="friend_invite_venue"></li>
+            <li id="my_invite_venue"></li>
+          </ul>
+        </div>
+        <!-- div class="invite_venue" id="venue_slider">
+          <ul>
+            <li>
+              <span class="invite_venue_name">%Venue%</span>
+              <span class="invite_venue_distance">%0.0km%</span>
+            </li>
+            <li>
+              <span class="invite_venue_name">%Venue%</span>
+              <span class="invite_venue_distance">%0.0km%</span>
+            </li>
+          </ul>
           <span class="invite_venue_name">%Venue%</span>
           <span class="invite_venue_distance">%0.0km%</span>
-        </div>
+        </div -->
         <div class="invite_confirm">
           <a class="button">Send Invite</a>
         </div>
@@ -174,6 +191,9 @@
       </header>
       <div class="addfriends_list">
         <ul class="fb_friend_list">
+          <li class="fb_friend" data-index="johndoe">
+            <img src="#"><span>John Doe</span><button id="addfriends_invite">Invite</button>
+          </li>
         </ul>
       </div>
       <div class="friend_slots">
