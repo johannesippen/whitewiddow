@@ -50,6 +50,6 @@ $(function(){
   } else {
     $('body').attr('data-mode','permissions');
   }
-  $('body').attr('data-mode','addfriends');
+//  $('body').attr('data-mode','addfriends');
 });
 

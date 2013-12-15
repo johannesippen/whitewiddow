@@ -13,7 +13,7 @@ var loadFacebookContacts = function() {
     {
       FacebookContacts_loaded = true;
       for(i in data) {
-        $('.fb_friend_list').append('<li class="fb_friend" data-index="'+user.name+'">'+user.name+'</li>');
+        $('.fb_friend_list').append('<li class="fb_friend" data-index="'+user.name+'"><img src="http://graph.facebook.com/'+user.fbID+'/picture"><span>'+user.name+'</span><button id="addfriends_invite">Invite</button></li>');
       }
     });
     social.getInvitedUser();    
