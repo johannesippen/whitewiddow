@@ -61,8 +61,8 @@
       </div>
       <div class="friends">
         <ul id="friendlist" class="friendlist">
-          <li class="friend_slot" id="friendlist_add"><i class="flaticon-addition1"></i></li>
-          <li class="friend_slot"><i class="flaticon-lock9"></i></li>
+          <li class="friend_slot" id="friendlist_add"><div class="symbol"><img src="img/add-icon-2x.png"></div></li>
+          <li class="friend_slot"><div class="symbol"><img src="img/lock-icon-2x.png"></div></li>
         </ul>
       </div>
       <div class="status_selector">
@@ -73,7 +73,7 @@
     <!-- Pre Event Dashboard -->
     <section id="event">
       <header>
-        <h1>Event</h1>
+        <h1>MeetEm</h1>
       </header>
       <div class="invite_dialogue">
         <div class="invite_map">
@@ -94,7 +94,7 @@
     <!-- Peer Invite Dashboard -->
     <section id="received">
       <header>
-        <h1>You are invited!</h1>
+        <h1>MeetEm</h1>
       </header>
       <div class="invite_dialogue">
         <div class="invite_map">
@@ -128,6 +128,7 @@
     <section id="invite">
       <header>
         <button class="back">Back</button>
+        <h1>MeetEm</h1>
       </header>
       <div class="invite_dialogue">
         <div class="invite_map">
@@ -159,7 +160,7 @@
     <!-- Venue Details -->
     <section id="venue">
       <header>
-        <button class="back">Back</button><h1>Details</h1>
+        <button class="back">Back</button><h1>MeetEm</h1>
       </header>
       <div class="venue_details">
         <div class="venue_image">
@@ -191,11 +192,11 @@
         </ul>
       </div>
       <div class="friend_slots">
-        <div class="friend_slot"><i class="flaticon-lock9"></i></div>
-        <div class="friend_slot"><i class="flaticon-lock9"></i></div>
-        <div class="friend_slot"><i class="flaticon-lock9"></i></div>
-        <div class="friend_slot"><i class="flaticon-lock9"></i></div>
-        <div class="friend_slot"><i class="flaticon-lock9"></i></div>
+        <div class="friend_slot"><div class="symbol"><img src="img/lock-icon-2x.png"></div></div>
+        <div class="friend_slot"><div class="symbol"><img src="img/lock-icon-2x.png"></div></div>
+        <div class="friend_slot"><div class="symbol"><img src="img/lock-icon-2x.png"></div></div>
+        <div class="friend_slot"><div class="symbol"><img src="img/lock-icon-2x.png"></div></div>
+        <div class="friend_slot"><div class="symbol"><img src="img/lock-icon-2x.png"></div></div>
       </div>
     </section>
     <section id="permissions">
@@ -204,7 +205,7 @@
           <p>Welcome to Whitewidow, where you meet real friends in real life.</p>
         </div>
         <div class="permission_action">
-          <button>Facebook Connect</button>
+          <button style="font-family: HelveticaNeue-CondensedBold;">Facebook Connect</button>
         </div>
       </section>
       <section id="allowLocation" class="permission">
@@ -235,27 +236,11 @@
     <div style="padding-top: 568px;">
     <!-- Debug Menu -->
     <div style="position: absolute;z-index:32000;top:0;right:0;background:rgba(0,0,0,.2)">
-      <a style="display:inline-block;margin:5px;padding:10px;background:rgba(0,0,0,.3)" onclick="window.location.reload();">&#8635;</a><a style="display:inline-block;margin:5px;padding:10px;background:rgba(0,0,0,.3)" onclick="localStorage.removeItem('permissions');">&otimes;</a>
+      <a style="display:inline-block;margin:5px;padding:10px;background:rgba(0,0,0,.3)" onclick="window.location.reload();">&#8635;</a><a style="display:inline-block;margin:5px;padding:10px;background:rgba(0,0,0,.3)" onclick="localStorage.removeItem('permissions');window.location.reload();">&otimes;</a>
     </div>
-    <section id="debug" class="debug">
-      <a onclick="window.location.reload();">&#8635; Reload</a>
-      <a onclick="localStorage.removeItem('permissions');">Reset Onboarding</a>
-      <a onclick="writeLog('Version: unknown')">Version</a>
-      <a onclick="getInvitations()">Get Invitations</a>
-      <a onclick="testCoreLocation()">Get Core Location</a>
       <p id="log">
         <!-- Generated Logs go here -->
       </p>
-    </section>
-    <!-- Onboarding -->
-    <section id="onboarding" class="debug">
-      <strong class="done" onclick="">1. Welcome</strong>
-      <a class="fb" onclick="hasAccessToContacts();">2. Connect to Facebook</a>
-      <a id="allowCoreLocation" class="" onclick="allowCoreLocation();">3. Allow Location</a>
-      <a class="" onclick="">4. Allow Notifications</a>
-      <a class="" onclick="inviteFBUser();">5. Invite Friends</a>
-    </section>
-    </div>
     <script src="js/native/NativeConnector.js"></script>
     <script src="js/native/Social.js"></script>
     <script src="js/native/CoreLocation.js"></script>

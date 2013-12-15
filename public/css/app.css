@@ -19,17 +19,16 @@ button:active {
   background: #f6f9f6;
   margin: 0;
   font-family: "Helvetica Neue";
-  font-weight: 200;
+  font-weight: 300;
 }
 header {
-  height: 44px;
-  background: #4184FE;
+  height: 45px;
+  background: #008aff;
   color: #fff;
-  border-bottom: 1px solid #eee;
   display: block;
 }
 header{height:44px;}
-header h1{font:normal 20px/43px sans-serif;overflow:hidden;text-align: center;}
+header h1{font:normal 30px/43px 'HelveticaNeue-CondensedBold';overflow:hidden;text-align: center;}
 header button{position:absolute;height:28px;font:normal 18px/29px sans-serif;margin:7px 5px;padding:0 8px;top:20px;color:#fff;border:none;background:none;}
 header h1+button{right:0;}
 header button.active {
@@ -43,7 +42,7 @@ section {
 .ios h2,
 .ios button {
   font-family: "Helvetica Neue";
-  font-weight: 200;
+  font-weight: 300;
 }
 .invite_map img {
   width: 320px;
@@ -55,19 +54,18 @@ section {
 .invite_confirm a {
   border: none;
   color: #fff;
-  background: #44DB5E;
-  line-height: 60px;
+  background: #4cd964;
+  line-height: 50px;
   border-radius: 6px;
   margin: 5px 15px;
-  font-size: 28px;
+  font-size: 26px;
   padding: 0px;
-  width: 100px;
   text-align: center;
   display: -webkit-box;
   -webkit-box-flex: 1;
   -webkit-box-pack: center;
 }
-.invite_confirm button.active {
+.invite_confirm a.active {
   background: #3c4;
 }
 .invite_venue,
@@ -139,15 +137,16 @@ section {
 }
 .status_free,
 .status_busy {
-  border: 2px solid #888;
+  border: 3px solid #888;
   text-decoration: none;
   color: #888;
   background: none;
-  line-height: 50px;
+  line-height: 62px;
   border-radius: 6px;
   margin: 5px;
-  font-size: 28px;
-  padding: 0px;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 0 0 2px 0;
   display: -webkit-box;
   -webkit-box-flex: 1;
   -webkit-box-pack: center;
@@ -155,8 +154,8 @@ section {
 .status_free {
   -webkit-box-flex: 2;
   color: #fff;
-  background: #44DB5E;
-  border-color: #44DB5E;
+  background: #4cd964;
+  border-color: #4cd964;
 }
 .status_planned {
   padding-top: 8px;
@@ -259,6 +258,9 @@ section {
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
+.fb_friend:nth-child(2n+1) {
+  background: #fff;
+}
 .fb_friend {
   display: -webkit-box;
   line-height: 44px;
@@ -273,10 +275,13 @@ section {
 .fb_friend span {
   display: -webkit-box;
   -webkit-box-flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .fb_friend button {
-  border: 1px solid #44DB5E;
-  color: #44DB5E;
+  border: 1px solid #4cd964;
+  color: #4cd964;
   background: #fff;
   border-radius: 3px;
   padding: 5px 15px;
@@ -290,14 +295,4 @@ section {
   padding: 0 10px;
   color: #fff;
   text-align: center;
-}
-.friend_slot {
-  display: -webkit-box;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 50px;
-  margin: 5px;
-  background: #ccc;
 }

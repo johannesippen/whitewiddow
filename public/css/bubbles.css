@@ -61,12 +61,12 @@ ul.friendlist li.me img {
   width: 97px!important;
 }
 ul.friendlist li.free img {
-  border: 2px solid #2BD74B;
-  padding: 2px;
+  border: 3px solid #2BD74B;
+  padding: 4px;
 }
 ul.friendlist li.busy img {
-  border: 2px solid #FF210E;
-  padding: 2px;
+  border: 3px solid #FF210E;
+  padding: 4px;
 }
 .friendlist .friend_slot {
   height: 60px!important;
@@ -75,41 +75,22 @@ ul.friendlist li.busy img {
   text-align: center;
   color: #fff;
 }
-/* Secondary List */
-ul.friendlist.secondary {
-  position: static;
-  height: auto;
+.friend_slot {
   display: -webkit-box;
-  margin-top: 0;
-  overflow: hidden;
-  padding: 10px;
-  width: 300px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  background: #808080;
+  margin: 5px;
 }
-.ios ul.friendlist.secondary li {
-  -webkit-box-flex: 1;
-  position: static;
-  margin: 0;
+.friend_slot .symbol {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
 }
-.attendees {
-  display: -webkit-box;
-  width: 320px;
-  height: 263px;
-}
-.attendees li.friend {
-  position: absolute;
-  margin: 51px 0 0 172px;
-  z-index: 10;
-}
-.attendees li.me {
-  position: absolute;
-  margin: 86px 0 0 95px;
-}
-.attendees li img {
-  width: 60px!important;
-  border-radius: 100px;
-  margin: 0;
-  padding: 4px;
-}
-.attendees li.me img {
-  width: 120px!important;
+.friend_slot .symbol img {
+  width: 30px!important;
+  height: 30px!important;
 }
