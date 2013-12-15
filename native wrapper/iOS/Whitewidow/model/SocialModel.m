@@ -89,31 +89,40 @@
 {
     if([PFUser currentUser] != nil)
     {
-        PFQuery *query = [PFQuery queryWithClassName:@"FriendsConnection"];
+        PFQuery *query = [PFQuery queryWithClassName:@"UserConnection"];
         
-        [query includeKey:@"Friend"];
-        [query whereKey:@"User" equalTo:[PFUser currentUser]];
+        [query includeKey:@"friend"];
+        [query whereKey:@"user" equalTo:[PFUser currentUser]];
         [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
         {
             if(error == nil)
             {
-                NSMutableArray* friends = [[NSMutableArray alloc] initWithArray:objects];
+                NSMutableArray* friends = [[NSMutableArray alloc] init];
+                PFObject *getterFriend;
+                NSMutableDictionary *tempLocation;
+                PFGeoPoint *geoPoint;
                 __block NSMutableDictionary *friend;
                 for (int i = 0; i < objects.count; i++)
                 {
                     friend = [[NSMutableDictionary alloc] init];
-                    [friend setValue:objects[i][@"objectId"] forKey:@"objectId"];
-                    [friend setValue:objects[i][@"facebookName"] forKey:@"name"];
+                    getterFriend = objects[i][@"friend"];
+                    [friend setValue:getterFriend.objectId forKey:@"objectId"];
+                    [friend setValue:getterFriend[@"facebookName"] forKey:@"name"];
                     [friend setValue:@"accepted" forKey:@"invitationState"];
-                    [friend setValue:objects[i][@"fbId"] forKey:@"fbID"];
-                    [friend setValue:objects[i][@"lastLocation"] forKey:@"location"];
-                    int currentAvailability = [objects[i][@"currentAvailability"] integerValue];
+                    [friend setValue:getterFriend[@"fbId"] forKey:@"fbID"];
+                    tempLocation = [[NSMutableDictionary alloc]init];
+                    geoPoint = getterFriend[@"lastLocation"];
+                    [tempLocation setValue:[NSNumber numberWithDouble:[geoPoint latitude]] forKey:@"latitude"];
+                    [tempLocation setValue:[NSNumber numberWithDouble:[geoPoint longitude]] forKey:@"longitude"];
+                    [friend setValue:tempLocation forKey:@"location"];
+                    int currentAvailability = [getterFriend[@"currentAvailability"] integerValue];
                     [friend setValue:[self convertToReadableAvailability: currentAvailability] forKey:@"availability"];
                     [friends addObject:friend];
                 }
                 
                 PFQuery *invitationQuery = [PFQuery queryWithClassName:@"UserInvitations"];
                 [invitationQuery whereKey:@"invitationFrom" equalTo:[PFUser currentUser]];
+                [invitationQuery whereKey:@"invitationState" notEqualTo:[NSNumber numberWithInt:1]];
                 [invitationQuery findObjectsInBackgroundWithBlock:^(NSArray *invitations, NSError *invitationError)
                  {
                      if(invitationError == nil)
@@ -122,7 +131,7 @@
                          for (int j = 0; j < invitations.count; j++)
                          {
                              friend = [[NSMutableDictionary alloc] init];
-                             [friend setValue:invitations[j][@"objectId"] forKey:@"objectId"];
+                             [friend setValue:[invitations[j] objectId] forKey:@"objectId"];
                              [friend setValue:invitations[j][@"facebookName"] forKey:@"name"];
                              invitationState = [[invitations[j] valueForKey:@"invitationState"] integerValue];
                              [friend setValue:[self convertToReadableState:invitationState] forKey:@"invitationState"];

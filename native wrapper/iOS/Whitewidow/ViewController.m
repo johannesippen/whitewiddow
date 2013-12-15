@@ -59,9 +59,9 @@
     self.webView.frame = webViewFrame;
     
     
-    UISwipeGestureRecognizer *gestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeHandler:)];
-    [gestureRecognizer setDirection:(UISwipeGestureRecognizerDirectionLeft)];
-    [self.view addGestureRecognizer:gestureRecognizer];
+    //UISwipeGestureRecognizer *gestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeHandler:)];
+    //[gestureRecognizer setDirection:(UISwipeGestureRecognizerDirectionLeft)];
+    //[self.view addGestureRecognizer:gestureRecognizer];
     [Logger setTextfield:self.debugView];
     NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey];
     [Logger outputMessage:version withScope:@"APP"];
