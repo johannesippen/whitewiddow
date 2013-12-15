@@ -14,10 +14,10 @@ $(document).on('ww:gotVenue', function(e, map, name){
 // Returns Geo Midpoint between my_ll and friend_ll
 var getMidpoint = function(my_ll, friend_ll) {
   if(friend_ll[0] == 0 || friend_ll[0] == undefined) {
-    friend_ll[0] = my_ll[0];
+    return my_ll;
   }
   if(friend_ll[1] == 0 || friend_ll[1] == undefined) {
-    friend_ll[1] = my_ll[1];
+    return my_ll;
   }
   midpoint = [((friend_ll[0]+my_ll[0])/2),((friend_ll[1]+my_ll[1])/2)];
   return midpoint;
@@ -40,14 +40,15 @@ var staticMapUrl = function(my_ll, friend_ll, w, h, venue_ll) {
 // Get the venue from Foursquare and puts it into the Map
 var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood, radius) {
   var category = '4bf58dd8d48988d116941735'; // Foursquare Nightlife
-  var radius = 500;  
+  if(!radius) {
+    var radius = 500;  
+  }
   var token = 'B2YI5GXCW022WC3F4FLP5SFHGGLG1LA0DCT2QSGQTXQVBYWV';
   var url = 'https://api.foursquare.com/v2/venues/search'
       url += '?ll='+ll(location_ll);
       url += '&radius='+radius;
       url += '&categoryId='+category;
       url += '&intent=browse&oauth_token='+token+'&v=20130811';
-
 
   $.getJSON(url,function(data){
     venues = data.response.venues;
@@ -56,19 +57,18 @@ var getVenue = function(location_ll, is_midpoint, is_my_hood, is_friend_hood, ra
       
       venue_ll = [venue.location.lat,venue.location.lng];
       
-      map.src = staticMapUrl(my_coordinates,friend_coordinates,320,320,venue_ll);
-      $('.map').attr('src',staticMapUrl(my_coordinates,friend_coordinates,320,320,venue_ll));
+      $('.map').attr('src',staticMapUrl(my_coordinates,friend_coordinates,640,640,venue_ll));
       
       if(is_midpoint) {
-        $('#mid_invite_venue').text(venue.name);
+        $('.invite_venue_name').text(venue.name);
         $('.invite_venue_distance').text(getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min');
       }
       if(is_my_hood) {
-        $('#my_invite_venue').text(venue.name);
+        $('.invite_venue_name').text(venue.name);
         $('.invite_venue_distance').text(getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min');
       }
       if(is_friend_hood) {
-        $('#friend_invite_venue').text(venue.name);
+        $('.invite_venue_name').text(venue.name);
         $('.invite_venue_distance').text(getDistance(my_coordinates,venue_ll)+'km, '+getTravelTime(my_coordinates,venue_ll)+'min');
       }
     } else {

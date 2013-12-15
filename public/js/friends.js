@@ -112,5 +112,6 @@ var createInviteFor = function(user_id) {
   }
   var map = document.getElementById('map');
       map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180);
+  
   getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
 }

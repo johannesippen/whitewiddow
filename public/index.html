@@ -133,12 +133,9 @@
         <div class="invite_map">
           <img src="" id="map" class="map">
         </div>
-        <div class="invite_venue" id="venue_slider">
-          <ul>
-            <li id="mid_invite_venue"></li>
-            <li id="friend_invite_venue"></li>
-            <li id="my_invite_venue"></li>
-          </ul>
+        <div class="invite_venue">
+          <span class="invite_venue_name">%Venue%</span>
+          <span class="invite_venue_distance">%0.0km%</span>
         </div>
         <!-- div class="invite_venue" id="venue_slider">
           <ul>
@@ -191,9 +188,6 @@
       </header>
       <div class="addfriends_list">
         <ul class="fb_friend_list">
-          <li class="fb_friend" data-index="johndoe">
-            <img src="#"><span>John Doe</span><button id="addfriends_invite">Invite</button>
-          </li>
         </ul>
       </div>
       <div class="friend_slots">
@@ -317,8 +311,8 @@
         log.innerHTML = JSON.stringify(data);
         writeLog(JSON.stringify(data));
         my_coordinates = [data.latitude,data.longitude];
-        map.src = staticMapUrl(my_coordinates,friend_coordinates,320,320);
-        getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
+        /*map.src = staticMapUrl(my_coordinates,friend_coordinates,320,320);
+        getVenue(getMidpoint(my_coordinates,friend_coordinates),true);*/
       };
       /* Cet Contacts / Invite Friends */
       var inviteFBUser = function() {
