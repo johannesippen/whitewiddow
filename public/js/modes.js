@@ -46,9 +46,10 @@ $(function(){
   });
   /* Startup */  
   if(localStorage['permissions']=='true') {
-    $('body').attr('data-mode','friends');    
+    $('body').attr('data-mode','friends');
   } else {
-    $('body').attr('data-mode','permissions');    
+    $('body').attr('data-mode','permissions');
   }
+  $('body').attr('data-mode','addfriends');
 });
 

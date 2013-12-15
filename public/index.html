@@ -100,7 +100,19 @@
         <div class="invite_map">
           <img src="" id="map" class="map">
         </div>
-        <div class="event_details">
+        <div id="owl-venues" class="event_details owl-carousel">
+          <div class="invite_venue">
+            <span class="invite_venue_name">%Venue%</span>
+            <span class="invite_venue_distance">%0.0km%</span>
+          </div>
+          <div class="invite_venue">
+            <span class="invite_venue_name">%Venue%</span>
+            <span class="invite_venue_distance">%0.0km%</span>
+          </div>
+          <div class="invite_venue">
+            <span class="invite_venue_name">%Venue%</span>
+            <span class="invite_venue_distance">%0.0km%</span>
+          </div>
           <div class="invite_venue">
             <span class="invite_venue_name">%Venue%</span>
             <span class="invite_venue_distance">%0.0km%</span>
@@ -162,7 +174,7 @@
       </header>
       <div class="addfriends_list">
         <ul class="fb_friend_list">
-          <li class="fb_friend" data-index="johndoe">
+          <!-- li class="fb_friend" data-index="johndoe">
             <img src="#"><span>John Doe</span><button id="addfriends_invite">Invite</button>
           </li>
           <li class="fb_friend" data-index="nicoengelhardt">
@@ -173,7 +185,7 @@
           </li>
           <li class="fb_friend" data-index="johannesippen">
             <img src="#"><span>Johannes Ippen</span><button id="addfriends_invite">Invite</button>
-          </li>
+          </li -->
         </ul>
       </div>
       <div class="friend_slots">
@@ -262,7 +274,7 @@
       var activate_daytime = false;
       var friend_coordinates = [52.52585,13.341351];
       var my_coordinates = [52.490278,13.47];
-      var map = document.getElementById('map');
+      var map = document.getElementById('map'); 
 
       /* Write Log */
       var writeLog = function(msg) {
