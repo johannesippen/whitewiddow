@@ -49,7 +49,10 @@ section {
   width: 320px;
   height: 320px;
 }
-.invite_confirm button {
+.invite_confirm {
+  display: -webkit-box;
+}
+.invite_confirm a {
   border: none;
   color: #fff;
   background: #44DB5E;
@@ -58,6 +61,8 @@ section {
   margin: 5px;
   font-size: 28px;
   padding: 0px;
+  width: 100px;
+  text-align: center;
   display: -webkit-box;
   -webkit-box-flex: 1;
   -webkit-box-pack: center;
@@ -67,6 +72,13 @@ section {
 }
 .invite_venue,
 .invite_time {
+  height: 86px;
+}
+.ui-swipeslide-reel {
+  margin: 0;
+  padding-left: 0!important;
+}
+.ui-swipeslide-slide {
   height: 86px;
 }
 .invite_venue_name,

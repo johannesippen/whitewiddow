@@ -28,7 +28,7 @@ $(function(){
     loadFacebookContacts();
   });
   /* Friend-Eventmode */
-  $('#invite .invite_confirm button').live('click',function(){
+  $('#invite .invite_confirm a.button').live('click',function(){
     alert('Your friend has been invited. Let the waiting begin!');
     $('body').attr('data-mode','event');
   });
@@ -37,7 +37,7 @@ $(function(){
     $('body').attr('data-mode','received');
   });
   /* Venuemode */
-  $('#invite .invite_venue').live('click',function(){
+  $('#invite .invite_venue_name').live('click',function(){
     $('body').attr('data-mode','venue');
   });
   $('#event .invite_venue').live('click',function(){
@@ -50,6 +50,12 @@ $(function(){
   } else {
     $('body').attr('data-mode','permissions');
   }
-//  $('body').attr('data-mode','addfriends');
+//  $('body').attr('data-mode','invite');
+  $('#venue_slider').swipeSlide({
+    bulletNavigation: false,
+    onChange: function(){
+      // Change Map
+    }
+  });
 });
 

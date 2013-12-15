@@ -4,8 +4,8 @@ var loadProfile = function(user_id) {
 	  social.addNativeListener("getUserData",function(data)
 	  {
 	  		showMyProfile(data);
+	  		loadFriends(7);
 	  });
-    loadFriends(7);
 };
 
 var showMyProfile = function(user) {
