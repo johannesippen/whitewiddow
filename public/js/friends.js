@@ -25,7 +25,7 @@ var loadFacebookContacts = function() {
 	      	break;
 	      	
 	      	default:
-	      		state = "invite";
+	      		state = "invite"; 
 	      		
       	}
       
@@ -42,9 +42,9 @@ var inviteFriend = function(id, state)
 	{
 		social.inviteFBUser(id);	
 	}
-	else if(state == "pendingByMe")
+	else if(state == "accept")
 	{
-		//social.
+		social.setInvitationState(state, id);
 	}
 	
 }

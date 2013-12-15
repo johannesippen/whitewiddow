@@ -201,10 +201,29 @@
    // [UIWebviewInterfaceController callJavascript:[JSONHelper convertArrayToJSON:friends forSignal:@"getFBContacts"]];
 }
 
-- (void) setInvitationState:(NSString*)state forID:(NSString*) invitationID
+- (void) setInvitationState:(NSString*)message
 {
+    message = [message stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *messageData = [NSJSONSerialization
+                               JSONObjectWithData:[message dataUsingEncoding:NSUTF8StringEncoding]
+                               options:kNilOptions
+                               error:nil];
+    NSString* state = [messageData valueForKey:@"state"];
+    __block NSString* invitationID = [messageData valueForKey:@"id"];
+    
+    if([state isEqualToString:@"accept"])
+    {
+        PFQuery *userquery = [PFQuery queryWithClassName:@"User"];
+        [userquery whereKey:@"fbId" equalTo:invitationID];
+        [userquery getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+            
+            invitationID = [object valueForKey:@"fbId"];
+        }];
+    }
+    
     PFQuery *query = [PFQuery queryWithClassName:@"UserInvitations"];
-    [query getObjectInBackgroundWithId:invitationID block:^(PFObject *userInvitation, NSError *error) {
+    [query whereKey:@"fbID" equalTo:invitationID];
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *userInvitation, NSError *error) {
         
         
         PFObject *user = [PFUser currentUser];
@@ -215,7 +234,7 @@
         {
             invitationState = 0;
         }
-        else if([state isEqualToString:@"accepted"])
+        else if([state isEqualToString:@"accept"])
         {
             invitationState = 1;
         }

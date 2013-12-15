@@ -131,6 +131,10 @@ static UIWebviewInterfaceController* _interface;
     {
         [social getUserData];
         returnValue = @"true";
+    }else if([messageType rangeOfString:@"setInvitationState"].location != NSNotFound)
+    {
+        [social setInvitationState:messageParam];
+        returnValue = @"true";
     }
     
     

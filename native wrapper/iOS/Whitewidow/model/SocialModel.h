@@ -29,6 +29,6 @@ typedef NS_ENUM(NSInteger, InvitationState) {
 - (void) inviteFBUserById:(NSString* )fbId;
 - (void) getInvitedUser;
 - (void) saveCurrentState: (NSString*) state;
-- (void) setInvitationState:(NSString*)state forID:(NSString*) invitationID;
+- (void) setInvitationState:(NSString*)message;
 
 @end

@@ -75,6 +75,12 @@ var Social = function()
 		this.connector.callNativeMethod("saveCurrentState", state);
 	}
 	
+	this.setInvitationState = function(state, id)
+	{
+		var inviteJSON = {"state":state, "id":id};
+		this.connector.callNativeMethod("setInvitationState", JSON.stringify(inviteJSON));
+	}
+	
 	this.getInvitedUser = function()
 	{
 		this.connector.removeNativeListener("getInvitedUser", self._onFBConnectionStateReceived);
