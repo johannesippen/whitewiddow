@@ -1,3 +1,6 @@
+body {
+  -webkit-user-select: none;
+}
 button:active {
   outline: none;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -275,6 +278,8 @@ section {
   display: -webkit-box;
   width: 50px;
   height: 50px;
+  line-height: 50px;
+  text-align: center;
   border-radius: 50px;
   margin: 5px;
   background: #ccc;
