@@ -12,17 +12,41 @@ var loadFacebookContacts = function() {
     social.addNativeListener("getInvitedUser", function(data)
     {
       FacebookContacts_loaded = true;
+      var state = "";
       for(i in data) {
-        $('.fb_friend_list').append('<li class="fb_friend" data-index="'+data[i].name+'"><img src="http://graph.facebook.com/'+data[i].fbID+'/picture"><span>'+data[i].name+'</span><button ontouchstart="inviteFriend(\''+data[i].fbID+'\');" id="addfriends_invite">Invite</button></li>');
+      	switch(data[i].invitationState)
+      	{
+	      	case "pending":
+	      		state = "pending";
+	      	break;
+	      	
+	      	case "pendingByMe":
+	      		state = "accept";
+	      	break;
+	      	
+	      	default:
+	      		state = "invite";
+	      		
+      	}
+      
+        $('.fb_friend_list').append('<li class="fb_friend" data-index="'+data[i].name+'"><img src="http://graph.facebook.com/'+data[i].fbID+'/picture"><span>'+data[i].name+'</span><button ontouchstart="inviteFriend(\''+data[i].fbID+'\',\''+state+'\');" id="addfriends_invite">'+state+'</button></li>');
       }
     });
     social.getInvitedUser();    
   }
 };
 
-var inviteFriend = function(id)
+var inviteFriend = function(id, state)
 {
-	social.inviteFBUser(id);
+	if(state == "invite")
+	{
+		social.inviteFBUser(id);	
+	}
+	else if(state == "pendingByMe")
+	{
+		//social.
+	}
+	
 }
 
 // loads the actual friendlist from backend

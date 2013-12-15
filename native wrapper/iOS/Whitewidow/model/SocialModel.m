@@ -287,7 +287,7 @@
                     NSString* objectID = userInvitation.objectId;
                     [PushController registerPushForInvite:objectID];
                     
-                   // FBRequest *inviteRequest = [FBRequest ]
+                    
                 }
             }];
     //

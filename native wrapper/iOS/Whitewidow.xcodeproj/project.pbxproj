@@ -103,6 +103,16 @@
 		7A3E1C0C18286C410017467E /* InvitesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvitesViewController.m; sourceTree = "<group>"; };
 		7A3E1C0E182A72B90017467E /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
 		7A3E1C0F182A72B90017467E /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		7A4201DF185DF30E003BC129 /* Base64Transcoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		7A4201E0185DF30E003BC129 /* Base64Transcoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base64Transcoder.m; sourceTree = "<group>"; };
+		7A4201E1185DF30E003BC129 /* HSK_CFUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSK_CFUtilities.h; sourceTree = "<group>"; };
+		7A4201E2185DF30E003BC129 /* HSK_CFUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSK_CFUtilities.m; sourceTree = "<group>"; };
+		7A4201E3185DF30E003BC129 /* NSData+Base64Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64Additions.h"; sourceTree = "<group>"; };
+		7A4201E4185DF30E003BC129 /* NSData+Base64Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64Additions.m"; sourceTree = "<group>"; };
+		7A4201E5185DF30E003BC129 /* NSStream+SKPSMTPExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSStream+SKPSMTPExtensions.h"; sourceTree = "<group>"; };
+		7A4201E6185DF30E003BC129 /* NSStream+SKPSMTPExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSStream+SKPSMTPExtensions.m"; sourceTree = "<group>"; };
+		7A4201E7185DF30E003BC129 /* SKPSMTPMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKPSMTPMessage.h; sourceTree = "<group>"; };
+		7A4201E8185DF30E003BC129 /* SKPSMTPMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKPSMTPMessage.m; sourceTree = "<group>"; };
 		7A49CAF3181D140600350AF1 /* FunctionTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionTestViewController.h; path = view/FunctionTestViewController.h; sourceTree = "<group>"; };
 		7A49CAF4181D140600350AF1 /* FunctionTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionTestViewController.m; path = view/FunctionTestViewController.m; sourceTree = "<group>"; };
 		7ACF2EAE1808707F001DAF1B /* whitewidow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whitewidow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +198,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A4201DE185DF30E003BC129 /* SMTPSend */ = {
+			isa = PBXGroup;
+			children = (
+				7A4201DF185DF30E003BC129 /* Base64Transcoder.h */,
+				7A4201E0185DF30E003BC129 /* Base64Transcoder.m */,
+				7A4201E1185DF30E003BC129 /* HSK_CFUtilities.h */,
+				7A4201E2185DF30E003BC129 /* HSK_CFUtilities.m */,
+				7A4201E3185DF30E003BC129 /* NSData+Base64Additions.h */,
+				7A4201E4185DF30E003BC129 /* NSData+Base64Additions.m */,
+				7A4201E5185DF30E003BC129 /* NSStream+SKPSMTPExtensions.h */,
+				7A4201E6185DF30E003BC129 /* NSStream+SKPSMTPExtensions.m */,
+				7A4201E7185DF30E003BC129 /* SKPSMTPMessage.h */,
+				7A4201E8185DF30E003BC129 /* SKPSMTPMessage.m */,
+			);
+			name = SMTPSend;
+			path = ../../../_FRAMEWORKS/SMTPSend;
+			sourceTree = "<group>";
+		};
 		7A49CAF2181D13CE00350AF1 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +252,7 @@
 		7ACF2EB01808707F001DAF1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A4201DE185DF30E003BC129 /* SMTPSend */,
 				7ADDA6E6183BED1300B49846 /* FacebookSDK.framework */,
 				7ADDA6E4183BED0200B49846 /* Parse.framework */,
 				7ACF2F02180AD84E001DAF1B /* libTestFlight.a */,
