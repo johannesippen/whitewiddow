@@ -67,7 +67,7 @@ var Social = function()
 	
 	self._onUserData = function(data)
 	{
-		//self._listeners["getUserData"](data);
+		self._listeners["getUserData"](data);
 	}
 	
 	this.saveCurrentState = function(state)

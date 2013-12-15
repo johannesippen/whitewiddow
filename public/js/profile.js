@@ -1,4 +1,4 @@
-var loadProfile = function(user_id) {
+/*var loadProfile = function(user_id) {
 	  var url = "../data/profile.json";
 	  social.getUser();
 	  social.addNativeListener("getUserData",function(data)
@@ -13,4 +13,4 @@ var showMyProfile = function(user) {
   $('#profile').append('<p><img src="https://graph.facebook.com/'+user.fbID+'/picture"></p>');
  // $('#profile').append('<p>Status: '+user+'</p>');
   addMeToFriendlist(user);
-};
+};*/
