@@ -3,7 +3,6 @@ section {
   position: absolute;
   float: none;
   margin: 0;
-  padding-top: 1px;
 }
 section > section {
   margin-top: 0;
