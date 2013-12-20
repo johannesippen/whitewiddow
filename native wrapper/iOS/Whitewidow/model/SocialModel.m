@@ -213,76 +213,76 @@
     
     if([state isEqualToString:@"accept"])
     {
-        PFQuery *userquery = [PFQuery queryWithClassName:@"User"];
+        PFQuery *userquery = [PFUser query];
         [userquery whereKey:@"fbId" equalTo:invitationID];
-        [userquery getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        [userquery getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error)
+        {
             
-            invitationID = [object valueForKey:@"fbId"];
+            
+            PFQuery *query = [PFQuery queryWithClassName:@"UserInvitations"];
+            [query whereKey:@"invitationFrom" equalTo:object];
+            [query getFirstObjectInBackgroundWithBlock:^(PFObject *userInvitation, NSError *error) {
+                
+                
+                PFUser *user = [PFUser currentUser];
+                // Changes the invitation status, 0 = pending, 1 = accepted, 2 = denied
+                int invitationState;
+                
+                if ([state isEqualToString:@"pending"])
+                {
+                    invitationState = 0;
+                }
+                else if([state isEqualToString:@"accept"])
+                {
+                    invitationState = 1;
+                }
+                else
+                {
+                    invitationState = 2;
+                }
+                
+                userInvitation[@"invitationState"] = [NSNumber numberWithInt:invitationState];
+                [userInvitation saveEventually:^(BOOL succeeded, NSError *error)
+                 {
+                     NSString* username = [userInvitation valueForKey:@"facebookName"];
+                     NSString *pushMessage;
+                     if(invitationState == 1)
+                     {
+                         pushMessage = [username stringByAppendingString:@" hat deine Freundschaftsanfrage angenommen."];
+                     }
+                     else{
+                         pushMessage = [username stringByAppendingString:@" hat deine Freundschaftsanfrage abgelehnt."];
+                     }
+                     NSString *channelID = @"invite_";
+                     channelID = [channelID stringByAppendingString:userInvitation.objectId];
+                     PFPush *push = [[PFPush alloc] init];
+                     [push setChannel:channelID];
+                     [push setMessage:pushMessage];
+                     [push sendPushInBackground];
+                 }];
+                
+                // Saves the Connection between the two users
+                if(invitationState == 1)
+                {
+                    PFObject *friend = [userInvitation objectForKey:@"invitationFrom"];
+                    
+                    PFObject *friendToUserConnection = [PFObject objectWithClassName:@"UserConnection"];
+                    [friendToUserConnection setObject:friend forKey:@"friend"];
+                    [friendToUserConnection setObject:user forKey:@"user"];
+                    [friendToUserConnection saveEventually];
+                    
+                    PFObject *userToFriendConnection = [PFObject objectWithClassName:@"UserConnection"];
+                    [userToFriendConnection setObject:user forKey:@"friend"];
+                    [userToFriendConnection setObject:friend forKey:@"user"];
+                    [userToFriendConnection saveEventually];
+                    
+                    
+                }
+                
+                
+            }];
         }];
     }
-    
-    PFQuery *query = [PFQuery queryWithClassName:@"UserInvitations"];
-    [query whereKey:@"fbID" equalTo:invitationID];
-    [query getFirstObjectInBackgroundWithBlock:^(PFObject *userInvitation, NSError *error) {
-        
-        
-        PFObject *user = [PFUser currentUser];
-        // Changes the invitation status, 0 = pending, 1 = accepted, 2 = denied
-        int invitationState;
-        
-        if ([state isEqualToString:@"pending"])
-        {
-            invitationState = 0;
-        }
-        else if([state isEqualToString:@"accept"])
-        {
-            invitationState = 1;
-        }
-        else
-        {
-            invitationState = 2;
-        }
-        
-        userInvitation[@"invitationState"] = [NSNumber numberWithInt:invitationState];
-        [userInvitation saveEventually:^(BOOL succeeded, NSError *error)
-        {
-            NSString* username = [user valueForKey:@"facebookName"];
-            NSString *pushMessage;
-            if(invitationState == 1)
-            {
-                pushMessage = [username stringByAppendingString:@" hat deine Freundschaftsanfrage angenommen."];
-            }
-            else{
-                pushMessage = [username stringByAppendingString:@" hat deine Freundschaftsanfrage abgelehnt."];
-            }
-            NSString *channelID = @"invite_";
-            [channelID stringByAppendingString:userInvitation.objectId];
-            PFPush *push = [[PFPush alloc] init];
-            [push setChannel:channelID];
-            [push setMessage:pushMessage];
-            [push sendPushInBackground];
-        }];
-        
-        // Saves the Connection between the two users
-        if(invitationState == 1)
-        {
-            PFObject *friend = [userInvitation objectForKey:@"invitationFrom"];
-            
-            PFObject *friendToUserConnection = [PFObject objectWithClassName:@"UserConnection"];
-            [friendToUserConnection setObject:friend forKey:@"friend"];
-            [friendToUserConnection setObject:user forKey:@"user"];
-            [friendToUserConnection saveEventually];
-            
-            PFObject *userToFriendConnection = [PFObject objectWithClassName:@"UserConnection"];
-            [userToFriendConnection setObject:user forKey:@"friend"];
-            [userToFriendConnection setObject:friend forKey:@"user"];
-            [userToFriendConnection saveEventually];
-            
-           
-        }
-             
-        
-    }];
 }
 
 - (void) inviteFBUserById:(NSString* )fbId
@@ -306,7 +306,16 @@
                     NSString* objectID = userInvitation.objectId;
                     [PushController registerPushForInvite:objectID];
                     
+                    NSString* username = [user valueForKey:@"facebookName"];
+                    NSString *pushMessage;
+                    pushMessage = [username stringByAppendingString:@" möchte dein Freund werden."];
                     
+                    NSString *channelID = @"invite_";
+                    channelID = [channelID stringByAppendingString:fbId];
+                    PFPush *push = [[PFPush alloc] init];
+                    [push setChannel:channelID];
+                    [push setMessage:pushMessage];
+                    [push sendPushInBackground];
                 }
             }];
     //
@@ -378,13 +387,20 @@
                      {
                          invitationState = [[object valueForKey:@"invitationState"] integerValue];
                          [userInvitation setValue:[self convertToReadableState:invitationState] forKey:@"invitationState"];
-                         break;
+                         
+                        // [_invitationList insertObject:userInvitation atIndex:0];
+                        // break;
                      }
                      else
                      {
                          [userInvitation setValue:@"notdetermined" forKey:@"invitationState"];
+                        // [_invitationList addObject:userInvitation];
+                        // break;
                      }
                  }
+                 
+//                 if(invites.count != 0)
+//                     break;
                  
                  for (PFObject *pendingInvitation in myPendingInvitations)
                  {
@@ -393,11 +409,12 @@
                      if([facebookID isEqualToString:pendingUser])
                      {
                          [userInvitation setValue:@"pendingByMe" forKey:@"invitationState"];
+  //                       [_invitationList insertObject:userInvitation atIndex:0];
                          break;
                      }
                  }
-                 
                  [_invitationList addObject:userInvitation];
+                 
              }
              if(self.delegate != nil)
              {
@@ -497,6 +514,9 @@
         [userData setValue:user[@"fbId"] forKey:@"fbID"];
         [userData setValue:@"notdetermined" forKey:@"location"];
         [userData setValue:@"notdetermined" forKey:@"availability"];
+        
+        
+        [PushController registerPushForInvite:user[@"fbId"]];
         
         [UIWebviewInterfaceController callJavascript:[JSONHelper convertDictionaryToJSON:userData forSignal:@"getUserData"]];
     }
