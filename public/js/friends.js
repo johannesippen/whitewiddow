@@ -48,6 +48,10 @@ var computerName = function(name){
   return (name.replace(/ /g, "")).toLowerCase();
 };
 
+$('button.invite').live('mouseup touchend',function(){
+  $(this).text('Pending').addClass('pending').removeClass('invite');
+});
+
 var inviteFriend = function(id, state)
 {
 	if(state == "invite")
@@ -69,9 +73,16 @@ var loadFriends = function(user_id) {
   }
   social.addNativeListener("getWWFriendsList", function(data)
   {
-	  for(i in data) {
-      friendlist.push(data[i]);
-      addFriendtoList(data[i], i);
+    if(data.length > 6) {
+      $('#friendlist_add').remove();
+    }
+    for(var i = 0; i <= 5; i++) {
+      if(data.length > i) {
+        friendlist.push(data[i]);
+        addFriendtoList(data[i], i);
+      } else {
+        $('#friendlist').append('<li class="friend_slot"><div class="symbol"><img src="img/lock-icon-2x.png"></div></li>')          
+      }
     }
     arrangeBubbles(document.querySelectorAll('#friendlist .friend'));
   });
@@ -101,13 +112,9 @@ var addFriendtoList = function(user, i) {
 
 // adds you to the friend list
 var addMeToFriendlist = function(user) {
-    $('<li class="me"></li>')
-      .prepend('<img src="https://graph.facebook.com/'+user.fbID+'/picture?width=200&height=200">')
-      .appendTo($('#friendlist'));
-      
-      $('<li class="me"></li>')
-        .prepend('<img src="https://graph.facebook.com/'+user.fbID+'/picture?width=200&height=200">')
-        .appendTo($('.attendees'));
+$('<div class="me"></div>')
+  .prepend('<img src="https://graph.facebook.com/'+user.fbID+'/picture?width=200&height=200">')
+  .insertBefore($('#friendlist'));
 };
 
 // shows the friends profile

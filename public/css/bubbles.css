@@ -10,7 +10,7 @@ ul.friendlist {
   width: 320px;
   height: 320px;
   background: transparent;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 ul.friendlist li {
   position: absolute;
@@ -52,19 +52,23 @@ ul.friendlist li img {
   margin: 0;
   padding: 4px;
 }
-ul.friendlist li.me {
+.me {
+  position: absolute;
   left: 160px;
-  top: 160px;
+  top: 290px;
   margin: -49px 0 0 -49px;
 }
-ul.friendlist li.me img {
+.me img {
   width: 97px!important;
+  border-radius: 100px;
+  margin: 0;
+  padding: 4px;
 }
-ul.friendlist li.free img {
+li.free img {
   border: 3px solid #2BD74B;
   padding: 4px;
 }
-ul.friendlist li.busy img {
+li.busy img {
   border: 3px solid #FF210E;
   padding: 4px;
 }
