@@ -663,6 +663,7 @@
 				7A4202301864AF47003BC129 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A4202311864AF47003BC129 /* Build configuration list for PBXNativeTarget "MeetEmTests" */ = {
 			isa = XCConfigurationList;
@@ -671,6 +672,7 @@
 				7A4202331864AF47003BC129 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
