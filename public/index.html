@@ -184,14 +184,14 @@
     </section>
     <!-- Add Friends -->
     <section id="addfriends">
-      <header>
+      <header class="noscroll">
         <button id="addfriends_cancel">Done</button><input id="search" type="search" placeholder="Search">
       </header>
       <div class="addfriends_list">
         <ul class="fb_friend_list" id="fb_list">
         </ul>
       </div>
-      <div class="friend_slots">
+      <div class="friend_slots noscroll">
         <div class="friend_slot"><div class="symbol"><img src="img/lock-icon-2x.png"></div></div>
         <div class="friend_slot"><div class="symbol"><img src="img/lock-icon-2x.png"></div></div>
         <div class="friend_slot"><div class="symbol"><img src="img/lock-icon-2x.png"></div></div>
@@ -316,9 +316,6 @@
         writeLog(data);
       };
       $(function(){
-/*        $('#friends, #event, #received, #invite, #venue, #addfriends, #permissions').on('touchmove', function(e) {
-          e.preventDefault();
-        });*/
         $('.invite_venue, .invite_venue_switch a').on('click',function(){
           $('.invite_venue_switch').toggleClass('active');
         });

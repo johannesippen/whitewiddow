@@ -28,12 +28,20 @@ var loadFacebookContacts = function() {
 	      		state = "invite"; 
 	      		
       	}
-      
-        $('.fb_friend_list').append('<li class="fb_friend" data-index="'+computerName(data[i].name)+'"><img src="http://graph.facebook.com/'+data[i].fbID+'/picture"><span>'+data[i].name+'</span><button ontouchstart="inviteFriend(\''+data[i].fbID+'\',\''+state+'\');" id="addfriends_invite">'+state+'</button></li>');
+        if(state == "pending" || state == "accept") {
+          $('.fb_friend_list').prepend('<li class="fb_friend" data-index="'+computerName(data[i].name)+'"><img src="http://graph.facebook.com/'+data[i].fbID+'/picture"><span><b>'+data[i].name+'</b><button ontouchstart="inviteFriend(\''+data[i].fbID+'\',\''+state+'\');" id="addfriends_invite" class="'+computerName(state)+'">'+buttonState(state)+'</button></span></li>');          
+        } else {
+          $('.fb_friend_list').append('<li class="fb_friend" data-index="'+computerName(data[i].name)+'"><img src="http://graph.facebook.com/'+data[i].fbID+'/picture"><span><b>'+data[i].name+'</b><button ontouchstart="inviteFriend(\''+data[i].fbID+'\',\''+state+'\');" id="addfriends_invite" class="'+computerName(state)+'">'+buttonState(state)+'</button></span></li>');
+        }
       }
     });
     social.getInvitedUser();    
   }
+};
+
+var buttonState = function(state) {
+  if(state == "invite") { state = "+"; }
+  return state;
 };
 
 var computerName = function(name){

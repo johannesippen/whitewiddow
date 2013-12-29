@@ -85,6 +85,9 @@ ul.friendlist li.busy img {
   background: #808080;
   margin: 5px;
 }
+.friend_slot.active {
+  background: #555;
+}
 .friend_slot .symbol {
   width: 30px;
   height: 30px;
@@ -93,4 +96,11 @@ ul.friendlist li.busy img {
 .friend_slot .symbol img {
   width: 30px!important;
   height: 30px!important;
+}
+.friend.active img {
+  opacity: .8;
+  background: #008aff;
+}
+.friend.free.active img {
+  background: #4cd964;
 }

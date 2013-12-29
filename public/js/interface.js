@@ -16,8 +16,10 @@ var arrangeBubbles = function(elems){
       angle += increase;
   }
 };
-
-$('button')
+$('#friends, #event, #received, #invite, #venue, #permissions, .noscroll').on('touchmove', function(e) {
+  e.preventDefault();
+});
+$('a, button, #friendlist_add, .friend')
 .live('mousedown touchstart',function(){
   $(this).addClass('active');
 })
