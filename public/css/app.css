@@ -287,12 +287,12 @@ section {
   display: -webkit-box;
   -webkit-box-flex: 1;
   -webkit-box-align: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   border-bottom: 1px solid #eee;
 }
 .fb_friend span b {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   display: -webkit-box;
   -webkit-box-flex: 1;
   font-weight: normal;
@@ -329,4 +329,7 @@ section {
   padding: 5px 10px;
   color: #fff;
   text-align: center;
+}
+.friend_slots img {
+  width: 50px!important;
 }

@@ -2,6 +2,13 @@ var friendlist = new Array();
 var social = new Social();
 var FacebookContacts_loaded = false;
 
+function sortByKey(array, key) {
+    return array.sort(function(a, b) {
+        var x = a[key]; var y = b[key];
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    });
+}
+
 // loads Facebook Friends
 var loadFacebookContacts = function() {
   if(!FacebookContacts_loaded) {
@@ -13,6 +20,9 @@ var loadFacebookContacts = function() {
     {
       FacebookContacts_loaded = true;
       var state = "";
+      
+      data = sortByKey(data,'name');
+      
       for(i in data) {
       	switch(data[i].invitationState)
       	{
@@ -48,7 +58,7 @@ var computerName = function(name){
   return (name.replace(/ /g, "")).toLowerCase();
 };
 
-$('button.invite').live('mouseup touchend',function(){
+$('button.invite').live('touchend',function(){
   $(this).text('Pending').addClass('pending').removeClass('invite');
 });
 
@@ -73,15 +83,17 @@ var loadFriends = function(user_id) {
   }
   social.addNativeListener("getWWFriendsList", function(data)
   {
-    if(data.length > 6) {
+    var max = 4;
+    if(data.length > 5) {
       $('#friendlist_add').remove();
+      max = 5;
     }
-    for(var i = 0; i <= 5; i++) {
+    for(var i = 0; i <= max; i++) {
       if(data.length > i) {
         friendlist.push(data[i]);
         addFriendtoList(data[i], i);
       } else {
-        $('#friendlist').append('<li class="friend_slot"><div class="symbol"><img src="img/lock-icon-2x.png"></div></li>')          
+        $('#friendlist_add').before('<li class="friend_slot"><img src="img/user-icon-2x.png"></li>');
       }
     }
     arrangeBubbles(document.querySelectorAll('#friendlist .friend'));
@@ -112,6 +124,7 @@ var addFriendtoList = function(user, i) {
 
 // adds you to the friend list
 var addMeToFriendlist = function(user) {
+$('body').attr('data-status',user.availability);
 $('<div class="me"></div>')
   .prepend('<img src="https://graph.facebook.com/'+user.fbID+'/picture?width=200&height=200">')
   .insertBefore($('#friendlist'));

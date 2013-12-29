@@ -54,7 +54,7 @@ ul.friendlist li img {
 }
 .me {
   position: absolute;
-  left: 160px;
+  left: 155px;
   top: 290px;
   margin: -49px 0 0 -49px;
 }
@@ -63,6 +63,10 @@ ul.friendlist li img {
   border-radius: 100px;
   margin: 0;
   padding: 4px;
+}
+ul.friendlist li.free,
+ul.friendlist li.busy {
+  margin: -37px 0 0 -37px;
 }
 li.free img {
   border: 3px solid #2BD74B;
@@ -86,20 +90,12 @@ li.busy img {
   line-height: 50px;
   text-align: center;
   border-radius: 50px;
-  background: #808080;
   margin: 5px;
 }
-.friend_slot.active {
-  background: #555;
-}
-.friend_slot .symbol {
-  width: 30px;
-  height: 30px;
-  margin: 10px;
-}
-.friend_slot .symbol img {
-  width: 30px!important;
-  height: 30px!important;
+.friendlist .friend_slot img {
+  background: none;
+  padding: 0;
+  width: 60px!important;
 }
 .friend.active img {
   opacity: .8;
@@ -107,4 +103,12 @@ li.busy img {
 }
 .friend.free.active img {
   background: #4cd964;
+}
+#friendlist_add {
+  margin: -30px 0 0 -30px;
+}
+#friendlist_add img {
+  border: 3px solid #808080;
+  width: 54px!important;
+  height: 54px!important;
 }
