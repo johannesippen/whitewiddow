@@ -19,6 +19,38 @@
 		7A4202211864AF47003BC129 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4202091864AF47003BC129 /* UIKit.framework */; };
 		7A4202291864AF47003BC129 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A4202271864AF47003BC129 /* InfoPlist.strings */; };
 		7A42022B1864AF47003BC129 /* MeetEmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A42022A1864AF47003BC129 /* MeetEmTests.m */; };
+		7A42023518704071003BC129 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42023418704071003BC129 /* Parse.framework */; };
+		7A42023718704085003BC129 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42023618704085003BC129 /* FacebookSDK.framework */; };
+		7A420239187040E7003BC129 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A420238187040E7003BC129 /* libTestFlight.a */; };
+		7A42023B18704119003BC129 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42023A18704119003BC129 /* Social.framework */; };
+		7A42023D18704128003BC129 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42023C18704128003BC129 /* AddressBook.framework */; };
+		7A42023F18704139003BC129 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42023E18704139003BC129 /* Accounts.framework */; };
+		7A42024118704155003BC129 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42024018704155003BC129 /* SystemConfiguration.framework */; };
+		7A42024318704166003BC129 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42024218704166003BC129 /* Security.framework */; };
+		7A42024518704178003BC129 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42024418704178003BC129 /* QuartzCore.framework */; };
+		7A42024718704187003BC129 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42024618704187003BC129 /* MobileCoreServices.framework */; };
+		7A4202491870419D003BC129 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4202481870419D003BC129 /* libz.1.1.3.dylib */; };
+		7A42024B187041AE003BC129 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42024A187041AE003BC129 /* CoreLocation.framework */; };
+		7A42024D187041D0003BC129 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42024C187041D0003BC129 /* CFNetwork.framework */; };
+		7A42024F187041DF003BC129 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42024E187041DF003BC129 /* AudioToolbox.framework */; };
+		7A420251187041EE003BC129 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A420250187041EE003BC129 /* libz.dylib */; };
+		7A420256187043EB003BC129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A420255187043EA003BC129 /* Main.storyboard */; };
+		7A420259187044CA003BC129 /* FunctionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A420258187044CA003BC129 /* FunctionTestViewController.m */; };
+		7A42025C1870458B003BC129 /* InvitesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A42025B1870458B003BC129 /* InvitesViewController.m */; };
+		7A42025F187045DB003BC129 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A42025E187045DB003BC129 /* FriendsViewController.m */; };
+		7A420263187046C4003BC129 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A420262187046C4003BC129 /* Logger.m */; };
+		7A420266187047AD003BC129 /* UIWebviewInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A420265187047AD003BC129 /* UIWebviewInterfaceController.m */; };
+		7A420269187047EB003BC129 /* JSONHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A420268187047EB003BC129 /* JSONHelper.m */; };
+		7A42026C187048EB003BC129 /* EventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A42026B187048EB003BC129 /* EventModel.m */; };
+		7A42026F18704921003BC129 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A42026E18704921003BC129 /* LocationController.m */; };
+		7A42027218704955003BC129 /* PushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A42027118704955003BC129 /* PushController.m */; };
+		7A42027518704989003BC129 /* ContactsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A42027418704989003BC129 /* ContactsModel.m */; };
+		7A420278187049BA003BC129 /* SocialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A420277187049BA003BC129 /* SocialModel.m */; };
+		7A42028318704BB0003BC129 /* ContactVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A42028218704BB0003BC129 /* ContactVO.m */; };
+		7A42028618704BF0003BC129 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A42028518704BF0003BC129 /* ViewController.m */; };
+		7A42028A187056A5003BC129 /* prototyp_icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A420287187056A5003BC129 /* prototyp_icon-58.png */; };
+		7A42028B187056A5003BC129 /* prototyp_icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A420288187056A5003BC129 /* prototyp_icon-80.png */; };
+		7A42028C187056A5003BC129 /* prototyp_icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A420289187056A5003BC129 /* prototyp_icon-120.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +80,53 @@
 		7A4202261864AF47003BC129 /* MeetEmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeetEmTests-Info.plist"; sourceTree = "<group>"; };
 		7A4202281864AF47003BC129 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7A42022A1864AF47003BC129 /* MeetEmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetEmTests.m; sourceTree = "<group>"; };
+		7A42023418704071003BC129 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../../_FRAMEWORKS/Parse.framework; sourceTree = "<group>"; };
+		7A42023618704085003BC129 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../_FRAMEWORKS/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		7A420238187040E7003BC129 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestFlight.a; path = ../../../../_FRAMEWORKS/TestFlightSDK/libTestFlight.a; sourceTree = "<group>"; };
+		7A42023A18704119003BC129 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		7A42023C18704128003BC129 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		7A42023E18704139003BC129 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		7A42024018704155003BC129 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7A42024218704166003BC129 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7A42024418704178003BC129 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7A42024618704187003BC129 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7A4202481870419D003BC129 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		7A42024A187041AE003BC129 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7A42024C187041D0003BC129 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7A42024E187041DF003BC129 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7A420250187041EE003BC129 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7A42025218704230003BC129 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestFlight.h; path = ../TestFlight.h; sourceTree = "<group>"; };
+		7A420255187043EA003BC129 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		7A420257187044CA003BC129 /* FunctionTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionTestViewController.h; path = controller/FunctionTestViewController.h; sourceTree = "<group>"; };
+		7A420258187044CA003BC129 /* FunctionTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FunctionTestViewController.m; path = controller/FunctionTestViewController.m; sourceTree = "<group>"; };
+		7A42025A1870458B003BC129 /* InvitesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InvitesViewController.h; path = controller/InvitesViewController.h; sourceTree = "<group>"; };
+		7A42025B1870458B003BC129 /* InvitesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InvitesViewController.m; path = controller/InvitesViewController.m; sourceTree = "<group>"; };
+		7A42025D187045DB003BC129 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendsViewController.h; path = controller/FriendsViewController.h; sourceTree = "<group>"; };
+		7A42025E187045DB003BC129 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendsViewController.m; path = controller/FriendsViewController.m; sourceTree = "<group>"; };
+		7A420261187046C4003BC129 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = utils/Logger.h; sourceTree = "<group>"; };
+		7A420262187046C4003BC129 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Logger.m; path = utils/Logger.m; sourceTree = "<group>"; };
+		7A420264187047AD003BC129 /* UIWebviewInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWebviewInterfaceController.h; path = utils/UIWebviewInterfaceController.h; sourceTree = "<group>"; };
+		7A420265187047AD003BC129 /* UIWebviewInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIWebviewInterfaceController.m; path = utils/UIWebviewInterfaceController.m; sourceTree = "<group>"; };
+		7A420267187047EB003BC129 /* JSONHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONHelper.h; path = utils/JSONHelper.h; sourceTree = "<group>"; };
+		7A420268187047EB003BC129 /* JSONHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONHelper.m; path = utils/JSONHelper.m; sourceTree = "<group>"; };
+		7A42026A187048EB003BC129 /* EventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventModel.h; path = model/EventModel.h; sourceTree = "<group>"; };
+		7A42026B187048EB003BC129 /* EventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventModel.m; path = model/EventModel.m; sourceTree = "<group>"; };
+		7A42026D18704921003BC129 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationController.h; path = model/LocationController.h; sourceTree = "<group>"; };
+		7A42026E18704921003BC129 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationController.m; path = model/LocationController.m; sourceTree = "<group>"; };
+		7A42027018704955003BC129 /* PushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushController.h; path = controller/PushController.h; sourceTree = "<group>"; };
+		7A42027118704955003BC129 /* PushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushController.m; path = controller/PushController.m; sourceTree = "<group>"; };
+		7A42027318704989003BC129 /* ContactsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactsModel.h; path = model/ContactsModel.h; sourceTree = "<group>"; };
+		7A42027418704989003BC129 /* ContactsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactsModel.m; path = model/ContactsModel.m; sourceTree = "<group>"; };
+		7A420276187049BA003BC129 /* SocialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialModel.h; path = model/SocialModel.h; sourceTree = "<group>"; };
+		7A420277187049BA003BC129 /* SocialModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialModel.m; path = model/SocialModel.m; sourceTree = "<group>"; };
+		7A42027F18704B5B003BC129 /* SocialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialDelegate.h; path = model/SocialDelegate.h; sourceTree = "<group>"; };
+		7A42028118704BB0003BC129 /* ContactVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactVO.h; path = vo/ContactVO.h; sourceTree = "<group>"; };
+		7A42028218704BB0003BC129 /* ContactVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactVO.m; path = vo/ContactVO.m; sourceTree = "<group>"; };
+		7A42028418704BF0003BC129 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = controller/ViewController.h; sourceTree = "<group>"; };
+		7A42028518704BF0003BC129 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = controller/ViewController.m; sourceTree = "<group>"; };
+		7A420287187056A5003BC129 /* prototyp_icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prototyp_icon-58.png"; sourceTree = "<group>"; };
+		7A420288187056A5003BC129 /* prototyp_icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prototyp_icon-80.png"; sourceTree = "<group>"; };
+		7A420289187056A5003BC129 /* prototyp_icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prototyp_icon-120.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +134,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A420251187041EE003BC129 /* libz.dylib in Frameworks */,
+				7A42024F187041DF003BC129 /* AudioToolbox.framework in Frameworks */,
+				7A42024D187041D0003BC129 /* CFNetwork.framework in Frameworks */,
+				7A42024B187041AE003BC129 /* CoreLocation.framework in Frameworks */,
+				7A4202491870419D003BC129 /* libz.1.1.3.dylib in Frameworks */,
+				7A42024718704187003BC129 /* MobileCoreServices.framework in Frameworks */,
+				7A42024518704178003BC129 /* QuartzCore.framework in Frameworks */,
+				7A42024318704166003BC129 /* Security.framework in Frameworks */,
+				7A42024118704155003BC129 /* SystemConfiguration.framework in Frameworks */,
+				7A42023F18704139003BC129 /* Accounts.framework in Frameworks */,
+				7A42023D18704128003BC129 /* AddressBook.framework in Frameworks */,
+				7A42023B18704119003BC129 /* Social.framework in Frameworks */,
+				7A420239187040E7003BC129 /* libTestFlight.a in Frameworks */,
+				7A42023718704085003BC129 /* FacebookSDK.framework in Frameworks */,
+				7A42023518704071003BC129 /* Parse.framework in Frameworks */,
 				7A4202081864AF47003BC129 /* CoreGraphics.framework in Frameworks */,
 				7A42020A1864AF47003BC129 /* UIKit.framework in Frameworks */,
 				7A4202061864AF47003BC129 /* Foundation.framework in Frameworks */,
@@ -81,6 +175,9 @@
 				7A4202241864AF47003BC129 /* MeetEmTests */,
 				7A4202041864AF47003BC129 /* Frameworks */,
 				7A4202031864AF47003BC129 /* Products */,
+				7A420287187056A5003BC129 /* prototyp_icon-58.png */,
+				7A420288187056A5003BC129 /* prototyp_icon-80.png */,
+				7A420289187056A5003BC129 /* prototyp_icon-120.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +193,21 @@
 		7A4202041864AF47003BC129 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A420250187041EE003BC129 /* libz.dylib */,
+				7A42024E187041DF003BC129 /* AudioToolbox.framework */,
+				7A42024C187041D0003BC129 /* CFNetwork.framework */,
+				7A42024A187041AE003BC129 /* CoreLocation.framework */,
+				7A4202481870419D003BC129 /* libz.1.1.3.dylib */,
+				7A42024618704187003BC129 /* MobileCoreServices.framework */,
+				7A42024418704178003BC129 /* QuartzCore.framework */,
+				7A42024218704166003BC129 /* Security.framework */,
+				7A42024018704155003BC129 /* SystemConfiguration.framework */,
+				7A42023E18704139003BC129 /* Accounts.framework */,
+				7A42023C18704128003BC129 /* AddressBook.framework */,
+				7A42023A18704119003BC129 /* Social.framework */,
+				7A420238187040E7003BC129 /* libTestFlight.a */,
+				7A42023618704085003BC129 /* FacebookSDK.framework */,
+				7A42023418704071003BC129 /* Parse.framework */,
 				7A4202051864AF47003BC129 /* Foundation.framework */,
 				7A4202071864AF47003BC129 /* CoreGraphics.framework */,
 				7A4202091864AF47003BC129 /* UIKit.framework */,
@@ -107,6 +219,12 @@
 		7A42020B1864AF47003BC129 /* MeetEm */ = {
 			isa = PBXGroup;
 			children = (
+				7A42028018704B7E003BC129 /* vo */,
+				7A4202601870460B003BC129 /* utils */,
+				7A420255187043EA003BC129 /* Main.storyboard */,
+				7A4202541870433D003BC129 /* controller */,
+				7A4202531870432E003BC129 /* model */,
+				7A42025218704230003BC129 /* TestFlight.h */,
 				7A4202141864AF47003BC129 /* AppDelegate.h */,
 				7A4202151864AF47003BC129 /* AppDelegate.m */,
 				7A4202171864AF47003BC129 /* Images.xcassets */,
@@ -142,6 +260,61 @@
 				7A4202271864AF47003BC129 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A4202531870432E003BC129 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7A42026A187048EB003BC129 /* EventModel.h */,
+				7A42026B187048EB003BC129 /* EventModel.m */,
+				7A42026D18704921003BC129 /* LocationController.h */,
+				7A42026E18704921003BC129 /* LocationController.m */,
+				7A42027018704955003BC129 /* PushController.h */,
+				7A42027118704955003BC129 /* PushController.m */,
+				7A42027318704989003BC129 /* ContactsModel.h */,
+				7A42027418704989003BC129 /* ContactsModel.m */,
+				7A420276187049BA003BC129 /* SocialModel.h */,
+				7A420277187049BA003BC129 /* SocialModel.m */,
+				7A42027F18704B5B003BC129 /* SocialDelegate.h */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		7A4202541870433D003BC129 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7A420257187044CA003BC129 /* FunctionTestViewController.h */,
+				7A420258187044CA003BC129 /* FunctionTestViewController.m */,
+				7A42025A1870458B003BC129 /* InvitesViewController.h */,
+				7A42025B1870458B003BC129 /* InvitesViewController.m */,
+				7A42025D187045DB003BC129 /* FriendsViewController.h */,
+				7A42025E187045DB003BC129 /* FriendsViewController.m */,
+				7A42028418704BF0003BC129 /* ViewController.h */,
+				7A42028518704BF0003BC129 /* ViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		7A4202601870460B003BC129 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				7A420261187046C4003BC129 /* Logger.h */,
+				7A420262187046C4003BC129 /* Logger.m */,
+				7A420264187047AD003BC129 /* UIWebviewInterfaceController.h */,
+				7A420265187047AD003BC129 /* UIWebviewInterfaceController.m */,
+				7A420267187047EB003BC129 /* JSONHelper.h */,
+				7A420268187047EB003BC129 /* JSONHelper.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		7A42028018704B7E003BC129 /* vo */ = {
+			isa = PBXGroup;
+			children = (
+				7A42028118704BB0003BC129 /* ContactVO.h */,
+				7A42028218704BB0003BC129 /* ContactVO.m */,
+			);
+			name = vo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +364,14 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Paul Schmidt";
 				TargetAttributes = {
+					7A4202011864AF47003BC129 = {
+						DevelopmentTeam = WTBVTY9G47;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
 					7A42021C1864AF47003BC129 = {
 						TestTargetID = 7A4202011864AF47003BC129;
 					};
@@ -219,8 +400,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A42028B187056A5003BC129 /* prototyp_icon-80.png in Resources */,
+				7A420256187043EB003BC129 /* Main.storyboard in Resources */,
 				7A4202101864AF47003BC129 /* InfoPlist.strings in Resources */,
+				7A42028A187056A5003BC129 /* prototyp_icon-58.png in Resources */,
 				7A4202181864AF47003BC129 /* Images.xcassets in Resources */,
+				7A42028C187056A5003BC129 /* prototyp_icon-120.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +424,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A42026F18704921003BC129 /* LocationController.m in Sources */,
+				7A42025F187045DB003BC129 /* FriendsViewController.m in Sources */,
+				7A42027518704989003BC129 /* ContactsModel.m in Sources */,
+				7A420269187047EB003BC129 /* JSONHelper.m in Sources */,
+				7A420263187046C4003BC129 /* Logger.m in Sources */,
 				7A4202161864AF47003BC129 /* AppDelegate.m in Sources */,
+				7A420259187044CA003BC129 /* FunctionTestViewController.m in Sources */,
+				7A42026C187048EB003BC129 /* EventModel.m in Sources */,
+				7A420266187047AD003BC129 /* UIWebviewInterfaceController.m in Sources */,
+				7A42028618704BF0003BC129 /* ViewController.m in Sources */,
+				7A42028318704BB0003BC129 /* ContactVO.m in Sources */,
+				7A420278187049BA003BC129 /* SocialModel.m in Sources */,
+				7A42027218704955003BC129 /* PushController.m in Sources */,
 				7A4202121864AF47003BC129 /* main.m in Sources */,
+				7A42025C1870458B003BC129 /* InvitesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,11 +555,23 @@
 		7A42022F1864AF47003BC129 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Paul Schmidt (7M7K64WEV6)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Projekte/_FRAMEWORKS,
+					/Projekte/_FRAMEWORKS/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeetEm/MeetEm-Prefix.pch";
 				INFOPLIST_FILE = "MeetEm/MeetEm-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Projekte/_FRAMEWORKS/TestFlightSDK,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -370,11 +580,23 @@
 		7A4202301864AF47003BC129 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Paul Schmidt (WTBVTY9G47)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Projekte/_FRAMEWORKS,
+					/Projekte/_FRAMEWORKS/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeetEm/MeetEm-Prefix.pch";
 				INFOPLIST_FILE = "MeetEm/MeetEm-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Projekte/_FRAMEWORKS/TestFlightSDK,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

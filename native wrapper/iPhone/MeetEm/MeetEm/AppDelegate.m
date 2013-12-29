@@ -1,22 +1,51 @@
 //
 //  AppDelegate.m
-//  MeetEm
+//  Whitewidow
 //
-//  Created by Paul Schmidt on 20.12.13.
+//  Created by Paul Schmidt on 11.08.13.
 //  Copyright (c) 2013 Paul Schmidt. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
+#import "TestFlight.h"
+#import "PushController.h"
+#import "LocationController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    [TestFlight takeOff:@"b7e77ee3-f211-47e6-8c99-7075c501a9f1"];
+    [Parse setApplicationId:@"KNtdMcnjzZUcsSLkPVvbW7lakdF9hzitvFaDjmU1"
+                  clientKey:@"5mTRyvLWqb6eEZelvR2GhmNgbzddGr2s8x5hB37P"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
+    [NSClassFromString(@"WebView") performSelector:@selector(_enableRemoteInspector)];
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [PFFacebookUtils handleOpenURL:url];
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    NSLog(@"registerNotification");
+    [TestFlight passCheckpoint:@"Pushnotifications registered"];
+    // Store the deviceToken in the current Installation and save it to Parse.
+    [PFPush storeDeviceToken:deviceToken];
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    NSLog(@"failNotification: %@", error);
+    [TestFlight passCheckpoint:@"Pushnotifications failed"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -27,7 +56,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
@@ -39,6 +68,8 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    LocationController* localCtrl = [[LocationController alloc] init];
+    [localCtrl saveCurrentLocation];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
