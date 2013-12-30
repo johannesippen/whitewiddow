@@ -83,6 +83,7 @@ var loadFriends = function(user_id) {
   }
   social.addNativeListener("getWWFriendsList", function(data)
   {
+    $('.empty, .friend').remove();
     var max = 4;
     if(data.length > 5) {
       $('#friendlist_add').remove();
@@ -93,7 +94,7 @@ var loadFriends = function(user_id) {
         friendlist.push(data[i]);
         addFriendtoList(data[i], i);
       } else {
-        $('#friendlist_add').before('<li class="friend_slot"><img src="img/user-icon-2x.png"></li>');
+        $('#friendlist_add').after('<li class="friend_slot empty"><img src="img/user-icon-2x.png"></li>');
       }
     }
     arrangeBubbles(document.querySelectorAll('#friendlist .friend'));
@@ -106,7 +107,7 @@ var addFriendtoList = function(user, i) {
     $('<li class="friend '+user.availability+'" onclick="createInviteFor(\''+i+'\')"></li>')
       .html('<span class="name">'+user.name+'</span>')
       .prepend('<img src="https://graph.facebook.com/'+user.fbID+'/picture?width=200&height=200">')
-      .appendTo($('#friendlist'));
+      .insertBefore('#friendlist_add');
     
     // Secondary List
     if(i == 0) {

@@ -112,3 +112,7 @@ li.busy img {
   width: 54px!important;
   height: 54px!important;
 }
+ul.friendlist li img.ajax {
+  width: 30px!important;
+  height: 30px!important;
+}
