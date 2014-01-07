@@ -39,8 +39,10 @@ var loadFacebookContacts = function() {
 	      		
       	}
         if(state == "pending" || state == "accept") {
-          $('.fb_friend_list').prepend('<li class="fb_friend" data-index="'+computerName(data[i].name)+'"><img src="http://graph.facebook.com/'+data[i].fbID+'/picture"><span><b>'+data[i].name+'</b><button ontouchstart="inviteFriend(\''+data[i].fbID+'\',\''+state+'\');" id="addfriends_invite" class="'+computerName(state)+'">'+buttonState(state)+'</button></span></li>');          
+          $('#fb_'+state).css('display','block');
+          $('#fb_'+state).after('<li class="fb_friend" data-index="'+computerName(data[i].name)+'"><img src="http://graph.facebook.com/'+data[i].fbID+'/picture"><span><b>'+data[i].name+'</b><button ontouchstart="inviteFriend(\''+data[i].fbID+'\',\''+state+'\');" id="addfriends_invite" class="'+computerName(state)+'">'+buttonState(state)+'</button></span></li>');          
         } else {
+          $('#fb_friends').css('display','block');
           $('.fb_friend_list').append('<li class="fb_friend" data-index="'+computerName(data[i].name)+'"><img src="http://graph.facebook.com/'+data[i].fbID+'/picture"><span><b>'+data[i].name+'</b><button ontouchstart="inviteFriend(\''+data[i].fbID+'\',\''+state+'\');" id="addfriends_invite" class="'+computerName(state)+'">'+buttonState(state)+'</button></span></li>');
         }
       }
@@ -126,6 +128,10 @@ var addFriendtoList = function(user, i) {
 // adds you to the friend list
 var addMeToFriendlist = function(user) {
 $('body').attr('data-status',user.availability);
+if(user.availability == "free" || user.availability == "busy") {
+  $('#status_busy').text('Set status to busy');
+  $('#status_free').text('Set status to free');
+}
 $('<div class="me"></div>')
   .prepend('<img src="https://graph.facebook.com/'+user.fbID+'/picture?width=200&height=200">')
   .insertBefore($('#friendlist'));

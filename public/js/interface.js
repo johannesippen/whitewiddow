@@ -26,3 +26,10 @@ $('a, button, #friendlist_add, .friend')
 .live('mouseup touchend',function(){
   $(this).removeClass('active');
 });
+$('#addfriends_invite')
+.live('mousedown touchstart',function(){
+  $(this).parent().addClass('active');
+})
+.live('mouseup touchend',function(){
+  $(this).parent().removeClass('active');
+});

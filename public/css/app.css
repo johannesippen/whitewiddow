@@ -251,7 +251,7 @@ section {
   border-radius: 4px;
   border: none;
   background: #fff;
-  margin-right: 20px;
+  margin-left: 15px;
   outline: none;
   padding-top: 4px;
   font: normal 16px/26px sans-serif;
@@ -270,18 +270,30 @@ section {
 .fb_friend:nth-child(2n+1) {
   background: #fff;
 }
+.fb_friend img {
+  display: -webkit-box;
+  width: 30px;
+  height: 30px;
+  border-radius: 44px;
+  margin: 5px 10px 5px 15px;
+}
+.fb_divider {
+  display: none;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 2px 0 2px 18px;
+  background: #eee;
+  color: #808080;
+}
 .fb_friend {
   display: -webkit-box;
   line-height: 44px;
   padding: 0;
   font-weight: 300;
 }
-.fb_friend img {
-  width: 30px;
-  height: 30px;
-  border-radius: 44px;
-  display: -webkit-box;
-  margin: 5px 10px 5px 15px;
+.fb_friend.active {
+  background: #4cd964;
+  color: #fff;
 }
 .fb_friend span {
   display: -webkit-box;

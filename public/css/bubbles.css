@@ -47,10 +47,11 @@ ul.friendlist li:nth-child(7) {
 }
 ul.friendlist li img {
   width: 60px!important;
-  height: auto;
+  height: 60px!important;
   border-radius: 100px;
   margin: 0;
   padding: 4px;
+  background: #eee;
 }
 .me {
   position: absolute;
