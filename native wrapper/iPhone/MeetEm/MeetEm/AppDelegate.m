@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 #import "TestFlight.h"
 #import "PushController.h"
+#import "SocialModel.h"
 #import "LocationController.h"
 
 @implementation AppDelegate
@@ -29,6 +30,13 @@
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     return [PFFacebookUtils handleOpenURL:url];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    SocialModel *social = [[SocialModel alloc] init];
+    
+    [social getWWFriendsList];
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken

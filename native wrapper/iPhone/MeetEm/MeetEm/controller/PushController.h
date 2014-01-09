@@ -18,6 +18,7 @@
 + (BOOL) isPushEnabled;
 + (void) enablePushNotification;
 
++(void) registerPushForFriend: (NSString *) friendID;
 +(void) registerPushForInvite: (NSString*) inviteID;
 
 @end

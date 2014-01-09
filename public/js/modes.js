@@ -13,6 +13,7 @@ $(function(){
   /* Invitemode */
   $('#invite .back').live('click',function(){
     $('body').attr('data-mode','friends');
+    maps.hideMap();
   });
   /* Add Friends */
   $('#addfriends header button').live('touchend mouseup',function(){

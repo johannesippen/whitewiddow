@@ -16,9 +16,12 @@
 #import "Logger.h"
 #import "EventModel.h"
 #import "FunctionTestViewController.h"
+#import <MapKit/MapKit.h>
+#import "MapModel.h"
 
 @interface ViewController ()
 @property IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UITextView *debugView;
 @property LocationController *locationCtrl;
 @property (weak, nonatomic) IBOutlet UITableView *featureSelectionTable;
@@ -49,6 +52,9 @@
     [UIWebviewInterfaceController setWebview:self.webView];
     [self registerForLocations];
     [self registerForChannel];
+    
+    [self.mapView setHidden:YES];
+    [MapModel setMapView:self.mapView];
     
     self.webView.scalesPageToFit = YES;
     self.webView.multipleTouchEnabled = YES;

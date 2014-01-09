@@ -13,6 +13,7 @@
 #import "SocialModel.h"
 #import "PushController.h"
 #import "EventModel.h"
+#import "MapModel.h"
 
 @interface UIWebviewInterfaceController()
 @property (nonatomic) LocationController *locationController;
@@ -134,6 +135,18 @@ static UIWebviewInterfaceController* _interface;
     }else if([messageType rangeOfString:@"setInvitationState"].location != NSNotFound)
     {
         [social setInvitationState:messageParam];
+        returnValue = @"true";
+    }else if([messageType rangeOfString:@"showMap"].location != NSNotFound)
+    {
+        [MapModel showMap];
+        returnValue = @"true";
+    }else if([messageType rangeOfString:@"addMarker"].location != NSNotFound)
+    {
+        [MapModel addMarker:messageParam];
+        returnValue = @"true";
+    }else if([messageType rangeOfString:@"hideMap"].location != NSNotFound)
+    {
+        [MapModel hideMap];
         returnValue = @"true";
     }
     

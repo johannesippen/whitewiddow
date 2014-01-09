@@ -30,11 +30,16 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aB7-xF-3bu">
+                                <rect key="frame" x="-8" y="66" width="335" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </mapView>
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" id="WWR-ZY-RZJ"/>
                     <connections>
                         <outlet property="debugView" destination="jmD-9I-vKC" id="PL8-J1-O1E"/>
+                        <outlet property="mapView" destination="aB7-xF-3bu" id="Iar-8y-rVe"/>
                         <outlet property="webView" destination="Rad-i7-n9o" id="qjx-VO-5kf"/>
                     </connections>
                 </viewController>

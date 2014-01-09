@@ -70,19 +70,96 @@
     
 }
 
+// Saves the current state of the user
+bool pushForStatechangeInProgress;
+NSString* lastChangedStateText;
+
 - (void) saveCurrentState: (NSString*) state
 {
     if([PFUser currentUser] != nil)
     {
-        PFObject* currentLocation = [PFObject objectWithClassName:@"UserAvailability"];
-        [currentLocation setObject:[PFUser currentUser] forKey:@"user"];
-        [currentLocation setObject:[NSNumber numberWithInt:[self convertToAvailability:state]] forKey:@"availability"];
-        [currentLocation saveEventually];
-        
-        PFUser* lastLocation = [PFUser currentUser];
-        [lastLocation setValue:[NSNumber numberWithInt:[self convertToAvailability:state]] forKey:@"currentAvailability"];
-        [lastLocation saveEventually];
+        // Getting all userdata
+        PFObject* user = [PFUser currentUser];
+        [user fetchInBackgroundWithBlock:^(PFObject *object, NSError *error)
+         {
+             NSNumber *lastAvailability = [object valueForKey:@"currentAvailability"];
+             
+             // Save current availability to availability database
+             PFObject* currentLocation = [PFObject objectWithClassName:@"UserAvailability"];
+             [currentLocation setObject:[PFUser currentUser] forKey:@"user"];
+             [currentLocation setObject:[NSNumber numberWithInt:[self convertToAvailability:state]] forKey:@"availability"];
+             [currentLocation saveEventually];
+             
+             // Save current availability to user database
+             PFUser* lastLocation = [PFUser currentUser];
+             [lastLocation setValue:[NSNumber numberWithInt:[self convertToAvailability:state]] forKey:@"currentAvailability"];
+             lastLocation[@"lastAvailability"] = [NSDate date];
+             [lastLocation saveEventually];
+             
+             
+             // Send current status via push
+             NSString* username = [object valueForKey:@"facebookName"];
+             NSString *pushMessage;
+             pushMessage = [username stringByAppendingString:@" is "];
+             
+             if([state isEqualToString:@"free"])
+             {
+                 pushMessage = [pushMessage stringByAppendingString:@"free."];
+             }
+             else
+             {
+                 pushMessage = [pushMessage stringByAppendingString:@"busy."];
+             }
+             
+             NSString *channelID = @"friend_";
+             channelID = [channelID stringByAppendingString:[user valueForKey:@"fbId"]];
+             
+             PFPush *push = [[PFPush alloc] init];
+             [push setChannel:channelID];
+             [push setMessage:pushMessage];
+             lastChangedStateText = pushMessage;
+             
+             // Send push only in certain conditions
+             NSCalendar *calendar = [NSCalendar currentCalendar];
+             NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
+             [calendar setTimeZone:timeZone];
+             
+             // Selectively convert the date components (year, month, day) of the input date
+             NSDateComponents *dateComps = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:[NSDate date]];
+             
+             // Set the time components manually
+             [dateComps setHour:2];
+             [dateComps setMinute:0];
+             [dateComps setSecond:0];
+             
+             
+             NSDate* enddate = object[@"lastAvailability"];
+             NSDate* resetDate = [calendar dateFromComponents:dateComps];
+             NSTimeInterval distanceBetweenDates = [enddate timeIntervalSinceDate:resetDate];
+             
+             if(!pushForStatechangeInProgress)
+             {
+                 if ([state isEqualToString:@"free"])
+                 {
+                     pushForStatechangeInProgress = YES;
+                     [self performSelector:@selector(sendPushforStateChange:) withObject:push afterDelay:10];
+                 }
+                 else if([state isEqualToString:@"busy"] && distanceBetweenDates >= 0)
+                 {
+                     pushForStatechangeInProgress = YES;
+                     [self performSelector:@selector(sendPushforStateChange:) withObject:push afterDelay:10];
+                 }
+             }
+        }];
     }
+}
+
+// Sends delayed push message
+- (void) sendPushforStateChange: (PFPush*) push
+{
+    [push setMessage:lastChangedStateText];
+    [push sendPushInBackground];
+    pushForStatechangeInProgress = NO;
 }
 
 - (void) getWWFriendsList
@@ -117,6 +194,30 @@
                      [friend setValue:tempLocation forKey:@"location"];
                      int currentAvailability = [getterFriend[@"currentAvailability"] integerValue];
                      [friend setValue:[self convertToReadableAvailability: currentAvailability] forKey:@"availability"];
+                     
+                     // Prüfen, ob die letzte Aktualisierung ein Tag zuvor war.
+                     NSCalendar *calendar = [NSCalendar currentCalendar];
+                     NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
+                     [calendar setTimeZone:timeZone];
+                     
+                     // Selectively convert the date components (year, month, day) of the input date
+                     NSDateComponents *dateComps = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:[NSDate date]];
+                     
+                     // Set the time components manually
+                     [dateComps setHour:2];
+                     [dateComps setMinute:0];
+                     [dateComps setSecond:0];
+                     
+                     
+                     NSDate* enddate = getterFriend[@"lastAvailability"];
+                     NSDate* resetDate = [calendar dateFromComponents:dateComps];
+                     NSTimeInterval distanceBetweenDates = [enddate timeIntervalSinceDate:resetDate];
+                     
+                     if(distanceBetweenDates < 0)
+                     {
+                         [friend setValue:@"notdetermined" forKey:@"availability"];
+                     }
+                     
                      [friends addObject:friend];
                  }
                  
@@ -221,6 +322,7 @@
              
              PFQuery *query = [PFQuery queryWithClassName:@"UserInvitations"];
              [query whereKey:@"invitationFrom" equalTo:object];
+             [query includeKey:@"invitationFrom"];
              [query getFirstObjectInBackgroundWithBlock:^(PFObject *userInvitation, NSError *error) {
                  
                  
@@ -275,7 +377,11 @@
                  // Saves the Connection between the two users
                  if(invitationState == 1)
                  {
+                     
+                     
                      PFObject *friend = [userInvitation objectForKey:@"invitationFrom"];
+                     
+                     [PushController registerPushForFriend:[friend valueForKey:@"fbId"]];
                      
                      PFObject *friendToUserConnection = [PFObject objectWithClassName:@"UserConnection"];
                      [friendToUserConnection setObject:friend forKey:@"friend"];
@@ -324,6 +430,8 @@
                         {
                             NSString* objectID = userInvitation.objectId;
                             [PushController registerPushForInvite:objectID];
+                            
+                            [PushController registerPushForFriend:fbId];
                             
                             NSString* username = [user valueForKey:@"facebookName"];
                             NSString *pushMessage;
@@ -396,32 +504,45 @@
              PFQuery *myPendingInvitationsQuery = [PFQuery queryWithClassName:@"UserInvitations"];
              [myPendingInvitationsQuery whereKey:@"fbID" equalTo:[user valueForKey:@"fbId"]];
              [myPendingInvitationsQuery includeKey:@"invitationFrom"];
+             NSNumber *notAcceptedInvitestate = [NSNumber numberWithInt:1];
+             [myPendingInvitationsQuery whereKey:@"invitationState" notEqualTo:notAcceptedInvitestate];
              
              NSArray *myPendingInvitations = [myPendingInvitationsQuery findObjects];
              
              NSMutableDictionary* userInvitation;
              NSString* facebookID;
              int invitationState;
+             
+             PFQuery *meetemUserQuery;
+             PFQuery *userQuery;
+             NSMutableArray *queryList = [[NSMutableArray alloc] init];
+             
              for (FBGraphObject* facebookUser in result[@"data"])
              {
                  userInvitation = [[NSMutableDictionary alloc] init];
                  facebookID = [facebookUser valueForKey:@"id"];
+                 
+                 userQuery = [PFQuery queryWithClassName:@"User"];
+                 [userQuery whereKey:@"fbId" equalTo:facebookID];
+                 [queryList addObject:userQuery];
+                 
                  [userInvitation setValue:facebookID forKey:@"fbID"];
                  [userInvitation setValue:[facebookUser valueForKey:@"name"] forKey:@"name"];
+                 
+                 
+                 // Versendete Einladungen
                  for (PFObject *object in invites)
                  {
                      if([facebookID isEqualToString:[object valueForKey:@"fbID"]])
                      {
                          invitationState = [[object valueForKey:@"invitationState"] integerValue];
                          [userInvitation setValue:[self convertToReadableState:invitationState] forKey:@"invitationState"];
-                     }
-                     else
-                     {
-                         [userInvitation setValue:@"notdetermined" forKey:@"invitationState"];
+                         break;
                      }
                  }
                  
                  
+                 // Empfangene Einladungen
                  for (PFObject *pendingInvitation in myPendingInvitations)
                  {
                      NSString* pendingUser = [[pendingInvitation valueForKey:@"invitationFrom"] valueForKey:@"fbId"];
@@ -433,8 +554,14 @@
                      }
                  }
                  [_invitationList addObject:userInvitation];
-                 
              }
+             
+             meetemUserQuery = [PFQuery orQueryWithSubqueries:queryList];
+             [meetemUserQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
+             {
+                 
+             }];
+             
              if(self.delegate != nil)
              {
                  [self.delegate setInvitationList:_invitationList];
@@ -525,20 +652,51 @@
 - (void) getUserData
 {
     PFObject* user = [PFUser currentUser];
+    
     if(user != nil)
     {
-        NSMutableDictionary *userData = [[NSMutableDictionary alloc] init];
+        [user fetchInBackgroundWithBlock:^(PFObject *object, NSError *error)
+        {
+            NSMutableDictionary *userData = [[NSMutableDictionary alloc] init];
+            
+            [userData setValue:object[@"objectId"] forKey:@"objectId"];
+            [userData setValue:object[@"facebookName"] forKey:@"name"];
+            [userData setValue:object[@"fbId"] forKey:@"fbID"];
+            [userData setValue:@"notdetermined" forKey:@"location"];
+            
+            int userAvailability = [object[@"currentAvailability"] intValue];
+            
+            [userData setValue:[self convertToReadableAvailability: userAvailability] forKey:@"availability"];
+            
+            // Prüfen, ob die letzte Aktualisierung ein Tag zuvor war.
+            NSCalendar *calendar = [NSCalendar currentCalendar];
+            NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
+            [calendar setTimeZone:timeZone];
+            
+            // Selectively convert the date components (year, month, day) of the input date
+            NSDateComponents *dateComps = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:[NSDate date]];
+            
+            // Set the time components manually
+            [dateComps setHour:2];
+            [dateComps setMinute:0];
+            [dateComps setSecond:0];
+            
+            
+            NSDate* enddate = object[@"lastAvailability"];
+            NSDate* resetDate = [calendar dateFromComponents:dateComps];
+            NSTimeInterval distanceBetweenDates = [enddate timeIntervalSinceDate:resetDate];
+            
+            if(distanceBetweenDates < 0)
+            {
+                [userData setValue:@"notdetermined" forKey:@"availability"];
+            }
+            
+            
+            [PushController registerPushForInvite:object[@"fbId"]];
+            
+            [UIWebviewInterfaceController callJavascript:[JSONHelper convertDictionaryToJSON:userData forSignal:@"getUserData"]];
+        }];
         
-        [userData setValue:user[@"objectId"] forKey:@"objectId"];
-        [userData setValue:user[@"facebookName"] forKey:@"name"];
-        [userData setValue:user[@"fbId"] forKey:@"fbID"];
-        [userData setValue:@"notdetermined" forKey:@"location"];
-        [userData setValue:@"notdetermined" forKey:@"availability"];
-        
-        
-        [PushController registerPushForInvite:user[@"fbId"]];
-        
-        [UIWebviewInterfaceController callJavascript:[JSONHelper convertDictionaryToJSON:userData forSignal:@"getUserData"]];
     }
 }
 @end

@@ -77,6 +77,15 @@
     [currentInstallation saveInBackground];
 }
 
++(void) registerPushForFriend: (NSString *) friendID
+{
+    NSString* identifier = @"friend_";
+    identifier = [identifier stringByAppendingString:friendID];
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation addUniqueObject:identifier forKey:@"channels"];
+    [currentInstallation saveInBackground];
+}
+
 +(void) unregisterPushForInvite: (NSString*) inviteID
 {
     NSString* identifier = @"invite_";

@@ -70,7 +70,7 @@ UIAlertView *alert;
     {
         switch (row) {
             case 0:
-                [localCtrl setCallback:self withSelector:@selector(fooIsDone) andIdentifier:@"authorizationState"];
+                [localCtrl setCallback:self withSelector:@selector(fooIsDone:) andIdentifier:@"authorizationState"];
                 [localCtrl authorize];
                 [alert setTitle:@"CoreLocation - getAuthorizationState()"];
                 [alert addButtonWithTitle:@"OK"];
@@ -78,7 +78,7 @@ UIAlertView *alert;
                 break;
                 
             case 1:
-                [localCtrl setCallback:self withSelector:@selector(fooIsDone) andIdentifier:@"getLocation"];
+                [localCtrl setCallback:self withSelector:@selector(fooIsDone:) andIdentifier:@"getLocation"];
                 [localCtrl getLocation];
                 [alert setTitle:@"CoreLocation - getLocation()"];
                 [alert addButtonWithTitle:@"OK"];
@@ -86,7 +86,7 @@ UIAlertView *alert;
                 break;
                 
             case 2:
-                [localCtrl setCallback:self withSelector:@selector(fooIsDone) andIdentifier:@"authorizationState"];
+                [localCtrl setCallback:self withSelector:@selector(fooIsDone:) andIdentifier:@"authorizationState"];
                 [localCtrl getAuthorizationState];
                 [alert setTitle:@"CoreLocation - getAuthorizationState()"];
                 [alert addButtonWithTitle:@"OK"];
