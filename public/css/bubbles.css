@@ -74,7 +74,7 @@ li.free img {
   padding: 4px;
 }
 li.busy img {
-  border: 3px solid #FF210E;
+  border: 3px solid #808080;
   padding: 4px;
 }
 .friendlist .friend_slot {
@@ -98,12 +98,15 @@ li.busy img {
   padding: 0;
   width: 60px!important;
 }
+.friend.pending img {
+  opacity: .4;
+}
 .friend.active img {
   opacity: .8;
   background: #008aff;
 }
 .friend.free.active img {
-  background: #4cd964;
+  background: #008aff;
 }
 #friendlist_add {
   margin: -30px 0 0 -30px;

@@ -1,9 +1,9 @@
 body[data-status=free] .me img {
-  border: 3px solid #4cd964;
+  border: 3px solid #008aff;
   padding: 4px;
 }
 body[data-status=busy] .me img {
-  border: 3px solid #FF210E;
+  border: 3px solid #808080;
   padding: 4px;
 }
 body[data-status=free] .status_free,

@@ -55,7 +55,7 @@ section {
 .invite_confirm a {
   border: none;
   color: #fff;
-  background: #4cd964;
+  background: #008aff;
   line-height: 50px;
   border-radius: 6px;
   margin: 5px 15px;
@@ -155,12 +155,12 @@ section {
 .status_free {
   -webkit-box-flex: 2;
   color: #fff;
-  background: #4cd964;
-  border-color: #4cd964;
+  background: #008aff;
+  border-color: #008aff;
 }
 .status_free.active {
   background: #fff;
-  color: #4cd964;
+  color: #008aff;
 }
 .status_busy.active {
   background: #888;
@@ -292,7 +292,7 @@ section {
   font-weight: 300;
 }
 .fb_friend.active {
-  background: #4cd964;
+  background: #008aff;
   color: #fff;
 }
 .fb_friend span {
@@ -310,7 +310,7 @@ section {
   font-weight: normal;
 }
 .fb_friend button {
-  color: #4cd964;
+  color: #008aff;
   background: #fff;
   border-radius: 25px;
   font-size: 16px;
@@ -325,7 +325,7 @@ section {
   padding: 3px 10px;
 }
 .fb_friend button.invite {
-  border: 1px solid #4cd964;
+  border: 1px solid #008aff;
   width: 25px;
   height: 25px;
   padding: 0;
@@ -333,7 +333,7 @@ section {
   margin-right: 15px;
 }
 .fb_friend button.active {
-  background: #4cd964;
+  background: #008aff;
   color: #fff;
 }
 .friend_slots {

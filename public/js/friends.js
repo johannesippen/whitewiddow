@@ -106,7 +106,7 @@ var loadFriends = function(user_id) {
 
 // adds a person to the friend list
 var addFriendtoList = function(user, i) {
-    $('<li class="friend '+user.availability+'" onclick="createInviteFor(\''+i+'\')"></li>')
+    $('<li class="friend '+user.availability+' '+user.invitationState+'" onclick="createInviteFor(\''+i+'\')"></li>')
       .html('<span class="name">'+user.name+'</span>')
       .prepend('<img src="https://graph.facebook.com/'+user.fbID+'/picture?width=200&height=200">')
       .insertBefore('#friendlist_add');
