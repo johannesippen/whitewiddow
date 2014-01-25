@@ -14,6 +14,7 @@
 #import "PushController.h"
 #import "EventModel.h"
 #import "MapModel.h"
+#import "EventViewController.h"
 
 @interface UIWebviewInterfaceController()
 @property (nonatomic) LocationController *locationController;
@@ -23,6 +24,7 @@
 @implementation UIWebviewInterfaceController
 static UIWebView* _webView;
 static UIWebviewInterfaceController* _interface;
+static UIViewController* _rootController;
 
 - (LocationController*) locationController
 {
@@ -116,6 +118,12 @@ static UIWebviewInterfaceController* _interface;
     {
         [PushController enablePushNotification];
         returnValue = @"true";
+    }else if([messageType rangeOfString:@"createEventWithUser"].location != NSNotFound)
+    {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+        EventViewController* viewCtrl = (EventViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"EventView"];
+        [_rootController.navigationController pushViewController: viewCtrl animated:YES];
+        returnValue = @"true";
     }else if ([messageType rangeOfString:@"createEvent"].location != NSNotFound)
     {
         [EventModel createEvent:messageParam];
@@ -161,6 +169,11 @@ static UIWebviewInterfaceController* _interface;
     jsCallback = [NSString stringWithFormat:@"_callJS('%@')", jsCallback];
     [Logger logMessage:jsCallback withScope:@"JS-CALLBACK"];
     [_webView stringByEvaluatingJavaScriptFromString:jsCallback];
+}
+
++(void) setRootController:(UIViewController*)controller
+{
+    _rootController = controller;
 }
 
 @end

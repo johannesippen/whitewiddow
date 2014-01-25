@@ -65,6 +65,11 @@ var Social = function()
 		//this.connector.addNativeListener("getUserData", self._onUserData);
 	}
 	
+	this.createEventWithUser = function(id)
+	{
+		this.connector.callNativeMethod("createEventWithUser", id);
+	}
+	
 	self._onUserData = function(data)
 	{
 		self._listeners["getUserData"](data);

@@ -54,6 +54,7 @@
 		7A42028E187F4913003BC129 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42028D187F4913003BC129 /* MapKit.framework */; };
 		7A420291187F5317003BC129 /* MapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A420290187F5317003BC129 /* MapModel.m */; };
 		7A420295187F5F58003BC129 /* UserMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A420294187F5F58003BC129 /* UserMarker.m */; };
+		7A4202AC188C2C27003BC129 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4202AB188C2C27003BC129 /* EventViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,8 @@
 		7A420290187F5317003BC129 /* MapModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapModel.m; path = model/MapModel.m; sourceTree = "<group>"; };
 		7A420293187F5F58003BC129 /* UserMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserMarker.h; path = view/UserMarker.h; sourceTree = "<group>"; };
 		7A420294187F5F58003BC129 /* UserMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserMarker.m; path = view/UserMarker.m; sourceTree = "<group>"; };
+		7A4202AA188C2C27003BC129 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventViewController.h; path = controller/EventViewController.h; sourceTree = "<group>"; };
+		7A4202AB188C2C27003BC129 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventViewController.m; path = controller/EventViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +307,8 @@
 				7A42025E187045DB003BC129 /* FriendsViewController.m */,
 				7A42028418704BF0003BC129 /* ViewController.h */,
 				7A42028518704BF0003BC129 /* ViewController.m */,
+				7A4202AA188C2C27003BC129 /* EventViewController.h */,
+				7A4202AB188C2C27003BC129 /* EventViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -463,6 +468,7 @@
 				7A42027218704955003BC129 /* PushController.m in Sources */,
 				7A4202121864AF47003BC129 /* main.m in Sources */,
 				7A42025C1870458B003BC129 /* InvitesViewController.m in Sources */,
+				7A4202AC188C2C27003BC129 /* EventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +603,7 @@
 					/Projekte/_FRAMEWORKS/TestFlightSDK,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "745E5ED5-7FC1-471A-A15F-50E458829116";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -622,6 +629,7 @@
 					/Projekte/_FRAMEWORKS/TestFlightSDK,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "392E8E5C-410F-470D-86AF-B1EAEA38E749";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

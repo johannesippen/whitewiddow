@@ -8,6 +8,7 @@
 
 #import "MapModel.h"
 #import "UserMarker.h"
+#import "Foursquare2.h"
 
 @implementation MapModel
 
@@ -61,6 +62,8 @@ static UserMarker* annotation;
     [map removeAnnotation:annotation];
     annotation = pin;
     [map addAnnotation:pin];
+    
+    [MapModel getVenueForLocation:[MapModel findCenterPoint:location :userLocation]];
 }
 
 +(CLLocationCoordinate2D)findCenterPoint:(CLLocationCoordinate2D)_lo1 :(CLLocationCoordinate2D)_loc2 {
@@ -85,5 +88,26 @@ static UserMarker* annotation;
     
     return center;
 }
+
++(void) getVenueForLocation:(CLLocationCoordinate2D)location
+{
+    NSURL *url = [[NSURL alloc] initWithString:@""];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+   // NSURLConnection *connection = [NSURLConnection alloc] initWithRequest:request delegate:
+    
+    [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithDouble:location.latitude]
+                                 longitude:[NSNumber numberWithDouble:location.longitude]
+                                     query:nil
+                                     limit:nil
+                                    intent:intentBrowse
+                                    radius:@(500)
+                                categoryId:@"4bf58dd8d48988d116941735"
+                                  callback:^(BOOL success, id result) {
+                                      NSLog(@"RESULT");
+     
+                                  }];
+}
+
+
 
 @end

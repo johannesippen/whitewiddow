@@ -142,7 +142,10 @@ var showFriendProfile = function(user_id) {
   
 };
 
-var createInviteFor = function(user_id) {
+var createInviteFor = function(user_id) 
+{
+	social.createEventWithUser(friendlist[user_id].fbID);
+/*
   coreLocation.addNativeListener("getLocation", _onCoreLocationReceived);
   coreLocation.getLocation();
   friend_coordinates = [friendlist[user_id].location.longitude,friendlist[user_id].location.latitude];
@@ -152,5 +155,5 @@ var createInviteFor = function(user_id) {
   var map = document.getElementById('map');
       map.src = staticMapUrl(my_coordinates,friend_coordinates,300,180);
   
-  getVenue(getMidpoint(my_coordinates,friend_coordinates),true);
+  getVenue(getMidpoint(my_coordinates,friend_coordinates),true);*/
 }

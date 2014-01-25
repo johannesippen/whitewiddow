@@ -38,6 +38,7 @@ var NativeConnector = function()
 	
 	this.callNativeMethod = function(method, params)
 	{
+		//alert(method+": "+params);
 		if(params)
 		{
 			window.location.href = "native://"+method+"&"+params;

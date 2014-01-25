@@ -50,10 +50,13 @@
     [PFFacebookUtils initializeFacebook];
     
     [UIWebviewInterfaceController setWebview:self.webView];
+    
+    [UIWebviewInterfaceController setRootController:self];
     [self registerForLocations];
     [self registerForChannel];
     
     [self.mapView setHidden:YES];
+    self.mapView.delegate=self;
     [MapModel setMapView:self.mapView];
     
     self.webView.scalesPageToFit = YES;

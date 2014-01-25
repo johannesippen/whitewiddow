@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController<UIWebViewDelegate, UIGestureRecognizerDelegate>
+@interface ViewController : UIViewController<UIWebViewDelegate, UIGestureRecognizerDelegate, MKMapViewDelegate>
 +(void)writeToDebugView:(NSString*)message;
 @end

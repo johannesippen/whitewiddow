@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface UIWebviewInterfaceController : NSObject
 +(void) setWebview:(UIWebView*) webview;
 +(NSString *)callNativeCode:(NSString*) requestString;
 +(void) callJavascript:(NSData*)json;
++(void) setRootController:(UIViewController*)controller;
 @end

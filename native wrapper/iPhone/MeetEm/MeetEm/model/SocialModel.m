@@ -187,6 +187,7 @@ NSString* lastChangedStateText;
                      [friend setValue:getterFriend[@"facebookName"] forKey:@"name"];
                      [friend setValue:@"accepted" forKey:@"invitationState"];
                      [friend setValue:getterFriend[@"fbId"] forKey:@"fbID"];
+                     [PushController registerPushForFriend:getterFriend[@"fbId"]];
                      tempLocation = [[NSMutableDictionary alloc]init];
                      geoPoint = getterFriend[@"lastLocation"];
                      [tempLocation setValue:[NSNumber numberWithDouble:[geoPoint latitude]] forKey:@"latitude"];

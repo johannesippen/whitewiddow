@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-@interface MapModel : NSObject
+@interface MapModel : NSObject<MKMapViewDelegate>
 + (void)showMap;
 + (void)hideMap;
 + (void)setMapView:(MKMapView*) mapView;
