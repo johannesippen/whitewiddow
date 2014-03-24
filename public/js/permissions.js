@@ -11,8 +11,8 @@ $('#allowNotification button').live('click',function(){
 });
 $('#addFriends button').live('click',function(){
   localStorage.setItem('permissions',true);
-  $('body').attr('data-mode','addfriends');
-  loadFacebookContacts();
+  $('body').attr('data-mode','friends');
+//  loadFacebookContacts();
 });
 /* Next Slide */
 $('.permission_action button').live('click',function(){
