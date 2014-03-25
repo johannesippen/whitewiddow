@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "SocialDelegate.h"
+#import <Parse/PFObject.h>
 
 typedef NS_ENUM(NSInteger, InvitationState) {
 	InvitationStateNotDetermined = -1,
@@ -30,5 +31,6 @@ typedef NS_ENUM(NSInteger, InvitationState) {
 - (void) getInvitedUser;
 - (void) saveCurrentState: (NSString*) state;
 - (void) setInvitationState:(NSString*)message;
++ (int) getCurrentAvailabilityFromUser:(int) availability withDate:(NSDate*) date;
 
 @end

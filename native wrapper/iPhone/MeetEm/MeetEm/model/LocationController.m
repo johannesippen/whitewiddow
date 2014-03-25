@@ -61,22 +61,47 @@ NSMutableDictionary* callBacks;
     if([PFUser currentUser] != nil)
     {
         PFObject* currentLocation = [PFObject objectWithClassName:@"UserLocation"];
-        CLLocation* location = [self.manager location];
-        CLLocationCoordinate2D coord = [location coordinate];
-        PFGeoPoint *geoPoint = [PFGeoPoint geoPointWithLatitude:coord.latitude longitude:coord.longitude];
-        [currentLocation setObject:[PFUser currentUser] forKey:@"user"];
-        [currentLocation setObject:geoPoint forKey:@"location"];
-        [currentLocation saveEventually];
         
-        PFUser* lastLocation = [PFUser currentUser];
-        [lastLocation setValue:geoPoint forKey:@"lastLocation"];
-        [lastLocation saveEventually];
+        
+        [self getAuthorizationState];
+        NSLog(@"state: %i", [CLLocationManager authorizationStatus]);
+        
+        
+        CLLocation* location = [self.manager location];
+        if(location)
+        {
+            CLLocationCoordinate2D coord = [location coordinate];
+            
+            
+            PFGeoPoint *geoPoint = [PFGeoPoint geoPointWithLatitude:coord.latitude longitude:coord.longitude];
+            [currentLocation setObject:[PFUser currentUser] forKey:@"user"];
+            [currentLocation setObject:geoPoint forKey:@"location"];
+            
+            
+            [currentLocation saveEventually];
+        
+            PFUser* lastLocation = [PFUser currentUser];
+            [lastLocation setValue:geoPoint forKey:@"lastLocation"];
+            [lastLocation saveEventually];
+        }
     }
 }
 
+
 - (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
+    PFObject* currentLocation = [PFObject objectWithClassName:@"UserLocation"];
+    CLLocation* location = [manager location];
+    CLLocationCoordinate2D coord = [location coordinate];
+    PFGeoPoint *geoPoint = [PFGeoPoint geoPointWithLatitude:coord.latitude longitude:coord.longitude];
+    [currentLocation setObject:[PFUser currentUser] forKey:@"user"];
+    [currentLocation setObject:geoPoint forKey:@"location"];
+    [currentLocation saveEventually];
     
+    PFUser* lastLocation = [PFUser currentUser];
+    [lastLocation setValue:geoPoint forKey:@"lastLocation"];
+    [lastLocation saveEventually];
+
 }
 
 -(void) setCallback:(id)object withSelector:(SEL)selector andIdentifier:(NSString*) identifier

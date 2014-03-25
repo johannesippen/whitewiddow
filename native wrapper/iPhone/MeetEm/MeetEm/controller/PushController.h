@@ -20,5 +20,6 @@
 
 +(void) registerPushForFriend: (NSString *) friendID;
 +(void) registerPushForInvite: (NSString*) inviteID;
++(void) registerPushForEvent: (NSString *) eventID;
 
 @end

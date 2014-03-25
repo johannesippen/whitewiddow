@@ -11,14 +11,18 @@
 @implementation UserMarker
 @synthesize coordinate;
 @synthesize title;
-@synthesize subtitle;
+@synthesize availability;
+@synthesize markerType;
+@synthesize index;
 
-- (id)initWithCoordinates:(CLLocationCoordinate2D)location placeName:placeName description:description {
+
+- (id)initWithCoordinates:(CLLocationCoordinate2D)location userID:(NSString*)userID availability:(int)avail {
     self = [super init];
     if (self != nil) {
         coordinate = location;
-        title = placeName;
-        subtitle = description;
+        title = userID;
+        availability = avail;
+        index = -1;
     }
     return self;
 }

@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A00AC4A18AFC596001AC371 /* LocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A00AC4918AFC596001AC371 /* LocationView.m */; };
+		7A00AC4D18B0D5D5001AC371 /* LocationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A00AC4C18B0D5D5001AC371 /* LocationUtils.m */; };
+		7A23AA2118C23BEE00668AC3 /* Mission Gothic Black Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A23AA1618C23BED00668AC3 /* Mission Gothic Black Italic.otf */; };
+		7A23AA2218C23BEE00668AC3 /* Mission Gothic Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A23AA1718C23BED00668AC3 /* Mission Gothic Black.otf */; };
+		7A23AA2318C23BEE00668AC3 /* Mission Gothic Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A23AA1818C23BED00668AC3 /* Mission Gothic Bold Italic.otf */; };
+		7A23AA2418C23BEE00668AC3 /* Mission Gothic Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A23AA1918C23BEE00668AC3 /* Mission Gothic Bold.otf */; };
+		7A23AA2518C23BEE00668AC3 /* Mission Gothic Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A23AA1A18C23BEE00668AC3 /* Mission Gothic Light Italic.otf */; };
+		7A23AA2618C23BEE00668AC3 /* Mission Gothic Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A23AA1B18C23BEE00668AC3 /* Mission Gothic Light.otf */; };
+		7A23AA2718C23BEE00668AC3 /* Mission Gothic Regular Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A23AA1C18C23BEE00668AC3 /* Mission Gothic Regular Italic.otf */; };
+		7A23AA2818C23BEE00668AC3 /* Mission Gothic Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A23AA1D18C23BEE00668AC3 /* Mission Gothic Regular.otf */; };
+		7A23AA2918C23BEE00668AC3 /* Mission Gothic Thin Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A23AA1E18C23BEE00668AC3 /* Mission Gothic Thin Italic.otf */; };
+		7A23AA2A18C23BEE00668AC3 /* Mission Gothic Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A23AA1F18C23BEE00668AC3 /* Mission Gothic Thin.otf */; };
 		7A4202061864AF47003BC129 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4202051864AF47003BC129 /* Foundation.framework */; };
 		7A4202081864AF47003BC129 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4202071864AF47003BC129 /* CoreGraphics.framework */; };
 		7A42020A1864AF47003BC129 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4202091864AF47003BC129 /* UIKit.framework */; };
@@ -55,6 +67,11 @@
 		7A420291187F5317003BC129 /* MapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A420290187F5317003BC129 /* MapModel.m */; };
 		7A420295187F5F58003BC129 /* UserMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A420294187F5F58003BC129 /* UserMarker.m */; };
 		7A4202AC188C2C27003BC129 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4202AB188C2C27003BC129 /* EventViewController.m */; };
+		7A7D1B8218D5E00A00C43E64 /* UserAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D1B8118D5E00A00C43E64 /* UserAnnotationView.m */; };
+		7A7D1B8518D5EDC800C43E64 /* VenueAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D1B8418D5EDC800C43E64 /* VenueAnnotationView.m */; };
+		7A7D1B8918DA1EF200C43E64 /* EventVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D1B8818DA1EF200C43E64 /* EventVO.m */; };
+		7A7D1B8C18DA2B6700C43E64 /* EventAttendeeVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D1B8B18DA2B6700C43E64 /* EventAttendeeVO.m */; };
+		7AC3677018C23E3B00F7244C /* EventDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC3676F18C23E3B00F7244C /* EventDashboardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +85,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A00AC4818AFC596001AC371 /* LocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationView.h; path = view/LocationView.h; sourceTree = "<group>"; };
+		7A00AC4918AFC596001AC371 /* LocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationView.m; path = view/LocationView.m; sourceTree = "<group>"; };
+		7A00AC4B18B0D5D5001AC371 /* LocationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationUtils.h; path = utils/LocationUtils.h; sourceTree = "<group>"; };
+		7A00AC4C18B0D5D5001AC371 /* LocationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationUtils.m; path = utils/LocationUtils.m; sourceTree = "<group>"; };
+		7A00AC4E18B0D940001AC371 /* LocationUtilsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationUtilsDelegate.h; path = utils/LocationUtilsDelegate.h; sourceTree = "<group>"; };
+		7A23AA1618C23BED00668AC3 /* Mission Gothic Black Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mission Gothic Black Italic.otf"; path = "../../../../../Users/paulschmidt/Dropbox/MeetEm/mission_gothic_personal/Mission Gothic Black Italic.otf"; sourceTree = "<group>"; };
+		7A23AA1718C23BED00668AC3 /* Mission Gothic Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mission Gothic Black.otf"; path = "../../../../../Users/paulschmidt/Dropbox/MeetEm/mission_gothic_personal/Mission Gothic Black.otf"; sourceTree = "<group>"; };
+		7A23AA1818C23BED00668AC3 /* Mission Gothic Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mission Gothic Bold Italic.otf"; path = "../../../../../Users/paulschmidt/Dropbox/MeetEm/mission_gothic_personal/Mission Gothic Bold Italic.otf"; sourceTree = "<group>"; };
+		7A23AA1918C23BEE00668AC3 /* Mission Gothic Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mission Gothic Bold.otf"; path = "../../../../../Users/paulschmidt/Dropbox/MeetEm/mission_gothic_personal/Mission Gothic Bold.otf"; sourceTree = "<group>"; };
+		7A23AA1A18C23BEE00668AC3 /* Mission Gothic Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mission Gothic Light Italic.otf"; path = "../../../../../Users/paulschmidt/Dropbox/MeetEm/mission_gothic_personal/Mission Gothic Light Italic.otf"; sourceTree = "<group>"; };
+		7A23AA1B18C23BEE00668AC3 /* Mission Gothic Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mission Gothic Light.otf"; path = "../../../../../Users/paulschmidt/Dropbox/MeetEm/mission_gothic_personal/Mission Gothic Light.otf"; sourceTree = "<group>"; };
+		7A23AA1C18C23BEE00668AC3 /* Mission Gothic Regular Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mission Gothic Regular Italic.otf"; path = "../../../../../Users/paulschmidt/Dropbox/MeetEm/mission_gothic_personal/Mission Gothic Regular Italic.otf"; sourceTree = "<group>"; };
+		7A23AA1D18C23BEE00668AC3 /* Mission Gothic Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mission Gothic Regular.otf"; path = "../../../../../Users/paulschmidt/Dropbox/MeetEm/mission_gothic_personal/Mission Gothic Regular.otf"; sourceTree = "<group>"; };
+		7A23AA1E18C23BEE00668AC3 /* Mission Gothic Thin Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mission Gothic Thin Italic.otf"; path = "../../../../../Users/paulschmidt/Dropbox/MeetEm/mission_gothic_personal/Mission Gothic Thin Italic.otf"; sourceTree = "<group>"; };
+		7A23AA1F18C23BEE00668AC3 /* Mission Gothic Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mission Gothic Thin.otf"; path = "../../../../../Users/paulschmidt/Dropbox/MeetEm/mission_gothic_personal/Mission Gothic Thin.otf"; sourceTree = "<group>"; };
 		7A4202021864AF47003BC129 /* MeetEm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetEm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4202051864AF47003BC129 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7A4202071864AF47003BC129 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,6 +170,17 @@
 		7A420294187F5F58003BC129 /* UserMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserMarker.m; path = view/UserMarker.m; sourceTree = "<group>"; };
 		7A4202AA188C2C27003BC129 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventViewController.h; path = controller/EventViewController.h; sourceTree = "<group>"; };
 		7A4202AB188C2C27003BC129 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventViewController.m; path = controller/EventViewController.m; sourceTree = "<group>"; };
+		7A7D1B8018D5E00A00C43E64 /* UserAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserAnnotationView.h; path = view/map/UserAnnotationView.h; sourceTree = "<group>"; };
+		7A7D1B8118D5E00A00C43E64 /* UserAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserAnnotationView.m; path = view/map/UserAnnotationView.m; sourceTree = "<group>"; };
+		7A7D1B8318D5EDC800C43E64 /* VenueAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VenueAnnotationView.h; path = view/map/VenueAnnotationView.h; sourceTree = "<group>"; };
+		7A7D1B8418D5EDC800C43E64 /* VenueAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VenueAnnotationView.m; path = view/map/VenueAnnotationView.m; sourceTree = "<group>"; };
+		7A7D1B8718DA1EF200C43E64 /* EventVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventVO.h; path = model/vo/EventVO.h; sourceTree = "<group>"; };
+		7A7D1B8818DA1EF200C43E64 /* EventVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventVO.m; path = model/vo/EventVO.m; sourceTree = "<group>"; };
+		7A7D1B8A18DA2B6700C43E64 /* EventAttendeeVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventAttendeeVO.h; path = model/vo/EventAttendeeVO.h; sourceTree = "<group>"; };
+		7A7D1B8B18DA2B6700C43E64 /* EventAttendeeVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventAttendeeVO.m; path = model/vo/EventAttendeeVO.m; sourceTree = "<group>"; };
+		7AA44CA918BE0E9900E1DFB2 /* EventViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventViewControllerDelegate.h; path = controller/EventViewControllerDelegate.h; sourceTree = "<group>"; };
+		7AC3676E18C23E3B00F7244C /* EventDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventDashboardViewController.h; path = controller/EventDashboardViewController.h; sourceTree = "<group>"; };
+		7AC3676F18C23E3B00F7244C /* EventDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventDashboardViewController.m; path = controller/EventDashboardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +226,16 @@
 		7A4201F91864AF47003BC129 = {
 			isa = PBXGroup;
 			children = (
+				7A23AA1618C23BED00668AC3 /* Mission Gothic Black Italic.otf */,
+				7A23AA1718C23BED00668AC3 /* Mission Gothic Black.otf */,
+				7A23AA1818C23BED00668AC3 /* Mission Gothic Bold Italic.otf */,
+				7A23AA1918C23BEE00668AC3 /* Mission Gothic Bold.otf */,
+				7A23AA1A18C23BEE00668AC3 /* Mission Gothic Light Italic.otf */,
+				7A23AA1B18C23BEE00668AC3 /* Mission Gothic Light.otf */,
+				7A23AA1C18C23BEE00668AC3 /* Mission Gothic Regular Italic.otf */,
+				7A23AA1D18C23BEE00668AC3 /* Mission Gothic Regular.otf */,
+				7A23AA1E18C23BEE00668AC3 /* Mission Gothic Thin Italic.otf */,
+				7A23AA1F18C23BEE00668AC3 /* Mission Gothic Thin.otf */,
 				7A42020B1864AF47003BC129 /* MeetEm */,
 				7A4202241864AF47003BC129 /* MeetEmTests */,
 				7A4202041864AF47003BC129 /* Frameworks */,
@@ -279,6 +332,7 @@
 		7A4202531870432E003BC129 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				7A7D1B8618DA1E9100C43E64 /* vo */,
 				7A42026A187048EB003BC129 /* EventModel.h */,
 				7A42026B187048EB003BC129 /* EventModel.m */,
 				7A42026D18704921003BC129 /* LocationController.h */,
@@ -307,8 +361,11 @@
 				7A42025E187045DB003BC129 /* FriendsViewController.m */,
 				7A42028418704BF0003BC129 /* ViewController.h */,
 				7A42028518704BF0003BC129 /* ViewController.m */,
+				7AA44CA918BE0E9900E1DFB2 /* EventViewControllerDelegate.h */,
 				7A4202AA188C2C27003BC129 /* EventViewController.h */,
 				7A4202AB188C2C27003BC129 /* EventViewController.m */,
+				7AC3676E18C23E3B00F7244C /* EventDashboardViewController.h */,
+				7AC3676F18C23E3B00F7244C /* EventDashboardViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -322,6 +379,9 @@
 				7A420265187047AD003BC129 /* UIWebviewInterfaceController.m */,
 				7A420267187047EB003BC129 /* JSONHelper.h */,
 				7A420268187047EB003BC129 /* JSONHelper.m */,
+				7A00AC4B18B0D5D5001AC371 /* LocationUtils.h */,
+				7A00AC4C18B0D5D5001AC371 /* LocationUtils.m */,
+				7A00AC4E18B0D940001AC371 /* LocationUtilsDelegate.h */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -338,10 +398,35 @@
 		7A420292187F5F39003BC129 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				7A7D1B7F18D5DFD000C43E64 /* map */,
 				7A420293187F5F58003BC129 /* UserMarker.h */,
 				7A420294187F5F58003BC129 /* UserMarker.m */,
+				7A00AC4818AFC596001AC371 /* LocationView.h */,
+				7A00AC4918AFC596001AC371 /* LocationView.m */,
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		7A7D1B7F18D5DFD000C43E64 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				7A7D1B8018D5E00A00C43E64 /* UserAnnotationView.h */,
+				7A7D1B8118D5E00A00C43E64 /* UserAnnotationView.m */,
+				7A7D1B8318D5EDC800C43E64 /* VenueAnnotationView.h */,
+				7A7D1B8418D5EDC800C43E64 /* VenueAnnotationView.m */,
+			);
+			name = map;
+			sourceTree = "<group>";
+		};
+		7A7D1B8618DA1E9100C43E64 /* vo */ = {
+			isa = PBXGroup;
+			children = (
+				7A7D1B8718DA1EF200C43E64 /* EventVO.h */,
+				7A7D1B8818DA1EF200C43E64 /* EventVO.m */,
+				7A7D1B8A18DA2B6700C43E64 /* EventAttendeeVO.h */,
+				7A7D1B8B18DA2B6700C43E64 /* EventAttendeeVO.m */,
+			);
+			name = vo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,6 +512,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A23AA2118C23BEE00668AC3 /* Mission Gothic Black Italic.otf in Resources */,
+				7A23AA2218C23BEE00668AC3 /* Mission Gothic Black.otf in Resources */,
+				7A23AA2318C23BEE00668AC3 /* Mission Gothic Bold Italic.otf in Resources */,
+				7A23AA2418C23BEE00668AC3 /* Mission Gothic Bold.otf in Resources */,
+				7A23AA2518C23BEE00668AC3 /* Mission Gothic Light Italic.otf in Resources */,
+				7A23AA2618C23BEE00668AC3 /* Mission Gothic Light.otf in Resources */,
+				7A23AA2718C23BEE00668AC3 /* Mission Gothic Regular Italic.otf in Resources */,
+				7A23AA2818C23BEE00668AC3 /* Mission Gothic Regular.otf in Resources */,
+				7A23AA2918C23BEE00668AC3 /* Mission Gothic Thin Italic.otf in Resources */,
+				7A23AA2A18C23BEE00668AC3 /* Mission Gothic Thin.otf in Resources */,
 				7A42028B187056A5003BC129 /* prototyp_icon-80.png in Resources */,
 				7A420256187043EB003BC129 /* Main.storyboard in Resources */,
 				7A4202101864AF47003BC129 /* InfoPlist.strings in Resources */,
@@ -452,10 +547,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A420295187F5F58003BC129 /* UserMarker.m in Sources */,
+				7AC3677018C23E3B00F7244C /* EventDashboardViewController.m in Sources */,
 				7A42026F18704921003BC129 /* LocationController.m in Sources */,
+				7A7D1B8C18DA2B6700C43E64 /* EventAttendeeVO.m in Sources */,
+				7A7D1B8918DA1EF200C43E64 /* EventVO.m in Sources */,
 				7A42025F187045DB003BC129 /* FriendsViewController.m in Sources */,
 				7A42027518704989003BC129 /* ContactsModel.m in Sources */,
 				7A420269187047EB003BC129 /* JSONHelper.m in Sources */,
+				7A7D1B8218D5E00A00C43E64 /* UserAnnotationView.m in Sources */,
 				7A420291187F5317003BC129 /* MapModel.m in Sources */,
 				7A420263187046C4003BC129 /* Logger.m in Sources */,
 				7A4202161864AF47003BC129 /* AppDelegate.m in Sources */,
@@ -464,9 +563,12 @@
 				7A420266187047AD003BC129 /* UIWebviewInterfaceController.m in Sources */,
 				7A42028618704BF0003BC129 /* ViewController.m in Sources */,
 				7A42028318704BB0003BC129 /* ContactVO.m in Sources */,
+				7A7D1B8518D5EDC800C43E64 /* VenueAnnotationView.m in Sources */,
 				7A420278187049BA003BC129 /* SocialModel.m in Sources */,
 				7A42027218704955003BC129 /* PushController.m in Sources */,
+				7A00AC4D18B0D5D5001AC371 /* LocationUtils.m in Sources */,
 				7A4202121864AF47003BC129 /* main.m in Sources */,
+				7A00AC4A18AFC596001AC371 /* LocationView.m in Sources */,
 				7A42025C1870458B003BC129 /* InvitesViewController.m in Sources */,
 				7A4202AC188C2C27003BC129 /* EventViewController.m in Sources */,
 			);

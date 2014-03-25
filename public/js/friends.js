@@ -144,7 +144,8 @@ var showFriendProfile = function(user_id) {
 
 var createInviteFor = function(user_id) 
 {
-	social.createEventWithUser(friendlist[user_id].fbID);
+	social.createEventWithUser(friendlist[user_id].objectId);
+	
 /*
   coreLocation.addNativeListener("getLocation", _onCoreLocationReceived);
   coreLocation.getLocation();

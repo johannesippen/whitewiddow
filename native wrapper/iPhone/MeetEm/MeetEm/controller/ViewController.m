@@ -18,6 +18,7 @@
 #import "FunctionTestViewController.h"
 #import <MapKit/MapKit.h>
 #import "MapModel.h"
+#import "EventDashboardViewController.h"
 
 @interface ViewController ()
 @property IBOutlet UIWebView *webView;
@@ -31,12 +32,37 @@
 @implementation ViewController
 - (IBAction)_onButtonPressed:(UIButton *)sender
 {
-    [EventModel createEvent:@"&data={\"latitude\":\"12\", \"longitude\":\"52\", \"title\":\"Mein Haus am See\"}"];
+    //[EventModel createEvent:@"&data={\"latitude\":\"12\", \"longitude\":\"52\", \"title\":\"Mein Haus am See\"}"];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if([EventModel hasUnacceptedEvents])
+    {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+        EventDashboardViewController* viewCtrl = (EventDashboardViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"EventDashboardView"];
+        viewCtrl.dashboardState = EventDashboardStateAccept;
+        [self.navigationController pushViewController: viewCtrl animated:YES];
+        return;
+    }
+    else if([EventModel hasUpcomingEvents])
+    {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+        EventDashboardViewController* viewCtrl = (EventDashboardViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"EventDashboardView"];
+        viewCtrl.dashboardState = EventDashboardStateNormal;
+        [self.navigationController pushViewController: viewCtrl animated:YES];
+        return;
+    }
+    else if([EventModel hasPendingEvents])
+    {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+        EventDashboardViewController* viewCtrl = (EventDashboardViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"EventDashboardView"];
+        viewCtrl.dashboardState = EventDashboardStatePending;
+        [self.navigationController pushViewController: viewCtrl animated:YES];
+        return;
+    }
     
     NSURL *url = [[NSURL alloc] initWithString:@"http://thxalot.dermediendesigner.de/"];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
@@ -46,6 +72,7 @@
     
     self.featureSelectionTable.delegate = self;
     [[NSURLCache sharedURLCache] removeAllCachedResponses];
+    [self.navigationController setNavigationBarHidden:YES];
     
     [PFFacebookUtils initializeFacebook];
     

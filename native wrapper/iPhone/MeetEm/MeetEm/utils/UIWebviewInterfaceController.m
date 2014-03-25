@@ -122,11 +122,13 @@ static UIViewController* _rootController;
     {
         UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
         EventViewController* viewCtrl = (EventViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"EventView"];
+        viewCtrl.facebookID = messageParam;
+        [_rootController.navigationController setNavigationBarHidden:YES];
         [_rootController.navigationController pushViewController: viewCtrl animated:YES];
         returnValue = @"true";
     }else if ([messageType rangeOfString:@"createEvent"].location != NSNotFound)
     {
-        [EventModel createEvent:messageParam];
+       // [EventModel createEvent:messageParam];
         returnValue = @"true";
     }else if ([messageType rangeOfString:@"attendEvent"].location != NSNotFound)
     {
@@ -150,8 +152,8 @@ static UIViewController* _rootController;
         returnValue = @"true";
     }else if([messageType rangeOfString:@"addMarker"].location != NSNotFound)
     {
-        [MapModel addMarker:messageParam];
-        returnValue = @"true";
+       // [MapModel addMarker:messageParam];
+       // returnValue = @"true";
     }else if([messageType rangeOfString:@"hideMap"].location != NSNotFound)
     {
         [MapModel hideMap];

@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.2.7 push</string>
+	<string>0.4.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -30,13 +30,26 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>0.2.7 push</string>
+	<string>0.4.0</string>
 	<key>FacebookAppID</key>
 	<string>642158482464032</string>
 	<key>FacebookDisplayName</key>
 	<string>MeetEm</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Mission Gothic Regular.otf</string>
+		<string>Mission Gothic Black Italic.otf</string>
+		<string>Mission Gothic Black.otf</string>
+		<string>Mission Gothic Bold Italic.otf</string>
+		<string>Mission Gothic Bold.otf</string>
+		<string>Mission Gothic Light Italic.otf</string>
+		<string>Mission Gothic Light.otf</string>
+		<string>Mission Gothic Regular Italic.otf</string>
+		<string>Mission Gothic Thin Italic.otf</string>
+		<string>Mission Gothic Thin.otf</string>
+	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

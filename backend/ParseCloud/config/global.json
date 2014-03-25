@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "MeetEm": {
+            "applicationId": "KNtdMcnjzZUcsSLkPVvbW7lakdF9hzitvFaDjmU1", 
+            "masterKey": "7Gyncx95g1h2RH5ZTXU0Fyy6QbtR0qelHvoosMoq"
+        }, 
+        "_default": {
+            "link": "MeetEm"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.12"
+    }
+}

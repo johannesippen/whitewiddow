@@ -700,4 +700,34 @@ NSString* lastChangedStateText;
         
     }
 }
+
++ (int) getCurrentAvailabilityFromUser:(int) availability withDate:(NSDate*) date
+{
+    int userAvailability = availability;
+    
+    
+    // Prüfen, ob die letzte Aktualisierung ein Tag zuvor war.
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
+    [calendar setTimeZone:timeZone];
+    
+    // Selectively convert the date components (year, month, day) of the input date
+    NSDateComponents *dateComps = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:[NSDate date]];
+    
+    // Set the time components manually
+    [dateComps setHour:2];
+    [dateComps setMinute:0];
+    [dateComps setSecond:0];
+    
+    
+    NSDate* enddate = date;
+    NSDate* resetDate = [calendar dateFromComponents:dateComps];
+    NSTimeInterval distanceBetweenDates = [enddate timeIntervalSinceDate:resetDate];
+    
+    if(distanceBetweenDates < 0)
+    {
+        userAvailability = -1;
+    }
+    return userAvailability;
+}
 @end

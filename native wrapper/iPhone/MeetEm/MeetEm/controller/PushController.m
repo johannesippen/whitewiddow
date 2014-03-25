@@ -86,6 +86,15 @@
     [currentInstallation saveInBackground];
 }
 
++(void) registerPushForEvent: (NSString *) eventID
+{
+    NSString* identifier = @"event_";
+    identifier = [identifier stringByAppendingString:eventID];
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation addUniqueObject:identifier forKey:@"channels"];
+    [currentInstallation saveInBackground];
+}
+
 +(void) unregisterPushForInvite: (NSString*) inviteID
 {
     NSString* identifier = @"invite_";

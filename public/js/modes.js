@@ -1,7 +1,7 @@
 $(function(){
   /* Friendmode */
   $('#friends .friend').live('click',function(){
-    $('body').attr('data-mode','invite');
+//    $('body').attr('data-mode','invite');
   });
   $('#venue .back').live('click',function(){
     $('body').attr('data-mode','invite');

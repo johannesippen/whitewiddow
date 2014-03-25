@@ -8,12 +8,19 @@
 
 #import "MapModel.h"
 #import "UserMarker.h"
-#import "Foursquare2.h"
+
+#import "LocationUtils.h"
 
 @implementation MapModel
 
 static MKMapView* map;
 static UserMarker* annotation;
+
+static NSDictionary* currentVenue;
+
+static NSMutableArray* mapPins;
+
+static int selectedMarker = 0;
 
 + (void)showMap
 {
@@ -23,89 +30,167 @@ static UserMarker* annotation;
     }
 }
 
++(NSDictionary*) getCurrentVenue
+{
+    return currentVenue;
+}
+
++(void) changeCurrentVenue: (int) index
+{
+    currentVenue = venues[index];
+}
+
++(int) getSelectedMarker
+{
+    return selectedMarker;
+}
++(void) setSelectedMarker: (int) marker
+{
+    selectedMarker = marker;
+}
+
++(void) removeMarker
+{
+    [map removeAnnotations:mapPins];
+}
+
 + (void)hideMap
 {
     if(map)
     {
+        venues = [[NSMutableArray alloc] init];
+        mapPins = [[NSMutableArray alloc] init];
         [map setHidden:YES];
     }
 }
 
 + (void)setMapView:(MKMapView*) mapView
 {
+    
     map = mapView;
     [map showsUserLocation];
 }
 
-+ (void)addMarker:(NSString*) mapObj
+/*
+ Adds Marker for the selected friend
+ */
++ (void)addMarker:(CLLocationDegrees)lat atLongitude:(CLLocationDegrees)lon forFriend:(NSString*)friend withAvailability:(int) availability
 {
-    mapObj = [mapObj stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSDictionary *mapdata = [NSJSONSerialization
-                               JSONObjectWithData:[mapObj dataUsingEncoding:NSUTF8StringEncoding]
-                               options:kNilOptions
-                               error:nil];
-    CLLocationDegrees lat = [[mapdata valueForKey:@"latitude"] doubleValue];
-    CLLocationDegrees lon = [[mapdata valueForKey:@"longitude"] doubleValue];
     CLLocationCoordinate2D location = CLLocationCoordinate2DMake(lat, lon);
-    UserMarker *pin = [[UserMarker alloc] initWithCoordinates:location placeName:@"" description:@""];
+    UserMarker *pin = [[UserMarker alloc] initWithCoordinates:location userID:friend availability:availability];
     
-    [map setShowsUserLocation:YES];
+    if(!mapPins)
+    {
+        mapPins = [[NSMutableArray alloc] init];
+    }
+    
+    [mapPins addObject:pin];
+    if(map)
+        [map addAnnotation:pin];
+}
+
+/*
+ Adds Marker for the current user
+ */
++ (void)addMarker:(NSString*)me withAvailability:(int) availability
+{
+    if(!mapPins)
+    {
+        mapPins = [[NSMutableArray alloc] init];
+    }
     CLLocationManager *manager = [[CLLocationManager alloc] init];
     CLLocationCoordinate2D userLocation = manager.location.coordinate;
-    MKCoordinateSpan span = MKCoordinateSpanMake(lat - userLocation.latitude, lon - userLocation.longitude);
-    MKCoordinateRegion region = MKCoordinateRegionMake([MapModel findCenterPoint:location :userLocation], span);
-    region.span.latitudeDelta  *= 1.3;
-    region.span.longitudeDelta  *= 1.3;
     
-    [map setRegion:region];
-    
-    [map removeAnnotation:annotation];
-    annotation = pin;
-    [map addAnnotation:pin];
-    
-    [MapModel getVenueForLocation:[MapModel findCenterPoint:location :userLocation]];
+    UserMarker *pin = [[UserMarker alloc] initWithCoordinates:userLocation userID:me availability:availability];
+    [mapPins addObject:pin];
+    if(map)
+        [map addAnnotation:pin];
 }
 
-+(CLLocationCoordinate2D)findCenterPoint:(CLLocationCoordinate2D)_lo1 :(CLLocationCoordinate2D)_loc2 {
-    CLLocationCoordinate2D center;
-    
-    double lon1 = _lo1.longitude * M_PI / 180;
-    double lon2 = _loc2.longitude * M_PI / 180;
-    
-    double lat1 = _lo1.latitude * M_PI / 180;
-    double lat2 = _loc2.latitude * M_PI / 180;
-    
-    double dLon = lon2 - lon1;
-    
-    double x = cos(lat2) * cos(dLon);
-    double y = cos(lat2) * sin(dLon);
-    
-    double lat3 = atan2( sin(lat1) + sin(lat2), sqrt((cos(lat1) + x) * (cos(lat1) + x) + y * y) );
-    double lon3 = lon1 + atan2(y, cos(lat1) + x);
-    
-    center.latitude  = lat3 * 180 / M_PI;
-    center.longitude = lon3 * 180 / M_PI;
-    
-    return center;
-}
-
-+(void) getVenueForLocation:(CLLocationCoordinate2D)location
++ (void)addMarker:(CLLocationDegrees)lat atLongitude:(CLLocationDegrees)lon
 {
-    NSURL *url = [[NSURL alloc] initWithString:@""];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
-   // NSURLConnection *connection = [NSURLConnection alloc] initWithRequest:request delegate:
+    if(!mapPins)
+    {
+        mapPins = [[NSMutableArray alloc] init];
+        
+        
+    }
     
-    [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithDouble:location.latitude]
-                                 longitude:[NSNumber numberWithDouble:location.longitude]
-                                     query:nil
-                                     limit:nil
-                                    intent:intentBrowse
-                                    radius:@(500)
-                                categoryId:@"4bf58dd8d48988d116941735"
-                                  callback:^(BOOL success, id result) {
-                                      NSLog(@"RESULT");
-     
-                                  }];
+    CLLocationCoordinate2D location = CLLocationCoordinate2DMake(lat, lon);
+    
+    UserMarker *pin = [[UserMarker alloc] initWithCoordinates:location userID:@"mine" availability:0];
+    [mapPins addObject:pin];
+    if(map)
+        [map addAnnotation:pin];
+}
+
+
+
+static EventViewController* delegate;
+
++(void) setDelegate:(EventViewController *)controllerDelegate
+{
+    delegate = controllerDelegate;
+}
+
++(UserMarker*) getMarker:(NSString*)type
+{
+    UserMarker* marker = [currentVenue valueForKey:@"marker"];
+    return marker;
+}
+
+NSMutableArray* venues;
+
+- (void) getVenueLocations:(NSString*)friendId
+{
+    if(venues == nil)
+        venues = [[NSMutableArray alloc] init];
+    [venues removeAllObjects];
+    
+    if(!mapPins)
+    {
+        mapPins = [[NSMutableArray alloc] init];
+    }
+    else
+    {
+        [mapPins removeAllObjects];
+    }
+    
+    [LocationUtils setDelegate:self];
+    
+    [LocationUtils getVenueForFriend: friendId];
+}
+
+-(void) foursquareNotReached
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Foursquare not reached" message:@"Sorry, we have problems reaching the foursquare server" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+    //[alertView show];
+}
+
+-(void) bestVenueDataReceived:(NSArray *)venue withType:(NSString *)type
+{
+    venues = [venue mutableCopy];
+    
+    
+    currentVenue = venues[0];
+    if (map)
+    {
+        UserMarker *pin;
+        
+        for (int i = 0; i < venues.count; ++i)
+        {
+            CLLocationDegrees lat = [[[[venues[i] valueForKey:@"venue"] valueForKey:@"location"] valueForKey:@"lat"] doubleValue];
+            CLLocationDegrees lon = [[[[venues[i] valueForKey:@"venue"] valueForKey:@"location"] valueForKey:@"lng"] doubleValue];
+            CLLocation *venueLocation = [[CLLocation alloc] initWithLatitude:lat longitude:lon];
+                
+            pin = [[UserMarker alloc] initWithCoordinates:venueLocation.coordinate userID:[venues[i] valueForKey:@"type"] availability:0];
+            pin.index = i;
+            [map addAnnotation:pin];
+            [venues[i] setValue:pin forKey:@"marker"];
+            [delegate venueDataReceived:venues[i]];
+        }
+    }
+    
 }
 
 

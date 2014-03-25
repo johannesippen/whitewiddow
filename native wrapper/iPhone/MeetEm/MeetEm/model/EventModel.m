@@ -12,32 +12,75 @@
 #import "UIWebviewInterfaceController.h"
 #import "JSONHelper.h"
 #import "LocationController.h"
+#import "PushController.h"
 
 @implementation EventModel
 
-+(void) createEvent:(NSString *)eventObj
+static id delegate;
++(void) setDelegate:(id)eventDelegate
+{
+    delegate = eventDelegate;
+}
+
++(void) createEvent:(NSDictionary *)eventdata withAttendee:(NSString*) attendeeID
 {
     PFObject *event = [PFObject objectWithClassName:@"Event"];
-    eventObj = [eventObj stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSDictionary *eventdata = [NSJSONSerialization
-                               JSONObjectWithData:[eventObj dataUsingEncoding:NSUTF8StringEncoding]
-                               options:kNilOptions
-                               error:nil];
-    PFGeoPoint *coord = [PFGeoPoint geoPointWithLatitude:[[eventdata valueForKey:@"latitude"] doubleValue] longitude:[[eventdata valueForKey:@"longitude"] doubleValue]];
+    
+    PFGeoPoint *coord = [PFGeoPoint geoPointWithLatitude:[[[eventdata valueForKey:@"location"] valueForKey:@"lat"] doubleValue] longitude:[[[eventdata valueForKey:@"location"] valueForKey:@"lng"] doubleValue]];
     [event setObject: coord forKey:@"location"];
-    NSDate *eventDate = [JSONHelper dateWithJSONString:[eventdata valueForKey:@"date"]];
-    [event setObject: eventDate forKey:@"eventDate"];
+    
+    [event setObject: [eventdata valueForKey:@"id"] forKey:@"venueID"];
+    [event setObject: [eventdata valueForKey:@"name"] forKey:@"venueName"];
     
     PFObject *host = [PFObject objectWithClassName:@"EventAttendees"];
     [host setObject:[NSNumber numberWithBool:YES] forKey:@"organisator"];
-    [host setObject:event forKey:@"Event"];
+    [host setObject:[NSNumber numberWithInt:2] forKey:@"invitationState"];
     
     PFUser *user = [PFUser currentUser];
     [host setObject:user forKey:@"Attendee"];
     
-    [host saveEventually:^(BOOL succeeded, NSError *error)
+    PFQuery* query = [PFUser query];
+    [query whereKey:@"objectId" equalTo:attendeeID];
+    
+    
+       
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        
+        
+        PFObject *attendee = [PFObject objectWithClassName:@"EventAttendees"];
+        [attendee setObject:object forKey:@"Attendee"];
+        [attendee setObject:[NSNumber numberWithInt:1] forKey:@"invitationState"];
+        
+        
+        [event addObject:host forKey:@"attendees"];
+        [event addObject:attendee forKey:@"attendees"];
+        [event saveEventually:^(BOOL succeeded, NSError *error) {
+            [PushController registerPushForEvent:event.objectId];
+            [delegate eventSaved];
+        }];
+        
+        
+        NSString *channelID = @"friend_";
+        channelID = [channelID stringByAppendingString:[user valueForKey:@"fbId"]];
+        
+        PFPush *push = [[PFPush alloc] init];
+        [push setChannel:channelID];
+        NSString* pushMessage = [user valueForKey:@"facebookName"];
+        pushMessage = [pushMessage stringByAppendingString:@" invited you to an event."];
+        [push setMessage:pushMessage];
+        [push sendPushInBackground];
+        
+        NSString* alertMessage = @"You will get a notification as soon as ";
+        alertMessage = [alertMessage stringByAppendingString:[object valueForKey:@"facebookName"]];
+        alertMessage = [alertMessage stringByAppendingString:@" has accepted."];
+        UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Invitation sent!" message:alertMessage delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        
+        [alertView show];
+    }];
+    
+    
+   /* [host saveEventually:^(BOOL succeeded, NSError *error)
      {
-         NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
          if(succeeded)
          {
              LocationController *location = [[LocationController alloc] init];
@@ -47,20 +90,63 @@
              eventChannel = [eventChannel stringByAppendingString:event.objectId];
              [location registerForRegion:coord2d withRadius:100 withIdentifier:eventChannel];
              [currentInstallation addUniqueObject:eventChannel forKey:@"channels"];
-             [currentInstallation saveEventually];
-             [dict setValue:@"success" forKey:@"state"];
-         }
-         else
-         {
-             [dict setValue:@"failed" forKey:@"state"];
-         }
-         [UIWebviewInterfaceController callJavascript:[JSONHelper convertDictionaryToJSON:dict forSignal:@"createEvent"]];
-     }];
+             [currentInstallation saveEventually];*/
+        /*}
+     }];*/
 }
 
 +(void) modifyEvent:(NSString*) eventObj byId:(NSString*) eventID
 {
     
+}
+
++(PFObject*) getUpcomingEvent
+{
+    PFObject *event;
+    PFQuery *query = [PFQuery queryWithClassName:@"Event"];
+    PFUser *user = [PFUser currentUser];
+    PFQuery *innerquery = [PFQuery queryWithClassName:@"EventAttendees"];
+    [innerquery whereKey:@"Attendee" equalTo:user];
+    PFObject* attendee = [innerquery getFirstObject];
+    
+    
+    [query whereKey:@"attendees" containsAllObjectsInArray:@[attendee]];
+    [query includeKey:@"attendees"];
+    [query includeKey:@"attendees.Attendee"];
+    NSDate *now = [NSDate date];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:now];
+    [components setHour:2];
+    [components setMinute:0];
+    [components setSecond:0];
+    
+    NSDate *today = [calendar dateFromComponents:components];
+    NSTimeInterval tomorrowDifference = 24*60*60;
+    NSDate *tomorrow = [today dateByAddingTimeInterval:tomorrowDifference];
+    
+    [query whereKey:@"eventDate" greaterThan:today];
+    [query whereKey:@"eventDate" lessThan:tomorrow];
+    event = [query getFirstObject];
+    
+    return event;
+}
+
++(PFObject*) getPendingEvent
+{
+    PFObject *event;
+    PFQuery *query = [PFQuery queryWithClassName:@"Event"];
+    PFUser *user = [PFUser currentUser];
+    PFQuery *innerquery = [PFQuery queryWithClassName:@"EventAttendees"];
+    [innerquery whereKey:@"Attendee" equalTo:user];
+    PFObject* attendee = [innerquery getFirstObject];
+    
+    
+    [query whereKey:@"attendees" containsAllObjectsInArray:@[attendee]];
+    [query includeKey:@"attendees"];
+    [query includeKey:@"attendees.Attendee"];
+    event = [query getFirstObject];
+    
+    return event;
 }
 
 +(void)deleteEvent:(NSString *)eventID
@@ -135,6 +221,116 @@
          [UIWebviewInterfaceController callJavascript:[JSONHelper convertDictionaryToJSON:dict forSignal:@"createEvent"]];
      }];
 }
+
++(BOOL) hasUnacceptedEvents
+{
+   /* PFQuery *query = [PFQuery queryWithClassName:@"EventAttendees"];
+    PFUser *user = [PFUser currentUser];
+    [query whereKey:@"Attendee" equalTo:user];
+    [query whereKey:@"invitationState" equalTo:[NSNumber numberWithInt:1]];
+    
+    int count = [query countObjects];
+    if(count > 0)
+    {
+        return YES;
+    }*/
+    return NO;
+}
+
++(BOOL) hasPendingEvents
+{
+   /* PFQuery *query = [PFQuery queryWithClassName:@"Event"];
+    PFUser *user = [PFUser currentUser];
+    PFQuery *innerquery = [PFQuery queryWithClassName:@"EventAttendees"];
+    [innerquery whereKey:@"Attendee" equalTo:user];
+    [innerquery whereKey:@"invitationState" notEqualTo:[NSNumber numberWithInt:3]];
+    PFObject* attendee = [innerquery getFirstObject];
+    
+    if(!attendee)
+    {
+        return NO;
+    }
+    [query whereKey:@"attendees" containsAllObjectsInArray:@[attendee]];
+    [query whereKey:@"invitationState" equalTo:[NSNumber numberWithInt:1]];
+    NSDate *now = [NSDate date];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:now];
+    [components setHour:2];
+    [components setMinute:0];
+    [components setSecond:0];
+    
+    NSDate *today = [calendar dateFromComponents:components];
+    NSTimeInterval tomorrowDifference = 24*60*60;
+    NSDate *tomorrow = [today dateByAddingTimeInterval:tomorrowDifference];
+    
+    [query whereKey:@"eventDate" greaterThan:today];
+    [query whereKey:@"eventDate" lessThan:tomorrow];
+    
+    int count = [query countObjects];
+    if(count > 0)
+    {
+        return YES;
+    }*/
+    return NO;
+}
+
++(BOOL) hasUpcomingEvents
+{
+  /*  PFQuery *query = [PFQuery queryWithClassName:@"EventAttendees"];
+    PFUser *user = [PFUser currentUser];
+    [query whereKey:@"Attendee" equalTo:user];
+    [query whereKey:@"invitationState" equalTo:[NSNumber numberWithInt:2]];
+    PFQuery *innerquery = [PFQuery queryWithClassName:@"EventAttendees"];
+    [innerquery whereKey:@"invitationState" notEqualTo:[NSNumber numberWithInt:3]];
+    [innerquery whereKey:@"Attendee" equalTo:user];
+    NSArray* attendee = [innerquery findObjects];
+    
+    if(!attendee)
+    {
+        return NO;
+    }
+        
+    [query whereKey:@"attendees" containsAllObjectsInArray:attendee];
+    NSDate *now = [NSDate date];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:now];
+    [components setHour:2];
+    [components setMinute:0];
+    [components setSecond:0];
+    
+    NSDate *today = [calendar dateFromComponents:components];
+    NSTimeInterval tomorrowDifference = 24*60*60;
+    NSDate *tomorrow = [today dateByAddingTimeInterval:tomorrowDifference];
+    
+    [query whereKey:@"eventDate" greaterThan:today];
+    [query whereKey:@"eventDate" lessThan:tomorrow];
+    
+    
+    int count = [query countObjects];
+    if(count > 0)
+    {
+        return YES;
+    }*/
+    return NO;
+}
+
++(PFObject*) getUnacceptedEvents
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"Event"];
+    PFUser *user = [PFUser currentUser];
+    PFQuery *innerquery = [PFQuery queryWithClassName:@"EventAttendees"];
+    [innerquery whereKey:@"Attendee" equalTo:user];
+    PFObject* attendee = [innerquery getFirstObject];
+    
+    [query whereKey:@"attendees" containsAllObjectsInArray:@[attendee]];
+    [query includeKey:@"attendees"];
+    [query includeKey:@"attendees.Attendee"];
+    PFObject* event = [query getFirstObject];
+   // [query whereKey:@"invitationState" equalTo:[NSNumber numberWithInt:1]];
+    
+    return event;
+}
+
 
 +(void) getEventsFromUser:(NSString *) userID
 {

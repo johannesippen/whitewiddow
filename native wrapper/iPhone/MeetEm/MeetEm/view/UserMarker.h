@@ -13,14 +13,18 @@
 {
     CLLocationCoordinate2D coordinate;
     NSString *title;
-    NSString *subtitle;
+    int availability;
+    
+    NSString *markerType;
 }
 
-@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property (nonatomic) CLLocationCoordinate2D coordinate;
 @property (nonatomic, readonly) NSString *title;
-@property (nonatomic, readonly) NSString *subtitle;
+@property (nonatomic, readonly) int availability;
+@property (nonatomic) int index;
+@property (nonatomic, readonly) NSString *markerType;
 
-- (id)initWithCoordinates:(CLLocationCoordinate2D)location placeName:(NSString *)placeName description:(NSString *)description;
+- (id)initWithCoordinates:(CLLocationCoordinate2D)location userID:(NSString*)userID availability:(int)avail;
 
 
 @end

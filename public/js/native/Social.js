@@ -68,6 +68,7 @@ var Social = function()
 	this.createEventWithUser = function(id)
 	{
 		this.connector.callNativeMethod("createEventWithUser", id);
+		
 	}
 	
 	self._onUserData = function(data)
