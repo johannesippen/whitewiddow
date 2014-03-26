@@ -6,8 +6,11 @@ $('#allowLocation button').live('click',function(){
   allowCoreLocation();
 });
 $('#allowNotification button').live('click',function(){
+  localStorage.setItem('permissions',true);
   var notification = new PushNotification();
   notification.authorizePushNotification();
+  $('.permission').remove();
+  $('body').attr('data-mode','friends');
 });
 $('#addFriends button').live('click',function(){
   localStorage.setItem('permissions',true);

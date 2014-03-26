@@ -25,8 +25,8 @@ $(function(){
     loadFacebookContacts();
   });
   $('#friendlist_add').live('touchend mouseup',function(){
-    $('body').attr('data-mode','addfriends');
-    loadFacebookContacts();
+/*    $('body').attr('data-mode','addfriends');
+    loadFacebookContacts();*/
   });
   /* Friend-Eventmode */
   $('#invite .invite_confirm a.button').live('click',function(){
