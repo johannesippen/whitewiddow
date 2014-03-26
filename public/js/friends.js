@@ -86,10 +86,10 @@ var loadFriends = function(user_id) {
   social.addNativeListener("getWWFriendsList", function(data)
   {
     $('.empty, .friend').remove();
-    var max = 4;
-    if(data.length > 5) {
+    var max = 5;
+    if(data.length > 7) {
       $('#friendlist_add').remove();
-      max = 5;
+      max = 7;
     }
     for(var i = 0; i <= max; i++) {
       if(data.length > i) {
