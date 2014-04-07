@@ -61,6 +61,7 @@ ul.friendlist li img {
 }
 .me img {
   width: 97px!important;
+  height: 97px!important;
   border-radius: 100px;
   margin: 0;
   padding: 4px;
@@ -70,7 +71,7 @@ ul.friendlist li.busy {
   margin: -37px 0 0 -37px;
 }
 li.free img {
-  border: 3px solid #2BD74B;
+  border: 3px solid #008aff;
   padding: 4px;
 }
 li.busy img {
