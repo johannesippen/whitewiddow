@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Midddle</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+    <style>
+      body {
+        text-align: center;
+        font-weight: 300;
+        font-family: "Roboto", sans-serif;
+      }
+      article {
+        padding: 2em 0;
+      }
+      a {
+        text-decoration: none;
+        color: #08b;
+        border-bottom: 1px solid;
+      }
+      section {
+        max-width: 30em;
+        padding: 1em 1em;
+        margin: 0 auto;
+      }
+      section img {
+        max-width: 100%;
+      }
+      .map img {
+        border-radius: 100%;
+      }
+      .details h1 {
+        font-weight: 200;
+      }
+      .button-xlarge {
+        font-size: 150%;
+        padding-left: 2em;
+        padding-right: 2em;
+        margin-bottom: .4em;
+      }
+      footer {
+        color: #fff;
+        background: #234;
+        padding: 5em 0 10em;
+      }
+      @media screen and (max-width: 480px) {
+        article {
+          padding: 0;
+        }
+        .details h1 {
+          font-size: 16px;
+          margin-top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <section class="map"><img src="http://maps.googleapis.com/maps/api/staticmap?center=Rosenthaler+Platz,Berlin&zoom=16&size=600x600&maptype=roadmap&sensor=false"></section>
+      <section class="details">
+        <h1>Nico wants to meet you at <br><b>Mein Haus am See</b>.</h1>
+        <a href="#">Visit their website.</a>
+      </section>
+      <section class="cta">
+        <a class="pure-button button-xlarge pure-button-primary" href="">Set Time &amp; Accept</a><br>
+        <a href="#">Decline</a>
+      </section>
+      <section class="get_app"></section>
+    </article>
+    <footer>
+      <section><p>Midddle is a project by <a href="http://thxalot.co">Thanksalot</a></p>
+            <p>Made in Berlin</p>
+            <p>2014</p>
+      </section>
+    </footer>
+  </body>
+</html>

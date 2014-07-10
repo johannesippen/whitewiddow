@@ -10,3 +10,7 @@ $('#status_busy').live('mouseup touchend',function(){
   $('#status_free').text('Set status to free');
   social.saveCurrentState("busy");
 });
+
+var refreshDashboard = function() {
+  window.location.reload();
+};
